@@ -1,0 +1,164 @@
+<skin>
+  <!-- MerlinMusicPlayer -->
+  <screen name="iDreamAddToDatabase" position="320,200" size="600,320" title="Add music files to iDream database">
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/red.png" position="0,0" zPosition="0" size="15,15" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/green.png" position="159,0" zPosition="0" size="15,15" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/yellow.png" position="317,0" zPosition="0" size="15,15" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/blue.png" position="460,0" zPosition="0" size="15,15" transparent="1" alphatest="on" />
+    <widget name="output" position="1,30" size="600,290" valign="center" halign="center" font="Regular;22" />
+    <widget render="Label" source="key_red" position="17,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget render="Label" source="key_green" position="175,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+  </screen>
+<screen name="MerlinMusicPlayerScreenSaver" position="0,0" size="1280,720" title="Merlin Music Player ScreenSaver" flags="wfNoBorder" backgroundColor="transparent">
+  <widget name="coverArt" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/no_cover.png" position="200,77" size="180,180" transparent="1" alphatest="blend" zPosition="5" />
+  <widget name="display" position="201,258" size="1280,24" zPosition="1" font="Regular;20" foregroundColor="unfcc000" backgroundColor="black" />
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/Merlin-Player.png" position="0,1" size="1280, 720" />
+</screen>
+
+<screen name="MerlinMusicPlayerScreen" position="-1,-1" size="1280,720" title="Merlin Music Player" flags="wfNoBorder">
+  <ePixmap alphatest="on" pixmap="Prime-NFR-Style-by-stein17/menu/Merlininfobar.png" position="1,0" size="1280,720" zPosition="-10" />
+  <widget name="coverArt" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/no_coverArt3.png" position="755,21" size="500,525" transparent="1" alphatest="blend" zPosition="-1" />
+  <widget name="album" position="167,474" size="500,30" zPosition="1" transparent="1" font="Regular; 20" />
+  <widget name="artist" position="167,438" size="500,30" zPosition="1" transparent="1" font="Regular; 20" />
+  <widget name="genre" position="167,512" size="500,30" zPosition="1" transparent="1" font="Regular; 20" />
+  <widget name="nextTitle" options="movetype=running,startpoint=0,direction=left,step=1,steptime=25,repeat=4,oneshot=1,always=0,startdelay=3000,nowrap" render="RunningText" position="352,666" zPosition="2" size="540,32" font="Regular;28" valign="center" halign="center" foregroundColor="metrixsimpleForeground" backgroundColor="black" transparent="0" />
+  <widget name="shuffle" pixmaps="Prime-NFR-Style-by-stein17/skin_default/icons/placeholder1.png,Prime-NFR-Style-by-stein17/skin_default/icons/dvr_shuf.png" position="909,569" size="53,34" transparent="1" alphatest="on" />
+  <widget name="repeat" pixmaps="Prime-NFR-Style-by-stein17/mmp/placeholder1.png,Prime-NFR-Style-by-stein17/mmp/dvr_rep.png" position="968,569" size="53,34" transparent="1" alphatest="on" />
+  <widget source="Title" render="Label" position="755,26" size="510,26" font="Regular; 24" backgroundColor="black" foregroundColor="meincyan" transparent="1" />
+  <widget source="session.CurrentService" render="Label" position="269,574" size="70,30" font="Regular; 24" backgroundColor="black" halign="center" transparent="1" zPosition="1" foregroundColor="meincyan">
+    <convert type="ServicePosition">Length</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Progress" position="269,653" size="780,5" transparent="1" zPosition="1" backgroundColor="meinrot" foregroundColor="meincyan">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="267,618" size="75,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="977,618" size="70,28" font="Regular; 24" halign="center" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="ServicePosition">Remaining</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1073,679" size="200,30" font="LCD; 28" halign="center" backgroundColor="black" transparent="1" zPosition="0" foregroundColor="cyan1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1073,652" size="200,30" font="LCD; 28" halign="center" backgroundColor="black" foregroundColor="cyan1" transparent="1" zPosition="0">
+    <convert type="ClockToText">Format:%d.%b.%Y</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1091,555" size="80,80" font="DIGI; 56" halign="center" valign="center" backgroundColor="black" foregroundColor="cyan1" transparent="1" zPosition="2" noWrap="1">
+    <convert type="ClockToText">Format:%H</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1178,555" size="80,80" font="DIGI; 56" halign="center" valign="center" noWrap="1" backgroundColor="metrixBackground" foregroundColor="cyan1" transparent="1" zPosition="0">
+    <convert type="ClockToText">Format:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="FixedLabel" text=":" font="DIGI; 64" position="1164,555" size="20,62" halign="center" zPosition="0" valign="center" backgroundColor="black" foregroundColor="cyan1" transparent="1">
+    <convert type="BlinkingClockDots">
+    </convert>
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget name="PositionGauge" position="0,0" size="0,0" />
+  <eLabel text="next" position="272,666" size="63,30" font="Regular; 24" backgroundColor="black" foregroundColor="meincyan" transparent="1" zPosition="1" halign="center" />
+  <eLabel text="Genre" position="15,512" size="100,30" font="Regular; 20" backgroundColor="black" foregroundColor="meincyan" transparent="1" zPosition="1" halign="center" />
+  <eLabel text="Artist" position="15,438" size="105,30" font="Regular; 20" backgroundColor="black" foregroundColor="meincyan" transparent="1" halign="center" />
+  <eLabel text="Album" position="15,474" size="100,30" font="Regular; 20" backgroundColor="black" foregroundColor="meincyan" transparent="1" halign="center" />
+  <widget name="title" render="RunningText" options="movetype=running,startpoint=0,direction=left,step=1,steptime=25,repeat=4,oneshot=1,always=0,startdelay=3000,nowrap" position="352,615" size="540,32" font="Regular;28" valign="center" halign="center" foregroundColor="metrixsimpleForeground" backgroundColor="black" transparent="1" />
+</screen>
+
+<screen name="MerlinMusicPlayerLyrics" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" title="Merlin Music Player Lyrics">
+    <widget source="global.CurrentTime" render="Label" position="1100,676" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="748,679" size="350,25" font="Regular; 20" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <ePixmap alphatest="on" pixmap="Prime-NFR-Style-by-stein17/menu/EPG.png" position="0,0" size="1280,720" />
+    <eLabel backgroundColor="darkgrey" position="178,22" size="924,2" zPosition="1" />
+    <eLabel backgroundColor="darkgrey" font="Regular;16" foregroundColor="unf0f0f" halign="center" position="178,14" size="250,20" text="MERLIN  MUSIC  PLAYER" valign="center" zPosition="2" />
+    <eLabel backgroundColor="darkgrey" font="Regular;16" foregroundColor="unf0f0f" halign="center" position="852,14" size="250,20" text="WWW.DREAMBOX-TOOLS.INFO" valign="center" zPosition="2" />
+    <widget name="headertext" position="30,80" zPosition="1" size="1220,23" font="Regular;20" transparent="1" foregroundColor="unfcc000" backgroundColor="black" />
+    <widget name="resulttext" position="30,131" zPosition="1" size="1220,20" font="Regular;16" transparent="1" backgroundColor="black" />
+    <widget name="lyric_text" position="30,195" zPosition="2" size="1220,450" font="Regular;18" transparent="0" backgroundColor="black" />
+  </screen>
+  <screen name="MerlinMusicPlayerSongList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" title="Songlist">
+    <widget source="global.CurrentTime" render="Label" position="1100,676" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="748,679" size="350,25" font="Regular; 20" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <ePixmap alphatest="on" pixmap="Prime-NFR-Style-by-stein17/menu/EPG.png" position="0,0" size="1280,720" />
+    <eLabel backgroundColor="darkgrey" position="178,22" size="924,2" zPosition="1" />
+    <eLabel backgroundColor="darkgrey" font="Regular;16" foregroundColor="unf0f0f" halign="center" position="178,14" size="250,20" text="MERLIN  MUSIC  PLAYER" valign="center" zPosition="2" />
+    <eLabel backgroundColor="darkgrey" font="Regular;16" foregroundColor="unf0f0f" halign="center" position="852,14" size="250,20" text="WWW.DREAMBOX-TOOLS.INFO" valign="center" zPosition="2" />
+    <widget name="headertext" position="30,80" zPosition="1" size="1220,23" font="Regular;20" transparent="1" foregroundColor="unfcc000" backgroundColor="black" />
+    <widget name="list" position="30,126" zPosition="2" size="1220,520" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" />
+  </screen>
+  <screen name="iDreamMerlin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" title="iDream">
+    <widget source="global.CurrentTime" render="Label" position="1100,676" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="748,679" size="350,25" font="Regular; 20" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <ePixmap alphatest="on" pixmap="Prime-NFR-Style-by-stein17/menu/EPG.png" position="0,0" size="1280,720" />
+    <ePixmap position="78,685" zPosition="4" size="15,15" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/red.png" transparent="1" alphatest="on" />
+    <ePixmap position="258,685" zPosition="4" size="15,15" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/green.png" transparent="1" alphatest="on" />
+    <ePixmap position="440,685" zPosition="4" size="15,15" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/yellow.png" transparent="1" alphatest="on" />
+    <ePixmap position="628,685" zPosition="4" size="15,15" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/blue.png" transparent="1" alphatest="on" />
+    <widget render="Label" source="key_red" position="106,675" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget render="Label" source="key_green" position="289,675" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget render="Label" source="key_yellow" position="469,675" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget render="Label" source="key_blue" position="654,675" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="headertext" position="30,80" zPosition="1" size="1220,23" font="Regular;20" transparent="1" foregroundColor="unfcc000" backgroundColor="black" />
+    <widget name="list" position="30,127" zPosition="2" size="1220,500" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" />
+  </screen>
+  <screen name="SelectPath" position="center,center" size="560,320" title="Select path">
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/red.png" position="0,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/green.png" position="140,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/yellow.png" position="280,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/blue.png" position="420,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+    <widget name="target" position="0,60" size="540,22" valign="center" font="Regular;22" />
+    <widget name="filelist" position="0,100" zPosition="1" size="560,220" scrollbarMode="showOnDemand" />
+    <widget render="Label" source="key_red" position="0,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget render="Label" source="key_green" position="140,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+  </screen>
+  <screen name="" position="0,0" size="132,64">
+    <widget source="session.CurrentService" render="Label" position="4,0" size="132,12" valign="top" font="Regular;10" halign="center">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget name="text1" position="4,14" size="132,35" halign="center" valign="top" font="Regular;14" />
+    <widget name="text4" position="4,51" size="132,12" halign="center" valign="top" font="Regular;10" />
+  </screen>
+  <screen name="" position="0,0" size="132,64">
+    <widget name="text3" position="4,0" size="132,14" font="Regular;10" />
+    <widget name="text1" position="4,14" size="132,35" font="Regular;14" />
+    <widget name="text4" position="4,49" size="132,14" font="Regular;10" />
+  </screen>
+  <screen name="Merlin Music Player Setup" position="50,0" size="740,720" flags="wfNoBorder" backgroundColor="black" title="Merlin Music Player Setup">
+    <widget source="global.CurrentTime" render="Label" position="622,16" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="272,19" size="350,25" font="Regular; 20" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <ePixmap alphatest="on" pixmap="Prime-NFR-Style-by-stein17/menu/menu.png" position="0,0" size="740,720" zPosition="-10" />
+    <ePixmap position="134,685" zPosition="4" size="140,40" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/red.png" transparent="1" alphatest="on" />
+    <ePixmap position="336,682" zPosition="4" size="140,40" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/green.png" transparent="1" alphatest="on" />
+    <widget render="Label" source="key_red" position="155,679" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget render="Label" source="key_green" position="357,678" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="config" position="20,76" size="700,570" backgroundColor="black" scrollbarMode="showOnDemand" />
+  </screen>
+  <screen name="MerlinMusicPlayerFileList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" title="iDream">
+    <widget source="global.CurrentTime" render="Label" position="1100,676" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="748,679" size="350,25" font="Regular; 20" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <ePixmap alphatest="on" pixmap="Prime-NFR-Style-by-stein17/menu/EPG.png" position="0,0" size="1280,720" />
+    <eLabel backgroundColor="darkgrey" position="178,22" size="924,2" zPosition="1" />
+    <eLabel backgroundColor="darkgrey" font="Regular;16" foregroundColor="unf0f0f" halign="center" position="178,14" size="250,20" text="MERLIN  MUSIC  PLAYER" valign="center" zPosition="2" />
+    <eLabel backgroundColor="darkgrey" font="Regular;16" foregroundColor="unf0f0f" halign="center" position="852,14" size="250,20" text="WWW.DREAMBOX-TOOLS.INFO" valign="center" zPosition="2" />
+    <widget name="headertext" position="30,80" zPosition="1" size="1220,23" font="Regular;20" transparent="1" foregroundColor="unfcc000" backgroundColor="black" />
+    <widget name="list" position="30,120" zPosition="2" size="1220,520" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" />
+  </screen>
+  <!-- MerlinMusicPlayer -->
+</skin>

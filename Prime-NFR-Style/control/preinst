@@ -1,0 +1,32 @@
+
+#!/bin/sh                                                       
+rm -rf /usr/share/enigma2/Prime-NFR-Style-by-stein17
+rm -rf /usr/lib/enigma2/python/Components/Converter/NextEventsPrime.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/ReceiverInfoPrime.pyo
+echo "aktualisiere Updatequellen... "opkg update 
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "########  ########  #### ##     ## ########    ##    ## ######## ########  " 
+echo "##     ## ##     ##  ##  ###   ### ##          ###   ## ##       ##     ## "
+echo "##     ## ##     ##  ##  #### #### ##          ####  ## ##       ##     ## "
+echo "########  ########   ##  ## ### ## ######      ## ## ## ######   ########  "
+echo "##        ##   ##    ##  ##     ## ##          ##  #### ##       ##   ##   "
+echo "##        ##    ##   ##  ##     ## ##          ##   ### ##       ##    ##  "
+echo "##        ##     ## #### ##     ## ########    ##    ## ##       ##     ## "
+echo "                  ######  ######## ##    ## ##       ########              "
+echo "                ##    ##    ##     ##  ##  ##       ##                     "
+echo "                ##          ##      ####   ##       ##                     "
+echo "                 ######     ##       ##    ##       ######                 "
+echo "                      ##    ##       ##    ##       ##                     "
+echo "                ##    ##    ##       ##    ##       ##                     "
+echo "                 ######     ##       ##    ######## ########               "
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "            The Skin Prime NFR Style is now being installed...             "
+echo "                                                                           " 
+echo "                                                                           "
+echo "                                                                           "
+exit 0

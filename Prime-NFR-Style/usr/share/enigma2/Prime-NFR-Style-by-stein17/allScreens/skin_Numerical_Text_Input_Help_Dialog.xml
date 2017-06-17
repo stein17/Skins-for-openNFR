@@ -1,0 +1,29 @@
+   <skin> 
+  <!-- NumericalTextInputHelpDialog -->
+<screen name="NumericalTextInputHelpDialog" position="300,500" size="680,143" flags="wfNoBorder" zPosition="100">
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/key_frame.png" position="0,0" size="680,143" backgroundColor="black" zPosition="-10" transparent="1" alphatest="blend" />
+  <widget name="key1" position="28,12" size="198,24" font="Console;24" halign="center" valign="center" />
+  <widget name="key2" position="252,12" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="key3" position="475,12" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="key4" position="28,44" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="key5" position="252,44" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="key6" position="475,44" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="key7" position="28,76" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="key8" position="252,76" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="key9" position="475,76" size="198,24" font="Console; 24" halign="center" valign="center" />
+  <widget name="help1" position="89,111" size="56,24" font="Console; 24" halign="center" valign="center" backgroundColor="metrixBackground" transparent="1" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <widget name="key0" position="252,111" size="198,24" font="Console; 19" halign="center" valign="center" />
+  <widget name="help2" position="540,111" size="56,24" font="Console; 24" halign="center" valign="center" backgroundColor="metrixBackground" transparent="1" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="1" position="6,15" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="2" position="231,15" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="3" position="454,15" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="4" position="6,47" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="5" position="231,47" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="6" position="454,47" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="7" position="6,79" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="8" position="231,79" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="9" position="454,79" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  <eLabel text="0" position="231,111" size="20,24" font="Console; 24" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" borderWidth="1" borderColor="white" zPosition="10" foregroundColor="meinrot" />
+  </screen>
+  <!-- End NumericalTextInputHelpDialog -->
+    </skin>

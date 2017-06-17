@@ -1,0 +1,139 @@
+<skin>
+<!-- stein17 SecondInfoBar Analogclock*/-->
+<screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+    <ePixmap position="0,0" size="1280,720" pixmap="Prime-NFR-Style-by-stein17/menu/secondinfobar.png" zPosition="-1" borderWidth="0" borderColor="transparent" />
+    <eLabel text="Jetzt :" position="31,15" size="80,32" zPosition="2" font="Regular; 25" transparent="1" backgroundColor="black" halign="left" />
+    <eLabel text="Demnächst in" position="1050,147" size="210,32" zPosition="2" font="Regular; 25" transparent="1" backgroundColor="black" halign="center" />
+    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,oneshot=1,startdelay=8000,wrap" position="22,69" size="600,470" font="Regular; 22" zPosition="1" backgroundColor="black" foregroundColor="white" transparent="1" halign="left">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <!--Oben Datum und Uhr  */-->
+    <widget source="global.CurrentTime" render="Label" position="826,17" size="320,25" font="Regular;20" halign="right" backgroundColor="backtop" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1147,14" size="100,28" font="Regular; 26" halign="right" backgroundColor="backtop" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <!--Oben Datum und Uhr  */-->
+    <widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,oneshot=1,startdelay=8000,wrap" position="657,349" size="600,195" font="Regular; 20" zPosition="0" backgroundColor="black" transparent="1" halign="left" foregroundColor="white">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="1000,690" size="41,20" zPosition="2" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_dolby_on.png" position="930,690" size="56,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_format_on.png" position="885,690" size="32,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_txt_on.png" position="850,690" size="23,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="785,690" size="53,20" zPosition="2" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hbbtv_on.png" alphatest="blend">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_crypt_on.png" position="505,689" size="30,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_sub_on.png" position="744,690" size="30,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_on.png" position="688,689" render="Pixmap" size="45,23" source="session.RecordState" zPosition="5">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Picon" position="27,573" size="220,132" zPosition="10" backgroundColor="black" transparent="0" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="781,608" size="75,30" font="Regular; 22" halign="right" backgroundColor="black" transparent="1" valign="top">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel text="-" position="856,608" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+    <widget source="session.Event_Now" render="Label" position="871,608" size="70,30" font="Regular; 22" halign="left" backgroundColor="black" transparent="1" valign="top">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="274,608" size="520,30" font="Regular; 24" halign="left" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="942,608" size="103,30" font="Regular; 22" halign="right" backgroundColor="black" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" pixmap="Prime-NFR-Style-by-stein17/colorbar.png" position="280,639" size="758,3" zPosition="7" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="274,644" size="520,30" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" foregroundColor="grey" valign="top">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="942,644" size="103,30" font="Regular; 20" halign="right" backgroundColor="black" foregroundColor="grey" transparent="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="542,687" size="60,26" font="Regular; 20" halign="right" backgroundColor="black" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" position="603,687" size="15,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
+    <widget source="session.CurrentService" render="Label" position="619,687" size="60,26" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="401,687" size="100,26" foregroundColor="grey" backgroundColor="black" transparent="1" zPosition="10" font="Regular; 21" halign="center">
+      <convert type="ServiceOrbitalPosition" />
+    </widget>
+    <eLabel text="SNR :" position="269,687" size="70,26" halign="right" font="Regular; 21" backgroundColor="black" transparent="1" valign="center" foregroundColor="meingruen" />
+    <widget source="session.FrontendStatus" render="Label" position="339,687" size="66,26" font="Regular; 21" backgroundColor="black" transparent="1" halign="left" foregroundColor="meingruen">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="274,571" size="520,30" font="Regular; 24" valign="top" noWrap="1" backgroundColor="black" transparent="1" zPosition="0" halign="left">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="105,15" size="720,32" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="657,308" size="598,32" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/selection/Line 600x1.png" position="655,343" size="600,1" alphatest="blend" />
+    <widget source="session.VideoPicture" render="Pig" position="657,74" size="409,230" zPosition="5" backgroundColor="unff000000" />
+    <widget source="session.Event_Now" render="Label" position="1080,191" size="150,40" font="Regular; 30" halign="center" backgroundColor="black" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="781,644" size="75,30" font="Regular; 22" halign="right" backgroundColor="black" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel text="-" position="856,644" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+    <widget source="session.Event_Next" render="Label" position="871,644" size="75,30" font="Regular; 22" halign="left" backgroundColor="black" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <!-- Analogclock  */-->
+  <widget source="global.CurrentTime" render="Label" position="1054,686" size="130,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1181,686" size="90,26" font="Regular; 20" halign="left" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Format:%e. %b</convert>
+  </widget>
+	<widget source="global.CurrentTime" render="Watches" position="1123,585" size="75,75" zPosition="3" foregroundColor="grey" alphatest="on">
+    <convert type="ExtraNumText">minHand</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Watches" position="1128,590" size="65,65" zPosition="2" foregroundColor="grey" alphatest="on">
+    <convert type="ExtraNumText">hourHand</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Watches" position="1123,585" size="75,75" zPosition="4" alphatest="on" foregroundColor="red">
+    <convert type="ExtraNumText">secHand</convert>
+  </widget>
+  <ePixmap position="1100,564" size="120,120" pixmap="Prime-NFR-Style-by-stein17/menu/cklocksecondinfobar.png" zPosition="0" alphatest="blend" />
+   <!-- Analogclock  */-->
+    </screen>
+   </skin>

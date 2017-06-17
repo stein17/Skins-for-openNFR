@@ -1,0 +1,201 @@
+<skin> 
+<!-- WebradioFS R Rechts -->
+ <!--screen for: "WebradioFSScreen_13", "genre_anzeige_13", "menu_13", "groups_13"-->
+  <!--Attention: the z-positions of the widgets must be respected -->
+  <screen name="WebradioFSScreen_13" position="0,0" size="1280,720" title="Webradio - Favourites" flags="wfNoBorder" backgroundColor="transparent" zPosition="1">
+ <!--left site list-->
+  <widget source="streamlist" render="Listbox" zPosition="2" position="30,140" size="880,480" selectionDisabled="0" scrollbarMode="showOnDemand" backgroundColor="black" foregroundColor="white" enableWrapAround="1">
+  <convert type="TemplatedMultiContent" transparent="0">
+				{"templates": 
+                                {"default": (30,[
+						MultiContentEntryPixmapAlphaTest(pos = (5, 2), size = (30, 30), png = 2), # index 2: picture
+						MultiContentEntryText(pos = (40, 3), size = (680, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1: text
+						]),
+                                "info": (30,[
+						MultiContentEntryText(pos = (5, 3), size = (260, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 1: text
+						MultiContentEntryText(pos = (260, 3), size = (500, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, color=0xf47d19,color_sel=0xf47d19 , text = 1)
+						],False),
+				"menus": (30,[
+						MultiContentEntryText(pos = (5, 3), size = (740, 24), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 1), # index 1: text
+						],True),
+				"about": (30,[
+						MultiContentEntryText(pos = (5, 3), size = (740, 24), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, color=0xf47d19,color_sel=0xf47d19, border_width = 0, text = 0)
+						],False),
+				"genre": (30,[
+						MultiContentEntryText(pos = (5, 3), size = (740, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, border_width = 0, text = 1)
+						])
+				},		
+				"fonts": [gFont("Regular", 22),gFont("Regular", 20)],
+				"itemHeight": 35,
+				
+				}
+			</convert>
+</widget>
+ <!--top on left site in stream-list-Screen-->	   
+ <eLabel font="Regular; 32" position="15,12" size="850,40" text="webradioFS" transparent="1" zPosition="1" halign="left" backgroundColor="black" foregroundColor="white" />
+ <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/webradiorechts.png" position="0,0" size="1280,720" zPosition="-20" />
+ <widget source="global.CurrentTime" render="Label" position="1155,18" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
+ <convert type="ClockToText">Default</convert>
+ </widget>
+ <widget source="global.CurrentTime" render="Label" position="803,22" size="350,25" font="Regular; 20" halign="right" backgroundColor="black" transparent="1">
+ <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+ </widget>
+ <ePixmap alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_off.png" position="1215,665" size="45,23" zPosition="2" />
+ <widget name="rec_pic" position="1215,665" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_on.png" size="45,23" zPosition="4" backgroundColor="black" alphatest="blend" />
+ <widget source="rec_text_new" render="Listbox" position="28,70" size="770,62" zPosition="1" selectionDisabled="1" backgroundColor="black" foregroundColor="white" enableWrapAround="1">
+ <convert type="TemplatedMultiContent">
+			{"templates": 
+                        {"default": (30,[
+					MultiContentEntryText(pos = (5, 0), size = (760, 28), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, color=0xB5B5B5, text = 0), # top-line over list 
+					],False),
+                        "cache": (30,[
+					MultiContentEntryText(pos = (35, 0), size = (730, 28), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, color=0x58B74, text = 0), #cache-info 
+					],False),
+			"record": (30,[
+					MultiContentEntryText(pos = (35, 0), size = (730, 28), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, color=0xFF4500, text = 0), # record-info
+					],False),
+			"timer": (30,[
+					MultiContentEntryText(pos = (35, 0), size = (630, 28), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, color=0xFFD800, text = 0), #record-timer-info
+					],False),
+
+			"titel": (30,[
+					MultiContentEntryText(pos = (5, 0), size = (760, 28), font=0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, color=0xf47d19, text = 0), #for list-titles
+					],False),
+				},		
+			"fonts": [gFont("Regular", 20)],
+			"itemHeight": 35
+			}
+		</convert>
+</widget>
+<!--extended help-->
+ <widget name="help" zPosition="4" position="30,140" size="880,480" foregroundColor="white" backgroundColor="black" font="Regular;18" itemHeight="30" transparent="1" />
+<!--bottom left text -->
+<widget source="playtext" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" render="RunningText" position="30,631" zPosition="2" size="700,60" font="Regular;28" valign="center" halign="center" foregroundColor="metrixsimpleForeground" backgroundColor="black" transparent="0" />
+<!--bottom in Screen for streams and genres, ... (button-line)-->
+	  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/red.png" position="980,595" size="20,20" alphatest="blend" transparent="1" />
+      <widget name="green_pic" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/green.png" position="979,622" size="20,20" alphatest="blend" transparent="1" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/yellow.png" position="980,647" size="20,20" alphatest="blend" transparent="1" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/blue.png" position="980,672" size="20,20" alphatest="blend" transparent="1" />
+      <widget name="key_red" position="1002,592" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <widget name="key_green" position="1002,618" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <widget name="key_yellow" position="1002,643" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <widget name="key_blue" position="1002,668" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_menu.png" position="750,650" size="30,30" alphatest="blend" transparent="1" zPosition="20" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_info.png" position="814,650" size="30,30" alphatest="blend" transparent="1" zPosition="20" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_help.png" position="878,650" size="30,30" alphatest="blend" transparent="1" zPosition="20" />
+<!--spezial, bottom in Screen for menu, ...-
+"buttons_abdeck": must non-transparent!, to cover yellow and blue buttons + ButtonText
+"key_red2" and "key_green2" cover the text box of "key_red "and key_green"
+-->
+      <widget name="buttons_abdeck" position="976,593" zPosition="2" size="225,100" font="Regular;20" valign="center" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
+      <widget name="key_red2" position="1002,592" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <widget name="key_green2" position="1002,618" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+<!--spezial end-->
+  <ePixmap alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/wbrl.png" position="802,77" size="120,30" transparent="1" zPosition="5" />
+</screen>
+    <screen name="WebradioFSSetup_13" position="0,0" zPosition="2" size="1280,720" title="webradioFS" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="global.CurrentTime" render="Label" position="1155,18" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
+        <convert type="ClockToText">Default</convert>
+      </widget>
+      <widget source="global.CurrentTime" render="Label" position="803,22" size="350,25" font="Regular; 20" halign="right" backgroundColor="black" transparent="1">
+        <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+      </widget>
+	  <!--top on left site in stream-list-Screen  -->
+	  <widget source="playtext" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" render="RunningText" position="30,630" zPosition="2" size="880,60" font="Regular;28" valign="center" halign="center" foregroundColor="metrixsimpleForeground" backgroundColor="black" transparent="0" />
+      <widget name="rec_txt" position="550,69" size="700,25" font="Regular; 20" halign="center" valign="center" zPosition="2" backgroundColor="black" transparent="1" foregroundColor="white" />
+	  <!--left site in Screen for Streams, Genres...-->
+	  <widget name="config" position="30,130" zPosition="3" size="880,490" foregroundColor="white" backgroundColor="black" scrollbarMode="showOnDemand" itemHeight="30" transparent="1" />
+      <!--bottom left-->
+    <!--bottom in Screen for streams and genres, ... (button-line)-->
+	  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/red.png" position="980,595" size="20,20" alphatest="blend" transparent="1" />
+      <widget name="green_pic" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/green.png" position="979,622" size="20,20" alphatest="blend" transparent="1" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/yellow.png" position="980,647" size="20,20" alphatest="blend" transparent="1" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/blue.png" position="980,672" size="20,20" alphatest="blend" transparent="1" />
+      <widget name="key_red" position="1002,592" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <widget name="key_green" position="1002,618" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <widget name="key_yellow" position="1002,643" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <widget name="key_blue" position="1002,668" size="200,20" zPosition="1" font="Regular;17" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="white" backgroundColor="metrixSelection" />
+      <ePixmap alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/wbrl.png" position="789,78" size="120,30" transparent="1" zPosition="5" />
+	  <ePixmap alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_off.png" position="1215,665" size="45,23" zPosition="2" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/webradiorechts.png" position="0,0" size="1280,720" zPosition="-20" />
+	  </screen>
+	      <!-- webradioFS right site -->
+<screen flags="wfNoBorder" name="wbrFS_r_site13" position="949,70" size="317,519" zPosition="3" backgroundColor="transparent">
+      <widget alphatest="blend" backgroundColor="metrixsimpleBackground" name="streamlogo" position="12,415" size="293,95" halign="center" valign="center" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular;20" foregroundColor="metrixsimpleForeground" halign="center" name="fav_name" position="12,440" size="293,26" transparent="1" valign="top" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 17" halign="left" name="zeile1" foregroundColor="metrixsimpleForeground" position="19,246" size="90,20" transparent="1" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 17" halign="left" name="zeile1b" noWrap="1" position="93,246" size="210,20" transparent="1" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 17" halign="left" name="zeile2" foregroundColor="metrixsimpleForeground" position="19,333" size="90,20" transparent="1" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 16" halign="left" name="zeile2b" noWrap="1" position="93,333" size="140,20" transparent="1" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 17" halign="left" name="zeile3" foregroundColor="metrixsimpleForeground" position="19,362" size="90,22" transparent="1" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 17" halign="left" name="zeile3b" noWrap="1" position="93,362" size="140,22" transparent="1" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 17" halign="left" name="zeile4" foregroundColor="metrixsimpleForeground" position="19,274" size="90,22" transparent="1" />
+      <widget backgroundColor="metrixsimpleBackground" font="Regular; 17" halign="left" name="zeile4b" position="93,274" size="210,50" transparent="1" />
+      <widget name="picture" position="235,337" size="40,41" backgroundColor="transparent" alphatest="blend" zPosition="2" />
+      <widget foregroundColor="metrixsimpleForeground" name="playline2" pointer="skin_default/position_pointer.png:540,0" position="23,475" size="270,21" transparent="1">
+        <convert type="ServicePosition">Gauge</convert>
+      </widget>
+      <widget alphatest="blend" name="random" position="21,435" size="50,30" />
+      <widget alphatest="blend" name="subdirs" position="136,435" size="50,30" />
+      <widget alphatest="blend" name="auto" position="246,435" size="50,30" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/wbrFS_r_rechts.png" position="0,0" size="317,519" transparent="1" alphatest="blend" zPosition="-5" />
+     </screen>
+	<screen name="wbrScreenSaver_13" position="0,0" zPosition="5" size="1280,720" flags="wfNoBorder" backgroundColor="black" title="">
+      <widget name="background1" pixmap="Prime-NFR-Style-by-stein17/menu/WBR-Player.png" position="0,0" size="1280,720" zPosition="11" transparent="0" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/WBR-Player.png" position="0,0" size="1280,720" zPosition="11" />
+      <widget name="display_station" position="255,342" zPosition="12" size="400,40" font="Regular;32" halign="left" transparent="1" foregroundColor="meinrot" noWrap="1" backgroundColor="black" />
+      <widget name="display_time" position="255,282" zPosition="12" size="400,90" font="Regular;26" halign="left" transparent="1" foregroundColor="meinrot" backgroundColor="black" />
+      <widget name="display_nplaying" position="255,382" zPosition="12" size="400,90" font="Regular;26" halign="left" transparent="1" foregroundColor="cyan1" backgroundColor="black" />
+      <widget name="cover" zPosition="12" size="200,200" position="50,282" alphatest="blend" />
+      <widget name="cover2" zPosition="12" size="400,400" position="0,281" alphatest="blend" />
+      <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/chillen.png" position="251,277" size="410,200" transparent="1" alphatest="blend" zPosition="10" />
+    </screen>
+    <screen name="play_settings" zPosition="4" position="center,70" size="590,210" title="Settings for playing">
+    <widget name="config" position="5,40" size="580,60" scrollbarMode="showOnDemand" />
+    <widget name="button_backround" position="0,185" size="590,35" zPosition="1" foregroundColor="black" backgroundColor="black" />
+    <widget name="pic_red" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_red.png" zPosition="2" position="5,190" size="30,30" backgroundColor="black" alphatest="blend" />
+    <widget name="pic_green" pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_green.png" zPosition="2" position="295,190" size="30,30" backgroundColor="black" alphatest="blend" />
+    <widget name="key_red" position="40,190" zPosition="2" size="120,30" font="Regular;20" foregroundColor="metrixsimpleAccent1" transparent="1" />
+    <widget name="key_green" position="330,190" zPosition="2" size="140,30" font="Regular;20" foregroundColor="metrixsimpleAccent1" transparent="1" />
+  </screen>
+    <screen name="wbrfs_cs" position="55,55" size="760,610" backgroundColor="black" title="Save from cache" zPosition="99">
+    <widget source="song_liste" render="Listbox" backgroundColor="black" position="10,5" size="740,560" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (10, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 22)],
+				"itemHeight": 35
+				}
+			</convert>
+    </widget>
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_red.png" position="5,572" size="30,30" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_green.png" position="165,572" size="30,30" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_yellow.png" position="380,572" size="30,30" alphatest="on" />
+    <widget name="key_red" position="40,570" zPosition="1" size="160,30" valign="center" halign="left" font="Regular;22" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="key_green" position="200,570" zPosition="1" size="180,30" valign="center" halign="left" font="Regular;22" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="key_yellow" position="415,570" zPosition="1" size="350,30" valign="center" halign="left" font="Regular;22" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+  </screen>
+    <screen name="wbrfs_set_we" position="center,center" size="560,400" title="Info" zPosition="99">
+    <widget name="warn" position="10,5" zPosition="1" size="540,240" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="config" position="10,250" size="540,120" scrollbarMode="showOnDemand" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_red.png" position="15,372" size="30,30" alphatest="on" />
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/buttons/key_green.png" position="280,372" size="30,30" alphatest="on" />
+    <widget name="key_red" position="60,370" zPosition="1" size="240,30" valign="center" halign="left" font="Regular;22" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="key_green" position="330,370" zPosition="1" size="250,30" valign="center" halign="left" font="Regular;22" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+  </screen>
+    
+    <screen name="webradioFSdisplay13" position="0,0" size="132,64">
+    <widget source="Zeile1" render="Label" position="4,0" size="132,14" font="Regular;12" noWrap="1" />
+    <widget source="Zeile2" render="Label" position="4,14" size="132,18" font="Regular;16" noWrap="1" />
+    <widget source="Zeile3" render="Label" position="4,49" size="132,14" font="Regular;12" noWrap="1" />
+    <widget name="picon" position="center,0" size="0,0" alphatest="blend" />
+  </screen>
+    <screen name="wbrfs_message" position="240,59" zPosition="4" size="800,600" title="webradioFS-Info" backgroundColor="black">
+    <widget name="bgr" position="2,70" size="796,223" transparent="0" backgroundColor="un8b" zPosition="1" />
+    <widget name="titel" font="Regular;20" valign="center" halign="left" position="100,10" size="450,50" transparent="0" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" zPosition="5" />
+    <widget name="time" font="Regular;20" valign="center" halign="right" position="500,1" size="50,50" transparent="0" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" zPosition="6" />
+    <ePixmap position="9,-1" zPosition="2" size="70,71" backgroundColor="black" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/logodef.png" transparent="0" alphatest="on" />
+    <widget name="text" font="Regular;26" halign="left" position="20,90" size="760,200" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" zPosition="6" />
+    <widget name="list" transparent="0" position="2000,2000" size="500,50" itemHeight="42" zPosition="7" />
+  </screen>
+    
+  </skin>

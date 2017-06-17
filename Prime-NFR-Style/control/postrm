@@ -1,0 +1,33 @@
+#!/bin/sh
+TMP=/tmp/.skins
+rm -rf /usr/share/enigma2/Prime-NFR-Style-by-stein17
+rm -rf /usr/lib/enigma2/python/Components/Converter/NextEventsPrime.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/ReceiverInfoPrime.pyo
+echo "syncing disk"
+sync
+echo ""
+echo ""
+echo "****************************************"
+echo "*            Prime-NFR-Style            "
+echo "*        openNFR Skin by stein17        "
+echo "*    powered by Nachtfalke reloaded     "
+echo "****************************************"
+echo ""
+echo ""
+echo ""
+echo "Prime-NFR-Style-by-stein17 successfully removed!"
+echo ""
+echo ""
+echo "GUI restart."
+echo ""
+echo ""
+echo ""
+echo "Prime-NFR-Style-by-stein17 wurde erfolgreich entfernt!"
+echo ""
+echo ""
+echo ""
+echo "GUI Neustart."
+echo ""
+echo ""
+echo ""
+exit 0

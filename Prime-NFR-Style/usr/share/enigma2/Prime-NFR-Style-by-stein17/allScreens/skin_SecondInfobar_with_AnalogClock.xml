@@ -1,0 +1,259 @@
+<skin>
+<!--  SecondInfobar with AnalogClock-->
+ <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+  <ePixmap position="0,0" size="1280,720" pixmap="Prime-NFR-Style-by-stein17/menu/secondinfobar.png" zPosition="-1" borderWidth="0" borderColor="transparent" />
+  <eLabel text="Jetzt :" position="31,15" size="80,32" zPosition="2" font="Regular; 25" transparent="1" backgroundColor="black" halign="left" />
+  <eLabel text="Demnächst in" position="1050,147" size="210,32" zPosition="2" font="Regular; 25" transparent="1" backgroundColor="black" halign="center" />
+   <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,oneshot=1,startdelay=8000,wrap" position="22,69" size="600,470" font="Regular; 22" zPosition="1" backgroundColor="black" foregroundColor="white" transparent="1" halign="left">
+ <convert type="EventName">ExtendedDescription</convert>
+ </widget>
+ <widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,oneshot=1,startdelay=8000,wrap" position="657,349" size="600,195" font="Regular; 20" zPosition="0" backgroundColor="black" transparent="1" halign="left" foregroundColor="white">
+ <convert type="EventName">ExtendedDescription</convert>
+ </widget>
+ <!-- Datum für Analogclock  */-->
+  <widget source="global.CurrentTime" render="Label" position="1054,686" size="130,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1181,686" size="90,26" font="Regular; 20" halign="left" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Format:%e. %b</convert>
+  </widget>
+    <!-- Datum für Analogclock  */-->
+<ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hd_off.png" position="1000,690" size="41,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" position="1000,690" size="41,20" zPosition="2" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hd_on.png" alphatest="blend">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">721,1980</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_dolby_off.png" position="930,690" size="56,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_dolby_on.png" position="930,690" size="56,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_format_off.png" position="885,690" size="32,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_format_on.png" position="885,690" size="32,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_txt_off.png" position="850,690" size="23,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_txt_on.png" position="850,690" size="23,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hbbtv_off.png" position="785,690" size="53,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" position="785,690" size="53,20" zPosition="2" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hbbtv_on.png" alphatest="blend">
+    <convert type="ServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_crypt_off.png" position="505,689" size="30,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_crypt_on.png" position="505,689" size="30,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_sub_off.png" position="770,572" size="30,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_sub_on.png" position="770,572" size="30,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">SubservicesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+    <!-- Aufnahme */-->
+  <ePixmap alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_off.png" position="715,570" size="45,23" zPosition="2" />
+  <widget alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_on.png" position="715,570" render="Pixmap" size="45,23" source="session.RecordState" zPosition="5">
+  <convert type="ConditionalShowHide">Blink</convert>
+</widget>
+  <!-- Aufnahme */-->
+  <widget source="session.CurrentService" render="Picon" position="27,573" size="220,132" zPosition="10" backgroundColor="black" transparent="0" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="781,608" size="75,30" font="Regular; 22" halign="right" backgroundColor="black" transparent="1" valign="top">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="856,608" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+  <widget source="session.Event_Now" render="Label" position="871,608" size="70,30" font="Regular; 22" halign="left" backgroundColor="black" transparent="1" valign="top">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="274,608" size="520,30" font="Regular; 24" halign="left" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="942,608" size="103,30" font="Regular; 22" halign="right" backgroundColor="black" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Prime-NFR-Style-by-stein17/colorbar.png" position="280,639" size="758,3" zPosition="7" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="274,644" size="520,30" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" foregroundColor="grey" valign="top">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="942,644" size="103,30" font="Regular; 20" halign="right" backgroundColor="black" foregroundColor="grey" transparent="1">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="542,687" size="60,26" font="Regular; 20" halign="right" backgroundColor="black" transparent="1" valign="center">
+    <convert type="ServiceInfo">VideoWidth</convert>
+  </widget>
+  <eLabel text="x" position="603,687" size="15,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
+  <widget source="session.CurrentService" render="Label" position="619,687" size="60,26" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" valign="center">
+    <convert type="ServiceInfo">VideoHeight</convert>
+  </widget>
+  <eLabel text="B" font="Regular; 20" position="275,687" size="18,26" halign="center" backgroundColor="black" foregroundColor="un777777" transparent="1" valign="center" zPosition="3" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="275,687" size="18,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="B">
+    <convert type="MaggyCryptInfo">BetaCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 22" position="275,713" size="18,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="center" text="B">
+    <convert type="MaggyCryptInfo">BetaEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="I" font="Regular; 20" position="293,687" size="18,26" halign="center" backgroundColor="black" foregroundColor="un777777" transparent="1" valign="center" zPosition="3" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="293,687" size="18,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="I">
+    <convert type="MaggyCryptInfo">IrdCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 22" position="293,713" size="18,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="center" text="I">
+    <convert type="MaggyCryptInfo">IrdEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="S" font="Regular; 20" position="311,687" size="18,26" halign="center" backgroundColor="black" foregroundColor="un777777" transparent="1" valign="center" zPosition="3" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="311,687" size="18,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="S">
+    <convert type="MaggyCryptInfo">SecaCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 22" position="311,713" size="18,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="center" text="S">
+    <convert type="MaggyCryptInfo">SecaEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="V" font="Regular; 20" position="329,687" size="18,26" halign="center" backgroundColor="black" transparent="1" valign="center" zPosition="3" foregroundColor="un777777" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="329,687" size="18,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="V">
+    <convert type="MaggyCryptInfo">ViaCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="V" font="Regular; 22" position="329,713" size="18,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="center">
+    <convert type="MaggyCryptInfo">ViaEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="N" font="Regular; 20" position="347,687" size="18,26" halign="center" backgroundColor="black" foregroundColor="un777777" transparent="1" valign="center" zPosition="3" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="347,687" size="18,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="N">
+    <convert type="MaggyCryptInfo">NagraCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 22" position="347,713" size="18,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="center" text="N">
+    <convert type="MaggyCryptInfo">NagraEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="CW" font="Regular; 20" position="365,687" size="44,26" halign="center" backgroundColor="black" foregroundColor="un777777" transparent="1" valign="center" zPosition="3" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="365,687" size="44,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="CW">
+    <convert type="MaggyCryptInfo">CrwCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 22" position="368,713" size="38,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="top" text="CW">
+    <convert type="MaggyCryptInfo">CrwEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="ND" font="Regular; 20" position="409,687" size="42,26" halign="center" backgroundColor="black" foregroundColor="un777777" transparent="1" valign="center" zPosition="3" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="409,687" size="42,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="ND">
+    <convert type="MaggyCryptInfo">NdsCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 22" position="411,713" size="38,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="top" text="ND">
+    <convert type="MaggyCryptInfo">NdsEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="CO" font="Regular; 20" position="451,687" size="40,26" halign="center" backgroundColor="black" foregroundColor="un777777" transparent="1" valign="center" zPosition="3" />
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="451,687" size="40,26" halign="center" backgroundColor="black" zPosition="4" transparent="1" valign="center" text="CO">
+    <convert type="MaggyCryptInfo">ConaxCrypt</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" font="Regular; 22" position="453,713" size="36,3" halign="center" backgroundColor="metrixSelection" foregroundColor="metrixGreen" zPosition="4" transparent="0" valign="center" text="CO">
+    <convert type="MaggyCryptInfo">ConaxEcm</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="950,570" size="100,26" foregroundColor="grey" backgroundColor="black" transparent="1" zPosition="10" font="Regular; 21" halign="center">
+    <convert type="ServiceOrbitalPosition" />
+  </widget>
+  <eLabel text="SNR :" position="810,572" size="70,20" halign="right" font="Regular; 20" backgroundColor="black" transparent="1" valign="center" foregroundColor="meingruen" />
+  <widget source="session.FrontendStatus" render="Label" position="880,572" size="66,20" font="Regular; 20" backgroundColor="black" transparent="1" halign="left" foregroundColor="meingruen">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <eLabel text="A" position="695,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="B" position="715,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="C" position="735,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="D" position="755,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="695,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="B" position="715,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="735,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="755,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="695,713" zPosition="5" size="20,3" font="Regular; 22" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="715,713" zPosition="3" size="20,3" font="Regular; 20" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="735,713" zPosition="3" size="20,3" font="Regular; 22" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="755,713" zPosition="3" size="20,3" font="Regular; 20" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">3,3</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="274,571" size="435,30" font="Regular; 24" valign="top" noWrap="1" backgroundColor="black" transparent="1" zPosition="0" halign="left">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="105,15" size="720,32" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="657,308" size="598,32" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/selection/Line 600x1.png" position="655,343" size="600,1" alphatest="blend" />
+  <widget source="session.VideoPicture" render="Pig" position="657,74" size="409,230" zPosition="5" backgroundColor="unff000000" />
+  <widget source="session.Event_Now" render="Label" position="1080,191" size="150,40" font="Regular; 30" halign="center" backgroundColor="black" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="781,644" size="75,30" font="Regular; 22" halign="right" backgroundColor="black" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="856,644" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+  <widget source="session.Event_Next" render="Label" position="871,644" size="75,30" font="Regular; 22" halign="left" backgroundColor="black" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+ <!-- Analogclock */-->
+  <ePixmap position="1100,564" size="120,120" pixmap="Prime-NFR-Style-by-stein17/menu/cklocksecondinfobar.png" zPosition="1" alphatest="blend" />
+<widget source="global.CurrentTime" render="Watches" position="1123,585" size="75,75" zPosition="3" foregroundColor="grey" alphatest="on">
+    <convert type="ExtraNumText">minHand</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Watches" position="1128,590" size="65,65" zPosition="2" foregroundColor="grey" alphatest="on">
+    <convert type="ExtraNumText">hourHand</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Watches" position="1123,585" size="75,75" zPosition="4" alphatest="on" foregroundColor="red">
+    <convert type="ExtraNumText">secHand</convert>
+  </widget>
+  <!-- Analogclock */-->
+</screen>
+ </skin>

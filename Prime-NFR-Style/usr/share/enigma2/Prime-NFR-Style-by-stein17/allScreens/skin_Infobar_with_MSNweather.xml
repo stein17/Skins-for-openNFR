@@ -1,0 +1,228 @@
+<skin>
+ <!--Infobar with MSN_Weater-->
+<screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/infobar.png" position="0,561" zPosition="-1" size="1280,160" />
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hd_off.png" position="1002,688" size="41,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" position="1002,688" size="41,20" zPosition="2" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hd_on.png" alphatest="blend">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">721,1980</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_dolby_off.png" position="930,688" size="56,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_dolby_on.png" position="930,688" size="56,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_format_on.png" position="884,688" size="30,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_txt_off.png" position="846,688" size="23,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_txt_on.png" position="846,688" size="23,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hbbtv_off.png" position="775,688" size="53,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" position="775,688" size="53,20" zPosition="2" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_hbbtv_on.png" alphatest="blend">
+    <convert type="ServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_crypt_off.png" position="727,688" size="30,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_crypt_on.png" position="727,688" size="30,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_sub_off.png" position="681,688" size="30,20" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_sub_on.png" position="681,688" size="30,20" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">SubservicesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_off.png" position="616,687" size="45,23" zPosition="2" />
+  <widget alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_on.png" position="616,687" render="Pixmap" size="45,23" source="session.RecordState" zPosition="5">
+  <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Picon" position="26,575" size="220,132" zPosition="10" backgroundColor="black" transparent="0" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="781,608" size="75,30" font="Regular; 22" halign="right" backgroundColor="black" transparent="1" valign="top">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="856,644" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+  <widget source="session.Event_Now" render="Label" position="871,608" size="70,30" font="Regular; 22" halign="left" backgroundColor="black" transparent="1" valign="top">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="274,608" size="520,30" font="Regular; 24" halign="left" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="942,608" size="103,30" font="Regular; 22" halign="right" backgroundColor="black" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Prime-NFR-Style-by-stein17/colorbar.png" position="280,641" size="759,3" zPosition="7" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="274,644" size="520,30" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" foregroundColor="grey" valign="top">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="942,644" size="103,30" font="Regular; 20" halign="right" backgroundColor="black" foregroundColor="grey" transparent="1">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="443,687" size="60,26" font="Regular; 20" halign="right" backgroundColor="black" transparent="1" valign="center">
+    <convert type="ServiceInfo">VideoWidth</convert>
+  </widget>
+  <eLabel text="x" position="503,687" size="15,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
+  <widget source="session.CurrentService" render="Label" position="519,687" size="60,26" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" valign="center">
+    <convert type="ServiceInfo">VideoHeight</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="967,570" size="90,26" backgroundColor="black" transparent="1" zPosition="10" font="Regular; 21" halign="center">
+    <convert type="ServiceOrbitalPosition" />
+  </widget>
+  <eLabel text="SNR :" position="822,567" size="70,20" halign="right" font="Regular; 18" backgroundColor="black" transparent="1" valign="center" />
+  <widget source="session.FrontendStatus" render="Label" position="896,567" size="66,20" font="Regular; 18" backgroundColor="black" transparent="1" halign="left">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <eLabel text="A" position="295,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="B" position="315,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="C" position="335,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="D" position="355,687" zPosition="1" size="20,26" font="Regular; 20" halign="center" foregroundColor="un777777" backgroundColor="black" transparent="1" valign="center" />
+  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="295,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="B" position="315,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="335,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="355,687" zPosition="2" size="20,26" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="295,713" zPosition="5" size="20,3" font="Regular; 22" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="315,713" zPosition="3" size="20,3" font="Regular; 20" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="335,713" zPosition="3" size="20,3" font="Regular; 22" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="355,713" zPosition="3" size="20,3" font="Regular; 20" halign="center" foregroundColor="metrixGreen" backgroundColor="metrixSelection" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">3,3</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="274,568" size="540,36" font="Regular; 28" valign="top" noWrap="1" backgroundColor="black" transparent="1" zPosition="0" halign="center" foregroundColor="cyan1">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <!-- TunerInfo */-->
+  <widget source="session.Event_Next" render="Label" position="781,644" size="75,30" font="Regular; 22" halign="right" backgroundColor="black" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="871,644" size="75,30" font="Regular; 22" halign="left" backgroundColor="black" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="856,608" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+  <widget source="session.FrontendStatus" render="Progress" position="830,590" size="150,8" zPosition="1" pixmap="Prime-NFR-Style-by-stein17/snr2.png" backgroundColor="black">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+    <!--/* WEATHER -->
+   <widget render="Label" noWrap="1" source="session.MSNWeather" position="175,17" zPosition="8" size="52,26" font="Regular; 20" transparent="1" halign="right" foregroundColor="white" backgroundColor="metrixBackground">
+    <convert type="MSNWeather">observationtime</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="meindunkelrot" foregroundColor="meinrot" font="Regular; 28" render="Label" position="159,48" size="70,34" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+    <convert type="MSNWeather">temperature_current</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="metrixBackground" font="Regular;22" foregroundColor="white" render="Label" position="8,90" size="250,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,current</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="16,0" size="96,96" source="session.MSNWeather" transparent="1" zPosition="8">
+  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Prime-NFR-Style-by-stein17/Wettericons/,png</convert>
+</widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="271,0" size="96,96" source="session.MSNWeather" transparent="1" zPosition="5">
+  <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/Prime-NFR-Style-by-stein17/Wettericons/,png</convert>
+</widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 30" foregroundColor="blue2" render="Label" position="412,6" size="50,40" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day2</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 28" foregroundColor="cyan1" render="Label" position="367,48" size="150,34" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="metrixBackground" font="Regular;22" foregroundColor="white" render="Label" position="259,90" size="250,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day2</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="518,0" size="96,96" source="session.MSNWeather" transparent="1" zPosition="5">
+  <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/Prime-NFR-Style-by-stein17/Wettericons/,png</convert>
+</widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 28" foregroundColor="cyan1" render="Label" position="615,48" size="150,34" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day3</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="metrixBackground" font="Regular;22" foregroundColor="white" render="Label" position="509,90" size="250,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day3</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 30" foregroundColor="blue2" render="Label" position="663,6" size="50,40" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day3</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 28" foregroundColor="cyan1" render="Label" position="862,48" size="150,34" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day4</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 30" foregroundColor="blue2" render="Label" position="906,6" size="50,40" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day4</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="metrixBackground" font="Regular;22" foregroundColor="white" render="Label" position="759,90" size="250,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day4</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="766,0" size="96,96" source="session.MSNWeather" transparent="1" zPosition="5">
+  <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/Prime-NFR-Style-by-stein17/Wettericons/,png</convert>
+</widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1013,0" size="96,96" source="session.MSNWeather" transparent="1" zPosition="5">
+  <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/Prime-NFR-Style-by-stein17/Wettericons/,png</convert>
+</widget>
+  <widget Wrap="1" backgroundColor="metrixBackground" font="Regular;22" foregroundColor="white" render="Label" position="1010,90" size="250,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day5</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 28" foregroundColor="cyan1" render="Label" position="1110,48" size="150,34" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day5</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="Regular; 30" foregroundColor="blue2" render="Label" position="1155,6" size="50,40" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day5</convert>
+  </widget>
+  <eLabel text="Status:" position="113,17" size="70,26" zPosition="5" halign="left" font="Regular; 20" backgroundColor="metrixBackground" transparent="1" />
+  <widget backgroundColor="metrixPreTrans3" font="Block; 72" foregroundColor="metrixPreTrans3" render="Label" position="240,120" size="800,80" source="session.MSNWeather" noWrap="1" halign="center" transparent="1" valign="center" zPosition="-80">
+  <convert type="MSNWeather">city</convert>
+</widget>
+ <eLabel name="new eLabel" position="0,0" zPosition="-11" size="1280,120" backgroundColor="black" transparent="0" />
+  <eLabel text="Uhr" position="233,17" size="42,26" zPosition="5" halign="left" font="Regular; 20" backgroundColor="metrixBackground" transparent="1" />
+  <!-- WEATHER */-->
+  
+  <!-- Digitalclock */-->
+  <widget source="global.CurrentTime" render="Label" position="1068,570" size="180,70" font="Regular; 60" halign="center" backgroundColor="black" transparent="1" valign="top">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1068,682" size="180,34" font="Regular; 28" halign="center" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1082,644" size="151,36" font="Regular; 28" halign="center" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Format:%e. %b</convert>
+  </widget>
+  </screen>
+ </skin>
+  

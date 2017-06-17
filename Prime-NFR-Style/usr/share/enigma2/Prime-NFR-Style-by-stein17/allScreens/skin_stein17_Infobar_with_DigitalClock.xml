@@ -1,0 +1,58 @@
+<skin>
+<!-- stein17 Infobar Digitalclock*/-->
+  <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap pixmap="Prime-NFR-Style-by-stein17/menu/infobarsimple.png" position="0,561" zPosition="-1" size="1280,160" />
+    <widget alphatest="blend" pixmap="Prime-NFR-Style-by-stein17/skin_default/icons/ico_rec_on.png" position="277,578" render="Pixmap" size="45,23" source="session.RecordState" zPosition="5">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Picon" position="12,575" size="220,132" zPosition="10" backgroundColor="background20" transparent="0" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="860,622" size="75,30" font="Regular; 22" halign="right" backgroundColor="black" transparent="1" valign="top">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel text="-" position="937,668" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+    <widget source="session.Event_Now" render="Label" position="951,622" size="70,30" font="Regular; 22" halign="left" backgroundColor="black" transparent="1" valign="top">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="276,622" size="580,30" font="Regular; 24" halign="left" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" pixmap="Prime-NFR-Style-by-stein17/colorbar.png" position="280,660" size="733,5" zPosition="7" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="276,668" size="580,30" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" foregroundColor="grey" valign="top">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="77,710" size="35,12" font="Regular; 11" halign="right" backgroundColor="black" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" position="112,710" size="15,12" font="Regular; 11" halign="center" backgroundColor="black" transparent="1" valign="center" />
+    <widget source="session.CurrentService" render="Label" position="127,710" size="35,12" font="Regular; 11" halign="left" backgroundColor="black" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    <!-- TunerInfo */-->
+    <widget source="session.Event_Next" render="Label" position="861,668" size="75,30" font="Regular; 22" halign="right" backgroundColor="background" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="953,668" size="70,30" font="Regular; 22" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel text="-" position="936,622" size="15,30" font="Regular; 22" halign="center" backgroundColor="black" transparent="1" valign="top" />
+    <!-- Digitalclock  */-->
+    <widget source="global.CurrentTime" render="Label" position="1068,570" size="180,70" font="Regular; 60" halign="center" backgroundColor="background20" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1068,682" size="180,34" font="Regular; 28" halign="center" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1082,644" size="151,36" font="Regular; 28" halign="center" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <!-- Digitalclock  */-->
+  </screen>
+   </skin>

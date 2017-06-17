@@ -1,0 +1,39 @@
+<skin>
+<!--Menu Information big-->
+<screen name="menu_information" position="50,90" size="585,580" title="Menu">
+  <widget source="global.CurrentTime" render="Label" position="408,-1" size="170,65" font="Regular; 55" halign="right" backgroundColor="black" transparent="1" valign="top">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="258,35" size="148,29" font="Regular; 20" halign="right" backgroundColor="black" foregroundColor="grey" transparent="1">
+    <convert type="ClockToText">Format:%d. %B</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="132,34" size="125,30" font="Regular; 20" halign="right" backgroundColor="black" foregroundColor="grey" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  
+  <widget source="menu" render="Listbox" position="5,75" size="576,255" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="black" foregroundColor="white" selectionPixmap="Prime-NFR-Style-by-stein17/selection/selection50.png" transparent="1">
+    <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 26)],
+				"itemHeight": 50
+				}
+			</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="5,345" size="576,37" font="Regular; 25" halign="left" valign="center" transparent="0" zPosition="6" foregroundColor="metrixBlue" backgroundColor="black">
+    <convert type="CpuUsage">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="6,394" size="576,37" zPosition="1" font="Regular; 25" halign="left" valign="center" transparant="1" backgroundColor="black" noWrap="0" foregroundColor="metrixYellow">
+    <convert type="ReceiverInfoPrime">FleshInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="5,444" size="576,37" zPosition="1" font="Regular; 25" halign="left" valign="center" transparant="1" backgroundColor="black" transparent="0" foregroundColor="metrixGreen">
+    <convert type="ReceiverInfoPrime">MemTotal</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="5,493" size="576,37" zPosition="1" font="Regular; 25" halign="left" valign="center" transparent="0" noWrap="0" backgroundColor="black" foregroundColor="unff0000">
+    <convert type="ReceiverInfoPrime">HddInfo,Long</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="5,540" size="576,37" zPosition="1" font="Regular; 25" halign="left" valign="center" transparent="0" noWrap="0" backgroundColor="black">
+    <convert type="ReceiverInfoPrime">UsbInfo,Long</convert>
+  </widget>
+</screen>
+ </skin>
+  
