@@ -769,7 +769,7 @@
   </screen>
   <!--  NFR Skin Manager FHD  -->
 <screen backgroundColor="background" flags="wfNoBorder" name="NfrHD_Config" position="0,0" size="1920,1080" title="NfrHD_Config">
-    <eLabel text=" *Anadol FHD*  Version: 1.0 vom 07.03.2018" position="580,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+    <eLabel text=" *Anadol FHD*  Version: 1.1 vom 11.03.2018" position="580,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget name="config" position="50,232" size="975,45" font="Regular; 36" itemHeight="45" enableWrapAround="1" backgroundColor="dark" transparent="1" />
 	<ePixmap pixmap="Anadol/buttons/key_blue.png" position="47,424" size="35,35" alphatest="blend" />
     <eLabel text="Help, Skin Einstellungen (Wetter)" position="92,423" size="820,45" font="Regular; 36" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
@@ -822,7 +822,7 @@
   </screen>
     <!-- NFR NfrHD_About FHD  -->
 <screen name="NfrHD_About" position="0,0" size="1920,1080" title="NfrHD_About" flags="wfNoBorder">
-	 <eLabel text=" *Anadol FHD*  Version: 1.0 vom 07.03.2018" position="480,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+	 <eLabel text=" *Anadol FHD*  Version: 1.1 vom 11.03.2018" position="480,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
     <eLabel text="Skin Informationen" position="130,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
 	<eLabel name="vertikalline" position="10,315" size="1180,2" foregroundColor="anadollabel" backgroundColor="anadollabel" />
 	<ePixmap position="10,100" size="1180,210" zPosition="10" pixmap="Anadol/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
