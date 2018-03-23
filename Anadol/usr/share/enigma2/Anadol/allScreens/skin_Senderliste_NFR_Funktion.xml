@@ -1,0 +1,89 @@
+   <skin>
+<!-- Senderliste_NFR_Funktion FHD -->
+<screen name="ChannelSelection" position="0,0" title="Channel Selection" backgroundColor="background" flags="wfNoBorder" size="1920,1080">
+  <widget source="Title" render="Label" position="130,20" size="500,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+  <eLabel name="vertikalline" position="10,804" size="670,2" foregroundColor="anadollabel" backgroundColor="anadollabel" zPosition="5" />
+  <eLabel name="vertikalline" position="10,946" size="670,2" foregroundColor="anadollabel" backgroundColor="anadollabel" zPosition="5" />
+  <eLabel name="vertikalline" position="10,483" size="670,1" foregroundColor="anadollabel" backgroundColor="anadollabel" zPosition="6" />
+  <widget source="session.CurrentService" render="Label" position="96,108" size="500,36" font="Regular; 32" foregroundColor="white" backgroundColor="black" halign="center" valign="bottom" transparent="1" zPosition="6">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <ePixmap pixmap="Anadol/buttons/key_red.png" position="18,1022" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="Anadol/buttons/key_green.png" position="200,1022" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="Anadol/buttons/key_yellow.png" position="458,1022" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="Anadol/buttons/key_blue.png" position="678,1022" size="35,35" alphatest="blend" />
+  <widget name="key_red" render="Label" position="61,1005" size="140,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="key_green" render="Label" position="244,1005" size="210,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="key_yellow" render="Label" position="503,1005" size="170,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="key_blue" render="Label" position="722,1003" size="170,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <ePixmap pixmap="Anadol/buttons/key_epg.png" position="1535,1022" size="103,35" alphatest="on" />
+  <ePixmap pixmap="Anadol/buttons/key_info.png" position="1795,1022" size="103,35" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="Anadol/buttons/key_menu.png" position="1665,1022" size="103,35" zPosition="10" transparent="1" alphatest="blend" />
+  <widget source="global.CurrentTime" render="Label" position="1500,20" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="anadollabel" transparent="1">
+    <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
+  </widget>
+  <eLabel text="Start Time :" position="10,530" size="150,30" font="Regular; 27" halign="left" backgroundColor="black" foregroundColor="foregroundClock" transparent="1" zPosition="1" />
+  <eLabel text="End Time :" position="476,530" size="150,30" font="Regular; 27" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="foregroundClock" />
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="Anadol/icons/sat.png" position="910,1015" size="50,50" zPosition="2" alphatest="blend">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="Anadol/icons/dvbt.png" position="910,1015" size="50,50" zPosition="2" alphatest="blend">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="Anadol/icons/kabel.png" position="910,1015" size="50,50" zPosition="2" alphatest="blend">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="ServiceEvent" render="ANDFrontend" position="984,1022" zPosition="1" valign="center" size="520,35" font="Regular; 27" backgroundColor="black" foregroundColor="grey" transparent="1" halign="left" />
+  <!-- <widget source="session.CurrentService" render="Label" position="984,1022" zPosition="1" valign="center" size="520,35" font="Regular; 27" backgroundColor="black" foregroundColor="grey" transparent="1" halign="left">
+    <convert type="ANDSatInfo">ExpertInfo</convert>
+  </widget> -->
+  <widget name="list" position="700,100" size="1220,850" scrollbarMode="showOnDemand" transparent="1" zPosition="1" serviceItemHeight="60" serviceNumberFont="Regular;38" serviceNameFont="Regular;43" serviceInfoFont="Regular;37" foregroundColor="white" foregroundColorSelected="cyan1" backgroundColor="black" backgroundColorSelected="verydarkgrey" foregroundColorMarkedSelected="yellow" colorServiceDescription="cyan1" colorServiceDescriptionSelected="white" colorServiceRecording="red" foregroundColorServiceNotAvail="dark" colorEventProgressbar="anadollabel" colorEventProgressbarBorder="foregroundClock" colorEventProgressbarBorderSelected="anadollabel" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="80" progressPercentWidth="90" progressbarHeight="12" />
+  <widget source="ServiceEvent" render="Picon" position="11,484" size="71,40" zPosition="5" alphatest="blend" transparent="1">
+    <convert type="ANDRefString">ServicelistRef</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="160,530" size="80,30" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="foregroundClock">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="610,530" size="80,30" font="Regular; 27" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="245,537" pixmap="Anadol/colors/Anadol_Background.png" size="218,16" borderWidth="1" borderColor="foregroundClock" zPosition="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="ServiceEvent" render="ANDRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=6000,wrap=1,always=0,repeat=2,oneshot=1" position="10,563" size="670,242" font="Regular;35" foregroundColor="white" backgroundColor="black" valign="top" halign="left" transparent="1" zPosition="2">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="ServiceEvent" render="ANDNextEvents" position="10,809" size="670,135" noWrap="1" font="Regular;30" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="5">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="ServiceEvent" render="ANDRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=200,always=0" position="10,952" size="670,40" font="Regular; 36" foregroundColor="yellow" zPosition="5" noWrap="1" transparent="1" backgroundColor="black">
+    <convert type="ANDPrimeTime">PrimeTime,noDuration</convert>
+  </widget>
+  <eLabel text="Zapp Favorites " position="729,20" size="300,50" font="Regular; 40" backgroundColor="blue" transparent="1" zPosition="1" foregroundColor="white" />
+  <ePixmap pixmap="Anadol/buttons/key_CH_plus_minus.png" position="694,23" size="19,40" alphatest="blend" />
+<ePixmap pixmap="Anadol/skin_default/system/forward.png" position="1540,968" size="20,20" alphatest="on" />
+<ePixmap pixmap="Anadol/skin_default/system/backward.png" position="705,968" size="20,20" alphatest="on" />
+<ePixmap pixmap="Anadol/skin_default/system/play.png" position="1125,970" size="20,20" alphatest="on" />
+<widget source="ServiceEvent" render="Label" position="732,962" size="335,32" zPosition="1" font="Regular; 27" halign="left" backgroundColor="white" transparent="0" foregroundColor="black" borderWidth="1" borderColor="anadollabel">
+  <convert type="NFRFunktion">Plugins</convert>
+</widget>
+<widget source="ServiceEvent" render="Label" position="1152,963" size="335,32" zPosition="4" font="Regular; 27" halign="left" backgroundColor="white" transparent="0" foregroundColor="black" borderWidth="1" borderColor="anadollabel">
+  <convert type="NFRFunktion">Plugins1</convert>
+</widget>
+<widget source="ServiceEvent" render="Label" position="1572,961" size="335,32" zPosition="4" font="Regular; 27" halign="left" backgroundColor="white" transparent="0" foregroundColor="black" borderWidth="1" borderColor="anadollabel">
+  <convert type="NFRFunktion">Plugins2</convert>
+</widget>
+  <panel name="template_fullscreen" />
+  <panel name="template_pig_channel" />
+</screen>
+  </skin>
