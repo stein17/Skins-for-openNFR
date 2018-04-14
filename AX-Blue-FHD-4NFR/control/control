@@ -1,5 +1,5 @@
 Package: enigma2-plugin-skins-ax-blue-fhd-4nfr
-Version: 3.0
+Version: 3.2
 Section: base
 OE: Enigma2 Skin
 License: open
@@ -9,4 +9,4 @@ Maintainer: stein17
 Description: Skin Full HD for NFR Images by stein17
 Source: http://www.nachtfalke.biz
 Homepage: https://axforum.de/
-
+Depends: enigma2-plugin-skincomponents-weathercomponent, enigma2-plugin-systemplugins-weathercomponenthandler

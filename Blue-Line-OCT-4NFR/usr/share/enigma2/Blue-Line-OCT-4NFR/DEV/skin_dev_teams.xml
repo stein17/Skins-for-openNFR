@@ -2882,6 +2882,54 @@
     </widget>
     <eLabel text="SysTemp:" position="30,674" size="160,45" font="Regular; 32" halign="left" valign="bottom" backgroundColor="background" noWrap="1" transparent="1" zPosition="2" foregroundColor="orange" />
   </screen>
+    <!-- NFR Infopanel eparted FHD  -->
+  <screen name="Ceparted" position="center,center" size="900,300" title="eParted v0.13">
+  <widget name="list" position="5,5" font="Regular;34" size="890,290" />
+  </screen>
+  <screen name="AddPart" position="center,center" size="900,290" title="add Partition">
+	<ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_red.png" position="11,23" zPosition="0" size="35,35" transparent="1" alphatest="on" />
+	<ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_green.png" position="313,23" zPosition="0" size="35,35" transparent="1" alphatest="on" />
+	<widget render="Label" source="key_red" position="50,5" size="240,70" zPosition="2" valign="center" halign="center" backgroundColor="red" font="Regular;27" transparent="1" foregroundColor="white" shadowColor="black" />
+	<widget render="Label" source="key_green" position="353,5" size="240,70" zPosition="2" valign="center" halign="center" backgroundColor="red" font="Regular;27" transparent="1" foregroundColor="white" shadowColor="black" />
+	<widget name="config" position="5,82" size="890,200" font="Regular;34" scrollbarMode="showOnDemand" />
+  </screen>
+  <screen name="Cpart" position="center,center" size="1100,400" title="eParted">
+	<widget source="list" render="Listbox" position="10,5" size="1080,310" scrollbarMode="showOnDemand" enableWrapAround="on">
+		<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (0,5), size = (80, 40), font=0, flags = RT_HALIGN_LEFT, text=0),
+				MultiContentEntryText(pos = (80,5), size = (240, 40), font=0, flags = RT_HALIGN_LEFT, text=1),
+				MultiContentEntryText(pos = (320,5), size = (240, 40), font=0, flags = RT_HALIGN_LEFT, text=2),
+				MultiContentEntryText(pos = (560,5), size = (240, 40), font=0, flags = RT_HALIGN_LEFT, text=3),
+				MultiContentEntryText(pos = (810,5), size = (250, 40), font=0, flags = RT_HALIGN_LEFT, text=4)
+				],
+				"fonts": [gFont("Regular", 32)],
+				"itemHeight": 55
+				}
+		</convert>
+	</widget>
+	<widget name="PixmapRed" position="15,340" size="35,35" pixmaps="Blue-Line-OCT-4NFR/buttons/key_grey.png,Blue-Line-OCT-4NFR/buttons/key_red.png" transparent="1" alphatest="on" />
+	<widget name="LabelRed" position="62,323" size="240,70" font="Regular;27" valign="center" />
+	<widget name="PixmapGreen" position="318,340" size="35,35" pixmaps="Blue-Line-OCT-4NFR/buttons/key_grey.png,Blue-Line-OCT-4NFR/buttons/key_green.png" transparent="1" alphatest="on" />
+	<widget name="LabelGreen" position="368,323" size="240,70" font="Regular;27" valign="center" />
+	<widget name="PixmapBlue" position="624,340" size="35,35" pixmaps="Blue-Line-OCT-4NFR/buttons/key_grey.png,Blue-Line-OCT-4NFR/buttons/key_blue.png" transparent="1" alphatest="on" />
+	<widget name="LabelBlue" position="670,323" size="240,70" font="Regular;27" valign="center" />
+ </screen>
+ <screen name="Cpartexe" position="center,center" size="900,600" title=" ">
+	<widget source="list" render="Listbox" position="10,5" size="880,520" scrollbarMode="showOnDemand" enableWrapAround="on">
+		<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (40,5), size = (830, 50), font=0, flags = RT_HALIGN_LEFT, text=0),
+				MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (50,50), png=1),
+				],
+				"fonts": [gFont("Regular", 32)],
+				"itemHeight": 70
+				}
+		</convert>
+	</widget>
+	<widget name="PixmapButton" position="26,545" size="35,35" pixmaps="Blue-Line-OCT-4NFR/buttons/key_green.png,Blue-Line-OCT-4NFR/buttons/key_grey.png" transparent="1" alphatest="on" />
+	<widget name="LabelButton" position="72,532" size="820,60" font="Regular; 32" valign="center" />
+ </screen>
   <!--######################################### -->
   <!-- EIGHT_DEV_TEAM_Screens_FHD  -->
   <!--######################################### -->

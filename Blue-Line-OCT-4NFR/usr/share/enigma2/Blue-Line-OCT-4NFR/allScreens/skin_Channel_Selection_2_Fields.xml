@@ -39,7 +39,7 @@
   <convert type="ValueRange">1,1</convert>
   <convert type="ConditionalShowHide" />
   </widget>
-  <widget name="list" position="10,110" size="1220,880" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
+  <widget name="list" position="10,110" size="1220,830" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
   serviceItemHeight="60" 
   serviceNumberFont="Regular;38" 
   serviceNameFont="Regular;43" 
@@ -90,5 +90,18 @@
   <widget source="ServiceEvent" render="Label" position="1242,10" size="610,95" font="Regular; 40" halign="center" valign="center" transparent="1" zPosition="1">
   <convert type="ServiceName">Name</convert>
   </widget>
+<widget source="ServiceEvent" render="Label" position="65,953" size="335,32" zPosition="1" font="Regular; 27" halign="left" backgroundColor="white" transparent="0" foregroundColor="black">
+        <convert type="NFRFunktion">Plugins</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="480,953" size="335,32" zPosition="4" font="Regular; 27" halign="left" backgroundColor="white" transparent="0" foregroundColor="black">
+   <convert type="NFRFunktion">Plugins2</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="890,953" size="335,32" zPosition="4" font="Regular; 27" halign="left" backgroundColor="white" transparent="0" foregroundColor="black">
+        <convert type="NFRFunktion">Plugins1</convert>
+    </widget>
+    <ePixmap pixmap="Blue-Line-OCT-4NFR/mmp/play.png" position="22,950" size="36,36" alphatest="blend" />
+    <ePixmap pixmap="Blue-Line-OCT-4NFR/mmp/rewind.png" position="438,950" size="36,36" alphatest="blend" />
+    <ePixmap pixmap="Blue-Line-OCT-4NFR/mmp/forward.png" position="846,950" size="36,36" alphatest="blend" />
+
 </screen>
  </skin>

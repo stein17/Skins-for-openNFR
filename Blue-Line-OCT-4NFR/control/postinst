@@ -1,0 +1,21 @@
+#!/bin/sh
+if grep -qs 'getMachineBrand=Octagon' cat /tmp/boxbranding.cfg  ; then
+	echo "                                 "
+	echo "*********************************"
+	echo "Octagon Box found!"
+	echo "*********************************"
+	echo "                                 "
+	cp /tmp/octagon/*.png /usr/share/enigma2/Blue-Line-OCT-4NFR/menu	
+else
+	echo "                                 "
+	echo "*********************************"
+	echo "No Octagon Box found!"
+	echo "*********************************"
+	echo "                                 "
+       	cp /tmp/nfr/*.png /usr/share/enigma2/Blue-Line-OCT-4NFR/menu
+fi
+
+echo " Skin Blue-Line-OCT-4NFR installed "
+
+exit 0
+
