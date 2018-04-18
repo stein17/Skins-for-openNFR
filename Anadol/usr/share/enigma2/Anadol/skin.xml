@@ -3631,10 +3631,15 @@ self['config'].l.setSeperation(int(300*f))
   <widget name="Preview" position="1223,600" size="670,379" alphatest="blend" />
   <widget source="introduction" render="Label" position="30,940" size="800,40" font="Regular; 36" halign="center" valign="center" transparent="1" />
   <eLabel text="Preview" position="1223,560" size="480,40" font="Regular; 36" halign="left" valign="center" backgroundColor="black" transparent="1" zPosition="2" />
+  <ePixmap pixmap="Anadol/buttons/key_red.png" position="18,1022" size="35,35" />
+  <ePixmap pixmap="Anadol/buttons/key_green.png" position="318,1022" size="35,35" />
+  <ePixmap pixmap="Anadol/buttons/key_yellow.png" position="618,1022" size="35,35" />
+  <widget source="key_red" render="Label" position="61,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget source="key_green" render="Label" position="362,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget source="key_yellow" render="Label" position="663,1005" size="350,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   <panel name="template_fullscreen" />
   <panel name="template_menu_ok_exit" />
   <panel name="template_pig_setup" />
-<panel name="template_source_red_o_yellow" />
 </screen>
   <screen name="SundtekControlCenter" title="SundtekControlCenter" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="black">
     <widget name="ok" position="10,790" zPosition="1" size="1180,40" font="Regular; 36" halign="left" valign="center" transparent="1" />
