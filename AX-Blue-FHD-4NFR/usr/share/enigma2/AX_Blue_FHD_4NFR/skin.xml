@@ -4229,26 +4229,30 @@
   </screen>
   <!-- Skin Selector FHD -->
 <screen name="SkinSelector" position="0,0" size="1920,1080" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel text="Skin Selector" position="10,25" foregroundColor="bluetitle" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
-    <widget name="SkinList" position="71,161" size="1050,760" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="trbluelabel" foregroundColorSelected="white" enableWrapAround="1" transparent="1" />
-    <widget name="Preview" position="1260,210" size="620,440" alphatest="blend" zPosition="2" />
-    <widget source="introduction" render="Label" position="391,1000" size="1000,70" font="Regular; 32" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
-    <widget source="global.CurrentTime" render="Label" position="1188,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="foregroundClock" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
-    </widget>
-    <eLabel position="1248,211" size="649,440" backgroundColor="background" zPosition="1" />
-    <eLabel text="Dieser Skin kann in Infopanel/Image-Remote-Setup/Skineinstellungen, angepasst werden. Dort findet ihr auch Infos zum Einstellen Des Wetters in der 2en Infobar." position="1284,658" size="580,300" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="center" foregroundColor="foregroundClock" />
-    <eLabel text="Preview" position="1266,129" size="610,70" font="Regular;40" halign="center" valign="center" backgroundColor="bluelabel" transparent="1" zPosition="2" />
-    <ePixmap pixmap="AX_Blue_FHD_4NFR/menu/Chanel_transp_black.png" position="0,0" zPosition="-20" size="1920,1080" />
-    <eLabel position="1249,123" size="648,839" backgroundColor="trbluelabel" transparent="0" zPosition="-12" />
-    <ePixmap pixmap="AX_Blue_FHD_4NFR/menu/line648.png" position="1249,652" size="648,2" alphatest="blend" zPosition="6" />
-    <ePixmap pixmap="AX_Blue_FHD_4NFR/menu/line648.png" position="1247,208" size="649,2" alphatest="blend" zPosition="6" />
-    <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_ok.png" position="322,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_exit.png" position="1825,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
-    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <ePixmap position="926,585" size="384,384" zPosition="2" pixmap="AX_Blue_FHD_4NFR/setup/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
-  </screen>
+  <eLabel text="Skin Selector" position="10,25" foregroundColor="bluetitle" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+  <widget name="SkinList" position="71,161" size="1050,700" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="trbluelabel" foregroundColorSelected="white" enableWrapAround="1" transparent="1" />
+  <widget name="Preview" position="1260,210" size="620,440" alphatest="blend" zPosition="2" />
+  <widget source="introduction" render="Label" position="141,880" size="1000,70" font="Regular; 32" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+  <widget source="global.CurrentTime" render="Label" position="1188,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="foregroundClock" backgroundColor="black" transparent="1">
+  <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+  </widget>
+  <eLabel position="1248,211" size="649,440" backgroundColor="background" zPosition="1" />
+  <eLabel text="Dieser Skin kann in Infopanel/Image-Remote-Setup/Skineinstellungen, angepasst werden. Dort findet ihr auch Infos zum Einstellen Des Wetters in der 2en Infobar." position="1284,658" size="580,300" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="center" foregroundColor="foregroundClock" />
+  <eLabel text="Preview" position="1266,129" size="610,70" font="Regular;40" halign="center" valign="center" backgroundColor="bluelabel" transparent="1" zPosition="2" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/menu/Chanel_transp_black.png" position="0,0" zPosition="-20" size="1920,1080" />
+  <eLabel position="1249,123" size="648,839" backgroundColor="trbluelabel" transparent="0" zPosition="-12" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/menu/line648.png" position="1249,652" size="648,2" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/menu/line648.png" position="1247,208" size="649,2" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_ok.png" position="65,893" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_exit.png" position="1825,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+  <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <ePixmap position="926,585" size="384,384" zPosition="2" pixmap="AX_Blue_FHD_4NFR/setup/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
+</screen>
   <!-- User Positioner Interface FHD -->
   <!-- ServiceInfo FHD -->
   <screen name="ServiceInfoSimple" position="0,0" size="1920,1080" title="Service Info" flags="wfNoBorder" backgroundColor="transparent">
