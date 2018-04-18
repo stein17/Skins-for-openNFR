@@ -4250,7 +4250,7 @@
   <ePixmap pixmap="AX_Blue_FHD_4NFR/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
   <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-  <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget source="key_yellow" render="Label" position="675,1000" size="340,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   <ePixmap position="926,585" size="384,384" zPosition="2" pixmap="AX_Blue_FHD_4NFR/setup/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
 </screen>
   <!-- User Positioner Interface FHD -->
