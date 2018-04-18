@@ -4352,7 +4352,7 @@
   <eLabel text="Skin Selector" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
   <widget name="SkinList" position="71,161" size="750,760" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
   <widget name="Preview" position="11260,210" size="620,440" alphatest="blend" zPosition="2" />
-  <widget source="introduction" render="Label" position="391,1000" size="1000,70" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
+  <widget source="introduction" render="Label" position="132,915" size="1000,70" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
   <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
     <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
   </widget>
@@ -4363,11 +4363,15 @@
   <eLabel name="vertikalline" position="1251,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="5" />
   <eLabel name="vertikalline" position="1273,192" size="620,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="5" />
   <eLabel name="vertikalline" position="1273,650" size="620,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="5" />
-  <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_ok.png" position="322,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_ok.png" position="67,930" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
   <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_exit.png" position="1825,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
   <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
   <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-  <ePixmap position="822,573" size="384,384" zPosition="2" pixmap="Blue-Line-OCT-4NFR/setup/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
+  <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+ <ePixmap position="822,573" size="384,384" zPosition="2" pixmap="Blue-Line-OCT-4NFR/setup/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
 </screen>
   <!-- User Positioner Interface FHD -->
   <!-- ServiceInfo FHD -->
