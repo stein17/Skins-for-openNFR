@@ -50,7 +50,7 @@
   backgroundColorSelected="backgroundBlue" 
   foregroundColorMarkedSelected="yellow" 
   colorServiceDescription="cyan1" 
-  colorServiceDescriptionSelected="white" 
+  colorServiceDescriptionSelected="bernstein" 
   colorServiceRecording="red" 
   foregroundColorServiceNotAvail="dark" 
   picServiceEventProgressbar="Blue-Line-OCT-4NFR/ch_progress.png"
