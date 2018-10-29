@@ -45,7 +45,7 @@
   serviceNameFont="Regular;43" 
   serviceInfoFont="Regular;37" 
   foregroundColor="white" 
-  foregroundColorSelected="cyan1" 
+  foregroundColorSelected="white" 
   backgroundColor="black" 
   backgroundColorSelected="backgroundBlue" 
   foregroundColorMarkedSelected="yellow" 
