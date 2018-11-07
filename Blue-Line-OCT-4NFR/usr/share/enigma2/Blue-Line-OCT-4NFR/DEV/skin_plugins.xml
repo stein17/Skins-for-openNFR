@@ -3371,10 +3371,10 @@ self.instance.move(ePoint(0,0))
   <widget source="Service" render="PositionGauge" position="367,937" size="1200,6" zPosition="3" transparent="1">
     <convert type="EMCServicePosition">Gauge</convert>
   </widget>
-  <widget source="Service" render="Progress" pixmap="Blue-Line-OCT-4NFR/00ffffff.png" position="366,934" size="1202,12" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
+  <widget source="Service" render="Progress" pixmap="Blue-Line-OCT-4NFR/colors/00ffffff.png" position="366,934" size="1202,12" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
     <convert type="EMCServicePosition">Position</convert>
   </widget>
-  <widget source="Service" render="EMCPositionGauge" pointer="Blue-Line-OCT/menu/EMCPointerRecord.png:1470,0" position="367,937" size="1200,6" zPosition="4" transparent="1">
+  <widget source="Service" render="EMCPositionGauge" pointer="Blue-Line-OCT-4NFR/menu/EMCPointerRecord.png:1470,0" position="367,937" size="1200,6" zPosition="4" transparent="1">
     <convert type="EMCRecordPosition">Position</convert>
   </widget>
   <eLabel text="Min." font="Regular; 32" position="866,797" size="90,40" halign="left" backgroundColor="black" transparent="1" />
@@ -3841,7 +3841,7 @@ self.instance.move(ePoint(0,0))
     <widget name="kaydet" font="Regular; 24" position="415,1025" size="200,40" zPosition="1" transparent="1" foregroundColor="white" backgroundColor="background" />
     <widget name="paylas" font="Regular;28" position="1365,826" size="200,40" zPosition="1" transparent="1" backgroundColor="background" />
     <widget name="cont_play" position="925,1025" zPosition="1" size="250,40" halign="left" font="Regular; 24" foregroundColor="white" transparent="1" backgroundColor="background" text="" />
-    <widget source="session.CurrentService" render="PositionGauge" pointer="Blue-Line-OCT/colors/00ffffff.png:1345,0" position="366,934" size="1202,12" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="PositionGauge" pointer="Blue-Line-OCT-4NFR/colors/00ffffff.png:1345,0" position="366,934" size="1202,12" transparent="1" zPosition="1">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <eLabel backgroundColor="darkgrey" foregroundColor="darkgrey" name="new eLabel" position="373,932" size="1192,5" zPosition="-1" />
@@ -4443,9 +4443,9 @@ self.instance.move(ePoint(0,0))
     <widget name="title" position="840,680" size="1050,65" font="Regular; 40" backgroundColor="background" transparent="1" foregroundColor="green" />
     <widget name="genre" position="630,745" size="600,50" font="Regular; 30" backgroundColor="background" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Blue-Line-OCT-4NFR/mmp/mp_buttons.png" alphatest="blend" position="710,809" size="450,56" transparent="1" zPosition="4" />
-    <widget name="dvrStatus" pixmaps="Blue-Line-OCT/mmp/dvr_pl.png,Blue-Line-OE/mmp/dvr_pau.png" alphatest="blend" position="710,809" size="450,56" transparent="1" zPosition="5" />
-    <widget name="repeat" pixmaps="Blue-Line-OCT/mmp/repeat_on.png,Blue-Line-OE/mmp/repeat_off.png" alphatest="blend" position="630,812" size="60,50" transparent="1" zPosition="5" />
-    <widget name="shuffle" pixmaps="Blue-Line-OCT/mmp/shuffle_on.png,/Blue-Line-OE/mmp/shuffle_off.png" alphatest="blend" position="1180,812" size="60,50" transparent="1" zPosition="4" />
+    <widget name="dvrStatus" pixmaps="Blue-Line-OCT-4NFR/mmp/dvr_pl.png,Blue-Line-OCT-4NFR/mmp/dvr_pau.png" alphatest="blend" position="710,809" size="450,56" transparent="1" zPosition="5" />
+    <widget name="repeat" pixmaps="Blue-Line-OCT-4NFR/mmp/repeat_on.png,Blue-Line-OCT-4NFR/mmp/repeat_off.png" alphatest="blend" position="630,812" size="60,50" transparent="1" zPosition="5" />
+    <widget name="shuffle" pixmaps="Blue-Line-OCT-4NFR/mmp/shuffle_on.png,/Blue-Line-OCT-4NFR/mmp/shuffle_off.png" alphatest="blend" position="1180,812" size="60,50" transparent="1" zPosition="4" />
     <widget source="session.CurrentService" render="Label" position="1280,800" size="220,70" font="Regular; 50" halign="right" backgroundColor="background" transparent="1" foregroundColor="bluetitle">
       <convert type="ServicePosition">Position</convert>
     </widget>
