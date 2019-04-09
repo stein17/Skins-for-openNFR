@@ -1099,9 +1099,8 @@
   </screen>
   
     <!-- NFR PositionerSetup FHD  -->
- <screen name=" PositionerSetup" position="0,0" size="1920,1080" title=" Positioner setup..." flags="wfNoBorder" backgroundColor="background">
-    <eLabel text=" Positioner setup..." position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="list" position="105,100" size="1050,480" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+<screen name="PositionerSetup" position="0,0" size="1280,1080" title="Positioner setup..." flags="wfNoBorder">
+     <widget name="list" position="105,100" size="1080,480" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
     <eLabel position="105,580" size="1050,2" backgroundColor="Line" foregroundColor="Line" transparent="0" />
     <widget name="snr_db" position="240,608" size="300,38" halign="center" valign="center" font="Regular; 34" backgroundColor="background" foregroundColor="white" transparent="1" />
     <eLabel text="SNR:" position="105,660" size="120,38" font="Regular; 34" backgroundColor="background" transparent="1" />
@@ -1122,11 +1121,28 @@
     <widget name="fec_value" position="955,765" size="225,38" font="Regular; 34" backgroundColor="background" foregroundColor="white" transparent="1" />
     <eLabel text="Polarisation:" position="715,818" size="225,38" font="Regular; 34" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="polarisation" position="955,818" size="225,38" font="Regular; 34" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
+    <widget source="Title" render="Label" position="180,20" size="600,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" position="827,22" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
+    <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
+    </widget>
+  <!--  Analog Clock-->
+    <widget source="global.CurrentTime" render="AMBWatches" position="1172,12" size="69,69" zPosition="4" foregroundColor="bluetitle" alphatest="blend">
+    <convert type="AMBAnalogClock">secHand</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="AMBWatches" position="1172,12" size="69,69" zPosition="3" foregroundColor="red" alphatest="blend">
+    <convert type="AMBAnalogClock">minHand</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="AMBWatches" position="1182,22" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+    <convert type="AMBAnalogClock">hourHand</convert>
+    </widget>
+    <ePixmap pixmap="Multibox/icons/Clock.png" position="1162,3" zPosition="1" size="90,90" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Multibox/buttons/key_menu.png" position="100,900" size="103,35" zPosition="10" transparent="1" />
+    <ePixmap pixmap="Multibox/buttons/key_ok.png" position="240,900" size="103,35" zPosition="10" transparent="1" />
+    <ePixmap pixmap="Multibox/buttons/key_exit.png" position="380,900" size="103,35" zPosition="10" transparent="1" />
+    <ePixmap pixmap="Multibox/Skinparts/BG_3_red.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <ePixmap pixmap="Multibox/menu/User Logo.png" position="11,20" size="150,48" zPosition="1" alphatest="blend" />
     <panel name="template_name_red_o_blue" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
+    <panel name="template_vertikalline" />
   </screen>
 <!-- NFR ViewGitLog FHD  -->
   <screen name="ViewGitLog" position="0,0" size="1920,1080" title="ViewGitLog" flags="wfNoBorder" backgroundColor="background">
