@@ -1,5 +1,5 @@
 <skin>
-    <!-- Window_Title_Foreground_Bernstein -->	
+    <!-- Window_Title_Foreground_GreyBlue -->	
    <colors>
     <color name="anadollabel" value="#00065c9e" />
     <color name="background" value="#00000000" />
@@ -32,8 +32,7 @@
     <color name="foregroundClock" value="#00ccffff" />
     <color name="green" value="#0000ff00" />
 	<color name="lemon" value="#00c8ff12" />
-	
-    <color name="greenlight" value="#00a4c400" />
+	<color name="greenlight" value="#00a4c400" />
     <color name="grey" value="#00bbbbbb" />
     <color name="grey1" value="#00a6a6a6" />
     <color name="grey2" value="#00cccccc" />
@@ -71,12 +70,12 @@
     <color name="ListboxBackground" color="black" />
     <color name="ListboxForeground" color="white" />
     <color name="ListboxSelectedBackground" color="black" />
-    <color name="ListboxSelectedForeground" color="bernstein" />
+    <color name="ListboxSelectedForeground" color="greyblue" />
     <color name="ListboxMarkedBackground" color="black" />
-    <color name="ListboxMarkedForeground" color="bernstein" />
+    <color name="ListboxMarkedForeground" color="greyblue" />
     <color name="ListboxMarkedAndSelectedBackground" color="black" />
     <color name="ListboxMarkedAndSelectedForeground" color="red" />
-    <color name="WindowTitleForeground" color="bernstein" />
+    <color name="WindowTitleForeground" color="greyblue" />
     <color name="WindowTitleBackground" color="black" />
     <borderset name="bsWindow">
       <pixmap pos="bpTopLeft" filename="NFR_Skin/window/bs_tl.png" />

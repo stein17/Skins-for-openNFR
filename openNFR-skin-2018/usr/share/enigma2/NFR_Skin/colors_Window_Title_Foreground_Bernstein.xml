@@ -31,9 +31,8 @@
     <color name="foreground" value="#00ffffff" />
     <color name="foregroundClock" value="#00ccffff" />
     <color name="green" value="#0000ff00" />
-	<color name="lemon" value="#00c8ff12" />
-	
     <color name="greenlight" value="#00a4c400" />
+	<color name="lemon" value="#00c8ff12" />
     <color name="grey" value="#00bbbbbb" />
     <color name="grey1" value="#00a6a6a6" />
     <color name="grey2" value="#00cccccc" />
