@@ -92,7 +92,22 @@
   <widget noWrap="1" font="Regular;30" foregroundColor="black" backgroundColor="grey" borderWidth="1" borderColor="bluelabel" render="Label" position="1708,989" size="150,37" source="session.MSNWeather" zPosition="2" halign="right" valign="center" transparent="1">
     <convert type="MSNWeather">temperature_current</convert>
   </widget>
-   </screen>
+  </screen>
+  
+     <!-- TEMPLATES Infobar Backgrounds-->
+ <screen name="template_pixmap_Infobar_full">
+  <ePixmap pixmap="Multibox/menu/Infobar_full_default.png" position="0,856" zPosition="-20" size="1920,226" />
+ </screen>
+ <screen name="template_pixmap_Infobar">
+  <ePixmap pixmap="Multibox/menu/Infobar_default.png" position="0,810" zPosition="-20" size="1920,271" />
+ </screen>
+ <screen name="template_pixmap_Infobar_light">
+ <ePixmap pixmap="Multibox/menu/Infobar_light_default.png" position="0,860" zPosition="-10" size="1920,221" />
+</screen>
+ <screen name="template_pixmap_Infobar-Player">
+  <ePixmap pixmap="Multibox/menu/Player.png" position="0,854" zPosition="-20" size="1920,226" />
+ </screen>
+
   <!-- TEMPLATES backgrounds-->
   <screen name="template_pixmap_BG">
   <ePixmap pixmap="Multibox/menu/BG_default.png" position="0,0" zPosition="-20" size="1920,1080" />
@@ -106,18 +121,6 @@
  <screen name="template_pixmap_channel_selection_line">
  <ePixmap pixmap="Multibox/Skinparts/quick_menu_line.png" position="335,69" zPosition="2" size="13,591" />
   </screen>
- <screen name="template_pixmap_Infobar_full">
-  <ePixmap pixmap="Multibox/menu/Infobar_full_default.png" position="0,856" zPosition="-20" size="1920,226" />
- </screen>
- <screen name="template_pixmap_Infobar">
-  <ePixmap pixmap="Multibox/menu/Infobar_default.png" position="0,810" zPosition="-20" size="1920,271" />
- </screen>
- <screen name="template_pixmap_Infobar_light">
- <ePixmap pixmap="Multibox/menu/Infobar_light_default.png" position="0,860" zPosition="-10" size="1920,221" />
-</screen>
- <screen name="template_pixmap_Infobar-Player">
-  <ePixmap pixmap="Multibox/menu/Player.png" position="0,854" zPosition="-20" size="1920,226" />
- </screen>
    <!-- TEMPLATES Progress BG-->
  <screen name="template_progress_bg_default">
 <ePixmap pixmap="Multibox/Progress_BG.png" position="386,964" size="985,10" zPosition="2" alphatest="blend" />
@@ -1996,7 +1999,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="Service" render="AMBRunningText" options="movetype=running,startdelay=10000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="1280,555" size="627,380" font="Regular;34" backgroundColor="background" foregroundColor="cyan1" transparent="1" halign="left" valign="top">
       <convert type="EMCEventName">FullDescription</convert>
     </widget>
-   <widget source="Service" render="Cover" position="1716,98" size="192,260" alphatest="blend" zPosition="2" halign="left" />
+    <widget name="Cover" position="1716,98" size="192,260" alphatest="blend" zPosition="2" halign="left" />
     <widget source="Service" render="Picon" position="1280,380" zPosition="10" size="64,36" transparent="1" alphatest="blend">
     <convert type="MovieInfo">RecordServiceRef</convert>
     </widget>
@@ -2078,7 +2081,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="Service" render="AMBRunningText" options="movetype=running,startdelay=10000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="10,760" size="1200,240" font="Regular;34" backgroundColor="background" foregroundColor="cyan1" transparent="1" halign="left" valign="top">
       <convert type="EMCEventName">FullDescription</convert>
     </widget>
-   <widget source="Service" render="Cover" position="1230,649" size="192,260" alphatest="blend" zPosition="2" halign="left" />
+    <widget name="Cover" position="1230,649" size="192,260" alphatest="blend" zPosition="2" halign="left" />
     <widget source="Service" render="Picon" position="1495,706" zPosition="10" size="347,197" transparent="1" alphatest="blend" borderWidth="1" borderColor="grey">
     <convert type="MovieInfo">RecordServiceRef</convert>
   </widget>
@@ -2161,7 +2164,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="Service" render="AMBRunningText" options="movetype=running,startdelay=10000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="10,760" size="1200,240" font="Regular;34" backgroundColor="background" foregroundColor="cyan1" transparent="1" halign="left" valign="top">
       <convert type="EMCEventName">FullDescription</convert>
     </widget>
-   <widget source="Service" render="Cover" position="1322,100" size="464,650" alphatest="blend" zPosition="2" halign="left" />
+    <widget name="Cover" position="1322,100" size="464,650" alphatest="blend" zPosition="2" halign="left" />
     <widget source="Service" render="Picon" position="1233,918" zPosition="10" size="64,36" transparent="1" alphatest="blend" borderWidth="1" borderColor="grey">
     <convert type="MovieInfo">RecordServiceRef</convert>
   </widget>
