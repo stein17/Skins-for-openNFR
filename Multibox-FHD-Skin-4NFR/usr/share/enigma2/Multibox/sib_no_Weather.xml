@@ -4,10 +4,10 @@
   <widget alphatest="blend" position="1226,484" render="Picon" size="71,40" source="session.CurrentService" transparent="1" zPosition="8">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget font="Regular; 36" halign="left" noWrap="1" position="110,100" render="Label" size="1000,40" source="session.Event_Now" transparent="1" valign="center" zPosition="2" backgroundColor="background" foregroundColor="cyan1">
+  <widget font="Regular; 36" halign="left" noWrap="1" position="110,100" render="Label" size="1000,40" source="session.Event_Now" transparent="1" valign="center" zPosition="2" backgroundColor="background" foregroundColor="default">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget font="Regular; 36" halign="left" noWrap="1" position="110,570" render="Label" size="1000,40" source="session.Event_Next" valign="center" zPosition="2" backgroundColor="background" transparent="1" foregroundColor="cyan1">
+  <widget font="Regular; 36" halign="left" noWrap="1" position="110,570" render="Label" size="1000,40" source="session.Event_Next" valign="center" zPosition="2" backgroundColor="background" transparent="1" foregroundColor="default">
     <convert type="EventName">Name</convert>
   </widget>
   <ePixmap alphatest="blend" pixmap="Multibox/icons/ico_rec_off.png" position="1810,450" size="80,26" zPosition="4" />
@@ -21,42 +21,42 @@
   <widget source="session.CurrentService" render="Label" position="1010,510" size="100,40" font="Regular; 36" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="white">
     <convert type="ServiceInfo">VideoHeight</convert>
   </widget>
-  <!--   <widget source="session.CurrentService" render="Label" position="844,1033" size="120,36" font="Regular; 30" halign="left" valign="center" transparent="1" foregroundColor="cyan1">
+  <!--   <widget source="session.CurrentService" render="Label" position="844,1033" size="120,36" font="Regular; 30" halign="left" valign="center" transparent="1" foregroundColor="default">
     <convert type="ServiceOrbitalPosition" />
   </widget> -->
-  <eLabel text="SNR:" position="975,1033" size="80,36" font="Regular; 30" halign="left" valign="center" transparent="1" foregroundColor="cyan1" />
+  <eLabel text="SNR:" position="975,1033" size="80,36" font="Regular; 30" halign="left" valign="center" transparent="1" foregroundColor="default" />
   <widget source="session.FrontendStatus" render="Label" position="1055,1033" size="80,36" font="Regular; 30" valign="center" noWrap="1" transparent="1" halign="left" backgroundColor="background">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
   <!--    <widget position="830,558" size="300,22" font="Regular; 18" halign="left" transparent="1" zPosition="10" render="Label" source="global.CurrentTime" backgroundColor="background">
       <convert type="MetrixHDSTBinfo">MyMetrixConfig</convert>
     </widget> -->
-  <eLabel font="Regular; 36" halign="center" noWrap="1" position="230,510" size="25,40" text="-" transparent="1" valign="center" foregroundColor="cyan1" />
+  <eLabel font="Regular; 36" halign="center" noWrap="1" position="230,510" size="25,40" text="-" transparent="1" valign="center" foregroundColor="default" />
   <widget source="session.Event_Now" render="Progress" foregroundColor="Line" position="380,520" size="200,16" zPosition="1" transparent="1" borderWidth="2" borderColor="greyblue">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget font="Regular; 36" halign="right" position="110,510" render="Label" size="110,40" source="session.Event_Now" transparent="1" foregroundColor="cyan1" backgroundColor="background">
+  <widget font="Regular; 36" halign="right" position="110,510" render="Label" size="110,40" source="session.Event_Now" transparent="1" foregroundColor="default" backgroundColor="background">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget font="Regular; 36" halign="left" position="265,510" render="Label" size="110,40" source="session.Event_Now" transparent="1" foregroundColor="cyan1" backgroundColor="background">
+  <widget font="Regular; 36" halign="left" position="265,510" render="Label" size="110,40" source="session.Event_Now" transparent="1" foregroundColor="default" backgroundColor="background">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget font="Regular; 36" halign="left" position="595,510" render="Label" size="150,40" source="session.Event_Now" transparent="1" foregroundColor="cyan1" backgroundColor="background">
+  <widget font="Regular; 36" halign="left" position="595,510" render="Label" size="150,40" source="session.Event_Now" transparent="1" foregroundColor="default" backgroundColor="background">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-  <widget font="Regular; 36" halign="right" noWrap="1" position="110,970" render="Label" size="110,40" source="session.Event_Next" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1">
+  <widget font="Regular; 36" halign="right" noWrap="1" position="110,970" render="Label" size="110,40" source="session.Event_Next" valign="center" backgroundColor="background" transparent="1" foregroundColor="default">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <eLabel font="Regular; 36" halign="center" noWrap="1" position="230,970" size="25,40" text="-" transparent="1" valign="center" foregroundColor="cyan1" />
-  <widget font="Regular; 36" halign="left" noWrap="1" position="265,970" render="Label" size="110,40" source="session.Event_Next" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1">
+  <eLabel font="Regular; 36" halign="center" noWrap="1" position="230,970" size="25,40" text="-" transparent="1" valign="center" foregroundColor="default" />
+  <widget font="Regular; 36" halign="left" noWrap="1" position="265,970" render="Label" size="110,40" source="session.Event_Next" valign="center" backgroundColor="background" transparent="1" foregroundColor="default">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget font="Regular; 36" halign="left" position="595,970" render="Label" size="150,40" source="session.Event_Next" backgroundColor="background" transparent="1" foregroundColor="cyan1">
+  <widget font="Regular; 36" halign="left" position="595,970" render="Label" size="150,40" source="session.Event_Next" backgroundColor="background" transparent="1" foregroundColor="default">
     <convert type="EventTime">Duration</convert>
     <convert type="ClockToText">InMinutes</convert>
   </widget>
@@ -96,12 +96,12 @@
     <convert type="AMBSatInfo">ExpertInfo</convert>
   </widget>
   <!--  AGC -->
-  <eLabel text="AGC:" position="1137,1033" size="80,36" font="Regular; 30" halign="left" valign="center" backgroundColor="background" foregroundColor="cyan1" transparent="1" />
+  <eLabel text="AGC:" position="1137,1033" size="80,36" font="Regular; 30" halign="left" valign="center" backgroundColor="background" foregroundColor="default" transparent="1" />
   <widget source="session.FrontendStatus" render="Label" position="1217,1033" size="80,36" valign="center" font="Regular; 30" backgroundColor="background" foregroundColor="grey" transparent="1" halign="left">
     <convert type="FrontendInfo">AGC</convert>
   </widget>
   <!--  BER -->
-  <eLabel text="BER:" position="1298,1033" size="80,36" font="Regular; 30" halign="left" valign="center" backgroundColor="background" foregroundColor="cyan1" transparent="1" />
+  <eLabel text="BER:" position="1298,1033" size="80,36" font="Regular; 30" halign="left" valign="center" backgroundColor="background" foregroundColor="default" transparent="1" />
   <widget source="session.FrontendStatus" render="Label" position="1379,1033" size="80,36" valign="center" font="Regular; 36" backgroundColor="background" foregroundColor="grey" transparent="1" halign="left">
     <convert type="FrontendInfo">BER</convert>
   </widget>
@@ -126,7 +126,7 @@
   <widget source="session.CurrentService" render="Label" position="1223,885" size="674,30" zPosition="1" font="Regular; 30" halign="left" valign="center" noWrap="1" backgroundColor="background" foregroundColor="white" transparent="1">
     <convert type="AMBCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
   </widget>
-  <!-- <widget source="session.CurrentService" render="Label" font="Regular; 16" position="788,539" size="380,40" halign="left" zPosition="50" backgroundColor="background" transparent="1" noWrap="1" valign="center" foregroundColor="cyan1">
+  <!-- <widget source="session.CurrentService" render="Label" font="Regular; 16" position="788,539" size="380,40" halign="left" zPosition="50" backgroundColor="background" transparent="1" noWrap="1" valign="center" foregroundColor="default">
   <convert type="CryptoInfo">VerboseInfo</convert>
 </widget> -->
   <!-- <eLabel text="CPU-Last:" position="1095,558" size="150,21" font="Regular; 16" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" /> -->
@@ -154,7 +154,7 @@
   <widget source="session.CurrentService" render="AMBNextEvents" number="6" position="1223,638" size="674,36" font="Regular; 32" zPosition="5" noWrap="1" transparent="1" foregroundColor="white">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <!--  <widget source="ServiceEvent" render="AMBSingleEpgListFull" position="1398,110" size="473,124" noWrap="1" font="Regular;24" backgroundColor="background" foregroundColor="cyan1" transparent="1" zPosition="5" /> -->
+  <!--  <widget source="ServiceEvent" render="AMBSingleEpgListFull" position="1398,110" size="473,124" noWrap="1" font="Regular;24" backgroundColor="background" foregroundColor="default" transparent="1" zPosition="5" /> -->
 <widget source="session.CurrentService" render="Pixmap" pixmap="Multibox/icons/ico_sd_on.png" position="1630,1028" size="82,44" zPosition="1" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">0,576</convert>

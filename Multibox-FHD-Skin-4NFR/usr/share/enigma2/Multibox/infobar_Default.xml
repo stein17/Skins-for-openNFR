@@ -185,7 +185,7 @@
   </widget>
   <eLabel text="Provider :" position="568,1033" size="140,44" font="Regular; 27" backgroundColor="background" transparent="1" zPosition="1" valign="center" halign="right" />
   <eLabel text="Orb:" position="1774,1028" size="60,24" font="Regular; 24" backgroundColor="background" transparent="1" zPosition="1" />
-  <widget source="session.CurrentService" render="Label" position="1000,857" size="540,55" font="Console; 20" transparent="1" halign="left" noWrap="1" valign="center" zPosition="3" backgroundColor="background" foregroundColor="cyan1">
+  <widget source="session.CurrentService" render="Label" position="1000,857" size="540,55" font="Console; 20" transparent="1" halign="left" noWrap="1" valign="center" zPosition="3" backgroundColor="background" foregroundColor="default">
     <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
   <panel name="template_right_tuner_info" />

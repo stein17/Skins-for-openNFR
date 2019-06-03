@@ -154,9 +154,9 @@
   </screen>
   <!-- NFR ButtonSetup FHD  -->
  <screen name="HotkeySetup" position="center,center" title="Tasteneinstellungen" size="1920,1080" flags="wfNoBorder" backgroundColor="background">
-	<eLabel text="Multi-Key-Panel" position="180,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+	<eLabel text="Multi-Key-Panel" position="180,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget name="list" itemHeight="50" font="Regular; 36" position="10,100" size="1180,730" scrollbarMode="showOnDemand" />
-    <widget name="choosen" position="1223,560" size="670,420" scrollbarMode="showOnDemand" foregroundColor="cyan1" font="Regular; 36" />
+    <widget name="choosen" position="1223,560" size="670,420" scrollbarMode="showOnDemand" foregroundColor="default" font="Regular; 36" />
     <widget name="description" position="10,860" size="1180,120" font="Regular; 36" halign="center" valign="center" transparent="0" zPosition="1" />
     <panel name="template_pig_setup" />
     <panel name="template_source_red_green_blue" />
@@ -165,7 +165,7 @@
   </screen>
     <!-- NFR ButtonSetupSelect FHD  -->
   <screen name="HotkeySetupSelect" position="0,0" size="1920,1080" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
-  <eLabel text="HotkeySetupSelect" position="180,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+  <eLabel text="HotkeySetupSelect" position="180,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
    <widget name="list" position="10,100" size="1180,460" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
     <eLabel position="10,570" size="1180,1" backgroundColor="Line" />
     <eLabel position="10,778" size="1180,1" backgroundColor="Line" />
@@ -325,7 +325,7 @@
     <!-- NFR E2log FHD  -->
   <screen name="E2log" position="0,0" size="1920,1080" title="E2log erstellen" flags="wfNoBorder" backgroundColor="background">
     <widget name="config" position="10,100" size="1180,880" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" />
-	<widget source="status" render="Label" position="10,930" size="1180,50" font="Regular; 36" halign="center" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="cyan1" />
+	<widget source="status" render="Label" position="10,930" size="1180,50" font="Regular; 36" halign="center" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="default" />
 	<panel name="template_fullscreen_title" />
 	<panel name="template_pig_setup" />
 	<panel name="template_name_red_o_blue" />
@@ -346,9 +346,9 @@
   <!-- NFR SwapManager FHD  -->
   <screen name="SwapOverviewScreen" position="0,0" size="1920,1080" title="Swap Manager" backgroundColor="background" flags="wfNoBorder">
 	<widget name="config" position="10,180" size="1180,720" backgroundColor="background" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="swapstatus_label" position="10,930" size="500,50" foregroundColor="cyan1" font="Regular;36" transparent="1" />
-    <widget name="swapstatus_status" position="550,930" size="500,50" halign="right" foregroundColor="cyan1" font="Regular;36" transparent="1" />
-    <widget font="Regular; 36" halign="left" name="status" position="10,100" size="1180,50" foregroundColor="cyan1" backgroundColor="black" transparent="1" />
+    <widget name="swapstatus_label" position="10,930" size="500,50" foregroundColor="default" font="Regular;36" transparent="1" />
+    <widget name="swapstatus_status" position="550,930" size="500,50" halign="right" foregroundColor="default" font="Regular;36" transparent="1" />
+    <widget font="Regular; 36" halign="left" name="status" position="10,100" size="1180,50" foregroundColor="default" backgroundColor="black" transparent="1" />
     <widget name="buttonredtext" position="63,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="ButtonGreentext" position="362,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="ButtonYellowtext" position="663,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -402,7 +402,7 @@
   </screen>
   <!-- NFR SatLoader FHD  -->
   <screen backgroundColor="background" flags="wfNoBorder" name="Satloader" position="0,0" size="1920,1080" title="Satloader Plugin">
-    <widget name="info" position="10,100" size="1180,90" zPosition="10" font="Regular;36" valign="center" halign="center" transparent="1" foregroundColor="cyan1" />
+    <widget name="info" position="10,100" size="1180,90" zPosition="10" font="Regular;36" valign="center" halign="center" transparent="1" foregroundColor="default" />
     <widget name="list" position="10,220" size="1180,750" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
 	<panel name="template_pixmap_BG" />
 	<panel name="template_fullscreen_title" />
@@ -412,18 +412,18 @@
   <!-- NFR Image Backup FHD -->
   <screen name="ImageBackup" position="0,0" size="1920,1080" title="Image Backup" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="info-hdd" position="10,100" zPosition="1" size="1180,250" font="Regular;34" foregroundColor="greenlight" backgroundColor="background" halign="left" valign="top" transparent="1" />
-    <widget name="info-usb" position="10,370" zPosition="1" size="1180,350" font="Regular;34" foregroundColor="yellow" backgroundColor="background" halign="left" valign="top" transparent="1" />
-    <widget name="info-multi" position="10,740" zPosition="1" size="1180,250" font="Regular;34" foregroundColor="cyan1" backgroundColor="background" halign="left" valign="top" transparent="1" />
+    <widget source="description" render="Label" position="10,100" zPosition="1" size="1180,275" font="Regular; 32" foregroundColor="greenlight" backgroundColor="background" halign="left" valign="top" transparent="1" />
+    <widget name="config" position="10,380" zPosition="1" size="1180,600" font="Regular;34" backgroundColor="background" halign="left" valign="top" transparent="1" />
+    <widget source="options" render="Label" position="1223,560" size="670,420" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="template_source_red_o_blue" />
     <panel name="template_menu_exit" />
     <panel name="template_pig_setup" />
   </screen>
-<!-- NFR4XChooseOnLineImage FHD -->
+  <!-- NFR4XChooseOnLineImage FHD -->
   <screen name="NFR4XChooseOnLineImage" position="0,0" size="1920,1080" title="NFR4XBoot - Download OnLine Images" backgroundColor="background" flags="wfNoBorder">
-   <eLabel text="Download OnLine Images" position="130,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+   <eLabel text="Download OnLine Images" position="130,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget source="list" render="Listbox" position="10,100" size="1180,880" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 		MultiContentEntryText(pos = (0, 10), size = (1180, 40), font=0, flags = RT_HALIGN_RIGHT, text = 0),
@@ -525,8 +525,8 @@
   </screen>
   <!-- NFR Disk Speed FHD -->
   <screen name="Disk_Speed" position="0,0" size="1920,1080" backgroundColor="background" title="Disk Speed Test">
-    <widget name="label1" position="10,130" size="1180,90" font="Regular;36" transparent="1" foregroundColor="cyan1" halign="left" backgroundColor="background" />
-    <widget name="label2" position="10,260" size="1180,220" font="Regular;36" transparent="1" foregroundColor="cyan1" halign="left" backgroundColor="background" />
+    <widget name="label1" position="10,130" size="1180,90" font="Regular;36" transparent="1" foregroundColor="default" halign="left" backgroundColor="background" />
+    <widget name="label2" position="10,260" size="1180,220" font="Regular;36" transparent="1" foregroundColor="default" halign="left" backgroundColor="background" />
     <widget name="config" position="10,520" size="1180,450" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
 	<panel name="template_source_red_o_blue" />
     <panel name="template_fullscreen_title" />
@@ -536,7 +536,7 @@
   <!-- NFR Disk Test FHD -->
   <screen name="Disk_Test" position="0,0" size="1920,1080" backgroundColor="background" title="Disk Speed Test">
 	<widget name="label1" position="10,163" size="1180,90" halign="center" itemHeight="40" font="Regular;36" foregroundColor="white" backgroundColor="background" enableWrapAround="1" transparent="1" />
-    <widget name="label2" position="10,274" size="1180,90" halign="center" itemHeight="40" font="Regular;36" foregroundColor="cyan1" backgroundColor="background" enableWrapAround="1" transparent="1" />
+    <widget name="label2" position="10,274" size="1180,90" halign="center" itemHeight="40" font="Regular;36" foregroundColor="default" backgroundColor="background" enableWrapAround="1" transparent="1" />
     <eLabel name="spaceused" text=" 1 SD" position="41,452" size="150,60" font="Regular; 46" halign="left" backgroundColor="background" transparent="1" zPosition="5" />
     <eLabel name="spaceused1" text=" 1 HD" position="209,453" size="150,60" font="Regular; 46" halign="left" backgroundColor="background" transparent="1" zPosition="5" />
     <eLabel name="spaceused2" text=" 2 HD" position="381,453" size="150,60" font="Regular; 46" halign="left" backgroundColor="background" transparent="1" zPosition="5" />
@@ -682,7 +682,7 @@
   <!-- NFR MovePlugins_ext FHD  -->
   <screen backgroundColor="background" flags="wfNoBorder" name="MovePlugins_ext" position="0,0" size="1920,1080" title="Move Plugins to HDD/USB">
 	<widget name="config" position="10,150" size="1180,400" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
-    <widget name="introduction" position="10,600" size="1180,250" font="Regular;36" foregroundColor="cyan1" backgroundColor="background" transparent="1" zPosition="2" />
+    <widget name="introduction" position="10,600" size="1180,250" font="Regular;36" foregroundColor="default" backgroundColor="background" transparent="1" zPosition="2" />
     <eLabel name="spaceused" text="% Flash Used..." position="10,900" size="300,40" font="Regular;36" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="315,910" size="875,20" foregroundColor="Line" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey" />
 	<panel name="template_source_red_o_blue" />
@@ -693,7 +693,7 @@
   <!-- NFR MovePlugins_int FHD  -->
   <screen backgroundColor="background" flags="wfNoBorder" name="MovePlugins_int" position="0,0" size="1920,1080" title="Move Plugins back to Flash">
 <widget name="config" position="10,150" size="1180,400" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
-    <widget name="introduction" position="10,600" size="1180,250" font="Regular;36" foregroundColor="cyan1" backgroundColor="background" transparent="1" zPosition="2" />
+    <widget name="introduction" position="10,600" size="1180,250" font="Regular;36" foregroundColor="default" backgroundColor="background" transparent="1" zPosition="2" />
     <eLabel name="spaceused" text="% Flash Used..." position="10,900" size="300,40" font="Regular;36" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
 	<widget name="spaceused" position="315,910" size="875,20" foregroundColor="Line" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey" />
 	<panel name="template_source_red_o_blue" />
@@ -842,14 +842,16 @@
   </screen>
   <!--  NFR Skin Manager FHD  -->
 <screen backgroundColor="background" flags="wfNoBorder" name="NfrHD_Config" position="0,0" size="1920,1080" title="NfrHD_Config">
-<eLabel text="Preview" position="1266,550" size="610,70" font="Regular;40" halign="center" valign="center" transparent="0" zPosition="2" />
-  <eLabel text=" *Multibox FHD*  Version: 0.1 vom 18.03.2019" position="600,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-  <widget name="config" position="50,130" size="1120,410" font="Regular; 36" itemHeight="50" enableWrapAround="1" backgroundColor="dark" transparent="1" />
+<eLabel text="Preview" position="1266,550" size="610,70" font="Regular;40" halign="center" valign="center" transparent="0" foregroundColor="green" zPosition="2" />
+  <eLabel text="* Multibox FHD *   FHD Skin for NFR Images by stein17" position="600,20" size="860,50" font="Italic; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+  <widget name="config" position="50,130" size="1120,550" font="Regular; 36" itemHeight="50" enableWrapAround="1" backgroundColor="dark" transparent="1" />
   <ePixmap pixmap="Multibox/buttons/key_blue.png" position="47,924" size="35,35" alphatest="blend" />
-  <eLabel text="Help, Skin Einstellungen (Wetter, Eigenes Userlogo )" position="92,923" size="1120,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="cyan1" />
+  <eLabel text="Help, Skin Einstellungen (Wetter, Eigenes Userlogo )" position="92,923" size="1120,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
   <eLabel text="/ Speichern" position="360,1000" size="160,70" font="Regular; 27" halign="center" backgroundColor="background" transparent="1" valign="center" />
-  <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="92,859" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="cyan1" />
+  <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="92,859" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
   <widget name="Picture" position="1265,630" size="612,344" alphatest="on" />
+  <ePixmap pixmap="Multibox/buttons/key_menu.png" position="50,798" size="103,35" zPosition="10" transparent="1" />
+  <eLabel text="Weather Setup .... Press Menu Button to get to the weather plugin" position="170,795" size="1090,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="2" />
   <ePixmap pixmap="Multibox/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Multibox/buttons/key_green.png" position="280,1018" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Multibox/buttons/key_yellow.png" position="555,1018" size="35,35" alphatest="blend" />
@@ -899,17 +901,16 @@
   </screen>
     <!-- NFR NfrHD_About FHD  -->
 <screen name="NfrHD_About" position="0,0" size="1920,1080" title="NfrHD_About" flags="wfNoBorder">
-    <eLabel text=" *Multibox FHD*  Version: 0.1-Beta vom 24.03.2019" position="520,21" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <eLabel text="Skin Informationen" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+     <eLabel text="* Multibox FHD *   FHD Skin for ATV Images by stein17" position="520,21" size="1060,50" font="Italic; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />  <eLabel text="Skin Informationen" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <ePixmap position="6,80" size="1180,210" zPosition="10" pixmap="Multibox/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
     <eLabel text="*Multibox* FHD Skin for NFR Images by stein17" position="1227,880" size="670,30" font="Replacement; 24" align="left" valign="center" foregroundColor="Line" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
     <ePixmap pixmap="Multibox/menu/Multibox_Info.png" position="1223,550" size="670,300" zPosition="-15" />
     <eLabel text=" Support: https://www.nachtfalke.biz/  " position="1225,961" size="670,40" zPosition="1" font="Regular; 28" halign="center" backgroundColor="background" transparent="1" />
 	<eLabel text="Im Skin gibt es die Möglichkeit, eure eigenen Userlogos zu integrieren. Das Logo sollte nicht größer sein, als 150x48 Pixel. Euer Logo auf diese Größe skalieren und als User Logo.png speichern. Das Logo dann mit FTP nach usr/share/enigma2/Multibox/Skinparts/ kopieren, dadurch wird das Originale Überschrieben. Wer Wünsche bezüglich eines Userlogos hat, kann sich im Forum melden. PN,s werden ignoriert." position="10,332" size="1190,230" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
     <eLabel text="Google DNS-Server: Die IP-Adressen des Google-Diensts&#xD;&#xA;IP-Adressen für das Internetprotokoll Version 4 (IPv4):&#xD;&#xA;Bevorzugter DNS-Server: 8.8.8.8 &#xD;&#xA;Alternativer DNS-Sever: 8.8.4.4&#xD;&#xA;IP-Adressen für das Internetprotokoll Version 6 (IPv6):&#xD;&#xA;Bevorzugter DNS-Server: 2001:4860:4860::8888&#xD;&#xA;Alternativer DNS-Sever: 2001:4860:4860::8844" position="10,605" size="1190,270" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
-    <eLabel text=" Anleitung Userlogo " position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="cyan1" backgroundColor="background" transparent="1" />
-    <eLabel text=" Wenn kein Wetter angezeigt wird, hilft eventuell die DNS Adresse zu ändern " position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="cyan1" backgroundColor="background" transparent="1" />
-    <eLabel text=" DNS-Server schnell und sicher: superschneller DNS-Server von Cloudflare " position="10,875" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="cyan1" backgroundColor="background" transparent="1" />
+    <eLabel text=" Anleitung Userlogo " position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <eLabel text=" Wenn kein Wetter angezeigt wird, hilft eventuell die DNS Adresse zu ändern " position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <eLabel text=" DNS-Server schnell und sicher: superschneller DNS-Server von Cloudflare " position="10,875" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
     <eLabel text="Bevorzugter DNSv4-Server die IP 1.1.1.1  &#xD;&#xA; Alternativer DNSv4-Server die IP 1.0.0.1" position="10,922" size="1190,90" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
     <eLabel name="" position="10,331" size="350,2" backgroundColor="Line" />
     <eLabel name="" position="10,600" size="1150,2" backgroundColor="Line" />
@@ -921,9 +922,9 @@
 
    <!--  <eLabel text="Im Skin gibt es die Möglichkeit, eure eigenen Userlogos zu integrieren. Das Logo sollte nicht größer sein, wie 150x48 Pixel. Euer Logo auf diese Größe skalieren und als User Logo.png speichern. Das Logo dann mit FTP nach usr/share/enigma2/Multibox/Skinparts/ kopieren, dadurch wird das Originale Überschrieben. Wer Wünsche bezüglich Eines Userlogos hat, kann sich im Forum melden. PN,s werden Ignoriert." position="10,332" size="1190,230" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
     <eLabel text="Google DNS-Server: Die IP-Adressen des Google-Diensts&#xD;&#xA;IP-Adressen für das Internetprotokoll Version 4 (IPv4):&#xD;&#xA;Bevorzugter DNS-Server: 8.8.8.8 &#xD;&#xA;Alternativer DNS-Sever: 8.8.4.4&#xD;&#xA;&#xD;&#xA;IP-Adressen für das Internetprotokoll Version 6 (IPv6):&#xD;&#xA;Bevorzugter DNS-Server: 2001:4860:4860::8888&#xD;&#xA;Alternativer DNS-Sever: 2001:4860:4860::8844" position="10,605" size="1190,305" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
-    <eLabel text=" Anleitung Userlogo " position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="cyan1" backgroundColor="background" transparent="1" />
-    <eLabel text=" Wenn kein Wetter angezeigt wird, hilft eventuell die DNS Adresse zu ändern " position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="cyan1" backgroundColor="background" transparent="1" />
-    <eLabel text=" DNS-Server schnell und sicher: superschneller DNS-Server von Cloudflare " position="10,910" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="cyan1" backgroundColor="background" transparent="1" />
+    <eLabel text=" Anleitung Userlogo " position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <eLabel text=" Wenn kein Wetter angezeigt wird, hilft eventuell die DNS Adresse zu ändern " position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <eLabel text=" DNS-Server schnell und sicher: superschneller DNS-Server von Cloudflare " position="10,910" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
     <eLabel text="Bevorzugten DNSv4-Server die IP 1.1.1.1  &#xD;&#xA; Alternativen DNSv4-Server die IP 1.0.0.1" position="10,952" size="1190,90" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
     <eLabel name="" position="10,331" size="350,2" backgroundColor="Line" />
     <eLabel name="" position="10,600" size="1150,2" backgroundColor="Line" />
@@ -959,7 +960,7 @@
   </screen>
   <!--  NFR Oscam SmartCam FHD  -->
   <screen backgroundColor="background" flags="wfNoBorder" name="OscamSmartcard-Setup" position="0,0" size="1920,1080" title="OscamSmartcard">
-    <eLabel text="OscamSmartcard" position="130,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+    <eLabel text="OscamSmartcard" position="130,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget name="config" position="10,100" size="1180,480" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="HELPTEXT" position="10,600" size="1180,380" font="Regular; 36" backgroundColor="background" transparent="1" zPosition="1" />
      <widget name="oscamsmartcardhelperimage" position="1223,560" size="680,430" zPosition="1" backgroundColor="black" transparent="1" />
@@ -977,14 +978,13 @@
   </screen>
   <!-- NFR FlashOnline FHD  -->
 <screen name="FlashOnline" position="0,0" size="1920,1080" title="Flash On the Fly" flags="wfNoBorder">
-    <widget name="info-online" position="10,100" size="1180,240" font="Regular;36" halign="center" transparent="0" zPosition="1" foregroundColor="yellow" />
-    <widget name="info-local" position="10,360" size="1180,340" font="Regular;36" halign="center" transparent="0" zPosition="1" foregroundColor="green" />
-	<widget name="info-flash" position="10,720" size="1180,260" font="Regular;36" transparent="0" zPosition="1" foregroundColor="cyan1" />
+   	<widget name="info-flash" position="10,720" size="1180,260" font="Regular;36" transparent="0" zPosition="1" foregroundColor="default" />
 	<eLabel text="OPEN SOURCE" position="1223,700" size="580,40" font="Replacement; 36" halign="left" transparent="0" zPosition="1" />
 	<eLabel text="https://github.com/oe-alliance" position="1223,800" size="670,40" font="Replacement; 36" halign="left" transparent="0" zPosition="1" />
 	<eLabel text="http://www.nachtfalke.biz" position="1223,900" size="670,40" font="Replacement; 36" backgroundColor="background" halign="left" transparent="1" zPosition="12" />
-	<widget source="Title" render="Label" position="130,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
+    <widget name="list" position="10,100" zPosition="1" size="1180,765" itemHeight="55" font="Regular;36" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="Line" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="description" position="10,450" zPosition="1" size="1180,540" itemHeight="55" font="Regular;36" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="Line" scrollbarMode="showOnDemand" transparent="1" />
+    <panel name="template_fullscreen_title" />
 	<panel name="template_pig_setup" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_menu_ok_exit" />
@@ -994,11 +994,11 @@
 <screen name="doFlashImage" position="0,0" size="1920,1080" title="Flash On the fly (select a image)" flags="wfNoBorder" backgroundColor="black">
     <eLabel name="vertikalline" position="10,315" size="1180,2" foregroundColor="Line" backgroundColor="Line" />
 	<ePixmap position="10,100" size="1180,210" zPosition="10" pixmaps="Multibox/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
-	<widget name="imageList" position="10,330" zPosition="1" size="1180,650" backgroundColorSelected="verydarkgrey" foregroundColor="white" backgroundColor="background" foregroundColorSelected="cyan1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
+	<widget name="imageList" position="10,330" zPosition="1" size="1180,650" backgroundColorSelected="verydarkgrey" foregroundColor="white" backgroundColor="background" foregroundColorSelected="cyan" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
     <eLabel text="OPEN SOURCE" position="1223,700" size="580,40" font="Replacement; 36" halign="left" transparent="0" zPosition="1" />
 	<eLabel text="https://github.com/oe-alliance" position="1225,800" size="670,40" font="Replacement; 36" halign="left" transparent="0" zPosition="1" />
 	<eLabel text="http://www.nachtfalke.biz" position="1223,900" size="670,40" font="Replacement; 36" backgroundColor="background" halign="left" transparent="1" zPosition="12" />
-   <widget source="Title" render="Label" position="130,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+   <widget source="Title" render="Label" position="130,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
 	<panel name="template_fullscreen" />
 	<panel name="template_pig_setup" />
     <panel name="template_name_red_o_blue" />
@@ -1053,7 +1053,7 @@
   <!-- NFR IPTV FHD  -->
   <screen name="IPTV" position="center,center" size="1920,1080" title="M3U Converter" flags="wfNoBorder">
 	<widget name="IPTVList" position="10,100" size="1180,710" itemHeight="50" font="Regular;36" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="text1" position="10,850" size="1180,130" font="Regular;36" transparent="0" foregroundColor="cyan1" halign="center" backgroundColor="background" />
+    <widget name="text1" position="10,850" size="1180,130" font="Regular;36" transparent="0" foregroundColor="default" halign="center" backgroundColor="background" />
 	<panel name="template_fullscreen_title" />
 	<panel name="template_pig_setup" />
     <panel name="template_name_red_o_blue" />
@@ -1143,6 +1143,22 @@
     <ePixmap pixmap="Multibox/menu/User Logo.png" position="11,20" size="150,48" zPosition="1" alphatest="blend" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_vertikalline" />
+  </screen>
+    <screen name="PositionerSetupLog" position="0,0" size="1920,1080" title="Positioner Setup Log" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <panel name="template_fullscreen_title" />
+    <panel name="template_pixmap_BG" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_menu_ok_exit" />
+    <panel name="template_pig_setup" />
+  </screen>
+  <screen name="TunerScreen" position="0,0" size="1920,1080" title="Tune" flags="wfNoBorder" backgroundColor="background">
+    <widget name="config" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <panel name="template_fullscreen_title" />
+    <panel name="template_pixmap_BG" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_menu_ok_exit" />
+    <panel name="template_pig_setup" />
   </screen>
 <!-- NFR ViewGitLog FHD  -->
   <screen name="ViewGitLog" position="0,0" size="1920,1080" title="ViewGitLog" flags="wfNoBorder" backgroundColor="background">
@@ -1322,4 +1338,27 @@
     <widget name="ok" position="0,0" size="0,0" />
     <eLabel name="" position="10,308" size="1200,2" backgroundColor="Line" />
   </screen>
+	<!-- Multiboot Selector -->
+<screen name="MultiBootSelector" position="0,0" size="1920,1080" title="Multiboot Image Selector" flags="wfNoBorder" backgroundColor="background">
+<eLabel name="vertikalline" position="10,245" size="1180,2" foregroundColor="Line" backgroundColor="Line" />
+<widget source="description" render="Label" position="10,100" size="1180,140" font="Regular;36" foregroundColor="default" halign="center" valign="center" transparent="1" />
+<widget name="config" position="10,270" size="1180,705" transparent="0" zPosition="1" font="Regular;36" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="Line" scrollbarSliderBorderColor="white" scrollbarMode="showOnDemand" />
+<widget source="options" render="Label" position="1223,558" size="670,420" font="Regular;36" foregroundColor="Line" halign="center" valign="center" transparent="1" />
+<panel name="template_source_red_green" />
+<panel name="template_fullscreen_title" />
+<panel name="template_pixmap_BG" />
+<panel name="template_pig_setup" />
+</screen>
+	<!-- MultiBootWizard -->
+<screen name="MultiBootWizard" position="0,0" size="1920,1080" title="MultiBoot maintenance" flags="wfNoBorder" backgroundColor="background">
+<eLabel name="vertikalline" position="10,245" size="1180,2" foregroundColor="Line" backgroundColor="Line" />
+<widget source="description" render="Label" position="10,100" size="1180,140" font="Regular;36" foregroundColor="default" halign="center" valign="center" transparent="1" />
+<widget name="config" position="10,270" size="1180,705" transparent="0" zPosition="1" font="Regular;36" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="Line" scrollbarSliderBorderColor="white" scrollbarMode="showOnDemand" />
+<widget source="options" render="Label" position="1223,558" size="670,420" font="Regular;36" foregroundColor="Line" halign="center" valign="center" transparent="1" />
+<panel name="template_ok_exit" />
+<panel name="template_source_red_green" />
+<panel name="template_fullscreen_title" />
+<panel name="template_pixmap_BG" />
+<panel name="template_pig_setup" />
+</screen>
 </skin>

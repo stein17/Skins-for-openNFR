@@ -139,7 +139,7 @@
   <widget source="session.CurrentService" render="Label" position="487,1033" size="80,44" font="Regular; 27" halign="left" valign="center" transparent="1" backgroundColor="background">
     <convert type="ServiceInfo">VideoHeight</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1000,857" size="540,55" font="Console; 20" transparent="1" halign="left" noWrap="1" valign="center" zPosition="3" backgroundColor="background" foregroundColor="cyan1">
+  <widget source="session.CurrentService" render="Label" position="1000,857" size="540,55" font="Console; 20" transparent="1" halign="left" noWrap="1" valign="center" zPosition="3" backgroundColor="background" foregroundColor="default">
     <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
   <!--  Tuner-->
@@ -154,48 +154,48 @@
   <eLabel text="G" position="283,1040" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
   <eLabel text="H" position="313,1040" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
   <eLabel text="I" position="343,1040" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
-  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="103,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="103,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">1</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="B" position="133,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="B" position="133,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">2</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="163,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="163,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">4</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="193,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="193,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">8</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <!-- <widget source="session.TunerInfo" render="Pixmap" pixmap="Multibox/skin_default/system/ValueBitTest_16.png" position="223,1040" zPosition="3" size="26,34" alphatest="blend"> -->
-  <widget source="session.TunerInfo" render="FixedLabel" text="E" position="223,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="E" position="223,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">16</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="F" position="253,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="F" position="253,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">32</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="G" position="283,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="G" position="283,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">64</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="H" position="313,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="H" position="313,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">128</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="I" position="343,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="yellow">
+  <widget source="session.TunerInfo" render="FixedLabel" text="I" position="343,1040" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">256</convert>
     <convert type="ConditionalShowHide" />
@@ -246,7 +246,7 @@
     <convert type="ValueRange">8,8</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <eLabel text="Tuner:" position="0,1040" zPosition="5" size="100,36" font="Regular; 30" halign="center" foregroundColor="cyan1" backgroundColor="background" transparent="1" valign="center" />
+  <eLabel text="Tuner:" position="0,1040" zPosition="5" size="100,36" font="Regular; 30" halign="center" foregroundColor="default" backgroundColor="background" transparent="1" valign="center" />
   <eLabel name="Rahmem_Tuner" backgroundColor="Line" zPosition="1" position="342,1039" size="28,36" />
   <eLabel name="Rahmem_Tuner" backgroundColor="Line" zPosition="0" position="222,1039" size="28,36" />
   <eLabel name="Rahmem_Tuner" backgroundColor="Line" zPosition="1" position="252,1039" size="28,36" />

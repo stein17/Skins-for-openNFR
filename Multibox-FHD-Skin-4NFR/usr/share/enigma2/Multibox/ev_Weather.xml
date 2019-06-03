@@ -1,7 +1,7 @@
 <skin>
  <!-- EventView_full_msn_weather-->
 <screen name="EventView" position="0,0" size="1920,1080" title="Eventview" flags="wfNoBorder" backgroundColor="background">
-    <widget source="Title" render="Label" position="480,100" size="710,50" font="Regular; 40" foregroundColor="cyan1" backgroundColor="background" zPosition="1" valign="center" halign="left" transparent="1" />
+    <widget source="Title" render="Label" position="480,100" size="710,50" font="Regular; 40" foregroundColor="default" backgroundColor="background" zPosition="1" valign="center" halign="left" transparent="1" />
     <widget source="Service" render="Picon" position="10,100" size="89,50" zPosition="5" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -25,16 +25,16 @@
       <convert type="EventName">FullDescription</convert>
     </widget>
     <eLabel text="-" position="1422,582" size="25,40" font="Regular; 34" halign="left" transparent="1" valign="center" />
-    <eLabel text="Start:" position="10,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="Start:" position="1223,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="Ende:" position="1681,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="ENDE:" position="926,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="Next:" position="1223,533" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
+    <eLabel text="Start:" position="10,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="Start:" position="1223,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="Ende:" position="1681,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="ENDE:" position="926,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="Next:" position="1223,533" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
     <widget source="session.Event_Next" render="AMBRunningText" position="1314,533" size="583,40" font="Regular;34" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" foregroundColor="white" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventName">Name</convert>
     </widget>
     <widget name="epg_description" position="10,155" size="1180,748" font="Regular;36" transparent="1" />
-    <widget name="channel" position="105,100" size="370,50" font="Regular; 40" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1" />
+    <widget name="channel" position="105,100" size="370,50" font="Regular; 40" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="default" />
     <widget source="Service" render="Progress" foregroundColor="Line" backgroundColor="Line" position="605,921" size="300,16" borderWidth="1" borderColor="grey" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
@@ -124,7 +124,7 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="836,6" size="75,75" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/Multibox/Wettericons/,png</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="935,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <widget backgroundColor="background" font="Regular; 27" foregroundColor="default" render="Label" position="935,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
       <convert type="MSNWeather">weekshortday,day2</convert>
     </widget>
     <widget backgroundColor="background" font="Regular; 27" foregroundColor="bernstein" render="Label" position="978,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
@@ -142,7 +142,7 @@
     <widget Wrap="1" backgroundColor="background" font="Regular; 24" foregroundColor="white" render="Label" position="1232,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
       <convert type="MSNWeather">temperature_text,day3</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1250,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <widget backgroundColor="background" font="Regular; 27" foregroundColor="default" render="Label" position="1250,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
       <convert type="MSNWeather">weekshortday,day3</convert>
     </widget>
     <eLabel text="Status:" position="230,51" size="100,30" zPosition="8" halign="left" font="Regular; 24" backgroundColor="background" transparent="1" />

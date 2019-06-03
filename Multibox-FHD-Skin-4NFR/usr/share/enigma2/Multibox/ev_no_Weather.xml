@@ -25,16 +25,16 @@
       <convert type="EventName">FullDescription</convert>
     </widget>
     <eLabel text="-" position="1422,582" size="25,40" font="Regular; 34" halign="left" transparent="1" valign="center" />
-    <eLabel text="Start:" position="10,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="Start:" position="1223,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="Ende:" position="1681,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="ENDE:" position="926,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
-    <eLabel text="Next:" position="1223,533" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
+    <eLabel text="Start:" position="10,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="Start:" position="1223,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="Ende:" position="1681,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="ENDE:" position="926,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="Next:" position="1223,533" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
     <widget source="session.Event_Next" render="AMBRunningText" position="1314,533" size="583,40" font="Regular;34" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" foregroundColor="white" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventName">Name</convert>
     </widget>
     <widget name="epg_description" position="10,155" size="1180,748" font="Regular;36" transparent="1" />
-    <widget name="channel" position="105,100" size="370,50" font="Regular; 40" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1" />
+    <widget name="channel" position="105,100" size="370,50" font="Regular; 40" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="default" />
     <widget source="Service" render="Progress" foregroundColor="Line" backgroundColor="Line" position="605,921" size="300,16" borderWidth="1" borderColor="grey" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
