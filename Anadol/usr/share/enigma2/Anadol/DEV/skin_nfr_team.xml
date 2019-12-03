@@ -788,6 +788,26 @@
 	<panel name="template_fullscreen_title" />
 	<panel name="template_pig_setup" />
 </screen>
+<screen backgroundColor="background" flags="wfNoBorder" name="NfrHD_Config1" position="0,0" size="1920,1080" title="NfrHD_Config">
+    <eLabel text=" *Anadol FHD*  Version: 1.2 vom 23.03.2018" position="580,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget name="config" position="50,232" size="975,45" font="Regular; 36" itemHeight="45" enableWrapAround="1" backgroundColor="dark" transparent="1" />
+	<ePixmap pixmap="Anadol/buttons/key_blue.png" position="47,424" size="35,35" alphatest="blend" />
+    <eLabel text="Help, Skin Einstellungen (Wetter)" position="92,423" size="820,45" font="Regular; 36" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
+    <eLabel text="/ Speichern" position="374,1000" size="160,70" font="Regular; 27" halign="center" backgroundColor="black" transparent="1" valign="center" />
+    <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="92,359" size="1020,45" font="Regular; 36" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
+	<widget name="Picture" position="934,433" size="1,1" alphatest="on" />
+    <ePixmap pixmap="Anadol/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="Anadol/buttons/key_green.png" position="280,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="Anadol/buttons/key_yellow.png" position="555,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="Anadol/buttons/key_yellow.png" position="47,362" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="Anadol/buttons/key_blue.png" position="1007,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="200,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="324,1000" size="100,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="600,1000" size="400,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="1055,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+	<panel name="template_fullscreen_title" />
+	<panel name="template_pig_setup" />
+</screen>
   <!--  NFR Screens FHD  -->
 <screen backgroundColor="background" flags="wfNoBorder" name="NfrHDScreens" position="0,0" size="1920,1080" title="NfrHDScreens">
   <eLabel name="vertikalline" position="1212,120" size="2,840" foregroundColor="anadollabel" backgroundColor="anadollabel" />
