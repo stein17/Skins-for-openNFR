@@ -1,7 +1,0 @@
-<skin>
-  <!-- ChannelSelection_NFR_Funktion Blue-->
-
-   <screen name="List_NFR_Funktion">
- <panel name="List_NFR_Funktion_blue" />
- </screen>
- </skin>

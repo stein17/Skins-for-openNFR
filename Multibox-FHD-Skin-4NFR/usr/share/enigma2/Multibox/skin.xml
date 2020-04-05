@@ -435,9 +435,6 @@
     <convert type="ServiceInfo">SubservicesAvailable</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget backgroundColor="background" font="DIGI; 66" noWrap="1" valign="center" halign="left" position="1735,862" render="Label" size="190,66" source="global.CurrentTime" transparent="1" zPosition="1" foregroundColor="white">
-    <convert type="ClockToText">Default</convert>
-  </widget>
   <widget backgroundColor="background" font="Regular; 24" noWrap="1" valign="center" halign="right" position="1560,903" render="Label" size="160,30" source="global.CurrentTime" transparent="1" zPosition="1" foregroundColor="white">
     <convert type="ClockToText">Format:%e. %B</convert>
   </widget>
@@ -470,6 +467,7 @@
   <widget source="session.CurrentService" render="Label" position="1000,857" size="540,55" font="Console; 20" transparent="1" halign="left" noWrap="1" valign="center" zPosition="3" backgroundColor="background" foregroundColor="default">
     <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
+  <panel name="template_infobar_digitalclock_widget" />
   <panel name="template_right_tuner_info" />
   <panel name="template_progress_default" />
   <panel name="template_progress_bg_default" />
@@ -984,20 +982,12 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
   </screen>
-  
-  
-  
-  
   <screen name="EMCSelection" position="0,0" size="1920,1080" title="Enhanced Movie Center" flags="wfNoBorder">
     <widget source="Title" render="Label" position="10,85" size="1200,50" font="Regular; 36" halign="left" valign="center" foregroundColor="default" backgroundColor="background" transparent="1" zPosition="1" />
     <eLabel text="Enhanced Movie Center" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget name="wait" position="180,20" size="800,45" zPosition="1" font="Regular;36" backgroundColor="background" foregroundColor="yellow" halign="center" valign="center" transparent="1" />
     <panel name="Enhanced_Movie_Center" />
   </screen>
-  
-
-  
-  
   <screen name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="session.CurrentService" render="Label" position="360,874" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1">
       <convert type="ServiceName">Name</convert>
@@ -1102,15 +1092,17 @@ self['config'].l.setSeperation(int(300*f))
     </widget>
     <eLabel text="Start:" font="Regular; 36" halign="right" valign="center" position="419,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
     <eLabel text="Ende:" font="Regular; 36" halign="right" valign="center" position="1170,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
-    <widget source="Service" render="Progress" pixmap="Multibox/Player_Progress.png" position="415,991" size="1008,24" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
+	
+    <widget source="Service" render="Progress" position="415,991" size="1008,24" pixmap="Multibox/mmp/Player_Progress.png"  zPosition="5"  transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" position="415,990" size="1008,26" zPosition="3" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" position="415,990" size="1008,26" zPosition="6" transparent="1">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" pointer="Multibox/colors/00ff0000.png:1917,4" position="415,992" size="1008,20" zPosition="4" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" position="415,992" size="1008,20" pointer="Multibox/mmp/Progress_rec.png:1104,0"  zPosition="4" transparent="1">
       <convert type="EMCRecordPosition">Position</convert>
     </widget>
+
     <ePixmap pixmap="Multibox/Skinparts/User Logo.png" position="10,850" size="150,48" zPosition="1" alphatest="blend" />
   </screen>
   <screen name="MovieListTags" position="0,0" size="1920,1080" title="Please select tag to filter..." flags="wfNoBorder" backgroundColor="background">
