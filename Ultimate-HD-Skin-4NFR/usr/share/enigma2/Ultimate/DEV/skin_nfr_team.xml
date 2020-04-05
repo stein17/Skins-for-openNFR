@@ -1116,7 +1116,7 @@
     <panel name="template_pixmap_center" />
   </screen>
   <!--  NFR Skin Manager FHD  -->
-<screen name="NfrHD_Config" position="0,0" size="1280,720" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
+<!-- <screen name="NfrHD_Config" position="0,0" size="1280,720" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Help, Skin Einstellungen (Wetter)" position="100,610" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
   <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
   <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
@@ -1140,8 +1140,8 @@
   <panel name="template_pixmap_rahmen" />
   <panel name="template_pixmap_Userlogo" />
   <panel name="template_pixmap_center" />
-</screen>
-<screen name="NfrHD_Config1" position="0,0" size="1280,720" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
+</screen> -->
+<!-- <screen name="NfrHD_Config1" position="0,0" size="1280,720" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Help, Skin Einstellungen (Wetter)" position="100,610" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
   <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
   <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
@@ -1190,9 +1190,9 @@
   <panel name="template_pixmap_rahmen" />
   <panel name="template_pixmap_Userlogo" />
   <panel name="template_pixmap_center" />
-</screen>
+</screen> -->
   <!--  NFR Screens FHD  -->
-  <screen name="NfrHDScreens" position="0,0" size="1280,720" title="NfrHDScreens" flags="wfNoBorder" backgroundColor="background">
+  <!-- <screen name="NfrHDScreens" position="0,0" size="1280,720" title="NfrHDScreens" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Screens Ultimate-HD" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  scrollbarWidth="6" scrollbarSliderBorderWidth="1" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">{"template":
@@ -1217,9 +1217,9 @@
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
-  </screen>
+  </screen> -->
     <!--  NFR NfrHD_About FHD  -->
-  <screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
+  <!-- <screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
     <ePixmap pixmap="Ultimate/DEV/Ultimate-Logo.png" position="870,390" size="280,280" transparent="1" alphatest="blend" zPosition="1" />
     <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="Ultimate/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
     <eLabel position="30,200" size="700,30" zPosition="2" font="Regular; 22" text="Einstellungen MSN-Wetter für Eventview und 2te Infobar" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
@@ -1240,7 +1240,7 @@
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
-  </screen>
+  </screen> -->
   <!--  NFR Weather Location FHD  -->
   <screen name="WeatherLocationChoiceList" position="0,0" size="1280,720" title="WeatherLocationChoiceList" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="WeatherLocationChoiceList" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
@@ -1889,29 +1889,26 @@
     <panel name="template_pixmap_center" />
   </screen>
 <screen name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="background">
-  <eLabel text="Skin Selector" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <widget name="SkinList" position="30,60" size="700,260" itemHeight="30" font="Regular; 20" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" enableWrapAround="1" transparent="1" />
-  <widget name="Preview" position="140,350" size="480,280" alphatest="blend" />
-  <eLabel text="Skinanpassungen in Infopanel/Image-Remote-Setup/Skineinstellungen." position="30,640" size="700,30" zPosition="2" font="Regular; 18" transparent="1" backgroundColor="black" halign="center" foregroundColor="selectedFG" />
-  <widget source="introduction" render="Label" position="530,689" size="580,25" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
+  <eLabel text="Skin Selector" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+  <widget name="SkinList" position="30,60" size="700,260" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" enableWrapAround="1" transparent="1" />
+  <widget name="Preview" position="140,337" size="480,280" alphatest="blend" />
+  <eLabel text="Skinanpassungen in Menu/Erweiterungen/Ultimate HD Config Tool." position="30,630" size="700,30" zPosition="2" font="Regular; 21" transparent="1" backgroundColor="black" halign="center" foregroundColor="selectedFG" />
+  <widget source="introduction" render="Label" position="500,689" size="580,25" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
   <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1" />
   <widget source="key_yellow" render="Label" position="255,689" size="270,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1" />
   <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
   <ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/skin_selector.png" alphatest="blend" transparent="1" />
   <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
   <panel name="template_date" />
-  <panel name="ScrollBarTemplate size=700,260"/>
-  <panel name="template_pixmap_line_hor_330" />
   <panel name="template_ok_exit_1280" />
   <panel name="template_pixmap_vert_line_738" />
   <panel name="template_pig_menu" />
   <panel name="template_pixmap_pig_menu" />
   <panel name="template_digitalclock_widget" />
   <panel name="template_pixmap_rahmen" />
-  
   <panel name="template_pixmap_Userlogo" />
   <panel name="template_pixmap_center" />
-</screen>  
+</screen>
  <!-- MultiBoot -->
   <screen name="MultiBootSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="Multiboot Image Selector" backgroundColor="background">
     <widget source="description" render="Label" position="30,60" size="700,110" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="center" />
@@ -2071,4 +2068,161 @@
   <!-- NFR_DEV_TEAM_Screens  -->
   <!--######################################### -->
   <!-- PLUGINS_Screens  -->
+    <!-- UltimateHD Setup -->
+<screen name="Ultimate_Config" position="0,0" size="1280,720" title="UltimateHD Setup" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
+    <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,579" size="630,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
+	<eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,636" size="620,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+    <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+    <widget name="config" position="30,60" size="700,560" font="Regular; 23" itemHeight="32" render="Listbox" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" scrollbarWidth="6" transparent="1"  />
+    <widget name="Picture" position="765,400" size="475,267" alphatest="on" />
+    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="40,586" size="26,26" alphatest="blend" transparent="1" />
+	<ePixmap position="30,642" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
+    <panel name="template_date" />
+    <panel name="template_name_red_o_yellow" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pixmap_vert_line_738" />
+    <panel name="template_pig_menu" />
+    <panel name="template_pixmap_pig_menu" />  
+    <panel name="template_pixmap_line_ServiceName_pig_menu" />
+    <panel name="template_digitalclock_widget" />
+    <panel name="template_pixmap_rahmen" />
+    <panel name="template_pixmap_Userlogo" />
+    <panel name="template_pixmap_center" />
+   </screen>
+   <!-- UltimateHD Screens-->
+ <screen name="UltimateScreens" position="0,0" size="1280,720" title="Ultimate Setup" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Configure Ultimate HD Skin" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" enableWrapAround="1" transparent="1">
+      <convert type="TemplatedMultiContent">{"template":
+   [
+    MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (25, 24), png = 2),
+    MultiContentEntryText(pos = (35, 2), size = (685, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+   ],
+   "fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+   "itemHeight": 36
+     }</convert>
+    </widget>
+    <widget name="Picture" position="765,400" size="475,267" alphatest="on" />
+	<panel name="template_date" />
+    <panel name="ScrollBarTemplate size=700,610" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pixmap_vert_line_738" />
+    <panel name="template_pig_menu" />
+    <panel name="template_pixmap_pig_menu" />  
+    <panel name="template_pixmap_line_ServiceName_pig_menu" />
+    <panel name="template_digitalclock_widget" />
+    <panel name="template_pixmap_rahmen" />
+    <panel name="template_pixmap_Userlogo" />
+    <panel name="template_pixmap_center" />
+  </screen>
+	   <!--  NfrHD_Config FHD  -->
+ <screen name="NfrHD_Config" position="center,center" size="800,420" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
+	<eLabel text="Ultimate HD" position="10,4" size="350,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+	<widget source="global.CurrentTime" render="Label" position="450,4" size="240,44" font="Regular;32" halign="right" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+  </screen>
+  <screen name="NfrHD_Config1" position="center,center" size="800,420" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
+  	<eLabel text="Ultimate HD" position="10,4" size="350,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+	<widget source="global.CurrentTime" render="Label" position="450,4" size="240,44" font="Regular;32" halign="right" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+  </screen>
+    <screen name="NfrHD_Config2" position="center,center" size="800,420" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
+  	<eLabel text="Ultimate HD" position="10,4" size="350,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+	<widget source="global.CurrentTime" render="Label" position="450,4" size="240,44" font="Regular;32" halign="right" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+  </screen>
+     <screen name="NfrHD_Config3" position="center,center" size="800,420" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
+  	<eLabel text="Ultimate HD" position="10,4" size="350,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+	<widget source="global.CurrentTime" render="Label" position="450,4" size="240,44" font="Regular;32" halign="right" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
+	<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
+	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+  </screen>
+    <!-- NFR NfrHD_About FHD  -->
+  <screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap pixmap="Ultimate/DEV/Ultimate_Logo.png" position="870,390" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="Ultimate/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />   <eLabel position="30,200" size="700,30" zPosition="2" font="Regular; 22" text="Einstellungen MSN-Wetter" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
+    <eLabel text="*Ultimate* HD Skin for NFR Images by stein17" position="13,685" size="480,26" font="Regular; 20" align="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
+    <eLabel position="30,240" size="700,160" zPosition="2" font="Regular; 22" text="Erweiterungen/Wetterinformationen/Menu, dann Grün Hinzufügen. Wenn ihr den Ort Eingegeben habt, ein mal runter auf Location-Code. Gelb für Code suchen, mit Grün (OK)bestätigen, wichtig wieder OK. Noch wichtiger mit Rot zurück, sonst müsst ihr wieder von vorne anfangen. Jetzt mit Exit beenden, Benutzer Oberfläche neustarten, eventuell kompletter Neustart.." transparent="1" backgroundColor="black" halign="left" valign="top" />
+    <eLabel position="29,490" size="700,180" zPosition="2" font="Regular; 22" text="Menu/ System/ Benutzeroberfläche/ Einstellungen, *2nd Infobar*  auf *2nd Infobar INFO* einstellen. Menu/ Info Panel/ Image/Remote-Setup/ Bearbeiten der Fernbedienung/ Info/EPG auswählen, in EPG *Open Eventview* auswählen.  ." transparent="1" backgroundColor="black" halign="left" valign="top" />
+    <eLabel position="30,425" size="700,55" zPosition="2" font="Regular; 21" text="Einstellungen 2te Infobar mit 2x Ok aufrufen, EventView durch Infotaste anzeigen lassen" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
+    <eLabel text="Ultimate HD About" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+    <panel name="template_pixmap_line_hor_190" />
+    <panel name="template_pixmap_line_hor_230" />
+    <panel name="template_pixmap_line_hor_480" />
+    <panel name="template_date" />
+    <panel name="template_pixmap_vert_line_738" />
+    <panel name="template_pig_menu" />
+    <panel name="template_pixmap_pig_menu" />
+    <panel name="template_pixmap_line_ServiceName_pig_menu" />
+    <panel name="template_digitalclock_widget" />
+    <panel name="template_pixmap_rahmen" />
+    <panel name="template_pixmap_Userlogo" />
+    <panel name="template_pixmap_center" />
+  </screen>
+
   </skin>
