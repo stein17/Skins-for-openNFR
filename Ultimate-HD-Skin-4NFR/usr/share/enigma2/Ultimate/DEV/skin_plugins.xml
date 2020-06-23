@@ -1463,34 +1463,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="template_pixmap_center" />
   </screen>
   <!-- AZPlay -->
-  <!-- C o o l   T V   G u i d e -->
-  <screen name="CoolTVGuideSetup" title="Cool TV Guide Setup" position="0,0" size="1280,720">
+    <!-- C o o l   T V   G u i d e -->
+  <screen name="CoolTVGuideSetup" title="Cool TV Guide Setup" position="0,0" size="1280,720" flags="wfNoBorder">
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
     <widget name="CoolText1" position="765,424" size="485,80" font="Regular;20" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
     <widget name="CoolText2" position="765,510" size="485,80" font="Regular;20" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
     <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,505" zPosition="3" size="485,5" />
     <panel name="template_source_red_o_blue" />
-	<panel name="ScrollBarTemplate size=700,610" />
+    <panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
     <panel name="template_ok_exit_1280" />
     <panel name="template_pixmap_vert_line_738" />
     <panel name="template_pig_menu" />
-    <panel name="template_pixmap_pig_menu" />  
+    <panel name="template_pixmap_pig_menu" />
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
   </screen>
-  <screen name="CoolTVGuide" position="center,center" size="1280,720" backgroundColor="black" title="Cool TV Guide">
-    <eLabel text="C o o l   T V   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget name="list" position="30,213" size="1220,460" scrollbarMode="showNever" transparent="1" />
+  <screen name="CoolTVGuide" position="0,0" size="1280,720" backgroundColor="black" title="Cool TV Guide" flags="wfNoBorder">
+   <eLabel text="Cool TV Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+   <widget name="list" position="30,213" size="1220,460" scrollbarMode="showNever" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
     <widget source="Event" render="Label" position="35,70" size="90,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" transparent="1">
       <convert type="EventTime">StartTime</convert>
@@ -1500,16 +1497,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="220,70" size="920,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" transparent="1">
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="220,70" size="920,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="1120,70" size="130,40" font="Regular;24" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,113" size="1220,60" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="30,113" size="1220,60" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
+  <convert type="EventName">ExtendedDescription</convert>
+</widget>
     <eLabel name="timeline_background" position="30,176" size="1220,30" backgroundColor="selectedFG" transparent="1" />
     <widget name="timeline_text" position="30,176" size="1220,28" font="Regular;20" foregroundColor="yellow" backgroundColor="background" zPosition="1" transparent="1" />
     <widget name="timeline_now" position="20,207" zPosition="1" size="16,472" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
@@ -1520,17 +1517,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="template_date" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
   </screen>
-  <screen name="CoolTinyGuide" position="0,0" size="1280,720" backgroundColor="black" title="Cool Tiny Guide">
-    <eLabel text="C o o l   T i n y   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget name="list" position="30,213" size="1220,460" scrollbarMode="showNever" transparent="1" />
+  <screen name="CoolTinyGuide" position="0,0" size="1280,720" backgroundColor="black" title="Cool Tiny Guide" flags="wfNoBorder">
+    <eLabel text="Cool Tiny Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+ <widget name="list" position="30,213" size="1220,460" scrollbarMode="showNever" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
     <widget source="Event" render="Label" position="35,70" size="90,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" transparent="1">
       <convert type="EventTime">StartTime</convert>
@@ -1540,16 +1534,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="220,70" size="920,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" transparent="1">
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="220,70" size="920,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="1120,70" size="130,40" font="Regular;24" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,113" size="1220,60" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="30,113" size="1220,60" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
+  <convert type="EventName">ExtendedDescription</convert>
+</widget>
     <eLabel name="timeline_background" position="30,176" size="1220,30" backgroundColor="selectedFG" transparent="1" />
     <widget name="timeline_text" position="30,176" size="1220,28" font="Regular;20" foregroundColor="yellow" backgroundColor="background" zPosition="1" transparent="1" />
     <widget name="timeline_now" position="20,207" zPosition="1" size="16,472" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
@@ -1560,54 +1554,48 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="template_date" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
   </screen>
   <screen name="CoolSingleGuide" position="0,0" size="1280,720" title="Cool Single Guide" backgroundColor="black" flags="wfNoBorder">
-    <eLabel text="C o o l   S i n g l e   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Event" render="Label" position="1094,392" size="110,25" font="Regular;24" foregroundColor="grey" halign="center" backgroundColor="black" shadowColor="black" transparent="1">
+    <eLabel text="Cool Single Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+   <widget source="Event" render="Label" position="1094,392" size="150,30" font="Regular; 26" foregroundColor="grey" halign="center" backgroundColor="black"  transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="854,392" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="right" transparent="1">
+    <widget source="Event" render="Label" position="854,392" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black"  halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="962,392" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="left" transparent="1">
+    <widget source="Event" render="Label" position="962,392" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black"  halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,470" size="1220,30" font="Regular;24" foregroundColor="orange" backgroundColor="background" shadowColor="verydarkgrey" halign="left" transparent="1">
+    <widget source="Event" render="Label" position="30,470" size="1220,30" font="Regular;24" foregroundColor="orange" backgroundColor="background"  halign="left" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,510" zPosition="1" size="1220,160" font="Regular;20" foregroundColor="grey" backgroundColor="background" shadowColor="verydarkgrey" transparent="1" valign="top">
+    <widget source="Event" render="Label" position="30,510" zPosition="1" size="1220,160" font="Regular;20" foregroundColor="grey" backgroundColor="background"  transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="list" position="30,60" size="770,390" itemHeight="28" zPosition="25" CoolFont="Regular;22" CoolEventFont="Regular;22" CoolDayPos="0" CoolDaySize="50" CoolTimePos="70" CoolTimeSize="70" CoolEventPos="150" CoolDayColor="orange" CoolTimeColor="selectedFG" CoolEventColor="white" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolBackColor="black" CoolBackColorSel="verydarkgrey" backgroundColor="black" transparent="1" />
+    <widget name="list" position="30,60" size="770,390" itemHeight="28" zPosition="25" CoolFont="Regular;22" CoolEventFont="Regular;22" CoolDayPos="0" CoolDaySize="50" CoolTimePos="70" CoolTimeSize="70" CoolEventPos="150" CoolDayColor="orange" CoolTimeColor="selectedFG" CoolEventColor="white" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolBackColor="black" CoolBackColorSel="black" backgroundColor="black" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
     <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,501" zPosition="3" size="1220,5" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_date" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_pig_setup" />
- <panel name="template_pixmap_line_ServiceName_pig_setup " />
+    <panel name="template_pixmap_line_ServiceName_pig_setup " />
   </screen>
   <screen name="CoolSearch" position="0,0" size="1280,720" title="Cool Search" backgroundColor="black" flags="wfNoBorder">
-    <eLabel text="C o o l   S e a r c h" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+    <eLabel text="Cool Search" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Event" render="Label" position="30,60" size="100,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" ransparent="1" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -1616,37 +1604,34 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="211,60" size="460,40" font="Regular;24" halign="left" foregroundColor="selectedFG" ransparent="1" transparent="1">
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="211,60" size="460,40" font="Regular;24" halign="left" foregroundColor="selectedFG" ransparent="1" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="680,60" size="120,40" font="Regular;24" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,112" size="770,230" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="30,112" size="770,230" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
+  <convert type="EventName">ExtendedDescription</convert>
+</widget>
     <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
     <panel name="template_pixmap_line_hor_343,1220" />
-    <widget name="list" position="30,350" size="1220,325" itemHeight="28" zPosition="3" CoolFont="Regular;22" CoolServiceFont="Regular;22" CoolEventFont="Regular;22" CoolDayPos="0" CoolDayHPos="2" CoolDatePos="70" CoolDateHPos="2" CoolTimePos="150" CoolTimeHPos="2" CoolServicePos="230" CoolServiceHPos="2" CoolEventPos="500" CoolEventHPos="2" CoolDaySize="50" CoolDateSize="70" CoolTimeSize="70" CoolServiceSize="280" CoolEventSize="700" CoolServiceColor="selectedFG" CoolEventColor="white" CoolDateColor="white" CoolTimeColor="selectedFG" CoolDayColor="yellow" CoolBackColor="black" CoolBackColorSel="verydarkgrey" CoolRecEventBackColor="black" CoolRecAlarmCol="yellow" CoolRecColor="red" backgroundColor="black" transparent="1" />
+    <widget name="list" position="30,350" size="1220,325" itemHeight="28" zPosition="3" CoolFont="Regular;22" CoolServiceFont="Regular;22" CoolEventFont="Regular;22" CoolDayPos="0" CoolDayHPos="2" CoolDatePos="70" CoolDateHPos="2" CoolTimePos="150" CoolTimeHPos="2" CoolServicePos="230" CoolServiceHPos="2" CoolEventPos="500" CoolEventHPos="2" CoolDaySize="50" CoolDateSize="70" CoolTimeSize="70" CoolServiceSize="280" CoolEventSize="700" CoolServiceColor="selectedFG" CoolEventColor="white" CoolDateColor="white" CoolTimeColor="selectedFG" CoolDayColor="yellow" CoolBackColor="black" CoolBackColorSel="black" CoolRecEventBackColor="black" CoolRecAlarmCol="yellow" CoolRecColor="red" backgroundColor="black" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_pig_setup" />
- <panel name="template_pixmap_line_ServiceName_pig_setup " />
+    <panel name="template_pixmap_line_ServiceName_pig_setup " />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
     <panel name="template_date" />
   </screen>
-  <screen name="CoolNiceGuide" position="center,center" size="1280,720" backgroundColor="black" title="Cool Nice Guide" flags="wfNoBorder">
-    <eLabel text="C o o l   N i c e   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+  <screen name="CoolNiceGuide" position="0,0" size="1280,720" backgroundColor="black" title="Cool Nice Guide" flags="wfNoBorder">
+    <eLabel text="Cool Nice Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Event" render="Label" position="30,60" size="100,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" ransparent="1" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -1655,16 +1640,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="211,60" size="460,40" font="Regular;24" halign="left" foregroundColor="selectedFG" ransparent="1" transparent="1">
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="211,60" size="460,40" font="Regular;24" halign="left" foregroundColor="selectedFG" ransparent="1" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="680,60" size="120,40" font="Regular;24" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,112" size="770,230" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="30,112" size="770,230" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
+  <convert type="EventName">ExtendedDescription</convert>
+</widget>
     <widget name="timeline_now" position="20,342" zPosition="1" size="16,333" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
     <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
     <panel name="template_pixmap_line_hor_343,1220" />
@@ -1673,21 +1658,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="template_name_red_o_blue" />
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_pig_setup" />
- <panel name="template_pixmap_line_ServiceName_pig_setup " />
+    <panel name="template_pixmap_line_ServiceName_pig_setup " />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
     <panel name="template_date" />
   </screen>
-  <screen name="CoolMultiGuide" position="center,center" size="1280,720" backgroundColor="black" title="Cool Multi Guide" flags="wfNoBorder">
-    <eLabel text="C o o l   M u l t i   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Event" render="Label" position="30,60" size="100,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" ransparent="1" transparent="1">
+  <screen name="CoolMultiGuide" position="0,0" size="1280,720" backgroundColor="black" title="Cool Multi Guide" flags="wfNoBorder">
+   <eLabel text="Cool Multi Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+   <widget source="Event" render="Label" position="30,60" size="100,40" font="Regular;24" halign="left" backgroundColor="background" foregroundColor="selectedFG" ransparent="1" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
@@ -1695,16 +1677,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="211,60" size="460,40" font="Regular;24" halign="left" foregroundColor="selectedFG" ransparent="1" transparent="1">
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="211,60" size="460,40" font="Regular;24" halign="left" foregroundColor="selectedFG" ransparent="1" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="680,60" size="120,40" font="Regular;24" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,112" size="770,180" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="30,112" size="770,180" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
+  <convert type="EventName">ExtendedDescription</convert>
+</widget>
     <widget name="timeline_now" position="20,342" zPosition="1" size="16,333" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
     <eLabel name="timeline_background" position="30,305" size="1220,28" backgroundColor="selectedFG" transparent="1" />
     <widget name="timeline_text" position="30,305" size="1220,28" font="Regular;20" foregroundColor="yellow" backgroundColor="background" zPosition="1" transparent="1" />
@@ -1715,131 +1697,120 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_pig_smal" />
-    <panel name="template_pixmap_pig_smal" /> 
-  <panel name="template_pixmap_line_ServiceName_pig_smal " />
+    <panel name="template_pixmap_pig_smal" />
+    <panel name="template_pixmap_line_ServiceName_pig_smal " />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
     <panel name="template_date" />
   </screen>
   <screen name="CoolInfoGuide" position="0,0" size="1280,720" title="Cool Info Guide" backgroundColor="black" flags="wfNoBorder">
-    <eLabel text="C o o l   I n f o   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Event" render="Label" position="20,110" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black" shadowColor="verydarkgrey" halign="right" transparent="1">
+   <eLabel text="Cool Info Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+  <widget source="Event" render="Label" position="20,110" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black"  halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="128,110" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black" shadowColor="verydarkgrey" halign="left" transparent="1">
+    <widget source="Event" render="Label" position="128,110" size="100,30" font="Regular;26" foregroundColor="selectedFG" backgroundColor="black"  halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="250,110" size="200,30" font="Regular;25" foregroundColor="grey" halign="left" backgroundColor="black" shadowColor="verydarkgrey" transparent="1">
+    <widget source="Event" render="Label" position="250,110" size="200,30" font="Regular;25" foregroundColor="grey" halign="left" backgroundColor="black"  transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
-    <eLabel text="Similar broadcasts:" position="490,70" size="366,30" font="Regular;22" backgroundColor="black" shadowColor="black" transparent="1" />
-    <widget name="CoolSimilar" position="490,100" size="366,200" font="Regular;22" foregroundColor="bernstein" backgroundColor="black" shadowColor="verydarkgrey" transparent="1" />
-    <widget name="CoolShort" position="40,150" size="435,150" font="Regular;22" foregroundColor="bernstein" backgroundColor="black" shadowColor="verydarkgrey" transparent="1" />
+    <eLabel text="Similar broadcasts:" position="490,70" size="366,30" font="Regular;22" backgroundColor="black"  transparent="1" />
+    <widget name="CoolSimilar" position="490,100" size="366,200" font="Regular;22" foregroundColor="bernstein" backgroundColor="black"  transparent="1" />
+    <widget name="CoolShort" position="40,150" size="435,150" font="Regular;22" foregroundColor="bernstein" backgroundColor="black"  transparent="1" />
     <widget name="CoolEvent" position="30,310" size="1220,30" itemHeight="30" zPosition="5" CoolFont="Regular;26" CoolDayPos="0" CoolTimePos="60" CoolEventPos="250" CoolDurationPos="1060" CoolDaySize="60" CoolTimeSize="190" CoolDurationSize="120" CoolDayColor="orange" CoolTimeColor="selectedFG" CoolEventColor="orange" CoolDurationColor="selectedFG" CoolTunerCol="verydarkgrey" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolBackColorSel="black" backgroundColor="black" transparent="1" />
-    <widget name="CoolDescription" position="30,350" size="1220,330" font="Regular;22" foregroundColor="grey" backgroundColor="black" shadowColor="black" transparent="1" />
+    <widget name="CoolDescription" position="30,350" size="1220,330" font="Regular;22" foregroundColor="grey" backgroundColor="black"  transparent="1" />
     <panel name="template_pixmap_line_hor_343,1220" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_date" />
     <panel name="template_pig_smal" />
-    <panel name="template_pixmap_pig_smal" /> 
-  <panel name="template_pixmap_line_ServiceName_pig_smal " />
+    <panel name="template_pixmap_pig_smal" />
+    <panel name="template_pixmap_line_ServiceName_pig_smal " />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
   </screen>
-  <screen name="CoolEasyGuide2" position="0,0" size="1280,720" title="Cool Easy Guide" backgroundColor="black" flags="wfNoBorder">
-    <eLabel text="C o o l   E a s y   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Event" render="Label" position="760,390" size="100,30" font="Regular;24" foregroundColor="grey" backgroundColor="black" shadowColor="verygrey" halign="left" transparent="1">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText" />
-    </widget>
-    <widget source="Event" render="Label" position="1150,390" size="100,30" font="Regular;24" foregroundColor="grey" backgroundColor="black" shadowColor="verygrey" halign="right" transparent="1">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="765,420" size="485,25" font="Regular; 22" foregroundColor="yellow" backgroundColor="black" shadowColor="verygrey" transparent="1" halign="center">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="Event" render="Progress" position="863,398" size="285,14" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/progress.png" borderWidth="2" borderColor="black" zPosition="2" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <widget source="Event" render="Label" position="765,450" zPosition="1" size="485,220" font="Regular;20" foregroundColor="grey" backgroundColor="black" shadowColor="verygrey" transparent="1" valign="top">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
-    <widget name="list" position="30,60" size="700,480" itemHeight="28" zPosition="25" CoolPico="28" CoolPicoHPos="1" CoolFont="Regular;22" CoolServiceFont="Regular;21" CoolEventFont="Regular;18" CoolServiceSize="230" CoolEventSize="320" CoolServicePos="1" CoolServiceHPos="1" CoolEventPos="240" CoolEventHPos="3" CoolMarkerPicPos="2" CoolMarkerPicHPos="2" CoolMarkerPos="140" CoolMarkerHPos="1" CoolBar="0" CoolTime="1" CoolTimePos="580" CoolTimeHPos="3" CoolTimeSize="130" CoolDurationPos="650" CoolDurationSize="40" CoolServiceColor="white" CoolBarColor="selectedFG" CoolEventColor="grey" CoolBackColorSel="verydarkgrey" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolTunerCol="grey" CoolCurrentCol="yellow" backgroundColor="black" transparent="1" />
-    <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
-    <widget source="Service" render="CoolNextEvent" position="30,550" size="700,120" font="Regular;19" backgroundColor="black" transparent="1">
-    </widget>
-	<panel name="template_pixmap_line_hor_540" />
-   <panel name="template_pixmap_line_hor_765_444"/>
-    <panel name="template_name_red_o_blue" />
-    <panel name="template_date" />
-    <panel name="template_pixmap_vert_line_738" />
-    <panel name="template_pig_menu" />
-    <panel name="template_pixmap_pig_menu" />  
-    <panel name="template_pixmap_line_ServiceName_pig_menu" />
-    <panel name="template_digitalclock_widget" />
-    <panel name="template_pixmap_rahmen" />
-    
-    <panel name="template_pixmap_Userlogo" />
-    <panel name="template_pixmap_center" />
-  </screen>
+  <screen name="CoolEasyGuide" position="0,0" size="1280,720" title="Cool Easy Guide" backgroundColor="black" flags="wfNoBorder">
+  <eLabel text="Cool Easy Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+  <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+  <widget source="Event" render="Label" position="400,60" size="80,30" font="Regular;24" foregroundColor="yellow" backgroundColor="black" halign="left" transparent="1" borderWidth="1" borderColor="black">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="480,60" size="90,30" font="Regular;24" foregroundColor="yellow" backgroundColor="black" halign="center" transparent="1" borderWidth="1" borderColor="black">
+  <convert type="EventTime">EndTime</convert>
+  <convert type="ClockToText">Format:- %H:%M</convert>
+</widget>
+  <widget source="Event" render="Label" position="600,60" size="650,30" font="Regular; 24" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="left" borderWidth="1" borderColor="black">
+    <convert type="EventName">Name</convert>
+  </widget>
+  
+  <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="400,101" zPosition="1" size="435,200" font="Regular; 22" foregroundColor="selectedFG" transparent="1" halign="left" valign="top">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget name="list" position="30,310" size="1220,365" itemHeight="28" zPosition="-1" CoolFont="Regular;22" CoolServiceFont="Regular;22" CoolEventFont="Regular;22" CoolServiceSize="280" CoolEventSize="665" CoolServicePos="5" CoolServiceHPos="2" CoolEventPos="430" CoolEventHPos="2" CoolBarPos="295" CoolBarHPos="5" CoolBarSize="120" CoolBarHigh="18" CoolTimePos="265" CoolTimeHPos="2" CoolTimeSize="150" CoolDurationPos="1105" CoolDurationSize="105" CoolServiceColor="#FF6600" CoolBarColor="#3B98C9" CoolEventColor="#FFFFFF" CoolBackColorSel="#000000" CoolRecAlarmCol="#B59E01" CoolRecColor="#9F1313" CoolTunerCol="#606060" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
+  <widget source="Service" render="CoolNextEvent" position="850,101" size="400,200" font="Regular; 22" foregroundColor="selectedFG" transparent="1" halign="left" valign="top">
+  </widget>
+  <panel name="template_pixmap_line_hor_5400" />
+  <panel name="template_pixmap_line_hor_765_4440" />
+  <panel name="template_name_red_o_blue" />
+  <panel name="template_date" />
+  <panel name="template_pixmap_vert_line_7820" />
+  <panel name="template_pig_smal_left" />
+  <panel name="template_pixmap_pig_smal_left" />
+  <panel name="template_pixmap_line_ServiceName_pig_setup " />
+  <panel name="template_digitalclock_widget" />
+  <panel name="template_pixmap_rahmen" />
+  <panel name="template_pixmap_Userlogo" />
+  <panel name="template_pixmap_center" />
+<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="400,90" zPosition="3" size="850,5" alphatest="blend" transparent="1" />
+<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="30,303" zPosition="3" size="1220,5" alphatest="blend" transparent="1" />
+</screen>
   <screen name="CoolChannelGuide" position="0,0" size="1280,720" title="Cool Channel Guide" backgroundColor="black" flags="wfNoBorder">
-    <eLabel text="C o o l   C h a n n e l   G u i d e" position="357,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <widget name="date" position="160,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <ePixmap pixmap="skin_default/icons/clock.png" position="165,14" zPosition="1" size="26,26" alphatest="on" />
-    <widget source="Service" render="CoolPico" position="320,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <widget source="Event" render="Label" position="760,390" size="100,30" font="Regular;24" foregroundColor="grey" backgroundColor="black" shadowColor="verygrey" halign="left" transparent="1">
+    <eLabel text="Cool Channel Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="date" position="160,4" size="220,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
+    <widget source="Service" render="CoolPico" position="390,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
+    <widget source="Event" render="Label" position="760,385" size="100,30" font="Regular;24" foregroundColor="grey" backgroundColor="black"  halign="left" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="1150,390" size="100,30" font="Regular;24" foregroundColor="grey" backgroundColor="black" shadowColor="verygrey" halign="right" transparent="1">
+    <widget source="Event" render="Label" position="1150,385" size="100,30" font="Regular;24" foregroundColor="grey" backgroundColor="black"  halign="right" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="765,420" size="485,25" font="Regular; 22" foregroundColor="yellow" backgroundColor="black" shadowColor="verygrey" transparent="1" halign="center">
+    <widget source="Event" render="Label" position="765,415" size="485,30" font="Regular; 22" foregroundColor="yellow" backgroundColor="black"  transparent="1" halign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Progress" position="863,398" size="285,14" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/progress.png" borderWidth="2" borderColor="black" zPosition="2" transparent="1">
+    <widget source="Event" render="Progress" position="863,393" size="285,14" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/progress.png" borderWidth="2" borderColor="black" zPosition="2" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="765,450" zPosition="1" size="485,220" font="Regular;20" foregroundColor="grey" backgroundColor="black" shadowColor="verygrey" transparent="1" valign="top">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
-
-    <widget name="list" position="30,60" size="700,480" itemHeight="28" zPosition="25" CoolPico="28" CoolPicoHPos="1" CoolFont="Regular;22" CoolServiceFont="Regular;21" CoolEventFont="Regular;18" CoolServiceSize="230" CoolEventSize="320" CoolServicePos="1" CoolServiceHPos="1" CoolEventPos="240" CoolEventHPos="3" CoolMarkerPicPos="2" CoolMarkerPicHPos="2" CoolMarkerPos="140" CoolMarkerHPos="1" CoolBar="0" CoolTime="1" CoolTimePos="580" CoolTimeHPos="3" CoolTimeSize="130" CoolDurationPos="650" CoolDurationSize="40" CoolServiceColor="white" CoolBarColor="selectedFG" CoolEventColor="yellow" CoolBackColorSel="verydarkgrey" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolTunerCol="grey" CoolCurrentCol="selectedFG" backgroundColor="black" transparent="1" />
-    <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
+    <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="765,450" zPosition="1" size="485,220" font="Regular;20" foregroundColor="grey" backgroundColor="black"  transparent="1" valign="top">
+  <convert type="EventName">ExtendedDescription</convert>
+</widget>
+<widget name="list" position="30,60" size="700,480" itemHeight="28" zPosition="25" CoolPico="28" CoolPicoHPos="1" CoolFont="Regular;22" CoolServiceFont="Regular;21" CoolEventFont="Regular;18" CoolServiceSize="230" CoolEventSize="320" CoolServicePos="1" CoolServiceHPos="1" CoolEventPos="240" CoolEventHPos="3" CoolMarkerPicPos="2" CoolMarkerPicHPos="2" CoolMarkerPos="140" CoolMarkerHPos="1" CoolBar="0" CoolTime="1" CoolTimePos="580" CoolTimeHPos="3" CoolTimeSize="130" CoolDurationPos="650" CoolDurationSize="40" CoolServiceColor="#FFFFFF" CoolBarColor="#3B98C9" CoolEventColor="#C6C6C6" CoolBackColorSel="#000000" CoolRecAlarmCol="#B59E01" CoolRecColor="#9F1313" CoolTunerCol="#606060" CoolCurrentCol="#fede05"  foregroundColor="#000000" backgroundColor="#404040" transparent="1" />
+  <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
     <widget source="Service" render="CoolNextEvent" position="30,550" size="700,120" font="Regular;19" backgroundColor="black" transparent="1">
     </widget>
-   <panel name="template_pixmap_line_hor_540" />
-   <panel name="template_pixmap_line_hor_765_444"/>
+    <panel name="template_pixmap_line_hor_540" />
+    <panel name="template_pixmap_line_hor_765_444" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_date" />
     <panel name="template_pixmap_vert_line_738" />
     <panel name="template_pig_menu" />
-    <panel name="template_pixmap_pig_menu" />  
+    <panel name="template_pixmap_pig_menu" />
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
   </screen>
