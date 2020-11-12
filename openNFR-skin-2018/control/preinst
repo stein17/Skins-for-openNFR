@@ -1,0 +1,24 @@
+#!/bin/sh
+echo "                                                                            "
+echo "                         ***** WARNING ****                                 "
+echo "NFR HD Skin skin requires a minimal dual core.                         "
+echo "NFR HD Skin skin is NOT guaranteed to work on slower or older receivers.    "
+echo "                                                                            "
+echo "                                                                            "
+echo "                                                                            "
+echo "Check if a previous version of the NFR HD Skin skin is installed"
+if [ -f /usr/share/enigma2/NFR_Skin/skin.xml ]; then
+    cp -R /usr/share/enigma2/NFR_Skin/ /tmp
+    rm -rf /usr/share/enigma2/NFR_Skin
+    rm -rf /usr/lib/enigma2/python/Components/Converter/NFR*
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/NFR*
+	rm -rf /usr/lib/enigma2/python/Plugins/Extensions/NFR_Skin*
+    echo "                                                   "
+    echo "Previous NFR HD Skin skin installation        "
+    echo "    was found and removed successfully!            "
+    echo "                                                   "
+fi
+echo "                                                       "
+echo "NFR HD Skin skin is now being installed...        "
+echo "                                                       "
+exit 0
