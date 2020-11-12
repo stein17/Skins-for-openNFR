@@ -1,0 +1,12 @@
+Package: enigma2-plugin-skins-steampunk
+Version: 1.1
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: stein17
+Description: Steampunk HD Skin  for NFR by stein17
+Depends: enigma2-plugin-skincomponents-weathercomponent, enigma2-plugin-systemplugins-weathercomponenthandler
+Source: https://github.com/stein17/Skins-for-openNFR
+Homepage: https://github.com/stein17/Skins-for-openNFR
+OE: Enigma2 Skin
+License: open

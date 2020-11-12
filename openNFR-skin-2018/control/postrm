@@ -1,0 +1,12 @@
+#!/bin/sh
+rm -rf /usr/share/enigma2/NFR_Skin
+rm -rf /usr/lib/enigma2/python/Components/Converter/NFR*
+rm -rf /usr/lib/enigma2/python/Components/Renderer/NFR*
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/NFR_Skin*
+echo "                                                                 "
+echo "NFR HD Skin skin was successfully removed from your receiver"
+echo "                                                                 "
+echo "The GUI of your receiver is now rebooting....                    "
+exit 0
+
+

@@ -4,7 +4,9 @@ rm -rf /usr/lib/enigma2/python/Components/Converter/Ultimate*
 rm -rf /usr/lib/enigma2/python/Components/Renderer/Ultimate*
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/UltimateHD*
 echo "                                                                 "
-echo "UltimateHD NFR skin was successfully removed from your receiver  "
+echo "Ultimate HD skin was successfully removed from your receiver"
 echo "                                                                 "
 echo "The GUI of your receiver is now rebooting....                    "
 exit 0
+
+

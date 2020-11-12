@@ -1,12 +1,12 @@
 Package: enigma2-plugin-skins-ultimate
-Version: 1.2
+Version: 4.1
 Section: base
 Priority: optional
 Architecture: all
 Maintainer: stein17
-Description: Skin HD for NFR by stein17
+Description: Ultimate HD for NFR by stein17
 Depends: enigma2-plugin-skincomponents-weathercomponent, enigma2-plugin-systemplugins-weathercomponenthandler
-Source: https://www.nachtfalke.biz/index.php
-Homepage: https://www.nachtfalke.biz/index.php
+Source: https://github.com/stein17/Skins-for-openNFR/tree/master/Ultimate-HD-Skin-4NFR
+Homepage: https://github.com/stein17/Skins-for-openNFR
 OE: Enigma2 Skin
 License: open

@@ -1,0 +1,24 @@
+#!/bin/sh
+echo "                                                                            "
+echo "                         ***** WARNING ****                                 "
+echo "AX Blue FHD skin requires a minimal dual core.                         "
+echo "AX Blue FHD skin is NOT guaranteed to work on slower or older receivers.    "
+echo "                                                                            "
+echo "                                                                            "
+echo "                                                                            "
+echo "Check if a previous version of the AX Blue FHD skin is installed"
+if [ -f /usr/share/enigma2/AX_Blue_FHD_4NFR/skin.xml ]; then
+    cp -R /usr/share/enigma2/AX_Blue_FHD_4NFR/ /tmp
+    rm -rf /usr/share/enigma2/AX_Blue_FHD_4NFR
+    rm -rf /usr/lib/enigma2/python/Components/Converter/AXBlue*
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/AXBlue*
+	rm -rf /usr/lib/enigma2/python/Plugins/Extensions/AXBlueFHD*
+    echo "                                                   "
+    echo "Previous AX Blue FHD skin installation        "
+    echo "    was found and removed successfully!            "
+    echo "                                                   "
+fi
+echo "                                                       "
+echo "AX Blue FHD skin is now being installed...        "
+echo "                                                       "
+exit 0

@@ -134,10 +134,10 @@
     <widget source="session.CurrentService" render="Label" position="854,540" size="170,21" font="Console; 16" halign="right" foregroundColor="selectedFG" backgroundColor="background" transparent="1" zPosition="5">
       <convert type="UltimateCaidInfo">CurCam</convert>
     </widget>
-   <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Ultimate/Skinparts/Infobar/Infobar_Brown.png" />
+   <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Ultimate/BG-Pixmaps/Infobar/Infobar_Brown.png" />
   <panel name="template_progress_infobar" />
   <panel name="template_infobar_tuner_info" />
-  <ePixmap pixmap="Ultimate/Skinparts/Clocks/Steampunk_Clock.png" position="1070,538" zPosition="0" size="178,178" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Clocks/Steampunk_Clock.png" position="1070,538" zPosition="0" size="178,178" alphatest="blend" transparent="1" />
     <widget source="global.CurrentTime" render="UltimateWatches" position="1109,577" size="100,100" zPosition="1" foregroundColor="cyan" alphatest="blend">
       <convert type="UltimateAnalogClock">secHand</convert>
     </widget>

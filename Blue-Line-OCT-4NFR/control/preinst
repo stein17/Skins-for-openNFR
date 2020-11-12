@@ -1,7 +1,24 @@
 #!/bin/sh
-
-python /usr/lib/enigma2/python/BoxBrandingTest.pyo | sed 's/<$//' | sed 's/ /_/g' > /tmp/boxbranding.cfg
-
+echo "                                                                            "
+echo "                         ***** WARNING ****                                 "
+echo "BlueLineFHD skin requires a minimal dual core.                         "
+echo "BlueLineFHD skin is NOT guaranteed to work on slower or older receivers.    "
+echo "                                                                            "
+echo "                                                                            "
+echo "                                                                            "
+echo "Check if a previous version of the BlueLineFHD skin is installed"
+if [ -f /usr/share/enigma2/Blue-Line-OCT-4NFR/skin.xml ]; then
+    cp -R /usr/share/enigma2/Blue-Line-OCT-4NFR/ /tmp
+    rm -rf /usr/share/enigma2/Blue-Line-OCT-4NFR
+    rm -rf /usr/lib/enigma2/python/Components/Converter/BL*
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/BL*
+	rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BlueLineFHD*
+    echo "                                                   "
+    echo "Previous BlueLineFHD skin installation        "
+    echo "    was found and removed successfully!            "
+    echo "                                                   "
+fi
+echo "                                                       "
+echo "BlueLineFHD skin is now being installed...        "
+echo "                                                       "
 exit 0
-
-
