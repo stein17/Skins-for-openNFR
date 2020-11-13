@@ -1246,7 +1246,7 @@
   <widget alphatest="blend" render="MSNWeatherPixmap" position="646,6" size="75,75" source="session.MSNWeather" transparent="1" zPosition="5">
     <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/Multibox/Wettericons/,png</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="745,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="745,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day2</convert>
   </widget>
   <widget backgroundColor="background" font="Regular; 27" foregroundColor="bernstein" render="Label" position="788,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
@@ -1264,13 +1264,13 @@
   <widget Wrap="1" backgroundColor="background" font="Regular; 24" foregroundColor="white" render="Label" position="1042,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
     <convert type="MSNWeather">temperature_text,day3</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1060,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="1060,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day3</convert>
   </widget>
   <widget backgroundColor="background" font="Regular; 27" foregroundColor="bernstein" render="Label" position="1421,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">temperature_heigh_low,day4</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1376,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="1376,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day4</convert>
   </widget>
   <widget Wrap="1" backgroundColor="background" font="Regular; 24" foregroundColor="white" render="Label" position="1359,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
@@ -1288,7 +1288,7 @@
   <widget backgroundColor="background" font="Regular; 27" foregroundColor="bernstein" render="Label" position="1741,17" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">temperature_heigh_low,day5</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1696,17" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="1696,17" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day5</convert>
   </widget>
   <eLabel text="Status:" position="40,51" size="100,30" zPosition="8" halign="left" font="Regular; 24" backgroundColor="background" transparent="1" />
@@ -1320,7 +1320,7 @@
   <widget alphatest="blend" render="MSNWeatherPixmap" position="646,6" size="75,75" source="session.MSNWeather" transparent="1" zPosition="5">
     <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/Multibox/Wettericons_2/,png</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="740,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="740,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day2</convert>
   </widget>
   <widget backgroundColor="background" font="Regular; 27" foregroundColor="bernstein" render="Label" position="798,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
@@ -1338,13 +1338,13 @@
   <widget Wrap="1" backgroundColor="background" font="Regular; 24" foregroundColor="white" render="Label" position="1042,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
     <convert type="MSNWeather">temperature_text,day3</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1055,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="1055,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day3</convert>
   </widget>
   <widget backgroundColor="background" font="Regular; 27" foregroundColor="bernstein" render="Label" position="1431,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">temperature_heigh_low,day4</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1371,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="1371,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day4</convert>
   </widget>
   <widget Wrap="1" backgroundColor="background" font="Regular; 24" foregroundColor="white" render="Label" position="1359,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
@@ -1363,7 +1363,7 @@
   <widget backgroundColor="background" font="Regular; 27" foregroundColor="bernstein" render="Label" position="1751,17" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">temperature_heigh_low,day5</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1691,17" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+  <widget backgroundColor="background" font="Regular; 27" foregroundColor="cyan" render="Label" position="1691,17" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day5</convert>
   </widget>
   <eLabel text="Status:" position="40,51" size="100,30" zPosition="8" halign="left" font="Regular; 24" backgroundColor="background" transparent="1" />
