@@ -1652,6 +1652,7 @@
   <widget source="session.CurrentService" render="Label" position="30,720" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="white">
     <convert type="AXBlueReceiverInfo">UsbInfo,Long</convert>
   </widget>
+   <panel name="template_menu_buttons" />
   </screen>
  <!--  NfrHD_Config FHD  -->
 <screen name="NfrHD_Config1"  title="NfrHD Setup" backgroundColor="background"  position="center,center" size="1000,480">
