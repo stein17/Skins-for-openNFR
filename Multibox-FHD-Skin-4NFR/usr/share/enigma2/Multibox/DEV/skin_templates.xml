@@ -547,7 +547,7 @@
     <eLabel text="B" position="40,963" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="C" position="70,963" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="D" position="100,963" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
-    <!-- <ePixmap alphatest="blend" pixmap="skin_default/system/tuner-E.png" position="130,963" size="26,34" zPosition="1" /> -->       
+    <!-- <ePixmap alphatest="blend" pixmap="Multibox/skin_default/system/tuner-E.png" position="130,963" size="26,34" zPosition="1" /> -->       
     <eLabel text="E " position="130,963" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="F" position="160,963" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="G" position="190,963" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
@@ -576,7 +576,7 @@
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- <widget source="session.TunerInfo" render="Pixmap" pixmap="skin_default/system/ValueBitTest_16.png" position="130,963" zPosition="3" size="26,34" alphatest="blend"> -->
+    <!-- <widget source="session.TunerInfo" render="Pixmap" pixmap="Multibox/skin_default/system/ValueBitTest_16.png" position="130,963" zPosition="3" size="26,34" alphatest="blend"> -->
       <widget source="session.TunerInfo" render="FixedLabel" text="E" position="130,963" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">16</convert>
@@ -637,7 +637,7 @@
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
- <!--    <widget source="session.FrontendInfo" render="Pixmap" pixmap="skin_default/system/ValueRange4.png" position="130,963" zPosition="5" size="26,34" alphatest="blend"> -->
+ <!--    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Multibox/skin_default/system/ValueRange4.png" position="130,963" zPosition="5" size="26,34" alphatest="blend"> -->
        <widget source="session.FrontendInfo" render="FixedLabel" text="E " position="130,963" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="menu" backgroundColor="Line" transparent="0" valign="top">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">4,4</convert>
@@ -848,7 +848,7 @@
     <eLabel text="B" position="40,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="C" position="70,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="D" position="100,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
-    <!-- <ePixmap alphatest="blend" pixmap="skin_default/system/tuner-E.png" position="130,1033" size="26,34" zPosition="1" /> -->       
+    <!-- <ePixmap alphatest="blend" pixmap="Multibox/skin_default/system/tuner-E.png" position="130,1033" size="26,34" zPosition="1" /> -->       
     <eLabel text="E " position="130,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="F" position="160,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="G" position="190,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
@@ -877,7 +877,7 @@
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- <widget source="session.TunerInfo" render="Pixmap" pixmap="skin_default/system/ValueBitTest_16.png" position="130,1033" zPosition="3" size="26,34" alphatest="blend"> -->
+    <!-- <widget source="session.TunerInfo" render="Pixmap" pixmap="Multibox/skin_default/system/ValueBitTest_16.png" position="130,1033" zPosition="3" size="26,34" alphatest="blend"> -->
       <widget source="session.TunerInfo" render="FixedLabel" text="E" position="130,1033" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">16</convert>
@@ -1002,7 +1002,7 @@
     <eLabel text="B" position="40,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="C" position="70,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="D" position="100,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
-    <!-- <ePixmap alphatest="blend" pixmap="skin_default/system/tuner-E.png" position="130,1033" size="26,34" zPosition="1" /> -->       
+    <!-- <ePixmap alphatest="blend" pixmap="Multibox/skin_default/system/tuner-E.png" position="130,1033" size="26,34" zPosition="1" /> -->       
     <eLabel text="E " position="130,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="F" position="160,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
     <eLabel text="G" position="190,1033" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="0" valign="center" />
@@ -1031,7 +1031,7 @@
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- <widget source="session.TunerInfo" render="Pixmap" pixmap="skin_default/system/ValueBitTest_16.png" position="130,1033" zPosition="3" size="26,34" alphatest="blend"> -->
+    <!-- <widget source="session.TunerInfo" render="Pixmap" pixmap="Multibox/skin_default/system/ValueBitTest_16.png" position="130,1033" zPosition="3" size="26,34" alphatest="blend"> -->
       <widget source="session.TunerInfo" render="FixedLabel" text="E" position="130,1033" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="background" transparent="0" valign="center" foregroundColor="darkyellow">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">16</convert>
@@ -1388,9 +1388,9 @@
     <widget source="Title" render="Label" position="109,28" size="1080,60" font="Italic; 50" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <eLabel name="line1" position="8,91" size="1880,2" backgroundColor="Line" zPosition="1" />
     <widget name="text" position="10,97" size="1180,60" font="Regular; 40" valign="center" halign="center" foregroundColor="Line" />
-    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="8,8" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="8,8" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="Multibox/skin_default/icons/input_error.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Multibox/skin_default/icons/input_question.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Multibox/skin_default/icons/input_info.png" position="8,8" size="80,80" alphatest="blend" />
     <widget name="list" position="14,163" size="1180,330" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
@@ -1471,7 +1471,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		</applet>
   </screen>
   <screen name="template_wizard">
-    <widget name="wizard" position="10,130" size="305,287" pixmap="skin_default/system/wizard.png" zPosition="10" transparent="1" alphatest="blend" />
+    <widget name="wizard" position="10,130" size="305,287" pixmap="Multibox/skin_default/system/wizard.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget name="text" position="330,87" size="860,480" font="Regular;36" backgroundColor="background" transparent="1" />
     <widget source="list" render="Listbox" position="10,590" size="1180,400" zPosition="13" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (30, 3), size = (1060, 40), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1489,10 +1489,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <screen name="template_wizardrc">
     <widget name="rc" position="1300,560" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
-    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowup.png" zPosition="11" alphatest="blend" />
   </screen>
   <screen name="template_setup_config">
     <widget name="VKeyIcon" pixmap="buttons/key_text.png" alphatest="on" zPosition="1" position="1535,1022" size="103,35" />
