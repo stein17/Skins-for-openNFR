@@ -1,4 +1,5 @@
-#!/bin/sh
-echo "                                                           "
-echo " Multibox Skin Full HD by stein17 is now being removed...    "
-echo "                                                           "
+ #!/bin/sh
+echo "                                                                           "
+echo "Multibox Skin by stein17 is now being removed from your receiver..."
+echo "                                                                           "
+exit 0   

@@ -9,7 +9,4 @@
  <screen name="Channel_selection_3_Fields_default">
  <panel name="3_fields_ChannelSelection_blue" />
  </screen>
- <screen name="List_NFR_Funktion">
- <panel name="List_NFR_Funktion_blue" />
- </screen>
  </skin>

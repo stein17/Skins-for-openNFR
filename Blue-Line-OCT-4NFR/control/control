@@ -1,12 +1,12 @@
 Package: enigma2-plugin-skins-blue-line-oct-4nfr
-Version: 1.7
+Version: 2.1
 Section: base
-OE: Enigma2 Skin
-License: open
 Priority: optional
 Architecture: all
 Maintainer: stein17
-Description: Skin Full HD for openNFR Images by stein17
-Source: https://www.nachtfalke.biz/
-Homepage: https://www.nachtfalke.biz/
-Depends: enigma2-plugin-skincomponents-weathercomponent, enigma2-plugin-systemplugins-weathercomponenthandl
+Description: BlueLineFHD for NFR by stein17
+Depends: enigma2-plugin-skincomponents-weathercomponent, enigma2-plugin-systemplugins-weathercomponenthandler
+Source: https://github.com/stein17/Skins-for-openNFR/tree/master/Blue-Line-OCT-4NFR
+Homepage: https://github.com/stein17/Skins-for-openNFR
+OE: Enigma2 Skin
+License: open

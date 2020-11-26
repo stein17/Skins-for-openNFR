@@ -1,0 +1,5 @@
+ #!/bin/sh
+echo "                                                                           "
+echo "AX Blue FHD Skin by stein17 is now being removed from your receiver..."
+echo "                                                                           "
+exit 0   

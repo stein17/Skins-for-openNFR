@@ -19,7 +19,7 @@
     <ePixmap pixmap="Ultimate/skin_default/icons/input_info.png" position="276,164" size="53,53" alphatest="blend" zPosition="3" />
     <widget name="text" position="270,250" size="735,310" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <ePixmap pixmap="Ultimate/DEV/start_nfr.png" position="center,center" size="1280,720" alphatest="blend" zPosition="-20" />
-    <ePixmap position="center,center" zPosition="-15" size="781,452" pixmap="Ultimate/Skinparts/Pig_Large/Pig_large_Org.png" alphatest="blend" transparent="1"/>
+    <ePixmap position="center,center" zPosition="-15" size="781,452" pixmap="Ultimate/BG-Pixmaps/Pig_Large/Pig_large_Org.png" alphatest="blend" transparent="1"/>
 	<panel name="template_pixmap_line_hor_QuitMainloop"/>
   </screen>
   <!-- NFR BootLogoHelper FHD  -->
@@ -113,7 +113,7 @@
   <widget name="sublist" position="473,60" size="415,600" itemHeight="50" font="Regular; 22" scrollbarMode="showOnDemand" transparent="1" backgroundColor="background" />
   <widget name="description" position="898,310" size="350,360" zPosition="1" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
   <eLabel text="Quick Launch Menu" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="898,302" zPosition="2" size="350,5" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="898,302" zPosition="2" size="350,5" />
   <panel name="template_pixmap_vert_line_450" />
   <panel name="template_name_red_o_blue" />
   <panel name="template_pig_smal" />
@@ -747,11 +747,11 @@
     <widget source="Frequency" render="Label" position="30,500" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
     <widget source="Encryption key" render="Label" position="30,540" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
     <widget source="BitRate" render="Label" position="30,580" zPosition="1" size="700,50" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,413" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,453" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,493" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,533" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,573" zPosition="2" size="700,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,413" zPosition="2" size="700,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,453" zPosition="2" size="700,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,493" zPosition="2" size="700,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,533" zPosition="2" size="700,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,573" zPosition="2" size="700,5" />
     <panel name="template_date" />
     <panel name="template_source_red_green_blue" />
     <panel name="template_ok_exit_1280" />
@@ -1119,7 +1119,7 @@
 <!-- <screen name="NfrHD_Config" position="0,0" size="1280,720" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Help, Skin Einstellungen (Wetter)" position="100,610" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
   <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
-  <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
+  <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
   <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,645" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
   <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
   <widget name="config" position="30,60" size="700,490" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="32" render="Listbox" />
@@ -1144,7 +1144,7 @@
 <!-- <screen name="NfrHD_Config1" position="0,0" size="1280,720" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Help, Skin Einstellungen (Wetter)" position="100,610" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
   <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
-  <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
+  <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
   <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,645" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
   <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
   <widget name="config" position="30,60" size="700,490" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="32" render="Listbox" />
@@ -1169,7 +1169,7 @@
 <screen name="NfrHD_Config2" position="0,0" size="1280,720" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Help, Skin Einstellungen (Wetter)" position="100,600" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
   <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
-  <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,560" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
+  <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,560" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
   <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,640" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
   <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
   <widget name="config" position="30,55" size="700,500" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="33" render="Listbox" />
@@ -1341,7 +1341,8 @@
     <panel name="template_pixmap_line_hor_150" />
   </screen>
   <!-- NFR ChoiceBox FHD  -->
-  <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
+  <!-- NFR ChoiceBox FHD  -->
+<!--   <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
     <widget name="text" position="30,60" size="700,60" font="Regular;22" halign="center" transparent="1" zPosition="10" foregroundColor="selectedFG" backgroundColor="background" />
     <widget name="list" position="30,135" size="700,522" scrollbarMode="showOnDemand" itemHeight="35"  enableWrapAround="1" backgroundColor="background" transparent="1" />
 	<ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/software_update.png" transparent="1" alphatest="blend" />
@@ -1356,7 +1357,26 @@
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
-  </screen>
+  </screen> -->
+  
+<screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" backgroundColor="background" flags="wfNoBorder">
+<widget source="windowtitle" render="Label" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+<widget source="Title" render="Label" position="30,54" size="700,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+  <widget name="text" position="30,110" size="700,60" font="Regular;22" halign="center" transparent="1" zPosition="10" foregroundColor="selectedFG" backgroundColor="background" />
+  <widget name="list" position="30,190" size="700,480" scrollbarMode="showOnDemand" itemHeight="35" enableWrapAround="1" backgroundColor="background" transparent="1" />
+  <ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/software_update.png" transparent="1" alphatest="blend" />
+  <panel name="template_date" />
+  <panel name="template_menu_ok_exit_1280" />
+  <panel name="template_pixmap_vert_line_738" />
+  <panel name="template_pixmap_line_hor_100" />
+  <panel name="template_pig_menu" />
+  <panel name="template_pixmap_pig_menu" />
+  <panel name="template_digitalclock_widget" />
+  <panel name="template_pixmap_rahmen" />
+  <panel name="template_pixmap_line_ServiceName_pig_menu" />
+  <panel name="template_pixmap_Userlogo" />
+  <panel name="template_pixmap_center" />
+</screen>
   <!-- NFR VirtualKeyBoard FHD  -->
   <!-- NFR PluginBrowser FHD  -->
   <screen name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser" flags="wfNoBorder" backgroundColor="background">
@@ -1387,8 +1407,8 @@
     <eLabel name="spaceused" text="% Flash Used..." position="765,640" size="150,20" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="310,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
     <widget source="Title" render="Label" position="160,4" size="760,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
     <panel name="template_name_long_red_o_blue" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -1408,8 +1428,8 @@
     <eLabel name="spaceused" text="% Flash Used..." position="765,640" size="150,20" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="310,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
     <widget source="Title" render="Label" position="160,4" size="760,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
     <panel name="template_source_long_red_o_blue" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -1429,8 +1449,8 @@
     <eLabel name="spaceused" text="% Flash Used..." position="765,640" size="150,20" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="310,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
     <panel name="template_source_long_red_o_blue" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -2071,7 +2091,7 @@
     <!-- UltimateHD Setup -->
 <screen name="Ultimate_Config" position="0,0" size="1280,720" title="UltimateHD Setup" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
-    <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,579" size="630,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
+    <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,579" size="630,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
 	<eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,636" size="620,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
     <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget name="config" position="30,60" size="700,560" font="Regular; 23" itemHeight="32" render="Listbox" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" scrollbarWidth="6" transparent="1"  />
@@ -2127,11 +2147,11 @@
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
 	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
@@ -2148,11 +2168,11 @@
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
 	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
@@ -2169,11 +2189,11 @@
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
 	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
@@ -2190,11 +2210,11 @@
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
 	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />

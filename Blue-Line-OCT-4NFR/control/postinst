@@ -1,21 +1,12 @@
 #!/bin/sh
-if grep -qs 'getMachineBrand=Octagon' cat /tmp/boxbranding.cfg  ; then
-	echo "                                 "
-	echo "*********************************"
-	echo "Octagon Box found!"
-	echo "*********************************"
-	echo "                                 "
-	cp /tmp/octagon/*.png /usr/share/enigma2/Blue-Line-OCT-4NFR/menu	
-else
-	echo "                                 "
-	echo "*********************************"
-	echo "No Octagon Box found!"
-	echo "*********************************"
-	echo "                                 "
-       	cp /tmp/nfr/*.png /usr/share/enigma2/Blue-Line-OCT-4NFR/menu
+if [ -f /Blue-Line-OCT-4NFR/skin.xml ]; then
+  rm -rf /usr/share/enigma2/Blue-Line-OCT-4NFR/
+  mv /tmp/Blue-Line-OCT-4NFR /usr/share/enigma2/
+  rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BlueLineFHD/
+  mv /tmp/BlueLineFHD /Extensions/Plugins/python/enigma2/lib/usr/
 fi
-
-echo " Skin Blue-Line-OCT-4NFR installed "
-
+echo "                                                          "
+echo " ..BlueLineFHD Skin  by stein17 successful installed. "
+echo "                                                          "
 exit 0
 

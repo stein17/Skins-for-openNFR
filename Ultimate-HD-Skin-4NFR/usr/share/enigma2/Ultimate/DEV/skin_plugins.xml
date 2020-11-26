@@ -522,7 +522,7 @@
     <widget name="station" position="210,575" size="880,50" font="Regular;20" backgroundColor="background" transparent="1" />
     <widget name="console" position="210,600" size="880,50" font="Regular;20" backgroundColor="background" transparent="1" />
     <ePixmap position="1120,610" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,530" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,530" zPosition="3" size="1220,5" />
     <panel name="template_title_date" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
@@ -1469,7 +1469,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
     <widget name="CoolText1" position="765,424" size="485,80" font="Regular;20" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
     <widget name="CoolText2" position="765,510" size="485,80" font="Regular;20" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,505" zPosition="3" size="485,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,505" zPosition="3" size="485,5" />
     <panel name="template_source_red_o_blue" />
     <panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -1510,9 +1510,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel name="timeline_background" position="30,176" size="1220,30" backgroundColor="selectedFG" transparent="1" />
     <widget name="timeline_text" position="30,176" size="1220,28" font="Regular;20" foregroundColor="yellow" backgroundColor="background" zPosition="1" transparent="1" />
     <widget name="timeline_now" position="20,207" zPosition="1" size="16,472" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,108" zPosition="3" size="1220,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,207" zPosition="3" size="1220,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,172" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,108" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,207" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,172" zPosition="3" size="1220,5" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_date" />
     <panel name="template_digitalclock_widget" />
@@ -1547,9 +1547,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel name="timeline_background" position="30,176" size="1220,30" backgroundColor="selectedFG" transparent="1" />
     <widget name="timeline_text" position="30,176" size="1220,28" font="Regular;20" foregroundColor="yellow" backgroundColor="background" zPosition="1" transparent="1" />
     <widget name="timeline_now" position="20,207" zPosition="1" size="16,472" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,108" zPosition="3" size="1220,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,207" zPosition="3" size="1220,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,172" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,108" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,207" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,172" zPosition="3" size="1220,5" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_date" />
     <panel name="template_digitalclock_widget" />
@@ -1581,7 +1581,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <widget name="list" position="30,60" size="770,390" itemHeight="28" zPosition="25" CoolFont="Regular;22" CoolEventFont="Regular;22" CoolDayPos="0" CoolDaySize="50" CoolTimePos="70" CoolTimeSize="70" CoolEventPos="150" CoolDayColor="orange" CoolTimeColor="selectedFG" CoolEventColor="white" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolBackColor="black" CoolBackColorSel="black" backgroundColor="black" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,501" zPosition="3" size="1220,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,501" zPosition="3" size="1220,5" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_date" />
     <panel name="template_digitalclock_widget" />
@@ -1614,7 +1614,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Event" render="UltimateRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="30,112" size="770,230" font="Regular; 22" backgroundColor="black" transparent="1" valign="top" zPosition="1">
   <convert type="EventName">ExtendedDescription</convert>
 </widget>
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
     <panel name="template_pixmap_line_hor_343,1220" />
     <widget name="list" position="30,350" size="1220,325" itemHeight="28" zPosition="3" CoolFont="Regular;22" CoolServiceFont="Regular;22" CoolEventFont="Regular;22" CoolDayPos="0" CoolDayHPos="2" CoolDatePos="70" CoolDateHPos="2" CoolTimePos="150" CoolTimeHPos="2" CoolServicePos="230" CoolServiceHPos="2" CoolEventPos="500" CoolEventHPos="2" CoolDaySize="50" CoolDateSize="70" CoolTimeSize="70" CoolServiceSize="280" CoolEventSize="700" CoolServiceColor="selectedFG" CoolEventColor="white" CoolDateColor="white" CoolTimeColor="selectedFG" CoolDayColor="yellow" CoolBackColor="black" CoolBackColorSel="black" CoolRecEventBackColor="black" CoolRecAlarmCol="yellow" CoolRecColor="red" backgroundColor="black" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
@@ -1651,7 +1651,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <convert type="EventName">ExtendedDescription</convert>
 </widget>
     <widget name="timeline_now" position="20,342" zPosition="1" size="16,333" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
     <panel name="template_pixmap_line_hor_343,1220" />
     <widget name="list" position="30,350" size="1220,325" CoolNoPiconBackCol="black" CoolPiconBackCol="verydarkgrey" CoolBorderColR="verydarkgrey" CoolBorderColL="verydarkgrey" scrollbarMode="showNever" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
@@ -1690,9 +1690,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="timeline_now" position="20,342" zPosition="1" size="16,333" pixmap="Ultimate/epg/timeline-now-xl.png" alphatest="blend" />
     <eLabel name="timeline_background" position="30,305" size="1220,28" backgroundColor="selectedFG" transparent="1" />
     <widget name="timeline_text" position="30,305" size="1220,28" font="Regular;20" foregroundColor="yellow" backgroundColor="background" zPosition="1" transparent="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,293" zPosition="3" size="770,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,293" zPosition="3" size="770,5" />
     <panel name="template_pixmap_line_hor_343,1220" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="31,100" zPosition="3" size="770,5" />
     <widget name="list" position="30,350" size="1220,325" CoolNoPiconBackCol="black" CoolPiconBackCol="verydarkgrey" CoolBorderColR="verydarkgrey" CoolBorderColL="verydarkgrey" scrollbarMode="showNever" transparent="1" />
     <widget source="Title" render="Label" position="860,689" size="230,25" zPosition="3" font="Regular;20" foregroundColor="verygrey" backgroundColor="black" halign="left" transparent="1" />
     <panel name="template_name_red_o_blue" />
@@ -1773,8 +1773,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <panel name="template_pixmap_rahmen" />
   <panel name="template_pixmap_Userlogo" />
   <panel name="template_pixmap_center" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="400,90" zPosition="3" size="850,5" alphatest="blend" transparent="1" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" position="30,303" zPosition="3" size="1220,5" alphatest="blend" transparent="1" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="400,90" zPosition="3" size="850,5" alphatest="blend" transparent="1" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="30,303" zPosition="3" size="1220,5" alphatest="blend" transparent="1" />
 </screen>
   <screen name="CoolChannelGuide" position="0,0" size="1280,720" title="Cool Channel Guide" backgroundColor="black" flags="wfNoBorder">
     <eLabel text="Cool Channel Guide" position="480,3" size="420,44" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" />
@@ -2674,7 +2674,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel name="layer2" position="460,5" size="230,142" zPosition="-10" backgroundColor="selectedFG" />
     <widget name="chPicon" position="465,10" size="220,132" transparent="1" zPosition="1" alphatest="blend" />
     <widget name="chName" position="10,5" size="440,50" halign="center" valign="bottom" font="Regular;34" backgroundColor="background" foregroundColor="selectedFG" noWrap="1" transparent="1" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="10,60" zPosition="3" size="440,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="10,60" zPosition="3" size="440,5" />
     <widget name="number" position="75,70" size="120,40" halign="left" font="Regular; 28" backgroundColor="background" transparent="1" />
     <widget name="chNum" position="195,70" size="180,40" halign="right" font="Regular; 28" backgroundColor="background" transparent="1" />
     <widget name="bouquet" position="75,105" size="120,40" halign="left" font="Regular; 28" backgroundColor="background" transparent="1" />
@@ -2750,8 +2750,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="NextEPG" font="Regular; 36" position="260,666" size="800,50" backgroundColor="background" halign="left" valign="top" transparent="1" zPosition="3" />
     <widget name="NowTime" font="Regular; 36" position="1070,595" size="180,50" backgroundColor="background" halign="right" transparent="1" zPosition="3" />
     <widget name="NextTime" font="Regular; 36" position="1070,666" size="180,50" backgroundColor="background" halign="right" transparent="1" zPosition="3" />
-    <ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,492" zPosition="-25" size="1280,230" />
-    <ePixmap pixmap="Ultimate/Skinparts/Center/Center_Dark.png" position="25,545" zPosition="-20" size="1230,177" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,492" zPosition="-25" size="1280,230" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Center/Center_Dark.png" position="25,545" zPosition="-20" size="1230,177" />
     <panel name="template_pixmap_line_hor_584,1220" />
     <widget source="global.CurrentTime" render="UltimateWatches" position="1220,496" size="44,44" zPosition="4" foregroundColor="blue" alphatest="blend">
       <convert type="UltimateAnalogClock">secHand</convert>
@@ -2762,7 +2762,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="global.CurrentTime" render="UltimateWatches" position="1225,501" size="34,34" zPosition="2" foregroundColor="red" alphatest="blend">
       <convert type="UltimateAnalogClock">hourHand</convert>
     </widget>
-    <ePixmap pixmap="Ultimate/Skinparts/User_Logos/User_Logo.png" position="5,494" size="150,48" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/User_Logos/User_Logo.png" position="5,494" size="150,48" zPosition="1" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="940,496" size="240,44" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
     </widget>
@@ -2778,8 +2778,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="NextEPG" font="Regular; 36" position="260,666" size="800,50" backgroundColor="background" halign="left" valign="top" transparent="1" zPosition="3" />
     <widget name="NowTime" font="Regular; 36" position="1070,595" size="180,50" backgroundColor="background" halign="right" transparent="1" zPosition="3" />
     <widget name="NextTime" font="Regular; 36" position="1070,666" size="180,50" backgroundColor="background" halign="right" transparent="1" zPosition="3" />
-    <ePixmap pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Org.png" position="0,492" zPosition="-25" size="1280,230" />
-    <ePixmap pixmap="Ultimate/Skinparts/Center/Center_Dark.png" position="25,545" zPosition="-20" size="1230,177" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,492" zPosition="-25" size="1280,230" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Center/Center_Dark.png" position="25,545" zPosition="-20" size="1230,177" />
     <panel name="template_pixmap_line_hor_584,1220" />
     <widget source="global.CurrentTime" render="UltimateWatches" position="1220,496" size="44,44" zPosition="4" foregroundColor="blue" alphatest="blend">
       <convert type="UltimateAnalogClock">secHand</convert>
@@ -2790,7 +2790,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="global.CurrentTime" render="UltimateWatches" position="1225,501" size="34,34" zPosition="2" foregroundColor="red" alphatest="blend">
       <convert type="UltimateAnalogClock">hourHand</convert>
     </widget>
-    <ePixmap pixmap="Ultimate/Skinparts/User_Logos/User_Logo.png" position="5,494" size="150,48" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/User_Logos/User_Logo.png" position="5,494" size="150,48" zPosition="1" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="940,496" size="240,44" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
     </widget>
@@ -3528,7 +3528,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
-    <ePixmap position="892,57" size="361,209" zPosition="12" pixmap="Ultimate/Skinparts/Pig_Smal/Pig_Smal_Org.png" transparent="1" alphatest="blend" />
+    <ePixmap position="892,57" size="361,209" zPosition="12" pixmap="Ultimate/BG-Pixmaps/Pig_Smal/Pig_Smal_Org.png" transparent="1" alphatest="blend" />
     <widget name="title" position="23,4" size="470,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget name="headline" position="30,4" size="470,44" valign="center" font="Regular; 32" foregroundColor="red" transparent="1" halign="left" />
     <widget name="version" position="901,270" size="350,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
@@ -3999,7 +3999,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="855,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1046,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,121" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,121" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_date" />
@@ -4080,7 +4080,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,121" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,121" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_date" />
@@ -4161,7 +4161,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,121" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,121" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_date" />
@@ -4242,7 +4242,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,120" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,120" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_date" />
@@ -4283,7 +4283,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_date" />
@@ -4304,7 +4304,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_name_red_green" />
@@ -4325,7 +4325,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_name_red_green" />
@@ -4346,7 +4346,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_name_red_green" />
@@ -4367,7 +4367,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_name_red_green" />
@@ -4388,7 +4388,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1050,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
     <ePixmap position="1145,689" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,95" zPosition="2" size="760,5" />
     <panel name="template_pixmap_line_hor_603,1220" />
     <panel name="template_pixmap_vert_line_805" />
     <panel name="template_name_red_green" />
@@ -4626,8 +4626,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/ok.png" transparent="1" alphatest="blend" />
     <ePixmap position="1045,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1140,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,122" zPosition="2" size="590,5" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="660,122" zPosition="2" size="590,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,122" zPosition="2" size="590,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="660,122" zPosition="2" size="590,5" />
     <panel name="template_date" />
     <panel name="template_pixmap_vert_line_628" />
     <panel name="template_digitalclock_widget" />
@@ -4710,7 +4710,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen name="ElektroNASrun" position="center,center" size="600,100" title="" zPosition="1">
     <eLabel name="a" position="1,1" size="598,98" backgroundColor="background" zPosition="-9" />
-    <ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="10,60" zPosition="2" size="580,5" />
+    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="10,60" zPosition="2" size="580,5" />
     <widget source="Title" render="Label" position="30,8" size="525,50" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget source="TextTest" render="Label" position="30,65" size="550,30" halign="center" valign="center" font="Regular;20" backgroundColor="background" transparent="1" />
   </screen>
@@ -5081,59 +5081,118 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/pplayer.png" transparent="1" alphatest="blend" />
   </screen>
   <!-- PicturePlayer -->
-  <!-- XMLTV Import -->
-  <screen name="EPGImportConfig" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text="EPG Import Configuration" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,400" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
-    <widget name="statusbar" position="30,622" size="700,34" font="Regular;20" foregroundColor="selectedFG" />
-    <widget name="status" position="30,550" size="700,60" font="Regular;20" foregroundColor="selectedFG" />
-    <panel name="template_date" />
+    <!-- XMLTV Import -->
+  <screen name="EPGImportConfig" position="0,0" size="1280,720" title="EPG Import Configuration" flags="wfNoBorder" backgroundColor="background">
+    <widget name="config" position="30,60" size="700,450" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <widget name="statusbar" position="30,622" size="700,34" font="Regular;20" foregroundColor="selectedFG" transparent="1" />
+    <widget name="status" position="30,550" size="700,60" font="Regular;20" foregroundColor="selectedFG" transparent="1" />
+    <panel name="template_title_date" />
     <panel name="template_source_red_o_blue" />
     <panel name="template_info_menu_exit_1280" />
     <panel name="template_pixmap_vert_line_738" />
     <panel name="template_pig_menu" />
-    <panel name="template_pixmap_pig_menu" />  
+    <panel name="template_pixmap_pig_menu" />
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
     <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/epg_epgimporter.png" transparent="1" alphatest="blend" />
   </screen>
-  <screen name="EPGImportSources" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text="EPG Import Sources" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
-    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" />
-    <panel name="template_date" />
-	<panel name="ScrollBarTemplate size=700,610" />
-    <panel name="template_source_red_o_yellow" />
+  <screen name="EPGImportSources" position="0,0" size="1280,720" title="EPG Import Sources" backgroundColor="background">
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" backgroundColor="background" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="433,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_yellow" position="462,689" size="250,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_title_date" />
+    <panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_exit_1280" />
     <panel name="template_pixmap_vert_line_738" />
     <panel name="template_pig_menu" />
-    <panel name="template_pixmap_pig_menu" />  
+    <panel name="template_pixmap_pig_menu" />
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
     <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/epg_epgimporter.png" transparent="1" alphatest="blend" />
   </screen>
-  <screen name="EPGImportProfile" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text="Days Profile" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+  <screen name="EPGImportProfile" position="0,0" size="1280,720" title="Days Profile" flags="wfNoBorder" backgroundColor="background">
     <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
-    <panel name="template_date" />
-	<panel name="ScrollBarTemplate size=700,610" />
+    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_title_date" />
+    <panel name="ScrollBarTemplate size=700,610" />
+    <panel name="template_exit_1280" />
+    <panel name="template_pixmap_vert_line_738" />
+    <panel name="template_pig_menu" />
+    <panel name="template_pixmap_pig_menu" />
+    <panel name="template_pixmap_line_ServiceName_pig_menu" />
+    <panel name="template_digitalclock_widget" />
+    <panel name="template_pixmap_rahmen" />
+    <panel name="template_pixmap_Userlogo" />
+    <panel name="template_pixmap_center" />
+    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/epg_epgimporter.png" transparent="1" alphatest="blend" />
+  </screen>
+  <screen name="EPGImportLog" position="0,0" size="1280,720" title="EPG Import Log" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <panel name="template_title_date" />
+    <panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_green" />
     <panel name="template_exit_1280" />
     <panel name="template_pixmap_vert_line_738" />
     <panel name="template_pig_menu" />
-    <panel name="template_pixmap_pig_menu" />  
+    <panel name="template_pixmap_pig_menu" />
     <panel name="template_pixmap_line_ServiceName_pig_menu" />
     <panel name="template_digitalclock_widget" />
     <panel name="template_pixmap_rahmen" />
-    
+    <panel name="template_pixmap_Userlogo" />
+    <panel name="template_pixmap_center" />
+    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/epg_epgimporter.png" transparent="1" alphatest="blend" />
+  </screen>
+  <screen name="filtersServicesSetup" position="0,0" size="1280,720" title="Ignore services list" flags="wfNoBorder" backgroundColor="background">
+  <widget source="list" render="Listbox" position="30,60" size="700,420" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1">
+    <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (5, 5), size = (400, 20), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+						MultiContentEntryText(pos = (5, 30), size = (400, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
+						MultiContentEntryText(pos = (0, 20), size = (650, 20), font = 2, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
+					],
+				 "fonts": [gFont("Regular", 20), gFont("Regular", 18), gFont("Regular", 16)],
+				 "itemHeight": 60
+				}
+			</convert>
+  </widget>
+  <widget source="introduction" render="Label" position="30,490" size="700,175" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+  <panel name="template_title_date" />
+  <panel name="ScrollBarTemplate size=700,420" />
+  <panel name="template_source_red_o_blue" />
+  <panel name="template_exit_1280" />
+  <panel name="template_pixmap_vert_line_738" />
+  <panel name="template_pig_menu" />
+  <panel name="template_pixmap_pig_menu" />
+  <panel name="template_pixmap_line_ServiceName_pig_menu" />
+  <panel name="template_digitalclock_widget" />
+  <panel name="template_pixmap_rahmen" />
+  <panel name="template_pixmap_Userlogo" />
+  <panel name="template_pixmap_center" />
+  <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/epg_epgimporter.png" transparent="1" alphatest="blend" />
+</screen>
+  <screen name="filtersServicesSelection" position="0,0" size="1280,720" title="Select service to add..." flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <panel name="template_title_date" />
+    <panel name="ScrollBarTemplate size=700,610" />
+    <panel name="template_name_long_red_o_blue" />
+    <panel name="template_exit_1280" />
+    <panel name="template_pixmap_vert_line_738" />
+    <panel name="template_pig_menu" />
+    <panel name="template_pixmap_pig_menu" />
+    <panel name="template_pixmap_line_ServiceName_pig_menu" />
+    <panel name="template_digitalclock_widget" />
+    <panel name="template_pixmap_rahmen" />
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
     <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/epg_epgimporter.png" transparent="1" alphatest="blend" />
@@ -5972,11 +6031,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <widget name="sort_right" position="650,115" size="100,30" font="Regular;18" halign="left" foregroundColor="selectedFG" backgroundColor="background" transparent="1" />
   <widget name="list_left" position="30,160" size="600,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
   <widget name="list_right" position="650,160" size="600,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,110" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,150" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,110" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,150" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="630,53" zPosition="2" size="21,623" alphatest="blend" transparent="1" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,110" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,150" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,110" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,150" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="630,53" zPosition="2" size="21,623" alphatest="blend" transparent="1" />
   <panel name="template_menu_ok_exit_1280" />
   <panel name="template_pixmap_line_hor_File_Commander" />
   <panel name="template_name_red_o_blue" />
@@ -6020,11 +6079,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <widget name="sort_right" position="650,115" size="100,30" font="Regular;18" halign="left" foregroundColor="selectedFG" backgroundColor="background" transparent="1" />
   <widget name="list_left" position="30,160" size="600,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
   <widget name="list_right" position="650,160" size="600,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,110" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,150" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,110" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,150" zPosition="2" size="600,5" />
-<ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="630,53" zPosition="2" size="21,623" alphatest="blend" transparent="1" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,110" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,150" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,110" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="650,150" zPosition="2" size="600,5" />
+<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="630,53" zPosition="2" size="21,623" alphatest="blend" transparent="1" />
   <panel name="template_menu_ok_exit_1280" />
   <panel name="template_pixmap_line_hor_File_Commander" />
   <panel name="template_name_red_o_blue" />
@@ -6259,7 +6318,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="ImageViewer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="background" />
     <widget name="image" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
-    <ePixmap position="0,0" size="1280,50" zPosition="1" pixmap="Ultimate/Skinparts/Rahmen/Rahmen_Black.png" transparent="1" alphatest="blend" />
+    <ePixmap position="0,0" size="1280,50" zPosition="1" pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Black.png" transparent="1" alphatest="blend" />
     <widget name="status" position="5,1" size="48,48" zPosition="2" pixmap="Ultimate/skin_default/icons/record.png" alphatest="blend" />
     <widget name="icon" position="60,5" size="163,40" zPosition="2" pixmap="Ultimate/mmp/dvr.png" alphatest="blend" />
     <widget source="message" render="Label" position="213,5" size="1060,40" font="Regular;20" halign="left" foregroundColor="selectedFG" backgroundColor="background" zPosition="2" noWrap="1" transparent="1" />
@@ -6301,7 +6360,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <widget name="info2" position="550,600" size="700,30" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="1" />
   <widget name="statusbar" position="550,560" size="700,30" font="Regular;20" foregroundColor="green" transparent="2" zPosition="2" />
   <ePixmap position="1200,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
   <panel name="template_pig_left" />
   <panel name="template_pixmap_pig_left" />
   <panel name="template_date" />
@@ -6322,7 +6381,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <widget name="text_clear" position="545,60" size="710,610" font="Regular;18" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="1" />
   <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
   <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-  <ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
   <panel name="template_pig_left" />
   <panel name="template_pixmap_pig_left" />
   <panel name="template_date" />
@@ -6406,7 +6465,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <widget name="version" position="37,398" size="100,20" halign="left" font="Regular;16" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="6" />
   <widget name="list" position="545,60" size="710,580" itemHeight="40" backgroundColor="background" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
   <widget name="path" position="550,645" size="700,30" font="Regular;22" halign="right" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="3" />
-  <ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
   <panel name="template_pig_left" />
   <panel name="template_pixmap_pig_left" />
   <panel name="template_date" />
@@ -6426,7 +6485,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <ePixmap position="32,390" size="180,248" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/grid.png" alphatest="blend" zPosition="5" />
   <widget name="version" position="37,398" size="100,20" halign="left" font="Regular;16" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="6" />
   <widget name="list" position="545,60" size="710,580" itemHeight="40" backgroundColor="background" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
-  <ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
   <panel name="template_pig_left" />
   <panel name="template_pixmap_pig_left" />
   <panel name="template_date" />
@@ -6456,7 +6515,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <ePixmap position="1050,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
   <ePixmap position="1125,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/info.png" transparent="1" alphatest="blend" />
   <ePixmap position="1200,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,360" alphatest="blend" transparent="1" zPosition="2" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,360" alphatest="blend" transparent="1" zPosition="2" />
   <panel name="template_pig_left" />
   <panel name="template_pixmap_pig_left" />
   <panel name="template_date" />
@@ -6478,7 +6537,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <widget name="live" position="725,60" size="300,50" font="Regular;30" halign="left" valign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="1" />
   <widget name="list" position="545,120" size="710,550" font="Regular;20" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" zPosition="1" />
   <ePixmap position="1200,691" size="64,26" zPosition="10" pixmap="Ultimate/buttons/help.png" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="Ultimate/Skinparts/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
+  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Vert/Line_Vert_Org.png" position="524,53" size="21,623" alphatest="blend" transparent="1" zPosition="2" />
   <panel name="template_pig_left" />
   <panel name="template_pixmap_pig_left" />
   <panel name="template_date" />
