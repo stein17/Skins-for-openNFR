@@ -265,6 +265,14 @@
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
+    <screen name="template_menu_buttons">
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="green" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="yellow" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="blue" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+ </screen>
   <screen name="template_name_long_red_o_blue">
  <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="11,689" size="25,25" alphatest="blend" transparent="1" />
   <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="261,689" size="25,25" alphatest="blend" transparent="1" />
