@@ -1716,6 +1716,7 @@
   <ePixmap pixmap="icons/memory.png" position="30,816" size="40,40" alphatest="blend" />
   <ePixmap pixmap="icons/hard-disk.png" position="30,870" size="40,40" alphatest="blend" />
   <ePixmap pixmap="icons/cpuload.png" position="30,924" size="40,40" alphatest="blend" />
+  <panel name="template_menu_buttons" />
   </screen> 
 
   <!-- CutListEditor FHD -->
