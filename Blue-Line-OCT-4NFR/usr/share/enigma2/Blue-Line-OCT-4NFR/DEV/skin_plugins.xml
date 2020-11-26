@@ -8165,7 +8165,7 @@ self['config'].l.setSeperation(int(300*f))
   </widget>
   <ePixmap pixmap="Blue-Line-OCT-4NFR/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
   <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-  <widget name="list" position="30,130" size="855,800" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" transparent="1" />
+  <widget name="list" position="30,130" size="855,800" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1"  />
   <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
@@ -8213,7 +8213,7 @@ self['config'].l.setSeperation(int(300*f))
   </widget>
   <ePixmap pixmap="Blue-Line-OCT-4NFR/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
   <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-  <widget source="list" render="Listbox" position="30,130" size="855,550" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" transparent="1">
+  <widget source="list" render="Listbox" position="30,130" size="855,550" backgroundColor="background" scrollbarMode="showOnDemand" transparent="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (25, 5), size = (500, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), 
