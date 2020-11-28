@@ -137,21 +137,6 @@
     <convert type="ConditionalShowHide" />
   </widget>
   <!--  Caid Info -->
-<widget font="Regular;27" backgroundColor="background" halign="left" position="1223,890" render="Label" size="175,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="AMBEmuInfo">Emu</convert>
-  </widget>
-  <widget font="Regular; 27" backgroundColor="background" halign="left" position="1400,890" render="Label" size="500,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="AMBEmuInfo">Address</convert>
-  </widget>
-  <widget font="Regular; 27" backgroundColor="background" halign="left" position="1770,920" render="Label" size="125,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="AMBEmuInfo">Hops</convert>
-  </widget>
-  <widget font="Regular; 27" backgroundColor="background" halign="left" position="1525,920" render="Label" size="245,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="AMBEmuInfo">Ecmtime</convert>
-  </widget>
-  <widget font="Regular; 27" backgroundColor="background" halign="left" position="1223,920" render="Label" size="300,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" noWrap="1">
-    <convert type="AMBEmuInfo">Caid</convert>
-  </widget>
 
   <!--  TUNERTYPE -->
   <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1285,968" valign="center" size="90,30" font="Regular; 30" backgroundColor="background" foregroundColor="white" transparent="1" halign="left">
@@ -210,6 +195,7 @@
   <widget source="session.CurrentService" render="Label" position="1223,860" size="674,30" zPosition="1" font="Regular; 27" halign="left" valign="center" noWrap="1" backgroundColor="background" foregroundColor="white" transparent="1">
     <convert type="AMBCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
   </widget>
+     <!--  Caid Info -->
   <widget font="Regular;27" backgroundColor="background" halign="left" position="1223,890" render="Label" size="175,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
     <convert type="AMBEmuInfo">Emu</convert>
   </widget>
@@ -248,11 +234,6 @@
     <convert type="ValueRange">1,1</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <panel name="template_crypt_tuner_info" />
-  <panel name="template_fullscreen" />
-  <panel name="template_pig_setup" />
-  <panel name="template_pixmap_BG" />
-</screen>
   <panel name="template_crypt_tuner_info" />
   <panel name="template_fullscreen" />
   <panel name="template_pig_setup" />

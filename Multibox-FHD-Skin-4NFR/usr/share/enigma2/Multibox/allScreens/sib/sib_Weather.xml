@@ -184,10 +184,10 @@
   <widget source="session.CurrentService" render="Label" position="1223,710" size="674,30" zPosition="1" font="Regular; 27" halign="left" valign="center" backgroundColor="background" foregroundColor="white" transparent="1">
     <convert type="AMBReceiverInfo">UsbInfo</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1223,740" size="674,30" zPosition="1" font="Regular; 27" halign="left" valign="center" backgroundColor="background" foregroundColor="white" transparant="1">
+  <widget source="session.CurrentService" render="Label" position="1223,740" size="674,30" zPosition="3" font="Regular; 27" halign="left" valign="center" backgroundColor="transparent" foregroundColor="white" transparant="1">
     <convert type="AMBReceiverInfo">SwapFree</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1223,770" size="674,30" zPosition="1" font="Regular; 27" halign="left" valign="center" backgroundColor="background" foregroundColor="white" transparant="1">
+  <widget source="session.CurrentService" render="Label" alphatest="blend" position="1223,770" size="674,30" zPosition="1" font="Regular; 27" halign="left" valign="center" backgroundColor="background" foregroundColor="white" transparant="1">
     <convert type="AMBReceiverInfo">MemFree</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1223,860" size="674,30" zPosition="1" font="Regular; 27" halign="left" valign="center" noWrap="1" backgroundColor="background" foregroundColor="white" transparent="1">
@@ -209,9 +209,9 @@
   <widget font="Regular; 27" backgroundColor="background" halign="left" position="1223,920" render="Label" size="300,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" noWrap="1">
     <convert type="AMBEmuInfo">Caid</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1">
+<!--   <widget source="session.CurrentService" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1">
     <convert type="ServiceName">Provider</convert>
-  </widget>
+  </widget> -->
   <widget source="session.CurrentService" render="Pixmap" pixmap="icons/iptv.png" alphatest="blend" position="1226,957" size="50,50" zPosition="2" transparent="1">
     <convert type="ServiceInfo">IsStream</convert>
     <convert type="ConditionalShowHide">
