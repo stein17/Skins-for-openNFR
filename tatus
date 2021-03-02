@@ -1,0 +1,1370 @@
+[33mcommit 5d76039f469c738761fdf091b6db5a241360815e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Mar 2 10:50:56 2021 +0100
+
+    Update NFRSTBInfo.py
+    
+    Delete NFRSTBInfo.py
+
+[33mcommit 7019d02477c433743ca99aed9ca4e491b834cc5a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Mar 2 10:46:36 2021 +0100
+
+    add new update AX_Blue_FHD_4NFR
+
+[33mcommit a4f010094ee2367f34601f9e969382dc26af0390[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Mar 2 10:32:44 2021 +0100
+
+    add new update  openNFR-skin-2018
+
+[33mcommit 81e6bacddfdcb5d2d5d2b31dd838db3310a480a2[m
+Author: torwald12 <torwald12@team.nachtfalke.biz>
+Date:   Thu Dec 3 19:57:56 2020 +0100
+
+    add openNFR-skin to master
+
+[33mcommit a9efc1a68b7af7114ad041169ad96d6bd2633a9e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:22:02 2020 +0100
+
+    Add files via upload
+
+[33mcommit 5bb7df5c6a60fc01bbc5ff45b7d3265385f0e92f[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:20:09 2020 +0100
+
+    Delete Steampunk_Player.png
+
+[33mcommit daa3a121dff1cbf694bcd6d98695e9ea65bdcad0[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:20:00 2020 +0100
+
+    Delete Steampunk_Infobar.png
+
+[33mcommit c78bda51cbd99a61821f2b817d3b1f8ea6e32dcc[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:19:48 2020 +0100
+
+    Delete Steampunk_Clock.png
+
+[33mcommit 20704f8428acb9d53a126022d9f8929d1b40cf99[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:19:38 2020 +0100
+
+    Delete Steampunk_Background_Setup_no_pig.png
+
+[33mcommit 8baeddf0387ec53a332a7e1482aa308d1a67a9b9[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:19:29 2020 +0100
+
+    Delete Steampunk_Background_Setup_blank_Textfield.png
+
+[33mcommit 81dae99828733bbeb739eb6084fc64f894376eaa[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:19:18 2020 +0100
+
+    Delete Steampunk_Background_Setup_blank.png
+
+[33mcommit 1404ea33802295bf0259c5c4beb66ebc845063f9[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:19:09 2020 +0100
+
+    Delete Steampunk_Background_Quick_blank.png
+
+[33mcommit a0af07907defc87235ceec6265c339f1b60e9f62[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:18:58 2020 +0100
+
+    Delete Steampunk_Background_Menu_blank.png
+
+[33mcommit 00881e157a8a0adc31d3e4b9c71aa805bf8bbd66[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:18:49 2020 +0100
+
+    Delete Steampunk_Background_EPG_Pig.png
+
+[33mcommit 874264b68f758bbf50d4138a2a4327bc1ce89792[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:18:39 2020 +0100
+
+    Delete Steampunk_Background_EPG.png
+
+[33mcommit 2a811ff56040248c553efc68750b672e2c982543[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:18:28 2020 +0100
+
+    Delete Steampunk_Background_Channel_blank_Textfield.png
+
+[33mcommit fd8daf57d0ad1d493bd276c8010e2fd52729cdd3[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:18:18 2020 +0100
+
+    Delete Steampunk_Background_Channel_blank.png
+
+[33mcommit 8b0a29eda860cc7fe501fe061504e4a69b92259e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:18:08 2020 +0100
+
+    Delete Steampunk_Background_3_Fields.png
+
+[33mcommit 2a1ffd599e060f88279022688cadd4304d07c41e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:17:57 2020 +0100
+
+    Delete Steampunk_Background.png
+
+[33mcommit 2c0588f1b9a52a8e17a5d94115d0d4b3aa6d1e8a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:17:48 2020 +0100
+
+    Delete Scrollbar.png
+
+[33mcommit 3c9e4e815dc1e48636d56171431a30040bf80013[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:17:36 2020 +0100
+
+    Delete SNR_AGC.png
+
+[33mcommit 4863e67026ac1c9c4ffca96b90e8007055c430c3[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:17:26 2020 +0100
+
+    Delete Progress_setup.png
+
+[33mcommit 5509a6a32b48cdd16ca6edc6cba168cf2ff58a5d[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:17:16 2020 +0100
+
+    Delete Progress_menu.png
+
+[33mcommit eb336fbcbed1f2d50cf803ca84da4fbe1d7387fc[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:17:06 2020 +0100
+
+    Delete Progress_channel.png
+
+[33mcommit b08f9e4adfce56d9e6ca2f7636c667c5788b707a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:16:55 2020 +0100
+
+    Delete Progress_SNR.png
+
+[33mcommit 01eaaab3bbf151efbae8041a30553d7b3a6658af[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:16:45 2020 +0100
+
+    Delete Progress_Infobar.png
+
+[33mcommit 150c0c0b82335e3652f8f77702f2438c920de3db[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:16:35 2020 +0100
+
+    Delete Progress_CS.png
+
+[33mcommit e402e8cfa53c6794b6e60701e0558f3e209014ec[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:16:26 2020 +0100
+
+    Delete Progress_Background_Infobar.png
+
+[33mcommit c9b300583f2293148217aaf2d934362dd351d8f6[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:16:15 2020 +0100
+
+    Delete Progress_AGC.png
+
+[33mcommit 359d67427da3f0e4680f1aa34fc0fd625242e5f5[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:16:06 2020 +0100
+
+    Delete PTClock.png
+
+[33mcommit 114fd1b592fc512f3a19a2fa8a7bccb1a5e04de8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:15:56 2020 +0100
+
+    Delete Line_Hor_680.png
+
+[33mcommit 53a1dc7efefdc67efd0a5ec0602243b2c815816b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:15:45 2020 +0100
+
+    Delete Line_Hor.png
+
+[33mcommit 05d28ed3d3230deaa8073412fb1c8a35f5c0e5de[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:15:35 2020 +0100
+
+    Delete 4_Day_Background.png
+
+[33mcommit 1b341718c53d8011f0d2a41345db5552b4d874d9[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:15:22 2020 +0100
+
+    Delete 4_Day_Back.png
+
+[33mcommit 664ec1ad0993aacc0801a90e7b2892570aafca68[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:15:12 2020 +0100
+
+    Delete Progress_Infobar_Red.png
+
+[33mcommit 5b34c7f8716e05bd44eb6e1bcee73da25996c6f5[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:15:01 2020 +0100
+
+    Delete Progress_Infobar_Cyan.png
+
+[33mcommit e7fb33c9fdcd357611bd7993c920d4f10d2c4c5e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:14:49 2020 +0100
+
+    Delete Progress_Infobar_Color.png
+
+[33mcommit d24a83bd2743bd8ae7c36edda7cb9ddf162dbd5d[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:14:39 2020 +0100
+
+    Delete Progress_CSC.png
+
+[33mcommit 20c3b5597d5b7c0e12129902e74ff4b0f622d99c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:14:21 2020 +0100
+
+    Delete second.png
+
+[33mcommit 5d889aa26bd863c278447647a7dcfa37586a3cc8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:14:08 2020 +0100
+
+    Delete 9.png
+
+[33mcommit 2f5a703a45c13b10a049a9f0ef549d25e7f8fb52[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:13:48 2020 +0100
+
+    Delete 8.png
+
+[33mcommit 4bc65cf88042603b0d48da58c617a32caeea7824[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:13:35 2020 +0100
+
+    Delete 7.png
+
+[33mcommit 6102f185b9af2121e995dc5c8a10d61f4119614b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:13:22 2020 +0100
+
+    Delete 6.png
+
+[33mcommit 56cd3e9661f4e740c232a24eef9e86a65c48da35[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:13:10 2020 +0100
+
+    Delete 5.png
+
+[33mcommit 21bf57dc9ec3c6034b4523eb398122404a2403cc[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:12:58 2020 +0100
+
+    Delete 4.png
+
+[33mcommit 0f90b0906e75e30abe91548663e3e4eb3106ded5[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:12:45 2020 +0100
+
+    Delete 3.png
+
+[33mcommit 8a9889a6f76cc19713a98d778bc4cd957f0ce823[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:12:33 2020 +0100
+
+    Delete 2.png
+
+[33mcommit 11795cedc865bd089a625cf64aad9281a4051a45[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:12:06 2020 +0100
+
+    Delete 1.png
+
+[33mcommit 69b8cff1b4cca7b1a35f16c0197522a889ae3f6f[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:11:54 2020 +0100
+
+    Delete 0.png
+
+[33mcommit c663c6912445b708f69fe47626ed4a713317b047[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:11:37 2020 +0100
+
+    Delete Steampunk_Clock_F.png
+
+[33mcommit b9c8fc6094271b798c4bf3da0bade4d235a4ca24[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:11:24 2020 +0100
+
+    Delete Steampunk_Clock_E.png
+
+[33mcommit d4783c8a0bdbd8cf45ea6053880b91e2408302b7[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:11:09 2020 +0100
+
+    Delete Steampunk_Clock_D.png
+
+[33mcommit 4c27303b23a254efbe35494429788ff74c5c8e27[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:10:59 2020 +0100
+
+    Delete Steampunk_Clock_C.png
+
+[33mcommit 6405b09df2bc47c5d4e7f7d60b40a45cc46d0d14[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:10:49 2020 +0100
+
+    Delete Steampunk_Clock_B.png
+
+[33mcommit 53485cbaa3e8591dc0f3d59a384bdb24284bab2f[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:10:38 2020 +0100
+
+    Delete Steampunk_Clock_A.png
+
+[33mcommit b0b77096ea6c79535421f31c58ac1b447f334ba6[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:10:21 2020 +0100
+
+    Delete Steampunk_Background_Red_Dark.png
+
+[33mcommit c51372d4a00e9ca1a89382943a1def8f8bf79cd7[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:10:09 2020 +0100
+
+    Delete Steampunk_Background_Red.png
+
+[33mcommit fd8933ba73a13facf56cc4abdf05ea634e941beb[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:09:58 2020 +0100
+
+    Delete Steampunk_Background_Grey_Dark.png
+
+[33mcommit 2501aab193fd7d30aace8fe7f61ea19419242576[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:09:48 2020 +0100
+
+    Delete Steampunk_Background_Grey.png
+
+[33mcommit 984c34c9f7495cdf93dd579b561daaa67c92f3da[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:09:37 2020 +0100
+
+    Delete Steampunk_Background_Cyan_Dark.png
+
+[33mcommit d2a7ca4d37c24bf24cd8fb628af49d05ea2e9c49[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:09:27 2020 +0100
+
+    Delete Steampunk_Background_Cyan.png
+
+[33mcommit 1e6ebbc4b2a28ec81fac423795d6630edb2d2009[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:09:17 2020 +0100
+
+    Delete Steampunk_Background_Brown_Dark.png
+
+[33mcommit b531483c09f5653ce7df2833c2fb14dc7440d22a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:09:07 2020 +0100
+
+    Delete Steampunk_Background_Brown.png
+
+[33mcommit 384e4ff9b463b5f95a50df02c4be6509e8948f3c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:08:54 2020 +0100
+
+    Delete Steampunk_Background_Blue_Dark.png
+
+[33mcommit 124b7b76962b41e27170c0b1381d1edbe7d40b81[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:08:40 2020 +0100
+
+    Delete Steampunk_Background_Blue.png
+
+[33mcommit 39d33012c44236bd499139c55f80657d8a08e41d[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 12:06:27 2020 +0100
+
+    Add files via upload
+
+[33mcommit 69ba9dc690c74abfb33a4367f08281cc6ebca16b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 11:58:36 2020 +0100
+
+    Add files via upload
+
+[33mcommit 435c014f57801099047d4ed7102ba7b749a1a68c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 11:57:30 2020 +0100
+
+    Add files via upload
+
+[33mcommit 0b96a1104071349bea8f1e1bb77bf85e31a156a0[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 11:56:36 2020 +0100
+
+    Add files via upload
+
+[33mcommit a28e91f763f90d6031674cf9d4e0f770b6607436[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 11:55:36 2020 +0100
+
+    Add files via upload
+
+[33mcommit b75f791cf3b2d35ae80f05294333a00bdfc301a4[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Nov 26 09:21:09 2020 +0100
+
+    add new update  Skins-for-openNFR
+
+[33mcommit 88577cdc4194edf470ae6544f3be79f705e42c7c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Jun 23 11:03:09 2020 +0200
+
+    Fix C o o l   T V   G u i d e
+
+[33mcommit acce530542e3a60c703c0a2188b6603f76cfc821[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed May 27 11:56:12 2020 +0200
+
+    Fix Tuner E
+
+[33mcommit 9f142f1a73981e74aacc25ea34df83e72295aecf[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed May 13 21:54:42 2020 +0200
+
+    fix FritzMenu
+
+[33mcommit 80e8b429fd19f6b1b5892fa8b700f55738e2d422[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:13:36 2020 +0200
+
+    Delete sib_MSN_Weather.xml
+
+[33mcommit 99e7ada778975ba718bddd1697c139b3a35fa957[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:13:25 2020 +0200
+
+    Delete sib_Default.xml
+
+[33mcommit 169c3e6146d8c1bffdee965e8baba5e9e8dc52ec[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:13:12 2020 +0200
+
+    Delete org_infobar_Steampunk.xml
+
+[33mcommit f7d996f0dd458807bfab095c6a9667a825070786[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:13:02 2020 +0200
+
+    Delete infobar_Flipclock_4Day_Weather.xml
+
+[33mcommit 2d2d9d55eea88e5e202412640043b93638027ce0[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:12:53 2020 +0200
+
+    Delete infobar_Flipclock.xml
+
+[33mcommit b8d7e1702ea69f8bfe4efd36bac992569b1098ab[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:12:45 2020 +0200
+
+    Delete infobar_Digital_Light_Servicename_4Day_Weather.xml
+
+[33mcommit 58df9d6d0f1b03ea4621bb6d3f6207394e7afd6b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:12:36 2020 +0200
+
+    Delete infobar_Digital_Light_Servicename.xml
+
+[33mcommit 2a1828c0766afb20457fffadc141509af0206304[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:12:25 2020 +0200
+
+    Delete infobar_Digital_Light_4Day_Weather.xml
+
+[33mcommit 314a9e5f2b9efdb994e39c374d48a3c600606847[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:12:14 2020 +0200
+
+    Delete infobar_Digital_Light.xml
+
+[33mcommit 062dc4d979d876ff4a107b3d4cf6cf56d101fc81[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:12:04 2020 +0200
+
+    Delete infobar_Digital_4Day_Weather.xml
+
+[33mcommit b44fd8ab49555edfe44d94909bb2125768551d7b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:11:53 2020 +0200
+
+    Delete infobar_Digital.xml
+
+[33mcommit aed6868b28a0d9b86d6ddf86642c0635ae6058ee[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:11:42 2020 +0200
+
+    Delete infobar_Default.xml
+
+[33mcommit 5c5c2d63b3951bb3ce8c993bd04890a39c322b6f[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:11:30 2020 +0200
+
+    Delete infobar_Androidclock_4Day_Weather.xml
+
+[33mcommit d28e45a1c1ddaa9144ae30e3c1b9736ca758e89c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:11:20 2020 +0200
+
+    Delete infobar_Androidclock.xml
+
+[33mcommit 77f80946dba7f2b9766458b2fd7298d58afb0fab[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:11:11 2020 +0200
+
+    Delete infobar_Analogclock_4Day_Weather.xml
+
+[33mcommit 568c30ffc7100d76c373d66ed7e30e3938f0b279[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:11:01 2020 +0200
+
+    Delete infobar_Analogclock.xml
+
+[33mcommit 801d7391f258fe00f792e941f1f1d6bb97159c46[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:10:47 2020 +0200
+
+    Delete ev_Default.xml
+
+[33mcommit b4b43aea567905305aafb6d38f0de2ab0a5ccf18[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:10:37 2020 +0200
+
+    Delete ev_Crypt_Tuner_Info_MSN_Weather.xml
+
+[33mcommit f97ea70a4621ead41d140a13896115756c807291[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:10:21 2020 +0200
+
+    Delete colors_Title_Foreground_Yellow_2.xml
+
+[33mcommit d7e7360fa1ee80aa75bbc444d2f9f4e5d6f344c3[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:10:07 2020 +0200
+
+    Delete colors_Title_Foreground_Yellow.xml
+
+[33mcommit 398eb89b07f7848ad803620d0946bd37242a2c54[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:09:58 2020 +0200
+
+    Delete colors_Title_Foreground_White.xml
+
+[33mcommit 4d9485851908e59de128e006653840a4513754e3[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:09:48 2020 +0200
+
+    Delete colors_Title_Foreground_Steelblue.xml
+
+[33mcommit cfef578854f1cb0190a9f01b8ff84ce684dcc534[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:09:40 2020 +0200
+
+    Delete colors_Title_Foreground_Red.xml
+
+[33mcommit ecfcb455651d4cc0c80a7291fe555370cd9dea9a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:09:31 2020 +0200
+
+    Delete colors_Title_Foreground_Pink_2.xml
+
+[33mcommit c36515e85572723c96ebe5e9b963ed417e5db3fa[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:09:21 2020 +0200
+
+    Delete colors_Title_Foreground_Pink.xml
+
+[33mcommit 73319b1f560a7b6b9661d1b95436a5951ee35309[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:09:10 2020 +0200
+
+    Delete colors_Title_Foreground_Orange_2.xml
+
+[33mcommit f8a4bef0e8d5023e72750d2fc618b31b8ff837ef[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:08:59 2020 +0200
+
+    Delete colors_Title_Foreground_Orange.xml
+
+[33mcommit d74b2f4f7597572649edfca671ea70c2ca940e51[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:08:49 2020 +0200
+
+    Delete colors_Title_Foreground_Metrixblue.xml
+
+[33mcommit 9569790c279c8f2a7b5312626c8e36a217d9c56e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:08:40 2020 +0200
+
+    Delete colors_Title_Foreground_Lightblue.xml
+
+[33mcommit 13d73890789cc6efbfeb42afcff87110e349f49c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:08:30 2020 +0200
+
+    Delete colors_Title_Foreground_Lemon.xml
+
+[33mcommit 5928d62ea440a388b447678443a1c0c4c4520b72[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:08:20 2020 +0200
+
+    Delete colors_Title_Foreground_Grey.xml
+
+[33mcommit 9bec287a3ea435fd2417ab25e6da8becea80b9c8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:08:11 2020 +0200
+
+    Delete colors_Title_Foreground_Greenlight.xml
+
+[33mcommit 13592a0d05984051c7aa70450dd56b6c377c54b3[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:08:01 2020 +0200
+
+    Delete colors_Title_Foreground_Green.xml
+
+[33mcommit dc82b9412de0890c33e0e1a0e30e1034e0695e14[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:07:52 2020 +0200
+
+    Delete colors_Title_Foreground_Default.xml
+
+[33mcommit 7fc1efe5dda767da6e900f94f964a97f456f3565[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:07:40 2020 +0200
+
+    Delete colors_Title_Foreground_Cyan.xml
+
+[33mcommit 23e39a25d14dda33432da245ea47c71bb8d75c78[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:07:32 2020 +0200
+
+    Delete colors_Title_Foreground_Bluetitle.xml
+
+[33mcommit 6c3927faccfa6d7bdc39c5133b8e854f240d2c4e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:07:23 2020 +0200
+
+    Delete colors_Title_Foreground_Blue.xml
+
+[33mcommit 1b32d2f3088b3d667667f0b641a2137adc8b7cb1[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:07:13 2020 +0200
+
+    Delete colors_Title_Foreground_Bernstein_2.xml
+
+[33mcommit 0e99f64179e469e4fd5e23842e4a061a4ceef90e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:07:05 2020 +0200
+
+    Delete colors_Title_Foreground_Bernstein.xml
+
+[33mcommit 1d64187188837833b8b5c6ecb6fd18b8485891e2[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:06:49 2020 +0200
+
+    Delete ch_se_Standard.xml
+
+[33mcommit b501f94514c1f6c5e7e0a2f21e8123da8e4d07de[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:06:40 2020 +0200
+
+    Delete ch_se_NFR_Funktion.xml
+
+[33mcommit 9e42b13b04d794835256d9c6a1057c8f869260b9[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:06:26 2020 +0200
+
+    Delete ch_se_3_Fields.xml
+
+[33mcommit 50d755704a861c2313fc086c55950b79e0b8a31e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:05:54 2020 +0200
+
+    Add files via upload
+    
+    fix sib
+
+[33mcommit 5d1d2ee1e7ee11059d99f96686f6db2a1327eace[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:04:47 2020 +0200
+
+    Add files via upload
+    
+    fix infobar
+
+[33mcommit b61c209613283a63005d106335998c4cda1bcf06[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:03:45 2020 +0200
+
+    Add files via upload
+    
+    fix ev
+
+[33mcommit ff0494663888b8f37ad616734f6d8c53ba04c8c0[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:02:49 2020 +0200
+
+    Add files via upload
+    
+    Fix colors
+
+[33mcommit 53e95776969db4046112dd7582962558b2ff194a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 10:01:17 2020 +0200
+
+    Add files via upload
+    
+    Fix ch_se
+
+[33mcommit 87aa3bf6ebf79ec01e900d4116e459fc992f34e6[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 07:51:43 2020 +0200
+
+    Update skin.xml
+    
+    Update
+
+[33mcommit 0fd6eaa1f8273b04bf9afa792111f55ef97206e5[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue May 12 07:44:23 2020 +0200
+
+    add new update Ultimate-HD-Skin
+
+[33mcommit 7d90379632d87a7a2b5c74fc6ba5dad9c4b66223[m
+Author: torwald12 <torwald12@team.nachtfalke.biz>
+Date:   Sun May 3 21:12:57 2020 +0200
+
+    add blue button in BackupSelection
+
+[33mcommit 86d14771e37ff419da77572f2afbdb2dab898a05[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Apr 19 16:39:39 2020 +0200
+
+    Update OMBManager
+
+[33mcommit 977353e81abbb8e0c8e03b6d14bb7570c984b502[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Apr 19 16:22:09 2020 +0200
+
+    Update OMBManager
+
+[33mcommit 037fd8e0239c4fa5eac38afcd0bc8d5ad8c2d197[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Apr 19 15:50:42 2020 +0200
+
+    Update OMBManager
+
+[33mcommit 9affb01cb2cf1192f915932f0471abd2d2eeeb16[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Apr 19 15:46:56 2020 +0200
+
+    Update OMBManager
+
+[33mcommit 1f7d14ff3674e427e8198c0b7747bb3805c4ed2c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 14 11:19:34 2020 +0200
+
+    Update, Fix Screens
+
+[33mcommit fce54a8d92ccce8459d65e05e94f10a585e49bf8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Apr 6 11:18:45 2020 +0200
+
+    Delete plugin.py
+
+[33mcommit 0099e98746f796827af61d497cdc22ac569715de[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Apr 5 17:29:14 2020 +0200
+
+    add new update Ultimate-HD-Skin
+
+[33mcommit 559b24b0d4d1f291c805fda834a0c0fce87c9bc7[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Apr 5 17:14:49 2020 +0200
+
+    add new update Multibox-FHD-Skin-4NFR, create a Configtool
+
+[33mcommit aeeb4bd90cb99dc245a6becdcf8557285121cb16[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Jan 31 08:44:43 2020 +0100
+
+    Fix Window Border
+
+[33mcommit c5a99115aca4a292a4ef2777684f74a76ac21871[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Jan 31 08:42:52 2020 +0100
+
+    Add files via upload
+
+[33mcommit 20b4f15730c8720319ab92c8a235f713080bd206[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Jan 31 08:39:49 2020 +0100
+
+    Add files via upload
+
+[33mcommit 542647bc8bf99fa3530a2b34d57e0e7ab4191eac[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Jan 31 08:37:31 2020 +0100
+
+    Add files via upload
+
+[33mcommit b5c96d95220d664bf3ad7f7b545b392443b9818c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Jan 3 14:57:50 2020 +0100
+
+    Fix Image Backup
+
+[33mcommit 6d915d86412e59a70d7586a8b69e22ddf68ea0ea[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Jan 3 14:56:04 2020 +0100
+
+    Fix Image Backup
+
+[33mcommit d5609cbd49224eb8cccc09cc8bcd2dc1db6d94be[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Dec 27 12:59:06 2019 +0100
+
+    Fix Volume_Progress
+
+[33mcommit c0fe381e081f34c98e4660b4e74fcf0421b333de[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Dec 27 12:57:02 2019 +0100
+
+    Add files via upload
+
+[33mcommit fab7ea861725edfb951daf063b7ca8cdbcc0a698[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Dec 27 12:33:37 2019 +0100
+
+    Fix Buttons Image Backup
+
+[33mcommit 9f9c2a134f0d1de234322e8e780e63e5fbbd60d0[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Dec 27 12:31:21 2019 +0100
+
+    Fix Buttons Image Backup
+
+[33mcommit 3b52099893e37d77bbd72ef5d6e9596d5c6c86d9[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Dec 19 07:42:33 2019 +0100
+
+    fix template_setup_config
+
+[33mcommit e6465c480c75d936c77fac4c884d29c17d9e61da[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Dec 17 21:50:10 2019 +0100
+
+    delete skin.py
+
+[33mcommit a47369480e96ec64fef2153569e8fab8774bc28d[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Dec 17 21:49:44 2019 +0100
+
+    delete skin_setup.py
+
+[33mcommit f5ae277edbf3501134fc300ca7f299dfb018c140[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Dec 17 21:49:09 2019 +0100
+
+    delete plugin.py
+
+[33mcommit 36fa6cc4506ddf87de94b600846957c3e0396969[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Dec 16 12:32:29 2019 +0100
+
+    IPk mit geänderten py,s für Skinsetup
+
+[33mcommit 391f72c9e4c2581e70b88adde63061c4d696a654[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Dec 16 12:16:33 2019 +0100
+
+    New Version
+
+[33mcommit 8675b006e2261178bd71b2cbcccc4e6c42808d8f[m
+Author: stein17 <lurt.f.kroll@gmail.com>
+Date:   Mon Dec 16 11:57:35 2019 +0100
+
+    add new HD Skin
+
+[33mcommit 6bf9393d27e33b905da29a6b7a9f223938d241f2[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Dec 6 11:57:27 2019 +0100
+
+    Fix NfrHD Setup, PluginSkinInstall
+
+[33mcommit abfa43ab370e8496c105b8493e5c37b29caac892[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Dec 6 11:36:12 2019 +0100
+
+    Fix Skinsetup, Fix OpenNFRSkins install
+
+[33mcommit 44f45ae08a02a438944fea6b8da07c57d52ea979[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Dec 5 19:54:57 2019 +0100
+
+    Fix NfrHD Setup, PluginSkinInstall
+
+[33mcommit ce1e637637851bc996f437890d47c71223505ba9[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Dec 3 17:21:43 2019 +0100
+
+    fix NfrHD_Config
+
+[33mcommit 0d33f0bd237c43714e8b32ec82e04282f727f503[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Dec 3 17:19:02 2019 +0100
+
+    fix NfrHD_Config
+
+[33mcommit abcd5fd92b819e85893f7560608ae9133bbed239[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Dec 3 17:16:31 2019 +0100
+
+    fix NfrHD_Config
+
+[33mcommit 7023658adfe475f7455b30a5b28eeadd0a616424[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Dec 3 17:13:37 2019 +0100
+
+    NfrHD_Config
+
+[33mcommit 4d70e5f3256ad1934952b1ba9aac06f10c3e7114[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Jul 5 00:26:43 2019 +0200
+
+    Fix FlashOnline
+
+[33mcommit 2422353bbcc4e6495d81ff202d0b80abc9324880[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Jul 3 15:56:11 2019 +0200
+
+    Fix YouTube
+
+[33mcommit f02a853bd06dd00a95f1ba20fb5e8e25ffcd4cec[m
+Author: stein17 <lurt.f.kroll@gmail.com>
+Date:   Mon Jun 3 22:22:49 2019 +0200
+
+    add new Screen
+
+[33mcommit 942ebd120e23ad751610396b5a029444fd65a894[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon May 6 17:21:39 2019 +0200
+
+    Update skin_nfr_team.xml
+    
+    Add MultiBootStartup, MultiBootStartupOPT
+
+[33mcommit 636b0ff68a962762e032cf9b131c4d115fcc5b17[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon May 6 17:16:17 2019 +0200
+
+    Delete MultiBootStartup
+
+[33mcommit df46d7aa871875ebe3878ba55333b92ab0fdfa8d[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sat Apr 13 17:15:00 2019 +0200
+
+    delete skinnfr
+
+[33mcommit 4fe99c8d484f80fa02125ddd47945ab3df35372d[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Apr 12 13:52:58 2019 +0200
+
+    Update skin_Logo_ATV.xml
+
+[33mcommit c597eb56593a9259cac1babf02678f2937e16d18[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Apr 12 12:10:03 2019 +0200
+
+    Update skin.xml
+    
+    Update  NumberZap
+
+[33mcommit 4102b4e49f0d3128b7df7dde65f47d8b7873cd39[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Apr 12 12:08:02 2019 +0200
+
+    Update skin_plugins.xml
+    
+    Update NumberZapExt
+
+[33mcommit 9d64297df1a77232347158f9a846c2b37340df96[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Apr 11 08:57:52 2019 +0200
+
+    Skintparts font_BG_......... gefixt
+    
+    Skinparts zum auswählen Farben für die Infobars gefixt.
+
+[33mcommit 2a01df3b32352de4f5c75345cb4b147a38a9575f[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 10 14:52:20 2019 +0200
+
+    add new Screen
+
+[33mcommit e33fdc8232a19ff3287d0464079fe71e641cffcb[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 9 23:02:04 2019 +0200
+
+    Update and fixed
+
+[33mcommit f96c29ceb24558bc1dd0a2037c1f20edb702fdd5[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 9 23:00:35 2019 +0200
+
+    Add Preview Skinparts
+
+[33mcommit 9b8c5a0c5e8eaa7f5a26b2418913a3726edba392[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 9 22:59:29 2019 +0200
+
+    Add Skinparts EMC+ MovieCenter
+
+[33mcommit fc3a7d18dfbe72d9ba10c03f95cc2d968b52febf[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 9 22:58:10 2019 +0200
+
+    Delete skin_Enhanced_Movie_Center_Pig.xml
+
+[33mcommit 5bdfbee428de47ed4a260b292218793a2c214f41[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 9 22:57:08 2019 +0200
+
+    Add files via upload
+    
+    Update
+
+[33mcommit a903297fcb83e2e80dcec6e4c5e858757518b4a2[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 9 17:21:50 2019 +0200
+
+    rename
+    
+    rename
+
+[33mcommit 19c6d9f94c166865a0abfb25a88eac042788756a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Apr 9 16:59:39 2019 +0200
+
+    add new Screen
+
+[33mcommit 2b4f93d061d75597be4d1fa11a71bc1ff1c9aabf[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 3 13:18:07 2019 +0200
+
+    add new Skin 4 NFR
+
+[33mcommit a78b225cb09379548b3fa7ebd058f024455a61c9[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 3 13:08:04 2019 +0200
+
+    Create Multibox FHD Skin 4 NFR
+
+[33mcommit 42ecfcdfc18df6de67174c21d173d774e5b9187a[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Feb 17 00:54:10 2019 +0100
+
+    Add PrimeTime Renderer
+
+[33mcommit 82679639197f434bfb01d27d2db6bf4f3ecb25b8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Feb 17 00:53:27 2019 +0100
+
+    Add PrimeTime Renderer
+
+[33mcommit 86cede49a1bb80cbab1283d1677bb42325bf11fb[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Feb 17 00:52:50 2019 +0100
+
+    Add PrimeTime Renderer
+
+[33mcommit 91dfff07e506b4239acc84c9fda6b92553278aff[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Jan 7 07:26:59 2019 +0100
+
+    Update skin.xml
+
+[33mcommit 7d336e20cf7dc18f49725d15244f363740fa062b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Nov 7 12:53:27 2018 +0100
+
+    Update skin_plugins.xml
+
+[33mcommit 6c394a072f0fbb4817fcea071d14c08d245a6262[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Oct 29 18:45:36 2018 +0100
+
+    Update skin_Channel_Selection_2_Fields_color_progress.xml
+
+[33mcommit 0337fe65e29d18f163176ea75bd0aaeef91aad93[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Oct 29 18:15:05 2018 +0100
+
+    Update skin_Channel_Selection_2_Fields_color_progress.xml
+
+[33mcommit f695dac2ce74353fd2703891f31a4aacb29ba445[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Oct 29 17:29:17 2018 +0100
+
+    Add files via upload
+
+[33mcommit d5d4842bb51620053a8b50599884c631c584e3f4[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Oct 29 17:27:11 2018 +0100
+
+    Update skin_plugins.xml
+
+[33mcommit 395186baf3518263b306870511cb08da958aef16[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Thu Sep 20 21:49:59 2018 +0200
+
+    Update skin_nfr_team.xml
+
+[33mcommit f923b7f56627d03c2fe38dfb93773ca14efd6a3c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Sep 19 05:11:04 2018 +0200
+
+    Update skin_nfr_team.xml
+
+[33mcommit dd4555ed1975500e02c558e8af8f3d7d54b008ae[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Sep 17 14:53:51 2018 +0200
+
+    Update skin.xml
+
+[33mcommit d8449f2d0526d066125353eff74e12cee8070b4e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Sep 17 14:52:38 2018 +0200
+
+    Update skin_templates.xml
+
+[33mcommit 8137d931629d83e54165da1d26e5c92b07808ab8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Sep 17 14:50:50 2018 +0200
+
+    Add files via upload
+
+[33mcommit 236ad156deb5e98cb82bcd1212771503082b2de6[m
+Merge: 07beaf9 bf0ed2e
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Sep 17 14:43:27 2018 +0200
+
+    Merge branch 'master' of https://github.com/stein17/Skins-for-openNFR
+
+[33mcommit bf0ed2e9029e260fa38b9372f65b0b9a025434eb[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Sep 17 14:39:30 2018 +0200
+
+    Delete openNFR-skin-2018
+
+[33mcommit 07beaf95d9afa9bb3eb188b94dabd8220f75cf12[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Sep 4 23:21:27 2018 +0200
+
+    add new Screen
+
+[33mcommit ba5107bf34efbde3421b2d972d8ec4cdd365c0a8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Tue Sep 4 23:14:31 2018 +0200
+
+    Create openNFR-skin-2018
+
+[33mcommit 93e49e16b2ee15ba4694020f2f7a2d589277f2e2[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon May 14 15:23:43 2018 +0200
+
+    Update control
+
+[33mcommit b601ec1ea55a31f47d3883e4c5d287fac9d316cf[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon May 14 15:17:48 2018 +0200
+
+    Add Previews
+
+[33mcommit 83e3e284d4aef3de878cc7e73b453de0c77497fa[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon May 14 15:16:39 2018 +0200
+
+    Add Skinparts Channel Selection
+
+[33mcommit 00890a72937260bcd7c140c68a5491555b1e5328[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 18 13:51:51 2018 +0200
+
+    Update skin.xml
+
+[33mcommit cf1cdb757e3cfd9c12db80a93c596b33ffd5f5b8[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 18 13:49:59 2018 +0200
+
+    Update skin.xml
+
+[33mcommit c27c368cdaff97f5b1036540445f0aaa019bb305[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 18 13:47:10 2018 +0200
+
+    Update skin.xml
+
+[33mcommit 19ae7e06dc49bdf1409b2cd31b783896e92dc84c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 18 13:38:04 2018 +0200
+
+    Update skin.xml
+
+[33mcommit 8a4312afa7cf7b1f9a6dcbbf121d254d651f1f39[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 18 13:29:10 2018 +0200
+
+    Update skin.xml
+
+[33mcommit a4a96c49f03ae2430bf4bd00dc59362eabbd540b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Apr 18 13:25:56 2018 +0200
+
+    Update skin.xml
+
+[33mcommit 9da429f6c185782e3ad70f7f6ccb608ffe77d625[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sat Apr 14 13:46:27 2018 +0200
+
+    Update Skin
+
+[33mcommit ed0a87f92bf543b97328159a9bab75b6e0f7635e[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Apr 13 21:53:30 2018 +0200
+
+    Update skin.xml
+
+[33mcommit 6291ddd650fbef282b37e248275e6f10989ae160[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Mar 23 11:25:19 2018 +0100
+
+    Add files via upload
+
+[33mcommit df360a01c4f900a5d01028e160236cdf4aa8fb60[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Mar 23 10:53:07 2018 +0100
+
+    Update skin.xml
+
+[33mcommit c8742777ae5a191d8b0650a8b59dbd73f55563db[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Mar 23 10:46:44 2018 +0100
+
+    Update skin_plugins.xml
+
+[33mcommit 42b1505acbc71fd051b8cfc8f93957f016b31635[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Mar 23 10:43:11 2018 +0100
+
+    Update skin.xml
+
+[33mcommit cadf8592fea8ec5fde724f46d753c069d3e04d99[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Mar 23 10:41:23 2018 +0100
+
+    Update skin_nfr_team.xml
+
+[33mcommit b11e75f255b9f9623dd6162a82f3a5ef30da1b84[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Mar 23 10:37:54 2018 +0100
+
+    Update skin_templates.xml
+
+[33mcommit ecd5417b797b528799b8081f8570002db99b468c[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Fri Mar 23 10:36:55 2018 +0100
+
+    Update control
+
+[33mcommit b170c0409fc1e854e9713bbe55dafe76f7a4f876[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Mar 14 09:08:20 2018 +0100
+
+    Update skin_nfr_team.xml
+
+[33mcommit 294413595cf9f09213f1874b55d8e92d0018b483[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Mar 12 14:20:10 2018 +0100
+
+    Add files via upload
+
+[33mcommit 79958aa8ae284d6adf9d08806e9a03aa73a227ce[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Mar 12 14:19:30 2018 +0100
+
+    Add files via upload
+
+[33mcommit db5f04ae245f2643585e4de6f89e9a7a12103b85[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Mar 12 14:18:55 2018 +0100
+
+    Add files via upload
+
+[33mcommit d4af40663cf3d097ceaf0cca9c4bbc014e93197f[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Mar 12 14:18:22 2018 +0100
+
+    Add files via upload
+
+[33mcommit 061720e77baa52c42ae5204b50079d2c2f7d33a5[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Mar 12 08:43:03 2018 +0100
+
+    Update skin.xml
+
+[33mcommit eb909934aa5d5d13d27392b3da0f40c9c30e5f27[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Mon Mar 12 08:34:01 2018 +0100
+
+    Update skin.xml
+
+[33mcommit f968c22294be28f5499dbe986db6df7c0b5b6c26[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Mar 11 18:51:26 2018 +0100
+
+    Update Skin
+
+[33mcommit 58920cf801f7e33137ff313db32fb6dd4a19071b[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Mar 7 23:32:22 2018 +0100
+
+    Update README.md
+
+[33mcommit 44ef463fd5a11e23b8959099813d6115a495c366[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Mar 7 23:30:55 2018 +0100
+
+    Create README.md
+
+[33mcommit 36570c82f26c6d4b6c05911e22ef5a323c4a2aad[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Wed Mar 7 23:26:55 2018 +0100
+
+    initial commit
+
+[33mcommit 52c087cd2e969054e12fdc8e45a9b082e9c59f09[m
+Author: stein17 <lutz.f.kroll@gmail.com>
+Date:   Sun Jun 18 01:10:54 2017 +0200
+
+    Update Skin
