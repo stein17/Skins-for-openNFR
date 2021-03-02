@@ -1272,7 +1272,7 @@
 				}
 			</convert>
     </widget>
-    <ePixmap pixmap="Multibox/mmp/mp_buttons.png" position="1302,880" size="450,60" alphatest="blend" />
+    <ePixmap pixmap="mmp/mp_buttons.png" position="1302,880" size="450,60" alphatest="blend" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
   </screen>

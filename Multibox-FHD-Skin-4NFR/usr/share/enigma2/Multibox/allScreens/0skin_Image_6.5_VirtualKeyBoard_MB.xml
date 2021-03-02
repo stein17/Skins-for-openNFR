@@ -8,7 +8,7 @@
     <eLabel position="5,105" size="1310,69" zPosition="1" backgroundColor="Line" foregroundColor="Line" />
     <eLabel position="0,51" size="1320,2" backgroundColor="Line" zPosition="1" />
     <widget name="text" position="8,108" size="1304,63" backgroundColor="background" foregroundColor="white" transparent="1" zPosition="3" font="Regular;45" noWrap="1" valign="center" halign="right" />
-    <widget name="list" position="5,200" size="970,350" selectionDisabled="1" transparent="1" />
+    <widget name="list" position="5,200" size="970,350" itemHeight="70" selectionDisabled="1" transparent="1" zPosition="1" />
     <widget name="mode" conditional="mode" position="1338,175" size="300,40" noWrap="1" zPosition="1" valign="center" font="Regular;27" halign="left" backgroundColor="background" foregroundColor="green" transparent="1" />
     <widget name="language" conditional="language" position="0,0" size="0,0" font="Regular;30" backgroundColor="background" foregroundColor="white" transparent="1" noWrap="1" />
     <widget name="locale" conditional="locale" position="982,200" size="330,200" valign="center" halign="center" font="Regular;27" backgroundColor="background" transparent="1" foregroundColor="yellow" />
