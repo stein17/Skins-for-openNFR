@@ -1,88 +1,83 @@
 <skin>
- <!--######################################### -->
-  <!-- templates  -->
   <!--######################################### -->
-
-    <!-- TEMPLATES -->
-
- 	<!-- </screen>  -->
-<screen name="template_digitalclock_widget">
-  <widget foregroundColor="selectedFG" font="LCD; 60" noWrap="1" valign="center" halign="center" position="1109,11" render="Label" size="160,58" source="global.CurrentTime" transparent="0">
-  <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <widget font="Regular; 20" noWrap="1" valign="bottom" halign="right" position="970,48" render="Label" size="135,22" source="global.CurrentTime" transparent="0">
-  <convert type="ClockToText">Format:%e. %B</convert>
-  </widget>
-  <widget font="Regular; 20" valign="bottom" halign="right" noWrap="1" position="970,23" render="Label" size="135,22" source="global.CurrentTime" transparent="0">
-  <convert type="ClockToText">Format:%A</convert>
-  </widget>
-  <eLabel backgroundColor="selectedFG" position="968,9" size="304,74" transparent="0" zPosition="-2" />
-  <eLabel position="970,11" size="300,70" transparent="0" zPosition="-1" />
- </screen>
-
- <screen name="template_analogclock_widget">
-  <ePixmap pixmap="NFR_Skin/menu/Analog-Clock.png" position="1127,15" zPosition="0" size="137,137" />
-  <widget source="global.CurrentTime" render="NFRWatches" position="1155,43" size="80,80" zPosition="4" foregroundColor="red" alphatest="blend">
-  <convert type="NFRAnalogClock">secHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="NFRWatches" position="1155,43" size="80,80" zPosition="3" foregroundColor="grey" alphatest="blend">
-  <convert type="NFRAnalogClock">minHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="NFRWatches" position="1165,54" size="60,60" zPosition="2" foregroundColor="grey" alphatest="blend">
-  <convert type="NFRAnalogClock">hourHand</convert>
-  </widget>
- </screen>
- <!-- Infobar_HTC_Clock  -->
- <screen name="template_htcclock_widget_infobar">
- <ePixmap pixmap="NFR_Skin/BG-Pixmaps/Digits/HTC_Clock_BG.png" position="1012,494" zPosition="-1" size="259,222" transparent="1" alphatest="blend" />
- <widget source="global.CurrentTime" render="NFRdigiclock" position="1046,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
-  <convert type="ClockToText">Format:H1 %H</convert>
- </widget>
- <widget source="global.CurrentTime" render="NFRdigiclock" position="1090,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
-  <convert type="ClockToText">Format:H2 %H</convert>
- </widget>
- <widget source="global.CurrentTime" render="Pixmap" pixmap="NFR_Skin/BG-Pixmaps/Digits/second.png" position="1133,506" size="16,74" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1">
-    <convert type="NFRBlinkingClock" />
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
- <widget source="global.CurrentTime" render="NFRdigiclock" position="1157,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
-  <convert type="ClockToText">Format:M1 %M</convert>
- </widget>
- <widget source="global.CurrentTime" render="NFRdigiclock" position="1202,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
-  <convert type="ClockToText">Format:M2 %M</convert>
- </widget>
- <widget source="global.CurrentTime" render="Label" position="1171,600" size="96,16" font="Regular; 14" halign="right" backgroundColor="background" transparent="1" zPosition="0">
- <convert type="ClockToText">Format:%a.%d.%b</convert>
- </widget>
-  <widget noWrap="1" foregroundColor="yellow" backgroundColor="background" font="Regular; 24" render="Label" position="1171,622" size="60,30" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
-    <convert type="MSNWeather">temperature_current</convert>
-  </widget>
-  <widget source="session.MSNWeather" render="Label" font="Regular; 14" position="1241,634" size="30,16" backgroundColor="background" zPosition="3" transparent="1" valign="center" halign="center" foregroundColor="lightbluelabel">
-    <convert type="MSNWeather">temperature_high,current</convert>
-  </widget>
-  <widget source="session.MSNWeather" render="Label" font="Regular; 14" position="1241,618" size="30,16" backgroundColor="background" zPosition="3" transparent="1" valign="center" halign="center" foregroundColor="meinrot">
-   <convert type="MSNWeather">temperature_low,current</convert>
-  </widget>
-  <widget Wrap="1" font="Regular; 14" render="Label" backgroundColor="background" position="1020,631" size="107,18" source="session.MSNWeather" halign="left" transparent="1" zPosition="8" valign="top" foregroundColor="yellow">
-   <convert type="MSNWeather">temperature_text,current</convert>
-  </widget>
-  <widget alphatest="blend" render="MSNWeatherPixmap" position="1112,582" size="65,65" source="session.MSNWeather" transparent="1" zPosition="5">
-   <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
-  </widget>
-  <widget Wrap="1" font="Regular; 14" backgroundColor="background" render="Label" position="1020,601" size="107,32" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="top">
-   <convert type="MSNWeather">city</convert>
-  </widget>
-   <ePixmap position="1231,622" size="9,24" pixmap="NFR_Skin/Wettericons/cold_hot.png" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1" />
+  <!-- TEMPLATES -->
+  <!-- </screen>  -->
+  <screen name="template_digitalclock_widget">
+    <widget foregroundColor="selectedFG" font="LCD; 60" noWrap="1" valign="center" halign="center" position="1109,11" render="Label" size="160,58" source="global.CurrentTime" transparent="0">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget font="Regular; 20" noWrap="1" valign="bottom" halign="right" position="970,48" render="Label" size="135,22" source="global.CurrentTime" transparent="0">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget font="Regular; 20" valign="bottom" halign="right" noWrap="1" position="970,23" render="Label" size="135,22" source="global.CurrentTime" transparent="0">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <eLabel backgroundColor="selectedFG" position="968,9" size="304,74" transparent="0" zPosition="-2" />
+    <eLabel position="970,11" size="300,70" transparent="0" zPosition="-1" />
+  </screen>
+  <screen name="template_analogclock_widget">
+    <ePixmap pixmap="menu/Analog-Clock.png" position="1127,15" zPosition="0" size="137,137" />
+    <widget source="global.CurrentTime" render="NFRWatches" position="1155,43" size="80,80" zPosition="4" foregroundColor="red" alphatest="blend">
+      <convert type="NFRAnalogClock">secHand</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="NFRWatches" position="1155,43" size="80,80" zPosition="3" foregroundColor="grey" alphatest="blend">
+      <convert type="NFRAnalogClock">minHand</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="NFRWatches" position="1165,54" size="60,60" zPosition="2" foregroundColor="grey" alphatest="blend">
+      <convert type="NFRAnalogClock">hourHand</convert>
+    </widget>
+  </screen>
+  <!-- Infobar_HTC_Clock  -->
+  <screen name="template_htcclock_widget_infobar">
+    <ePixmap pixmap="BG-Pixmaps/Digits/HTC_Clock_BG.png" position="1012,494" zPosition="-1" size="259,222" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="NFRdigiclock" position="1046,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
+      <convert type="ClockToText">Format:H1 %H</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="NFRdigiclock" position="1090,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
+      <convert type="ClockToText">Format:H2 %H</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Pixmap" pixmap="BG-Pixmaps/Digits/second.png" position="1133,506" size="16,74" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1">
+      <convert type="NFRBlinkingClock" />
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="NFRdigiclock" position="1157,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
+      <convert type="ClockToText">Format:M1 %M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="NFRdigiclock" position="1202,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
+      <convert type="ClockToText">Format:M2 %M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1171,600" size="96,16" font="Regular; 14" halign="right" backgroundColor="background" transparent="1" zPosition="0">
+      <convert type="ClockToText">Format:%a.%d.%b</convert>
+    </widget>
+    <widget noWrap="1" foregroundColor="yellow" backgroundColor="background" font="Regular; 24" render="Label" position="1171,622" size="60,30" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget source="session.MSNWeather" render="Label" font="Regular; 14" position="1241,634" size="30,16" backgroundColor="background" zPosition="3" transparent="1" valign="center" halign="center" foregroundColor="lightbluelabel">
+      <convert type="MSNWeather">temperature_high,current</convert>
+    </widget>
+    <widget source="session.MSNWeather" render="Label" font="Regular; 14" position="1241,618" size="30,16" backgroundColor="background" zPosition="3" transparent="1" valign="center" halign="center" foregroundColor="meinrot">
+      <convert type="MSNWeather">temperature_low,current</convert>
+    </widget>
+    <widget Wrap="1" font="Regular; 14" render="Label" backgroundColor="background" position="1020,631" size="107,18" source="session.MSNWeather" halign="left" transparent="1" zPosition="8" valign="top" foregroundColor="yellow">
+      <convert type="MSNWeather">temperature_text,current</convert>
+    </widget>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1112,582" size="65,65" source="session.MSNWeather" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
+    </widget>
+    <widget Wrap="1" font="Regular; 14" backgroundColor="background" render="Label" position="1020,601" size="107,32" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="top">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <ePixmap position="1231,622" size="9,24" pixmap="Wettericons/cold_hot.png" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1" />
     <widget font="Regular; 16" backgroundColor="background" render="Label" position="1030,695" size="28,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="selectedFG">
       <convert type="MSNWeather">weekshortday,day2</convert>
     </widget>
-	<widget font="Regular; 16" backgroundColor="background" render="Label" position="1095,695" size="28,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="selectedFG">
+    <widget font="Regular; 16" backgroundColor="background" render="Label" position="1095,695" size="28,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="selectedFG">
       <convert type="MSNWeather">weekshortday,day3</convert>
     </widget>
-	<widget font="Regular; 16" backgroundColor="background" render="Label" position="1160,695" size="28,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="selectedFG">
+    <widget font="Regular; 16" backgroundColor="background" render="Label" position="1160,695" size="28,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="selectedFG">
       <convert type="MSNWeather">weekshortday,day4</convert>
     </widget>
-	<widget font="Regular; 16" backgroundColor="background" render="Label" position="1226,694" size="28,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="selectedFG">
+    <widget font="Regular; 16" backgroundColor="background" render="Label" position="1226,694" size="28,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="selectedFG">
       <convert type="MSNWeather">weekshortday,day5</convert>
     </widget>
     <widget font="Regular; 12" backgroundColor="verydarkgrey" render="Label" position="1011,674" size="65,16" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
@@ -91,26 +86,26 @@
     <widget font="Regular; 12" backgroundColor="verydarkgrey" render="Label" position="1077,674" size="65,16" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
       <convert type="MSNWeather">temperature_heigh_low,day3</convert>
     </widget>
-	<widget font="Regular; 12" backgroundColor="verydarkgrey" render="Label" position="1143,674" size="65,16" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <widget font="Regular; 12" backgroundColor="verydarkgrey" render="Label" position="1143,674" size="65,16" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
       <convert type="MSNWeather">temperature_heigh_low,day4</convert>
     </widget>
-	<widget font="Regular; 12" backgroundColor="verydarkgrey" alphatest="blend" render="Label" position="1209,674" size="65,16" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <widget font="Regular; 12" backgroundColor="verydarkgrey" alphatest="blend" render="Label" position="1209,674" size="65,16" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
       <convert type="MSNWeather">temperature_heigh_low,day5</convert>
     </widget>
-	<widget alphatest="blend" render="MSNWeatherPixmap" position="1030,649" size="24,24" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1030,649" size="24,24" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
     </widget>
     <widget alphatest="blend" render="MSNWeatherPixmap" position="1095,649" size="24,24" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
     </widget>
-	<widget alphatest="blend" render="MSNWeatherPixmap" position="1160,649" size="24,24" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1160,649" size="24,24" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
     </widget>
     <widget alphatest="blend" render="MSNWeatherPixmap" position="1225,649" size="24,24" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
     </widget>
   </screen>
- <!-- Android-Clock-Infobar -->
+  <!-- Android-Clock-Infobar -->
   <screen name="template_androidclock_widget_infobar">
     <widget source="global.CurrentTime" render="Label" position="1118,668" size="160,16" font="Regular; 14" halign="right" backgroundColor="black" zPosition="2" transparent="1">
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
@@ -130,8 +125,7 @@
     <widget source="session.MSNWeather" render="Label" font="Regular; 14" position="1235,702" size="40,18" backgroundColor="background" zPosition="3" transparent="1" valign="center" halign="center" foregroundColor="metrixblue">
       <convert type="MSNWeather">temperature_high,current</convert>
     </widget>
-    <widget source="session.MSNWeather" render="Label" font="Regular; 14" position="1235,688
-	" size="40,18" backgroundColor="background" zPosition="3" transparent="1" valign="center" halign="center" foregroundColor="red">
+    <widget source="session.MSNWeather" render="Label" font="Regular; 14" position="1235,688&#xD;&#xA;	" size="40,18" backgroundColor="background" zPosition="3" transparent="1" valign="center" halign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_low,current</convert>
     </widget>
     <widget Wrap="1" font="Regular; 14" render="Label" backgroundColor="background" position="1015,701" size="107,18" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top" foregroundColor="selectedFG">
@@ -140,9 +134,9 @@
     <widget Wrap="1" font="Regular; 14" backgroundColor="background" render="Label" position="1015,669" size="107,32" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="top">
       <convert type="MSNWeather">city</convert>
     </widget>
-    <ePixmap position="1221,692" size="9,24" pixmap="NFR_Skin/Wettericons/cold_hot.png" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1" />
-   </screen>
-     <!-- Analog-Clock-Infobar-->
+    <ePixmap position="1221,692" size="9,24" pixmap="Wettericons/cold_hot.png" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1" />
+  </screen>
+  <!-- Analog-Clock-Infobar-->
   <screen name="template_analog_clock_widget_infobar">
     <widget source="global.CurrentTime" render="NFRWatches" position="1095,550" size="100,100" zPosition="4" foregroundColor="red" alphatest="blend">
       <convert type="NFRAnalogClock">secHand</convert>
@@ -156,76 +150,273 @@
     <widget source="global.CurrentTime" render="Label" position="1020,690" size="250,30" font="Regular; 20" halign="center" foregroundColor="selectedFG" backgroundColor="black" zPosition="2" transparent="1">
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
-	<panel name="template_pixmap_Analogclock_Infobar" />
-   </screen>
-   <!-- Analogclock-Pixmap-Infobar -->
-    <screen name="template_pixmap_Analogclock_Infobar">
-    <ePixmap pixmap="NFR_Skin/BG-Pixmaps/Clocks/Analog_Clock.png" position="1070,525" zPosition="0" size="150,150" alphatest="blend" transparent="1"/>
-   </screen>
-     <!-- Digitalclock-Clock-Infobar -->
-<screen name="template_digitalclock_widget_infobar">
-  <widget source="global.CurrentTime" transparent="1" font="LCD; 98" noWrap="1" foregroundColor="selectedFG" backgroundColor="background" valign="center" halign="center" position="1030,520" render="Label" size="240,98">
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <widget font="Regular; 27" noWrap="1" valign="center" halign="center" position="1040,670" render="Label" size="220,40" backgroundColor="background" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%e. %B</convert>
-  </widget>
-  <widget font="Regular; 27" valign="center" halign="center" noWrap="1" position="1040,630" render="Label" size="220,40" backgroundColor="background" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%A</convert>
-  </widget>
-</screen>
+    <panel name="template_pixmap_Analogclock_Infobar" />
+  </screen>
+  <!-- Analogclock-Pixmap-Infobar -->
+  <screen name="template_pixmap_Analogclock_Infobar">
+    <ePixmap pixmap="BG-Pixmaps/Clocks/Analog_Clock.png" position="1070,525" zPosition="0" size="150,150" alphatest="blend" transparent="1" />
+  </screen>
+  <!-- Digitalclock-Clock-Infobar -->
+  <screen name="template_digitalclock_widget_infobar">
+    <widget source="global.CurrentTime" transparent="1" font="LCD; 98" noWrap="1" foregroundColor="selectedFG" backgroundColor="background" valign="center" halign="center" position="1030,520" render="Label" size="240,98">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget font="Regular; 27" noWrap="1" valign="center" halign="center" position="1040,670" render="Label" size="220,40" backgroundColor="background" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget font="Regular; 27" valign="center" halign="center" noWrap="1" position="1040,630" render="Label" size="220,40" backgroundColor="background" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <!-- TEMPLATES SIB Poster-->
+  <screen name="template_sib_poster">
+    <eLabel name="fake" position="0, 0" size="0,0" />
+  </screen>
+  <!-- TEMPLATES SIB Now Next Poster-->
+  <screen name="template_sib_now_next_poster">
+    <eLabel name="fake" position="0, 0" size="0,0" />
+  </screen>
+  <!-- TEMPLATES SecondInfoBar Poster Diagonal Poster -->
+  <screen name="template_sib_now_next_d_poster">
+    <widget source="session.Event_Next" render="NFRPoster" borderColor="selectedFG" borderWidth="2" position="1110,103" size="146,220" zPosition="10" />
+    <widget source="session.Event_Now" render="NFRPoster" borderColor="selectedFG" borderWidth="2" position="471,408" size="146,220" zPosition="10" />
+    <widget source="session.Event_Now" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="445,225" position="22,405" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="445,225" position="661,100" foregroundColor="selectedFG" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+  </screen>
+  <!-- TEMPLATES SecondInfoBar Poster Horizontal Poster -->
+  <screen name="template_sib_now_next_h_poster">
+    <widget source="session.Event_Now" render="NFRPoster" borderColor="selectedFG" borderWidth="2" position="470,140" size="146,220" zPosition="10" />
+    <widget source="session.Event_Next" render="NFRPoster" borderColor="selectedFG" borderWidth="2" position="470,433" size="146,220" zPosition="10" />
+    <widget source="session.Event_Now" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="445,225" position="23,137" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="445,225" position="23,430" foregroundColor="greyblue" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+  </screen>
+  <!-- TEMPLATES-SIB_session_Event_Horizontal_Org -->
+  <screen name="template_sib_now_next_h_default">
+    <widget source="session.Event_Now" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="23,137" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="23,430" foregroundColor="greyblue" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+  </screen>
+  <!-- TEMPLATES-SIB_session_Event_Diagonal_ORG -->
+  <screen name="template_sib_now_next_d_default">
+    <widget source="session.Event_Now" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="22,405" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="661,100" foregroundColor="selectedFG" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+  </screen>
+  <!-- TEMPLATES Ch-SE Poster-->
+  <screen name="template_ch_se_poster_d">
+    <eLabel name="fake" position="0, 0" size="0,0" />
+  </screen>
+  <screen name="template_ch_se_poster_me">
+    <eLabel name="fake" position="0, 0" size="0,0" />
+  </screen>
+  <screen name="template_ch_se_poster_3f">
+    <eLabel name="fake" position="0, 0" size="0,0" />
+  </screen>
+  <!-- TEMPLATES-ChannelSelection-Poster-Default-->
+  <screen name="template_ChannelSelection_Poster_D">
+    <widget source="ServiceEvent" render="NFRPoster" position="695,270" size="112,169" zPosition="10" borderColor="selectedFG" borderWidth="1" />
+  </screen>
+  <!-- TEMPLATES-ChannelSelection-Poster-3Fields-->
+  <screen name="template_ChannelSelection_Poster_3F">
+    <widget source="ServiceEvent" render="NFRPoster" position="795,270" size="112,169" zPosition="10" borderColor="selectedFG" borderWidth="1" />
+  </screen>
+  <!-- TEMPLATES IB Poster-->
+  <screen name="template_ib_poster">
+    <eLabel name="fake" position="0, 0" size="0,0" />
+  </screen>
+  <!-- skin_infobar_Poster_Infobar_Now -->
+  <screen name="template_Poster_Infobar">
+    <widget source="session.Event_Now" render="NFRPoster" borderColor="selectedFG" borderWidth="2" position="10,220" size="185,278" zPosition="10" />
+  </screen>
+  <!-- TEMPLATES EMC Poster-->
+  <screen name="template_emc_poster">
+    <eLabel name="fake" position="0, 0" size="0,0" />
+  </screen>
+  <!-- TEMPLATES-EMCMediaCenter-Poster-->
+  <screen name="template_EMCMediaCenter_Backdrop_Poster">
+    <widget source="session.Event_Now" render="NFRPoster" borderColor="selectedFG" borderWidth="2" position="1115,360" size="156,234" zPosition="10" />
+    <widget source="session.Event_Now" render="NFRBackdrop" borderColor="selectedFG" borderWidth="2" position="690,360" size="415,234" zPosition="10" />
+  </screen>
+  <!-- TEMPLATES EV Default-->
+  <screen name="template_ev_default">
+    <widget source="session.Event_Next" render="Label" position="1161,420" size="90,24" font="Regular; 20" transparent="1" zPosition="2" halign="left" foregroundColor="selectedFG">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="901,420" size="70,24" font="Regular; 20" transparent="1" zPosition="2" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1090,420" size="70,24" font="Regular; 20" transparent="1" zPosition="2" halign="left">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="631,630" size="110,29" transparent="1" zPosition="1" font="Regular; 24" halign="left">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=10000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="786,455" size="475,200" font="Regular;24" halign="left" transparent="1" zPosition="2">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <eLabel text="Next:" position="786,379" size="70,30" font="Regular; 24" halign="left" transparent="1" valign="center" foregroundColor="selectedFG" />
+    <widget source="session.Event_Next" render="NFRRunningText" position="861,380" size="397,30" font="Regular;24" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=5000,always=0" foregroundColor="white" transparent="1" noWrap="1" zPosition="5">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel text="End Time :" position="981,420" size="110,24" font="Regular; 20" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="selectedFG" />
+    <eLabel text="Start Time :" position="785,420" size="115,24" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="selectedFG" transparent="1" zPosition="1" />
+    <widget source="Service" render="Progress" position="526,639" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget name="datetime" position="54,630" size="240,29" font="Regular;24" halign="center" transparent="1" />
+    <ePixmap position="22,630" size="30,29" zPosition="10" pixmap="buttons/left.png" transparent="1" alphatest="blend" />
+    <ePixmap position="296,630" size="30,29" zPosition="10" pixmap="buttons/right.png" transparent="1" alphatest="blend" />
+    <widget name="duration" position="329,630" size="120,29" font="Regular;24" halign="center" transparent="1" />
+    <eLabel text="ENDE:" position="452,630" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
+    <eLabel name="" position="785,449" size="475,1" backgroundColor="selectedFG" />
+    <eLabel name="" position="785,415" size="475,1" backgroundColor="selectedFG" />
+  </screen>
+  <!-- TEMPLATES EV Default Weather-->
+  <screen name="template_ev_default_weather">
+    <widget source="session.Event_Next" render="Label" position="1161,420" size="90,24" font="Regular; 20" transparent="1" zPosition="2" halign="left" foregroundColor="selectedFG">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="901,420" size="70,24" font="Regular; 20" transparent="1" zPosition="2" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1090,420" size="70,24" font="Regular; 20" transparent="1" zPosition="2" halign="left">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="631,600" size="110,29" transparent="1" zPosition="1" font="Regular; 24" halign="left">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=10000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="786,455" size="475,200" font="Regular;24" halign="center" transparent="1" zPosition="2">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <eLabel text="Next:" position="785,380" size="70,30" font="Regular; 24" halign="left" transparent="1" valign="center" foregroundColor="selectedFG" />
+    <widget source="session.Event_Next" render="NFRRunningText" position="861,380" size="397,30" font="Regular;24" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=5000,always=0" foregroundColor="white" transparent="1" noWrap="1" zPosition="5">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel text="End Time :" position="981,420" size="110,24" font="Regular; 20" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="selectedFG" />
+    <eLabel text="Start Time :" position="785,420" size="115,24" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="selectedFG" transparent="1" zPosition="1" />
+    <widget source="Service" render="Progress" position="529,610" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget name="datetime" position="54,600" size="240,29" font="Regular;24" halign="center" transparent="1" />
+    <ePixmap position="22,600" size="30,29" zPosition="10" pixmap="buttons/left.png" transparent="1" alphatest="blend" />
+    <ePixmap position="296,600" size="30,29" zPosition="10" pixmap="buttons/right.png" transparent="1" alphatest="blend" />
+    <widget name="duration" position="329,600" size="120,29" font="Regular;24" halign="center" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="523,639" size="220,20" font="Regular; 20" foregroundColor="selectedFG" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <eLabel text="ENDE:" position="453,600" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
+    <eLabel name="" position="785,449" size="475,1" backgroundColor="selectedFG" />
+    <eLabel name="" position="785,415" size="475,1" backgroundColor="selectedFG" />
+  </screen>
+  <!-- TEMPLATES EV Poster Default -->
+  <screen name="template_ev_default_poster">
+    <widget source="session.Event_Now" render="Label" position="631,630" size="110,29" transparent="1" zPosition="1" font="Regular; 24" halign="left">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <eLabel text="Next:" position="20,630" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
+    <widget source="Service" render="Progress" position="526,639" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget name="datetime" position="124,630" size="240,29" font="Regular;24" halign="center" transparent="1" />
+    <ePixmap position="92,630" size="30,29" zPosition="10" pixmap="buttons/left.png" transparent="1" alphatest="blend" />
+    <ePixmap position="366,630" size="30,29" zPosition="10" pixmap="buttons/right.png" transparent="1" alphatest="blend" />
+    <widget name="duration" position="399,630" size="120,29" font="Regular;24" halign="center" transparent="1" />
+    <widget source="Event" render="NFRBackdrop" position="815,400" size="415,234" borderColor="selectedFG" borderWidth="2" zPosition="2" />
+  </screen>
+  <!-- TEMPLATES EV Poster Default -->
+  <screen name="template_ev_weather_poster">
+    <widget source="session.Event_Now" render="Label" position="631,600" size="110,29" transparent="1" zPosition="1" font="Regular; 24" halign="left">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <eLabel text="Next:" position="20,600" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
+    <widget source="Service" render="Progress" position="529,610" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget name="datetime" position="124,600" size="240,29" font="Regular;24" halign="center" transparent="1" />
+    <ePixmap position="92,600" size="30,29" zPosition="10" pixmap="buttons/left.png" transparent="1" alphatest="blend" />
+    <ePixmap position="366,600" size="30,29" zPosition="10" pixmap="buttons/right.png" transparent="1" alphatest="blend" />
+    <widget name="duration" position="399,600" size="120,29" font="Regular;24" halign="center" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="523,639" size="220,20" font="Regular; 20" foregroundColor="selectedFG" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="Event" render="NFRBackdrop" position="815,400" size="415,234" borderColor="selectedFG" borderWidth="2" zPosition="2" />
+  </screen>
+  <!-- TEMPLATES Poster End -->
   <!-- TEMPLATES backgrounds-->
- <screen name="template_pixmap_menu_setup">
- <ePixmap pixmap="NFR_Skin/BG-Pixmaps/menu-setup_default.png" position="0,0" zPosition="-20" size="1280,720" />
+  <screen name="template_pixmap_menu_setup">
+    <ePixmap pixmap="BG-Pixmaps/menu-setup_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
- <screen name="template_pixmap_browser-epg">
- <ePixmap pixmap="NFR_Skin/BG-Pixmaps/browser-epg_default.png" position="0,0" zPosition="-20" size="1280,720" />
+  <screen name="template_pixmap_browser-epg">
+    <ePixmap pixmap="BG-Pixmaps/browser-epg_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
- <screen name="template_pixmap_channel_selection">
- <ePixmap pixmap="NFR_Skin/BG-Pixmaps/channel_selection_default.png" position="0,0" zPosition="-20" size="1280,720" />
+  <screen name="template_pixmap_channel_selection">
+    <ePixmap pixmap="BG-Pixmaps/channel_selection_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
- <screen name="template_pixmap_MovieSelection">
- <ePixmap pixmap="NFR_Skin/BG-Pixmaps/MovieSelection_default.png" position="0,0" zPosition="-20"  size="1280,720"  />
+  <screen name="template_pixmap_MovieSelection">
+    <ePixmap pixmap="BG-Pixmaps/MovieSelection_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
- <screen name="template_pixmap_quick_menu">
- <ePixmap pixmap="NFR_Skin/BG-Pixmaps/quick_menu_default.png" position="0,0" zPosition="-20" size="1280,720" />
-<!--  <ePixmap pixmap="NFR_Skin/menu/quick_menu_line.png" position="452,69" zPosition="2" size="13,591" /> -->
+  <screen name="template_pixmap_quick_menu">
+    <ePixmap pixmap="BG-Pixmaps/quick_menu_default.png" position="0,0" zPosition="-20" size="1280,720" />
+    <!--  <ePixmap pixmap="menu/quick_menu_line.png" position="452,69" zPosition="2" size="13,591" /> -->
   </screen>
- <screen name="template_pixmap_second-infobar">
- <ePixmap pixmap="NFR_Skin/BG-Pixmaps/second-infobar_default.png" position="0,0" zPosition="-20" size="1280,720" />
+  <screen name="template_pixmap_second-infobar">
+    <ePixmap pixmap="BG-Pixmaps/second-infobar_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
   <screen name="template_pixmap_nfr_bag">
- <ePixmap pixmap="NFR_Skin/menu/nfr_bag.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
-  </screen> 
- <screen name="template_pixmap_quick_menu_line">
- <ePixmap pixmap="NFR_Skin/menu/quick_menu_line.png" position="453,75" zPosition="2" size="13,596" />
-  </screen> 
- <screen name="template_pixmap_channel_selection_line">
- <ePixmap pixmap="NFR_Skin/menu/quick_menu_line.png" position="335,69" zPosition="2" size="13,591" />
+    <ePixmap pixmap="menu/nfr_bag.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
   </screen>
- <screen name="template_pixmap_Infobar_full">
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_full.png" />
- </screen>
- <screen name="template_pixmap_Infobar">
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar.png" />
- </screen>
- <screen name="template_pixmap_Infobar_light">
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_light.png" />
- </screen>
- <screen name="template_pixmap_Infobar-Movie">
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_Movie.png" />
- </screen>
+  <screen name="template_pixmap_quick_menu_line">
+    <ePixmap pixmap="menu/quick_menu_line.png" position="453,75" zPosition="2" size="13,596" />
+  </screen>
+  <screen name="template_pixmap_channel_selection_line">
+    <ePixmap pixmap="menu/quick_menu_line.png" position="335,69" zPosition="2" size="13,591" />
+  </screen>
+  <screen name="template_pixmap_Infobar_full">
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="menu/Infobar_full.png" />
+  </screen>
+  <screen name="template_pixmap_Infobar">
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="menu/Infobar.png" />
+  </screen>
+  <screen name="template_pixmap_Infobar_light">
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="menu/Infobar_light.png" />
+  </screen>
+  <screen name="template_pixmap_Infobar-Movie">
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="menu/Infobar_Movie.png" />
+  </screen>
   <!-- TEMPLATES backgrounds trans-->
-
- <screen name="template_fullscreen_1280_title">
+  <screen name="template_fullscreen_1280_title">
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
-   <panel name="template_pixmap_menu_setup" />
+    <panel name="template_pixmap_menu_setup" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
   </screen>
   <screen name="template_fullscreen_1280">
-   <panel name="template_pixmap_menu_setup" />
+    <panel name="template_pixmap_menu_setup" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -245,11 +436,11 @@
     </widget>
   </screen>
   <screen name="template_pig_large">
-   <eLabel position="661,70" size="596,371" zPosition="2" backgroundColor="selectedFG" />
-  <widget source="session.VideoPicture" render="Pig" position="663,104" size="592,335" zPosition="3" backgroundColor="background-pig" />
-  <widget source="session.CurrentService" render="Label" position="663,72" size="592,30" font="Regular;22" foregroundColor="white" borderWidth="2" transparent="0" valign="center" halign="center" noWrap="1" zPosition="5">
-   <convert type="ServiceName">Name</convert>
-  </widget>
+    <eLabel position="661,70" size="596,371" zPosition="2" backgroundColor="selectedFG" />
+    <widget source="session.VideoPicture" render="Pig" position="663,104" size="592,335" zPosition="3" backgroundColor="background-pig" />
+    <widget source="session.CurrentService" render="Label" position="663,72" size="592,30" font="Regular;22" foregroundColor="white" borderWidth="2" transparent="0" valign="center" halign="center" noWrap="1" zPosition="5">
+      <convert type="ServiceName">Name</convert>
+    </widget>
   </screen>
   <screen name="template_pig_medium">
     <eLabel position="920,70" size="354,231" zPosition="2" backgroundColor="selectedFG" />
@@ -265,143 +456,143 @@
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-    <screen name="template_menu_buttons">
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+  <screen name="template_menu_buttons">
+    <ePixmap pixmap="buttons/key_green.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="green" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="yellow" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="blue" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
- </screen>
+  </screen>
   <screen name="template_name_long_red_o_blue">
- <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="11,689" size="25,25" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="261,689" size="25,25" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="510,689" size="25,25" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="760,689" size="25,25" alphatest="blend" transparent="1" />
-  <widget name="key_red" position="39,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-  <widget name="key_green" position="289,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-  <widget name="key_yellow" position="538,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-  <widget name="key_blue" position="787,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="11,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="261,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="510,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="760,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="39,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_green" position="289,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_yellow" position="538,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_blue" position="787,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_name_red_o_blue">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="640,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="640,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_yellow" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_blue" position="669,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_name_red_o_yellow">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_yellow" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_name_red_green_blue">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_blue" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_name_red_green">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
-    <screen name="template_source_long_red_o_blue">
- <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="11,689" size="25,25" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="261,689" size="25,25" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="510,689" size="25,25" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="760,689" size="25,25" alphatest="blend" transparent="1" />
-  <widget source="key_red" render="Label" position="39,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-  <widget source="key_green" render="Label" position="289,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-  <widget source="key_yellow" render="Label" position="538,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-  <widget source="key_blue" render="Label" position="787,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+  <screen name="template_source_long_red_o_blue">
+    <ePixmap pixmap="buttons/key_red.png" position="11,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="261,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="510,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="760,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget source="key_red" render="Label" position="39,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="key_green" render="Label" position="289,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="key_yellow" render="Label" position="538,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="key_blue" render="Label" position="787,689" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_source_red_o_blue">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="640,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="640,689" size="25,25" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_green" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_yellow" render="Label" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_blue" render="Label" position="669,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_source_red_o_yellow">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_green" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_yellow" render="Label" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_source_red_green_blue">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_green" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_blue" render="Label" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_source_red_green">
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_green" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   </screen>
   <screen name="template_info_menu_exit_1280">
-    <ePixmap position="1050,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_info.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1050,688" size="64,26" zPosition="10" pixmap="buttons/key_info.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_info_ok_exit_1280">
-    <ePixmap position="1050,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_info.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1050,688" size="64,26" zPosition="10" pixmap="buttons/key_info.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_ok.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_menu_ok_exit_1280">
-    <ePixmap position="1050,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1050,688" size="64,26" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_ok.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_info_ok_1280">
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_info.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_info.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_ok.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_menu_ok_1280">
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_ok.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_ok_exit_1280">
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_ok.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_info_exit_1280">
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_info.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_info.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_menu_exit_1280">
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_menu_info_1280">
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_info.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_info.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_menu_help_1280">
-    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_help.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1125,688" size="64,26" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_help.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_exit_1280">
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="template_crypt_info">
     <!--  CRYPT -->
@@ -884,155 +1075,155 @@
     <!-- CRYPT  -->
   </screen>
   <screen name="template_infobar_tuner_info">
-   <!--  TunerInfo -->
-  <eLabel text="A" position="12,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="B" position="31,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="C" position="50,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="D" position="69,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <!--text="E" results "O" -> text="E " results "E"-->
-  <eLabel text="E " position="88,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="F" position="107,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="G" position="126,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="H" position="145,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="I" position="164,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="J" position="183,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="K" position="202,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel text="L" position="221,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="11,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="30,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="49,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="68,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="0" position="87,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="106,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="125,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="144,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="163,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="182,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="201,700" size="17,18" />
-  <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="220,700" size="17,18" />
-  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="12,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="B" position="31,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="50,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">4</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="69,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!--text="E" results "O" -> text="E " results "E"-->
-  <widget source="session.TunerInfo" render="FixedLabel" text="E " position="88,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">16</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="F" position="107,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">32</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="G" position="126,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">64</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="H" position="145,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">128</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="I" position="164,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">256</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="J" position="183,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">512</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="K" position="202,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1024</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="L" position="221,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1048</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="12,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">0,0</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="31,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">1,1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="50,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">2,2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="69,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">3,3</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!--text="E" results "O" -> text="E " results "E"-->
-  <widget source="session.FrontendInfo" render="FixedLabel" text="E " position="88,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">4,4</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="F" position="107,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">5,5</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="G" position="126,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">6,6</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="H" position="145,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">7,7</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="I" position="164,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">8,8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="J" position="183,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">9,9</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="K" position="202,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">10,10</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="L" position="221,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">11,11</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-   </screen>
+    <!--  TunerInfo -->
+    <eLabel text="A" position="12,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="B" position="31,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="C" position="50,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="D" position="69,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <!--text="E" results "O" -> text="E " results "E"-->
+    <eLabel text="E " position="88,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="F" position="107,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="G" position="126,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="H" position="145,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="I" position="164,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="J" position="183,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="K" position="202,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel text="L" position="221,701" zPosition="2" size="15,16" font="Regular; 16" halign="center" foregroundColor="grey" backgroundColor="background" transparent="0" valign="center" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="11,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="30,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="49,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="68,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="0" position="87,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="106,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="125,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="144,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="163,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="182,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="201,700" size="17,18" />
+    <eLabel name="Rahmem_tuner" backgroundColor="selectedFG" zPosition="1" position="220,700" size="17,18" />
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="12,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="31,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="50,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="69,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!--text="E" results "O" -> text="E " results "E"-->
+    <widget source="session.TunerInfo" render="FixedLabel" text="E " position="88,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="F" position="107,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="G" position="126,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">64</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="H" position="145,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">128</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="I" position="164,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">256</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="J" position="183,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">512</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="K" position="202,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1024</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="L" position="221,701" zPosition="3" size="15,16" font="Regular; 16" halign="center" foregroundColor="yellow" backgroundColor="background" transparent="0" valign="center">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1048</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="12,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="31,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="50,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="69,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!--text="E" results "O" -> text="E " results "E"-->
+    <widget source="session.FrontendInfo" render="FixedLabel" text="E " position="88,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">4,4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="F" position="107,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">5,5</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="G" position="126,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">6,6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="H" position="145,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">7,7</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="I" position="164,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">8,8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="J" position="183,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">9,9</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="K" position="202,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">10,10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="L" position="221,701" zPosition="5" size="15,16" font="Regular; 16" halign="center" foregroundColor="menu" backgroundColor="selectedFG" transparent="0" valign="center">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">11,11</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
     <!-- WEATHER -->
  <!--  <screen name="template_weather">
    <widget noWrap="1" foregroundColor="yellow" font="Regular; 18" render="Label" position="295,3" size="60,20" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
@@ -1108,11 +1299,11 @@
     <widget name="description" position="22,525" size="720,100" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
     <widget name="HelpWindow" position="78,320" size="600,200" zPosition="2" transparent="1" alphatest="blend" />
     <widget name="footnote" position="22,630" size="720,30" font="Regular; 22" halign="right" valign="center" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
     <widget source="key_green" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-    <ePixmap pixmap="NFR_Skin/icons/setup.png" position="880,390" size="290,290" zPosition="2" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="icons/setup.png" position="880,390" size="290,290" zPosition="2" transparent="1" alphatest="blend" />
     <eLabel name="" position="22,522" size="720,2" backgroundColor="selectedFG" />
   </screen>
     <screen name="template_menu_listbox">
@@ -1234,39 +1425,39 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     </widget>
     <widget name="config" position="185,460" size="710,200" itemHeight="30" zPosition="14" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="selectedBG" foregroundColorSelected="selectedFG" transparent="1" />
     <widget name="HelpWindow" position="330,180" size="402,128" zPosition="1" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="languagetext" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" transparent="1" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
     <panel name="template_pixmap_quick_menu" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
+    <ePixmap pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="912,58" size="350,610" />
   </screen>
   <screen name="template_wizardrc">
     <widget name="rc" position="25,84" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
-    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="NFR_Skin/arrowdown.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="NFR_Skin/arrowdown.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="NFR_Skin/arrowup.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="NFR_Skin/arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
   </screen>
 
  <!-- template_progress_Infobar_Default -->
 
  <screen name="template_progress_default">
-  <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_default.png" transparent="1" zPosition="7">
+  <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="menu/Progress_default.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
   </widget>
  </screen>
 
  <screen name="template_progress_default_light">
-  <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_default.png" transparent="1" zPosition="7">
+  <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="menu/Progress_default.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
   </widget>
  </screen>
 
 <screen name="template_progress_full_default">
-<widget render="Progress" position="244,609" size="760,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_default_full.png" transparent="1" zPosition="7">
+<widget render="Progress" position="244,609" size="760,10" source="session.Event_Now" pixmap="menu/Progress_default_full.png" transparent="1" zPosition="7">
  <convert type="EventTime">Progress</convert>
  </widget>
 </screen> 
@@ -1351,10 +1542,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget source="session.CurrentService" render="Label" position="368,3" size="30,20" font="Regular;18" zPosition="10" halign="left" valign="center" foregroundColor="green" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="NFRYahooWeather">CF</convert>
     </widget>
-<ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="566,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
-<ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="1215,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
-<ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="998,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
-<ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="782,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
+<ePixmap pixmap="Wettericons/cold_hot.png" position="566,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
+<ePixmap pixmap="Wettericons/cold_hot.png" position="1215,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
+<ePixmap pixmap="Wettericons/cold_hot.png" position="998,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
+<ePixmap pixmap="Wettericons/cold_hot.png" position="782,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
 </screen>
 <screen name="default_ChannelSelection_Default">
 	<widget name="list" position="22,70" size="800,590" scrollbarMode="showOnDemand" 
@@ -2312,10 +2503,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 
    <!-- template_button_sel-->
  <screen name="template_EPG_Multi">
-  <widget name="now_button_sel" position="34,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />
-  <widget name="next_button_sel" position="198,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />
-  <widget name="more_button_sel" position="362,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />
-  <ePixmap position="34,117" size="700,1" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />  
+  <widget name="now_button_sel" position="34,115" size="150,5" zPosition="2" pixmap="colors/0000ffff.png" />
+  <widget name="next_button_sel" position="198,115" size="150,5" zPosition="2" pixmap="colors/0000ffff.png" />
+  <widget name="more_button_sel" position="362,115" size="150,5" zPosition="2" pixmap="colors/0000ffff.png" />
+  <ePixmap position="34,117" size="700,1" zPosition="2" pixmap="colors/0000ffff.png" />  
  </screen>
   <!--Template MSN Weather  -->
   <screen name="template_weather">
@@ -2384,15 +2575,57 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="MSNWeather">observationtime</convert>
     </widget>
     <eLabel text="Uhr" position="145,25" size="40,20" zPosition="8" halign="left" backgroundColor="background" font="Regular; 18" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="503,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
-    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="723,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
-    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="943,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
-    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="1161,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
-	<ePixmap position="0,1" zPosition="-5" size="1280,50" pixmap="NFR_Skin/Wettericons/4_Day_Back.png" />
+    <ePixmap pixmap="Wettericons/cold_hot.png" position="503,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+    <ePixmap pixmap="Wettericons/cold_hot.png" position="723,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+    <ePixmap pixmap="Wettericons/cold_hot.png" position="943,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+    <ePixmap pixmap="Wettericons/cold_hot.png" position="1161,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+	<ePixmap position="0,1" zPosition="-5" size="1280,50" pixmap="Wettericons/4_Day_Back.png" />
     <eLabel name="" position="1066,3" size="1,42" backgroundColor="selectedFG" />
     <eLabel name="" position="848,3" size="1,42" backgroundColor="selectedFG" />
     <eLabel name="" position="629,3" size="1,42" backgroundColor="selectedFG" />
     <eLabel name="" position="409,3" size="1,42" backgroundColor="selectedFG" />
     <eLabel name="" position="0,51" size="1280,1" backgroundColor="selectedFG" />
     </screen>
+	<!-- TEMPLATES VpnIp_Infobar-->
+ <screen name="template_VpnIp_IF">
+ <eLabel name="fake" position="0, 0" size="0,0" />
+ </screen>
+ <!-- template_VpnIp_Infobar -->
+<screen name="template_VpnIp_Infobar">
+  <applet type="onLayoutFinish">
+  </applet>
+  <eLabel text="VPN:" backgroundColor="background" position="1045,470" size="40,20" font="Regular;16" halign="center" valign="center" foregroundColor="selectedFG" transparent="1" zPosition="1" borderWidth="1" borderColor="black" />
+  <eLabel backgroundColor="red" position="1045,488" size="37,3" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="green" position="1045,488" size="37,3" zPosition="2" render="FixedLabel" source="session.CurrentService" foregroundColor="white">
+    <convert type="NFRSambaVpnIp_converter">vpn</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget backgroundColor="background" position="1125,471" size="150,20" font="Regular;16" noWrap="1" halign="left" valign="center" foregroundColor="selectedFG" transparent="1" zPosition="10" render="Label" source="session.CurrentService" borderWidth="1" borderColor="black">
+    <convert type="NFRSambaVpnIp_converter">c+myip</convert>
+  </widget>
+  <widget position="1090,470" size="30,20" zPosition="10" render="NFRSambaVpnIp_renderer" source="session.CurrentService" alphatest="blend">
+    <convert type="NFRSambaVpnIp_converter">flag</convert>
+  </widget>
+</screen>
+ <!-- TEMPLATES VpnIp_SecondInfobar-->
+ <screen name="template_VpnIp_SIF">
+ <eLabel name="fake" position="0, 0" size="0,0" />
+ </screen>
+ <!-- template_VpnIp_SecondInfobar -->
+<screen name="template_VpnIp_SecondInfobar">
+  <applet type="onLayoutFinish">
+  </applet>
+  <eLabel text="VPN:" position="920,365" size="50,25" font="Regular;18" foregroundColor="selectedFG" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="1" />
+  <eLabel backgroundColor="red" position="920,387" size="45,3" zPosition="1" foregroundColor="white" />
+  <widget backgroundColor="green" position="920,387" size="45,3" zPosition="2" render="FixedLabel" source="session.CurrentService" foregroundColor="white">
+    <convert type="NFRSambaVpnIp_converter">vpn</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget backgroundColor="background" position="1005,365" size="180,25" font="Regular; 18" noWrap="1" halign="left" valign="center" foregroundColor="selectedFG" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
+    <convert type="NFRSambaVpnIp_converter">c+myip</convert>
+  </widget>
+  <widget position="973,367" size="30,20" zPosition="11" render="NFRSambaVpnIp_renderer" source="session.CurrentService" alphatest="blend">
+    <convert type="NFRSambaVpnIp_converter">flag</convert>
+  </widget>
+</screen>
 </skin>

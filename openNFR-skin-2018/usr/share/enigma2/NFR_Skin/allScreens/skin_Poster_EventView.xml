@@ -1,0 +1,42 @@
+<skin>
+ <!-- EventView_Backdrop-->
+  <!-- TEMPLATES EV Poster Default -->
+  
+ <screen name="template_ev_default" >
+    <widget source="session.Event_Now" render="Label" position="631,630" size="110,29" transparent="1" zPosition="1" font="Regular; 24" halign="left">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <eLabel text="Next:" position="20,630" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
+    <widget source="Service" render="Progress" position="526,639" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget name="datetime" position="124,630" size="240,29" font="Regular;24" halign="center" transparent="1" />
+    <ePixmap position="92,630" size="30,29" zPosition="10" pixmap="buttons/left.png" transparent="1" alphatest="blend" />
+    <ePixmap position="366,630" size="30,29" zPosition="10" pixmap="buttons/right.png" transparent="1" alphatest="blend" />
+    <widget name="duration" position="399,630" size="120,29" font="Regular;24" halign="center" transparent="1" />
+    <widget source="Event" render="NFRBackdrop" position="815,400" size="415,234" borderColor="selectedFG" borderWidth="2" zPosition="2" />
+	 </screen>
+	   <!-- TEMPLATES EV Poster Weather-->
+  <screen name="template_ev_default_weather">
+    <widget source="session.Event_Now" render="Label" position="631,600" size="110,29" transparent="1" zPosition="1" font="Regular; 24" halign="left">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <eLabel text="Next:" position="20,600" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
+    <widget source="Service" render="Progress" position="529,610" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget name="datetime" position="124,600" size="240,29" font="Regular;24" halign="center" transparent="1" />
+    <ePixmap position="92,600" size="30,29" zPosition="10" pixmap="buttons/left.png" transparent="1" alphatest="blend" />
+    <ePixmap position="366,600" size="30,29" zPosition="10" pixmap="buttons/right.png" transparent="1" alphatest="blend" />
+    <widget name="duration" position="399,600" size="120,29" font="Regular;24" halign="center" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="523,639" size="220,20" font="Regular; 20" foregroundColor="selectedFG" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="Event" render="NFRBackdrop" position="815,400" size="415,234" borderColor="selectedFG" borderWidth="2" zPosition="2" />
+  </screen>
+</skin>
+
+ 
+ 

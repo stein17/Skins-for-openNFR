@@ -1,9 +1,7 @@
-# - * - Codierung: UTF-8 - * -
 from Components.VariableText import VariableText
 from enigma import eLabel
-from Components.Renderer.Renderer import Renderer
-from Components.Language import language
-from os import path, popen, environ
+from Renderer import Renderer
+from os import path, popen
 
 class NFRSYSTemp(Renderer, VariableText):
 	def __init__(self):
@@ -41,19 +39,15 @@ class NFRSYSTemp(Renderer, VariableText):
 								systemp = temp[2]
 					except:
 						systemp = ""
-                elif path.exists('/sys/devices/virtual/thermal/thermal_zone0/temp'):
-                    try:
-				f = open('/sys/devices/virtual/thermal/thermal_zone0/temp', 'r')
-				temp = f.read()
-				temp = temp[:-4]
-				f.close()
+				elif path.exists('/sys/devices/virtual/thermal/thermal_zone0/temp'):
+					out_line = open('/sys/devices/virtual/thermal/thermal_zone0/temp', 'r')
+					systemp = out_line.read()
+					systemp = systemp[:-4]
+				if not systemp == "-- " and len(systemp) > 2:
+					systemp = systemp[:2]
 			except:
-				temp = ""
-		if temp and int(temp.replace('\n', '')) > 0:
-			#info ="systemp: " + temp.replace('\n', '')  + str('\xc2\xb0') + "C"
-			info = temp.replace('\n', '').replace(' ', '') + TEMPSIGN
-			info = _("systemp:%s") % info
-		return info
+				pass
+			self.text = systemp + str('\xc2\xb0') + "C"
 			
 	def onShow(self):
 		self.suspended = False

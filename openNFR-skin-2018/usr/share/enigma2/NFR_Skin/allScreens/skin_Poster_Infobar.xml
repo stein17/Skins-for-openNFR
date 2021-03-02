@@ -1,0 +1,7 @@
+<skin>
+  <!-- skin_infobar_Poster_Infobar_Now -->
+<screen name="template_ib_poster">
+ <widget source="session.Event_Now" render="NFRPoster" borderColor="selectedFG" borderWidth="2" position="10,220" size="185,278" zPosition="10" />
+</screen>
+</skin>
+ 
