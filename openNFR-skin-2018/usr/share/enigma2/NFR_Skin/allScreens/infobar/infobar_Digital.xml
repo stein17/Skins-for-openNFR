@@ -1,7 +1,7 @@
 <skin>
  <!-- skin_infobar_digital.xml -->
 <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-  <widget alphatest="blend" position="190,569" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="4">
+  <widget alphatest="blend" position="190,569" size="220,132" render="NFRXPicon" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget font="Regular; 30" halign="right" position="420,605" render="Label" size="90,38" source="session.Event_Now" transparent="1" foregroundColor="selectedFG" backgroundColor="background" >
@@ -45,42 +45,42 @@
   <widget source="session.CurrentService" render="Label" position="97,642" size="65,24" font="Regular; 24" halign="left" valign="center" transparent="1" foregroundColor="grey" backgroundColor="background" >
     <convert type="ServiceInfo">VideoHeight</convert>
   </widget>
- <!--  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar.png" /> -->
-  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="358,573" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
+ <!--  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="menu/Infobar.png" /> -->
+  <widget alphatest="blend" pixmap="icons/ico_rec_on.png" position="358,573" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_dolby_off.png" position="8,672" size="47,26" zPosition="1" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_dolby_off.png" position="8,672" size="47,26" zPosition="1" alphatest="blend">
     <convert type="ServiceInfo">IsStereo</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_dolby_on.png" position="8,672" size="47,26" zPosition="2" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_dolby_on.png" position="8,672" size="47,26" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">IsMultichannel</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" position="66,672" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_sd_on.png" zPosition="1" alphatest="blend">
+  <widget source="session.CurrentService" position="66,672" size="47,26" render="Pixmap" pixmap="icons/ico_sd_on.png" zPosition="1" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">0,719</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" position="66,672" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_off.png" zPosition="1" alphatest="blend">
+  <widget source="session.CurrentService" position="66,672" size="47,26" render="Pixmap" pixmap="icons/ico_hd_off.png" zPosition="1" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">720,1079</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" position="66,672" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_on.png" zPosition="1" alphatest="blend">
+  <widget source="session.CurrentService" position="66,672" size="47,26" render="Pixmap" pixmap="icons/ico_hd_on.png" zPosition="1" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">720,1080</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,672" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+  <widget alphatest="blend" pixmap="icons/ico_uhd_on.png" position="66,672" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">Is4K</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_format_off.png" position="125,672" size="47,26" zPosition="1" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_format_off.png" position="125,672" size="47,26" zPosition="1" alphatest="blend">
     <convert type="ServiceInfo">IsNotWidescreen</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_format_on.png" position="125,672" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+  <widget alphatest="blend" pixmap="icons/ico_format_on.png" position="125,672" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsWidescreen</convert>
     <convert type="ConditionalShowHide" />
   </widget>
@@ -88,7 +88,7 @@
   <widget source="session.FrontendStatus" render="Label" position="94,603" size="78,24" font="Regular; 24" valign="center" noWrap="1" transparent="1" halign="left" foregroundColor="selectedFG" backgroundColor="background" >
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <widget source="session.FrontendStatus" pixmap="NFR_Skin/menu/snr.png" position="24,630" size="131,5" render="Progress"  backgroundColor="background" zPosition="3" transparent="1">
+  <widget source="session.FrontendStatus" pixmap="menu/snr.png" position="24,630" size="131,5" render="Progress"  backgroundColor="background" zPosition="3" transparent="1">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
   <eLabel name="" position="1130,608" size="1,30" backgroundColor="selectedFG" zPosition="3" />
@@ -98,5 +98,7 @@
   <panel name="template_digitalclock_widget" />
     <panel name="template_progress_default"/>
 	<panel name="template_pixmap_Infobar"/>
+	<panel name="template_ib_poster" />
+	<panel name="template_VpnIp_IF" />
 </screen>
     </skin>
