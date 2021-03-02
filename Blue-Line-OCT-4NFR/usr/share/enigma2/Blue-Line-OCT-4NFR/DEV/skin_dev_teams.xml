@@ -1302,7 +1302,7 @@
     <ePixmap position="1082,542" size="270,220" zPosition="2" pixmap="icons/keyboard.png" transparent="1" alphatest="blend" />
   </screen> -->
   <!-- NFR PluginBrowser FHD  -->
-  <screen name="PluginBrowser" position="0,0" size="1920,1080" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="PluginBrowser" position="0,0" size="1920,1080" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1312,7 +1312,7 @@
     <ePixmap pixmap="buttons/key_red.png" position="13,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="buttons/key_green.png" position="270,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="buttons/key_yellow.png" position="582,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="buttons/key_blue.png" position="883,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_blue.png" position="923,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="buttons/key_menu.png" position="1401,1010" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap pixmap="buttons/key_exit.png" position="1320,1010" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="icons/menu_mainmenu_pluginmanager.png" transparent="1" />
@@ -1320,8 +1320,8 @@
     <eLabel name="background" backgroundColor="background" position="1300,995" size="180,80" />
     <widget name="key_red" position="58,1000" size="200,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="315,1000" size="260,70" zPosition="1" valign="center" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_yellow" position="630,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_blue" position="930,1000" size="295,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="630,1000" size="285,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="970,1000" size="295,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   </screen>
   <!-- NFR PluginInstall FHD  -->
   <screen name="PluginInstall" position="center,center" size="1920,1080" title="Installiere Plugins" flags="wfNoBorder" backgroundColor="transparent">
@@ -1692,9 +1692,13 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel name="vertikalline" position="22,640" size="890,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget source="global.CurrentTime" render="Label" position="90,645" size="830,45" font="Regular;32" halign="left" valign="bottom" backgroundColor="background" foregroundColor="lightblue" noWrap="1" transparent="1" zPosition="3">
+	   <!-- CPU Temp  6.5-->
+<!--     <widget source="global.CurrentTime" render="Label" position="90,645" size="830,45" font="Regular;32" halign="left" valign="bottom" backgroundColor="background" foregroundColor="lightblue" noWrap="1" transparent="1" zPosition="3">
     <convert type="BLSTBinfo">CPUtemp</convert>
-  </widget>
+  </widget> -->
+  	   <!-- CPU Temp  6.4 -->
+   <eLabel text="SysTemp:" position="90,645" size="160,45" font="Regular; 32" halign="left" valign="bottom" backgroundColor="background" noWrap="1" transparent="1" zPosition="2" foregroundColor="lightblue" />
+   <widget source="global.CurrentTime" render="BLSYSTemp" position="262,645" size="290,45" font="Regular;32" halign="left" valign="bottom" backgroundColor="background" foregroundColor="lightblue" noWrap="1" transparent="1" zPosition="3" />
   <widget source="session.CurrentService" render="Label" position="90,920" size="830,45" font="Regular;32" halign="left" valign="bottom" backgroundColor="background" foregroundColor="lightblue" noWrap="1" transparent="1" zPosition="3">
     <convert type="BLCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
   </widget>
@@ -1793,10 +1797,10 @@
     <eLabel text="Weather Setup" position="1025,1000" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <eLabel text="/ Speichern" position="374,1000" size="160,70" font="Regular; 27" halign="center" backgroundColor="black" transparent="1" valign="center" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_green.png" position="280,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_yellow.png" position="555,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Blue-Line-OCT-4NFR/buttons/key_menu.png" position="954,1012" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_green.png" position="280,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="555,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_menu.png" position="954,1012" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <widget name="key_red" position="67,1000" size="200,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="324,1000" size="100,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="600,1000" size="400,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
