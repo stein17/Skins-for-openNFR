@@ -18,21 +18,21 @@
     <screen name="QuitMainloopScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <ePixmap pixmap="Ultimate/skin_default/icons/input_info.png" position="276,164" size="53,53" alphatest="blend" zPosition="3" />
     <widget name="text" position="270,250" size="735,310" font="Regular;32" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/DEV/start_nfr.png" position="center,center" size="1280,720" alphatest="blend" zPosition="-20" />
-    <ePixmap position="center,center" zPosition="-15" size="781,452" pixmap="Ultimate/BG-Pixmaps/Pig_Large/Pig_large_Org.png" alphatest="blend" transparent="1"/>
+    <ePixmap pixmap="DEV/start_nfr.png" position="center,center" size="1280,720" alphatest="blend" zPosition="-20" />
+    <ePixmap position="center,center" zPosition="-15" size="781,452" pixmap="BG-Pixmaps/Pig_Large/Pig_large_Org.png" alphatest="blend" transparent="1"/>
 	<panel name="template_pixmap_line_hor_QuitMainloop"/>
   </screen>
   <!-- NFR BootLogoHelper FHD  -->
   <screen name="BootLogoHelper" position="0,0" size="1280,720" title="Bootlogo Helper" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
     <widget source="key_green" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_blue" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="comment" position="30,60" size="700,540" zPosition="1" font="Regular;22" halign="center" valign="center" transparent="1" />
     <widget name="status" position="30,620" size="700,50" zPosition="1" font="Regular;20" halign="center" valign="center" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_pixmap_line_hor_610" />
     <panel name="template_date" />
     <panel name="template_pixmap_vert_line_738" />
@@ -47,11 +47,11 @@
   <!-- NFR LogoManagerConfigScreen FHD  -->
   <screen name="LogoManagerConfigScreen" title="LogoManager Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <widget name="buttonred" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="buttongreen" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <panel name="template_date" />
@@ -67,10 +67,10 @@
    
   <!-- NFR About FHD  -->
   <screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="background">
-    <widget name="AboutScrollLabel" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" render="Listbox" position="30,220" size="700,450" font="Regular;22" backgroundColor="background" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="Ultimate/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+    <widget name="AboutScrollLabel" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" render="Listbox" position="30,220" size="700,450" font="Regular;22" backgroundColor="background" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
   <panel name="template_pixmap_line_hor_210" />
   <panel name="ScrollBarTemplate size=700,450_P220" />
   <panel name="template_title_date" />
@@ -87,9 +87,9 @@
   <!-- NFR Devices FHD  -->
   <!-- NFR InfoPanel FHD  -->
 <screen name="Infopanel" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
-    <!-- <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" /> -->
-    <ePixmap position="870,380" size="280,280" pixmap="Ultimate/icons/nfr_info_panel.png" alphatest="blend" transparent="1" />
-    <widget name="Mlist" position="30,60" size="700,560" zPosition="1" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" backgroundColor="background" alphatest="blend" transparent="1" />
+    <!-- <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" /> -->
+    <ePixmap position="870,380" size="280,280" pixmap="icons/nfr_info_panel.png" alphatest="blend" transparent="1" />
+    <widget name="Mlist" position="30,60" size="700,560" zPosition="1" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" backgroundColor="background" alphatest="blend" transparent="1" />
     <widget name="label1" position="30,640" size="700,30" font="Regular;22" transparent="1" foregroundColor="selectedFG" backgroundColor="background" valign="center" halign="left" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="54,691" size="150,20" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
@@ -113,7 +113,7 @@
   <widget name="sublist" position="473,60" size="415,600" itemHeight="50" font="Regular; 22" scrollbarMode="showOnDemand" transparent="1" backgroundColor="background" />
   <widget name="description" position="898,310" size="350,360" zPosition="1" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
   <eLabel text="Quick Launch Menu" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="898,302" zPosition="2" size="350,5" />
+  <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="898,302" zPosition="2" size="350,5" />
   <panel name="template_pixmap_vert_line_450" />
   <panel name="template_name_red_o_blue" />
   <panel name="template_pig_smal" />
@@ -127,7 +127,7 @@
   <!-- NFR Tastenbelegung FHD  -->
   <!-- NFR ButtonSetup FHD  -->
   <screen name="HotkeySetup" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="30,60" zPosition="1" size="700,460" font="Regular;20" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="list" position="30,60" zPosition="1" size="700,460" font="Regular;20" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
     <widget name="choosen" position="30,530" zPosition="1" size="700,130" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="background" />
     <widget name="description" position="765,390" size="485,280" font="Regular; 20" halign="center" valign="center" transparent="1" zPosition="1" />
     <eLabel text="Multi-Key-Panel" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
@@ -147,7 +147,7 @@
   </screen>
   <!-- NFR ButtonSetupSelect FHD  -->
   <screen name="HotkeySetupSelect" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="30,60" zPosition="1" size="700,460" font="Regular;20" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="list" position="30,60" zPosition="1" size="700,460" font="Regular;20" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
     <widget name="choosen" position="30,530" zPosition="1" size="700,140" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="background" />
     <eLabel text="Multi-Key-Panel" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget name="description" position="765,390" size="485,280" font="Regular; 20" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -168,7 +168,7 @@
   <!-- NFR HddSetup FHD  -->
   <screen name="HddSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Setup">
     <eLabel text="Hard Drive Setup" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
 					MultiContentEntryText(pos = (70, 3), size = (430, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
@@ -194,7 +194,7 @@
   <!-- NFR HddPartitions FHD  -->
   <screen name="HddPartitions" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Partitions">
     <eLabel text="Hard Drive Partitions" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 7), size = (48, 48), png = 0),
 					MultiContentEntryText(pos = (70, 1), size = (630, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
@@ -220,7 +220,7 @@
   <!-- NFR HddMounts FHD  -->
   <screen name="HddMount" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Mount">
     <eLabel text="Hard Drive Mount" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="menu"   position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1" />
+    <widget name="menu"   position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_name_red_o_blue" />
@@ -263,7 +263,7 @@
   <!-- NFR HddFastRemove FHD  -->
   <screen name="HddFastRemove" position="center,center" size="1280,720" title="HddFastRemove" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="HddFastRemove" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
 					MultiContentEntryText(pos = (65, 3), size = (190, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
@@ -295,10 +295,10 @@
     <widget name="swapstatus_label" position="30,607" size="250,30" foregroundColor="selectedFG" font="Regular;20" transparent="1" />
     <widget name="swapstatus_status" position="316,607" size="250,30" halign="right" font="Regular;20" transparent="1" />
     <widget font="Regular; 22" halign="left" name="status" position="30,569" size="700,25" foregroundColor="selectedFG" backgroundColor="black" transparent="1" />
-    <widget name="ButtonRed" pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
-    <widget name="ButtonGreen" pixmap="Ultimate/buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
-    <widget name="ButtonYellow" pixmap="Ultimate/buttons/key_yellow.png" position="433,689" size="26,26" alphatest="blend" transparent="1" />
-    <widget name="ButtonBlue" pixmap="Ultimate/buttons/key_blue.png" position="640,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget name="ButtonRed" pixmap="buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget name="ButtonGreen" pixmap="buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget name="ButtonYellow" pixmap="buttons/key_yellow.png" position="433,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget name="ButtonBlue" pixmap="buttons/key_blue.png" position="640,689" size="26,26" alphatest="blend" transparent="1" />
     <widget name="ButtonRedtext" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="ButtonGreentext" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="ButtonYellowtext" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
@@ -317,7 +317,7 @@
   <!-- NFR CamManager FHD  -->
 <screen name="NFRCamManager" position="0,0" size="1280,720" title="NFR SoftCam Manager" flags="wfNoBorder" backgroundColor="background">
   <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <widget source="list" render="Listbox" position="30,60" size="700,210" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1">
+  <widget source="list" render="Listbox" position="30,60" size="700,210" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1">
     <convert type="TemplatedMultiContent">{"template": [
 			MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 50), png = 1), 
 			MultiContentEntryText(pos = (120, 10), size = (275, 40), font=0, \
@@ -330,7 +330,7 @@
 
 	}</convert>
   </widget>
-  <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/caminfo_menu.png" transparent="1" alphatest="blend" />
+  <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="icons/caminfo_menu.png" transparent="1" alphatest="blend" />
   <widget name="status" position="30,290" size="700,380" font="Regular;22" halign="left" valign="center" noWrap="1" transparent="1" />
   <panel name="template_date" />
   <panel name="template_name_red_o_blue" />
@@ -346,9 +346,9 @@
 </screen>
   <!-- NFR ConfigEdit FHD  -->
   <screen name="ConfigEdit" position="0,0" size="1280,720" title="SoftCam path configuration" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" zPosition="1" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" zPosition="1" transparent="1" />
     <panel name="template_title_date" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_ok_exit_1280" />
@@ -363,9 +363,9 @@
   </screen>
   <!-- NFR BootvideoSetupScreen FHD  -->
   <screen name="BootvideoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="Mlist" position="30,60" size="700,560" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="black" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="Mlist" position="30,60" size="700,560" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" backgroundColor="black" transparent="1" />
     <widget name="label1" position="30,640" size="700,30" font="Regular;20" transparent="1" backgroundColor="background" halign="left" />
     <panel name="template_pixmap_line_hor_630" />
 	<panel name="ScrollBarTemplate size=700,560" />
@@ -384,7 +384,7 @@
   <!-- NFR SatLoader FHD  -->
   <screen name="Satloader" position="0,0" size="1280,720" title="Satloader Plugin" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="list" position="30,60" size="700,510" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="list" position="30,60" size="700,510" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
     <widget name="info" position="30,590" size="700,80" zPosition="10" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="selectedFG" />
     <panel name="template_pixmap_line_hor_580" />
 	<panel name="ScrollBarTemplate size=700,510" />
@@ -420,9 +420,9 @@
   </screen>
   <!-- NFR DownloadOnLineImage FHD -->
   <screen name="DownloadOnLineImage" position="0,0" size="1280,720" title="NFR4XBoot - Download Image" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="imageList" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" font="Regular;20" zPosition="1" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="imageList" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" font="Regular;20" zPosition="1" transparent="1" />
     <eLabel text="NFR4XBoot - Download Image" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
@@ -439,7 +439,7 @@
   </screen>
   <!-- NFR4XChooseOnLineImage FHD -->
   <screen name="NFR4XChooseOnLineImage" position="0,0" size="1280,720" title="NFR4XBoot - Download OnLine Images" flags="wfNoBorder" backgroundColor="background">
-    <widget source="list" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget source="list" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
     <convert type="TemplatedMultiContent">{"template": [
 	MultiContentEntryText(pos = (350, 3), size = (390, 34), font=0, flags = RT_HALIGN_LEFT, text = 0),
 	MultiContentEntryPixmapAlphaBlend(pos = (5, 3), size = (340, 70), png = 1),
@@ -449,8 +449,8 @@
 	"itemHeight": 75
 	}</convert>
   </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_title_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_pixmap_vert_line_738" />
@@ -465,9 +465,9 @@
   <!-- NFR4XBootImageInstall FHD -->
   <screen name="NFR4XBootImageInstall" position="0,0" size="1280,720" title="NFR4XBoot - Image Installation" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="NFR4XBoot - Image Installation" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1" />
     <widget name="HelpWindow" position="80,450" size="600,200" transparent="1" alphatest="blend" zPosition="2" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
@@ -500,8 +500,8 @@
     <widget name="free_space_progressbar" position="123,132" size="605,13" borderWidth="2" foregroundColor="selectedFG" zPosition="3" />
     <widget name="config" position="30,370" size="700,300" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
     <widget name="key_menu" position="947,688" size="170,24" zPosition="1" font="Regular;20" halign="right" backgroundColor="background" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_menu_ok_1280" />
@@ -519,8 +519,8 @@
     <widget name="label1" position="30,60" size="700,30" zPosition="1" halign="center" font="Regular;25" backgroundColor="white" transparent="1" />
     <widget name="label2" position="30,110" size="700,100" zPosition="1" halign="center" font="Regular;20" backgroundColor="white" transparent="1" />
     <widget name="config" position="30,220" size="700,430" scrollbarMode="showOnDemand" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <eLabel text="NFR4XBoot - Installation" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <panel name="template_pixmap_line_hor_100" />
     <panel name="template_date" />
@@ -539,7 +539,7 @@
   <screen name="SpinnerSelectionBox" position="center,center" size="1280,720" title="SpinnerSelection" flags="wfNoBorder" backgroundColor="background">
     <panel name="template_pixmap_line_hor_630" />
     <widget name="bild" position="765,400" zPosition="1" size="475,270" alphatest="blend" />
-    <widget name="list" position="30,60" size="700,570" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="list" position="30,60" size="700,570" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
     <widget name="text" position="30,650" size="700,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <panel name="template_date" />
@@ -557,9 +557,9 @@
   </screen>
   <!-- NFR RadiologoSelection FHD -->
   <screen name="RadiologoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="Mlist" position="30,60" size="700,570" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="Mlist" position="30,60" size="700,570" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
     <widget name="label1" position="30,650" size="700,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <panel name="template_pixmap_line_hor_630" />
@@ -578,9 +578,9 @@
   </screen>
   <!-- NFR BootlogoSetupScreen FHD -->
   <screen name="BootlogoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="Mlist" position="30,60" size="700,570" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="Mlist" position="30,60" size="700,570" zPosition="1" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1" />
     <widget name="label1" position="30,650" size="700,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <panel name="template_pixmap_line_hor_630" />
@@ -631,9 +631,9 @@
     <eLabel position="332,525" zPosition="2" size="398,25" foregroundColor="pink" backgroundColor="pink" borderWidth="2" borderColor="verygrey" transparent="0" />
     <widget name="label1" position="30,130" size="700,35" font="Regular;20" transparent="1" backgroundColor="background" halign="left" />
     <widget name="label2" position="30,200" size="700,35" font="Regular;20" transparent="1" backgroundColor="background" halign="left" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="30,688" size="22,22" alphatest="blend" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="30,688" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <widget source="key_red" position="50,688" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
     <panel name="template_date" />
     <panel name="template_ok_exit_1280" />
@@ -665,8 +665,8 @@
   <screen name="TimeInput" position="250,280" size=" 500,145" title="">
     <widget name="config" position=" 10, 10" size="480,90" itemHeight="30" scrollbarMode="showOnDemand" />
     <eLabel position="  0,115" size="500,30" zPosition="1" backgroundColor="black" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="21,118" size="22,22" alphatest="blend" transparent="1" zPosition="2" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="226,118" size="22,22" alphatest="blend" transparent="1" zPosition="2" />
+    <ePixmap pixmap="buttons/key_red.png" position="21,118" size="22,22" alphatest="blend" transparent="1" zPosition="2" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,118" size="22,22" alphatest="blend" transparent="1" zPosition="2" />
     <widget name="canceltext" position="55,119" size="160,24" zPosition="2" font="Regular;20" backgroundColor="black" transparent="1" />
     <widget name="oktext" position="260,119" size="160,24" zPosition="2" font="Regular;20" backgroundColor="black" transparent="1" />
     <widget name="cancel" position="0,0" size="0,0" />
@@ -675,11 +675,11 @@
   <!-- NFR AutoTimeshift FHD  -->
   <screen name="AutoTimeshift" position="0,0" size="1280,720" title="Auto Timeshift Configuration" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="433,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="640,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="433,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="640,689" size="26,26" alphatest="blend" transparent="1" />
     <widget name="buttonred" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="buttongreen" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="buttonyellow" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
@@ -699,7 +699,7 @@
   <!-- NFR WlanSelection FHD  -->
   <screen name="WlanSelection" position="0,0" size="1280,720" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Wireless Network Adapter Selection..." position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="menulist" position="30,160" size="700,510" transparent="1" backgroundColor="black" zPosition="10" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" />
+    <widget name="menulist" position="30,160" size="700,510" transparent="1" backgroundColor="black" zPosition="10" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" />
     <widget source="description" render="Label" position="30,60" size="700,80" font="Regular;19" halign="center" valign="center" backgroundColor="black" transparent="1" />
     <panel name="template_pixmap_line_hor_150" />
 	<panel name="ScrollBarTemplate size=700,510_P160" />
@@ -747,11 +747,11 @@
     <widget source="Frequency" render="Label" position="30,500" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
     <widget source="Encryption key" render="Label" position="30,540" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
     <widget source="BitRate" render="Label" position="30,580" zPosition="1" size="700,50" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,413" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,453" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,493" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,533" zPosition="2" size="700,5" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,573" zPosition="2" size="700,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,413" zPosition="2" size="700,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,453" zPosition="2" size="700,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,493" zPosition="2" size="700,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,533" zPosition="2" size="700,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,573" zPosition="2" size="700,5" />
     <panel name="template_date" />
     <panel name="template_source_red_green_blue" />
     <panel name="template_ok_exit_1280" />
@@ -766,14 +766,14 @@
   </screen>
   <!-- NFR Auto Pin FHD  -->
   <screen name="AutoPin" position="0,0" size="1280,720" title="Auto Pin" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  itemHeight="30"  enableWrapAround="1" backgroundColor="background" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="433,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="640,689" size="26,26" alphatest="blend" transparent="1" />
+    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  itemHeight="30"  enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="433,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="640,689" size="26,26" alphatest="blend" transparent="1" />
     <widget name="buttonred" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="buttongreen" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="buttonyellow" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
@@ -792,10 +792,10 @@
   </screen>
   <!-- NFR PasswordScreen FHD  -->
   <screen name="NFRPasswdScreen" position="0,0" size="1280,720" title="Change root password" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="passwd" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  itemHeight="30"  enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <widget name="passwd" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  itemHeight="30"  enableWrapAround="1" backgroundColor="background" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_o_blue" />
@@ -812,7 +812,7 @@
   <!-- NFR UserMainMenuConfig FHD  -->
   <screen name="UserMainMenuConfig" position="0,0" size="1280,720" title="openNFR UserMainMenu" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  enableWrapAround="1" backgroundColor="background" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  enableWrapAround="1" backgroundColor="background" transparent="1">
       <convert type="TemplatedMultiContent" transparent="1">{"template": [
 		  MultiContentEntryPixmapAlphaTest(pos = (4, 2), size = (48, 48), png = 2),
 		  MultiContentEntryText(pos = (60, 12), size = (500, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -821,8 +821,8 @@
 		  "itemHeight": 52
 	  }</convert>
     </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_o_yellow" />
@@ -899,7 +899,7 @@
     <eLabel text="Iperf-Net_test" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget name="filedata" position="30,60" size="700,610" itemHeight="25" transparent="1" />
     <widget source="key_info" render="Label" position="923,688" zPosition="5" size="214,26" valign="center" halign="left" font="Regular; 22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-    <ePixmap position="854,688" size="64,26" pixmap="Ultimate/buttons/info.png" alphatest="blend" zPosition="5" />
+    <ePixmap position="854,688" size="64,26" pixmap="buttons/info.png" alphatest="blend" zPosition="5" />
     <panel name="template_date" />
     <panel name="template_source_red_o_blue" />
     <panel name="template_ok_exit_1280" />
@@ -915,7 +915,7 @@
   <!-- Package Manager For NFR FHD  -->
   <screen name="InfopanelManagerScreen" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Package Manager For NFR" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 		MultiContentEntryText(pos = (120, 2), size = (580, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (120, 32), size = (580, 18), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
@@ -925,8 +925,8 @@
 		"itemHeight": 110
 		}</convert>
     </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
     <panel name="template_source_red_o_yellow" />
     <panel name="template_ok_exit_1280" />
@@ -942,7 +942,7 @@
   <!--  NFR InstallTarGZ FHD  -->
   <screen name="InstallTarGZ" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Package Manager For NFR" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
@@ -952,8 +952,8 @@
 		"itemHeight": 60
 		}</convert>
     </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_green" />
@@ -970,7 +970,7 @@
   <!--  NFR InstallIpk FHD  -->
   <screen name="InstallIpk" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Package Manager For NFR" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
@@ -980,8 +980,8 @@
 		"itemHeight": 60
 		}</convert>
     </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_green" />
@@ -998,7 +998,7 @@
   <!--  NFR InstallZip FHD  -->
   <screen name="InstallZip" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Package Manager For NFR" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
@@ -1008,8 +1008,8 @@
 		"itemHeight": 60
 		}</convert>
     </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_green" />
@@ -1026,7 +1026,7 @@
   <!--  NFR AdvInstallIpk FHD  -->
   <screen name="AdvInstallIpk" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Package Manager For NFR" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
@@ -1036,8 +1036,8 @@
 		"itemHeight": 60
 		}</convert>
     </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_green" />
@@ -1054,7 +1054,7 @@
   <!--  NFR InstallRar FHD  -->
   <screen name="InstallRar" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Package Manager For NFR" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" backgroundColor="background" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
@@ -1064,8 +1064,8 @@
 		"itemHeight": 60
 		}</convert>
     </widget>
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_green" />
@@ -1103,7 +1103,7 @@
     <eLabel font="Regular;20" halign="left" position="290,689" size="120,25" text="Save" transparent="1" valign="center" zPosition="6" />
     <eLabel font="Regular;20" halign="left" position="539,689" size="120,25" text="NewLine" transparent="1" valign="center" zPosition="6" />
     <eLabel font="Regular;20" halign="left" position="788,689" size="120,25" text="DeleteLine" transparent="1" valign="center" zPosition="6" />
-    <ePixmap pixmap="Ultimate/icons/softcam_panel.png" position="870,390" size="280,280" zPosition="2" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="icons/softcam_panel.png" position="870,390" size="280,280" zPosition="2" transparent="1" alphatest="blend" />
     <panel name="template_date" />
     <panel name="template_name_long_red_o_blue" />
     <panel name="template_pixmap_vert_line_738" />
@@ -1122,12 +1122,12 @@
   <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
   <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,645" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
   <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <widget name="config" position="30,60" size="700,490" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="32" render="Listbox" />
+  <widget name="config" position="30,60" size="700,490" scrollbarMode="showNever" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="32" render="Listbox" />
   <widget name="Picture" position="765,400" size="475,267" alphatest="on" />
-  <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="50,577" size="26,26" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="50,612" size="26,26" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_leftright.png" position="1060,689" size="56,29" alphatest="blend" transparent="1" />
-  <ePixmap position="30,648" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="buttons/key_yellow.png" position="50,577" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_blue.png" position="50,612" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_leftright.png" position="1060,689" size="56,29" alphatest="blend" transparent="1" />
+  <ePixmap position="30,648" size="64,26" zPosition="10" pixmap="buttons/menu.png" transparent="1" alphatest="blend" />
   <panel name="template_date" />
   <panel name="template_pixmap_line_hor_550" />
   <panel name="template_name_red_o_blue" />
@@ -1147,12 +1147,12 @@
   <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,575" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
   <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,645" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
   <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <widget name="config" position="30,60" size="700,490" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="32" render="Listbox" />
+  <widget name="config" position="30,60" size="700,490" scrollbarMode="showNever" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="32" render="Listbox" />
   <widget name="Picture" position="765,400" size="475,267" alphatest="on" />
-  <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="50,577" size="26,26" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="50,612" size="26,26" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_leftright.png" position="1060,689" size="56,29" alphatest="blend" transparent="1" />
-  <ePixmap position="30,648" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="buttons/key_yellow.png" position="50,577" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_blue.png" position="50,612" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_leftright.png" position="1060,689" size="56,29" alphatest="blend" transparent="1" />
+  <ePixmap position="30,648" size="64,26" zPosition="10" pixmap="buttons/menu.png" transparent="1" alphatest="blend" />
   <panel name="template_date" />
   <panel name="template_pixmap_line_hor_550" />
   <panel name="template_name_red_o_blue" />
@@ -1172,12 +1172,12 @@
   <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,560" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
   <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,640" size="630,34" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
   <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <widget name="config" position="30,55" size="700,500" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="33" render="Listbox" />
+  <widget name="config" position="30,55" size="700,500" scrollbarMode="showNever" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" font="Regular; 22" itemHeight="33" render="Listbox" />
   <widget name="Picture" position="765,400" size="475,267" alphatest="on" />
-  <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="50,563" size="26,26" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="50,603" size="26,26" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_leftright.png" position="1060,689" size="56,29" alphatest="blend" transparent="1" />
-  <ePixmap position="30,643" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="buttons/key_yellow.png" position="50,563" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_blue.png" position="50,603" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_leftright.png" position="1060,689" size="56,29" alphatest="blend" transparent="1" />
+  <ePixmap position="30,643" size="64,26" zPosition="10" pixmap="buttons/menu.png" transparent="1" alphatest="blend" />
   <panel name="template_date" />
   <panel name="template_pixmap_line_hor_550" />
   <panel name="template_name_red_o_blue" />
@@ -1194,7 +1194,7 @@
   <!--  NFR Screens FHD  -->
   <!-- <screen name="NfrHDScreens" position="0,0" size="1280,720" title="NfrHDScreens" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Screens Ultimate-HD" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  scrollbarWidth="6" scrollbarSliderBorderWidth="1" enableWrapAround="1" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  scrollbarWidth="6" scrollbarSliderBorderWidth="1" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">{"template":
    [
     MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (25, 24), png = 2),
@@ -1220,8 +1220,8 @@
   </screen> -->
     <!--  NFR NfrHD_About FHD  -->
   <!-- <screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap pixmap="Ultimate/DEV/Ultimate-Logo.png" position="870,390" size="280,280" transparent="1" alphatest="blend" zPosition="1" />
-    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="Ultimate/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="DEV/Ultimate-Logo.png" position="870,390" size="280,280" transparent="1" alphatest="blend" zPosition="1" />
+    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
     <eLabel position="30,200" size="700,30" zPosition="2" font="Regular; 22" text="Einstellungen MSN-Wetter für Eventview und 2te Infobar" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
     <eLabel text="*Ultimate* HD Skin for NFR Images by stein17" position="13,685" size="480,26" font="Regular; 20" align="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
     <eLabel position="30,240" size="700,160" zPosition="2" font="Regular; 22" text="Erweiterungen/Wetterinformationen/Menu, dann Grün Hinzufügen. Wenn ihr den Ort Eingegeben habt, ein mal runter auf Location-Code. Gelb für Code suchen, mit Grün (OK)bestätigen, wichtig wieder OK. Noch wichtiger mit Rot zurück, sonst müsst ihr wieder von vorne anfangen. Jetzt mit Exit beenden, Benutzer Oberfläche neustarten, eventuell kompletter Neustart.." transparent="1" backgroundColor="black" halign="left" valign="top" />
@@ -1244,9 +1244,9 @@
   <!--  NFR Weather Location FHD  -->
   <screen name="WeatherLocationChoiceList" position="0,0" size="1280,720" title="WeatherLocationChoiceList" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="WeatherLocationChoiceList" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="choicelist" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  scrollbarWidth="6" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="choicelist" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  scrollbarWidth="6" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_o_blue" />
@@ -1263,10 +1263,10 @@
   <!--  NFR Device Browser FHD  -->
   <screen name="DeviceBrowser" position="center,center" size="1280,720" title="DeviceBrowser" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="DeviceBrowser" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <widget source="message" render="Label" position="30,490" size="700,180" font="Regular;16" transparent="1" />
-    <widget name="filelist" position="30,60" size="700,420" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="filelist" position="30,60" size="700,420" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
 	<panel name="ScrollBarTemplate size=700,420"/> 
     <panel name="template_date" />
     <panel name="template_source_red_green" />
@@ -1285,7 +1285,7 @@
   <!--  NFR Panel Info 2 FHD  -->
   <screen name="PANEL-Info2" position="center,center" size="1280,720" title="PANEL-Info" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="PANEL-Info" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap position="800,460" size="412,125" pixmap="Ultimate/DEV/open_nfr_images.png" alphatest="blend" transparent="1" />
+    <ePixmap position="800,460" size="412,125" pixmap="DEV/open_nfr_images.png" alphatest="blend" transparent="1" />
     <widget name="label1" position="30,60" size="700,610" font="Regular;15" zPosition="1" transparent="1" />
     <panel name="template_date" />
     <panel name="template_name_red_o_blue" />
@@ -1302,10 +1302,10 @@
   <!-- NFR FlashOnline FHD  -->
  <screen name="FlashOnline" position="center,center" size="1280,720" title="Flash On the fly" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Flash On the fly" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <ePixmap position="30,60" size="700,128" pixmap="Ultimate/DEV/NFR_Logo.png" alphatest="blend" transparent="1" />
-  <widget name="list" position="30,200" zPosition="1" size="700,470" font="Regular;20" halign="left" valign="top" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" transparent="1" />
+  <ePixmap position="30,60" size="700,128" pixmap="DEV/NFR_Logo.png" alphatest="blend" transparent="1" />
+  <widget name="list" position="30,200" zPosition="1" size="700,470" font="Regular;20" halign="left" valign="top" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" transparent="1" />
   <widget name="description" position="765,650" zPosition="1" size="485,24" font="Regular;20" halign="left" valign="top" transparent="1" />
-  <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/e2image.png" transparent="1" alphatest="blend" />
+  <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="icons/e2image.png" transparent="1" alphatest="blend" />
   <panel name="template_pixmap_line_hor_190" />
   <panel name="ScrollBarTemplate size=700,470_P200" />
   <panel name="template_date" />
@@ -1323,9 +1323,9 @@
   <!-- NFR doFlashImage FHD  -->
   <screen name="doFlashImage" position="center,center" size="1280,720" title="Flash On the fly (select a image)" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Flash On the fly (select a image)" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="imageList" position="30,160" zPosition="1" size="700,510" font="Regular;22" scrollbarMode="showAlways"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/DEV/nfr_banner.png" position="30,60" size="700,88" zPosition="0" alphatest="blend" transparent="1" />
-	<ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/e2image.png" transparent="1" alphatest="blend" />
+    <widget name="imageList" position="30,160" zPosition="1" size="700,510" font="Regular;22" scrollbarMode="showAlways"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="DEV/nfr_banner.png" position="30,60" size="700,88" zPosition="0" alphatest="blend" transparent="1" />
+	<ePixmap position="870,390" size="280,280" zPosition="2" pixmap="icons/e2image.png" transparent="1" alphatest="blend" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,510_P160" />
     <panel name="template_name_red_o_blue" />
@@ -1345,7 +1345,7 @@
 <!--   <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
     <widget name="text" position="30,60" size="700,60" font="Regular;22" halign="center" transparent="1" zPosition="10" foregroundColor="selectedFG" backgroundColor="background" />
     <widget name="list" position="30,135" size="700,522" scrollbarMode="showOnDemand" itemHeight="35"  enableWrapAround="1" backgroundColor="background" transparent="1" />
-	<ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/software_update.png" transparent="1" alphatest="blend" />
+	<ePixmap position="870,390" size="280,280" pixmap="icons/software_update.png" transparent="1" alphatest="blend" />
     <panel name="template_title_date" />
     <panel name="template_menu_ok_exit_1280" />
     <panel name="template_pixmap_vert_line_738" />
@@ -1361,10 +1361,11 @@
   
 <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" backgroundColor="background" flags="wfNoBorder">
 <widget source="windowtitle" render="Label" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
+<widget name="windowtitle" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
 <widget source="Title" render="Label" position="30,54" size="700,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
   <widget name="text" position="30,110" size="700,60" font="Regular;22" halign="center" transparent="1" zPosition="10" foregroundColor="selectedFG" backgroundColor="background" />
   <widget name="list" position="30,190" size="700,480" scrollbarMode="showOnDemand" itemHeight="35" enableWrapAround="1" backgroundColor="background" transparent="1" />
-  <ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/software_update.png" transparent="1" alphatest="blend" />
+  <ePixmap position="870,390" size="280,280" pixmap="icons/software_update.png" transparent="1" alphatest="blend" />
   <panel name="template_date" />
   <panel name="template_menu_ok_exit_1280" />
   <panel name="template_pixmap_vert_line_738" />
@@ -1380,10 +1381,10 @@
   <!-- NFR VirtualKeyBoard FHD  -->
   <!-- NFR PluginBrowser FHD  -->
   <screen name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <eLabel text="Plugin browser" position="160,4" size="760,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  itemHeight="50" font="Regular; 24"    enableWrapAround="1" transparent="1" />
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  itemHeight="50" font="Regular; 24"    enableWrapAround="1" transparent="1" />
     <!-- <panel name="template_source_long_red_o_blue" />NFR -->
 	<panel name="template_name_long_red_o_blue" />
 	<panel name="ScrollBarTemplate size=700,610" />
@@ -1400,15 +1401,15 @@
   </screen>
   <!-- NFR PluginInstall FHD  -->
   <screen name="PluginInstall" position="center,center" size="1280,720" title="Installiere Plugins" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  itemHeight="49"   font="Regular;24" transparent="1"  zPosition="2"  enableWrapAround="1" />
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  itemHeight="49"   font="Regular;24" transparent="1"  zPosition="2"  enableWrapAround="1" />
     <widget name="status" position="765,100" size="480,450" scrollbarMode="showNever" font="Regular;20"  halign="center" noWrap="1" transparent="1" />
     <eLabel name="" position="765,60" size="480,30" font="Regular; 22" text="Liste der zu Installierenden Plugins" zPosition="3" halign="center"  />
     <widget name="text" position="765,556" size="480,80" zPosition="1" font="Regular;20" halign="center" valign="center"  transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="765,640" size="150,20" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="310,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
     <widget source="Title" render="Label" position="160,4" size="760,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
     <panel name="template_name_long_red_o_blue" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -1421,15 +1422,15 @@
   </screen>
   <!-- NFR PluginDeinstall FHD  -->
   <screen name="PluginDeinstall" position="center,center" size="1280,720" title="Deinstalliere Plugins" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  itemHeight="49"  font="Regular;24"  transparent="1"  zPosition="2" enableWrapAround="1" />
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  itemHeight="49"  font="Regular;24"  transparent="1"  zPosition="2" enableWrapAround="1" />
     <widget name="status" position="765,100" size="480,450"  scrollbarMode="showNever" font="Regular;22" halign="center" noWrap="1" transparent="1" />
     <eLabel name="" position="765,60" size="480,30" font="Regular; 22" text="Liste der zu Deinstallierenden Plugins"  zPosition="3" halign="center" transparent="1" />
     <widget name="text" position="765,556" size="480,80" zPosition="1" font="Regular;22" halign="center" valign="center"  transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="765,640" size="150,20" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="310,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
     <widget source="Title" render="Label" position="160,4" size="760,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
     <panel name="template_source_long_red_o_blue" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -1442,15 +1443,15 @@
   </screen>
   <!-- NFR Installiere OpenNFRSkins FHD  -->
   <screen name="PluginSkinInstall" position="center,center" size="1280,720" title="Installiere OpenNFRSkins" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  itemHeight="49" backgroundColor="listboxBG" foregroundColor="selectedFG" transparent="1"  zPosition="2" enableWrapAround="1" />
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  itemHeight="49" backgroundColor="listboxBG" foregroundColor="selectedFG" transparent="1"  zPosition="2" enableWrapAround="1" />
     <widget name="status" position="765,100" size="480,450" scrollbarMode="showNever" font="Regular;20" backgroundColor="listboxBG" foregroundColor="selectedFG" halign="center" noWrap="1" transparent="1" />
     <eLabel name="" position="765,60" size="480,30" font="Regular; 22" text="Liste der zu Installierenden Skins" backgroundColor="listboxBG" foregroundColor="selectedFG" zPosition="3" halign="center" transparent="1" />
     <widget name="text" position="765,556" size="480,80" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="listboxBG" foregroundColor="selectedFG" transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="765,640" size="150,20" font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="310,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
-    <ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,95" zPosition="2" size="480,5" />
+    <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="765,550" zPosition="2" size="480,5" />
     <panel name="template_source_long_red_o_blue" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -1463,7 +1464,7 @@
   </screen>
   <!-- NFR UpdatePluginMenu FHD  -->
   <screen name="UpdatePluginMenu" position="0,0" size="1280,720" title="Softwaremanager..." flags="wfNoBorder" backgroundColor="background">
-    <widget source="menu" render="Listbox" position="30,205" size="700,470" backgroundColor="background" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" enableWrapAround="1" transparent="1">
+    <widget source="menu" render="Listbox" position="30,205" size="700,470" backgroundColor="background" scrollbarMode="showNever" sliderPixmap="menu/Scrollbar.png" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (15, 5), size = (700, 34), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
@@ -1487,8 +1488,8 @@
     <widget name="packagenr" position="1066,645" size="75,26" zPosition="1" font="Regular; 22" halign="left" backgroundColor="background" transparent="1" />
     <widget name="key_green_pic" pixmap="Ultimate/skin_default/icons/lock_on.png" position="1144,641" size="32,31" alphatest="blend" zPosition="1" />
     <panel name="template_pixmap_line_hor_190" />
-    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="Ultimate/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <panel name="template_menu_exit_1280" />
 	<panel name="ScrollBarTemplate size=700,470_P200"/> 
@@ -1508,7 +1509,7 @@
     <panel name="template_pixmap_line_hor_120" />
     <widget name="packagetext" position="70,80" size="350,30" zPosition="1" font="Regular;24" halign="right" transparent="1" />
     <widget name="packagenr" position="422,80" size="50,30" zPosition="1" font="Regular;24" halign="right" transparent="1" />
-    <widget source="list" render="Listbox" position="30,130" size="700,540" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1">
+    <widget source="list" render="Listbox" position="30,130" size="700,540" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" backgroundColor="background" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [
 							MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 							MultiContentEntryText(pos = (5, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
@@ -1519,16 +1520,16 @@
 					"itemHeight": 52
 					}</convert>
     </widget>
-    <widget name="a_off" position="835,410" zPosition="1" size="49,120" pixmap="Ultimate/icons/aoff.png" alphatest="on" />
-    <widget name="a_red" position="835,410" zPosition="1" size="49,120" pixmap="Ultimate/icons/ared.png" alphatest="on" />
-    <widget name="a_yellow" position="835,410" zPosition="1" size="49,120" pixmap="Ultimate/icons/ayellow.png" alphatest="on" />
-    <widget name="a_green" position="835,410" zPosition="1" size="49,120" pixmap="Ultimate/icons/agreen.png" alphatest="on" />
+    <widget name="a_off" position="835,410" zPosition="1" size="49,120" pixmap="icons/aoff.png" alphatest="on" />
+    <widget name="a_red" position="835,410" zPosition="1" size="49,120" pixmap="icons/ared.png" alphatest="on" />
+    <widget name="a_yellow" position="835,410" zPosition="1" size="49,120" pixmap="icons/ayellow.png" alphatest="on" />
+    <widget name="a_green" position="835,410" zPosition="1" size="49,120" pixmap="icons/agreen.png" alphatest="on" />
     <widget name="feedstatusGREEN" position="900,419" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
     <widget name="feedstatusYELLOW" position="900,454" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
     <widget name="feedstatusRED" position="900,489" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
-    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/exit.png" transparent="1" alphatest="blend" />
     <widget name="key_green_pic" pixmap="Ultimate/skin_default/icons/lock_on.png" position="478,78" size="32,31" alphatest="blend" zPosition="1" />
-    <ePixmap pixmap="Ultimate/DEV/open_nfr_images.png" position="800,550" size="412,125" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="DEV/open_nfr_images.png" position="800,550" size="412,125" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,540_P130" />
     <panel name="template_name_red_green" />
@@ -1544,10 +1545,10 @@
   <!-- NFR SoftwareUpdateChanges FHD  -->
   <screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="background">
     <widget name="text" position="30,205" size="700,470" font="Regular;18" zPosition="3" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <widget source="message" render="Label" position="735,688" size="450,26" font="Regular; 22" halign="center" transparent="1" zPosition="1" />
-    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="Ultimate/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
     <panel name="template_pixmap_line_hor_190" />
     <panel name="template_title_date" />
     <panel name="template_source_red_o_yellow" />
@@ -1565,7 +1566,7 @@
     <widget source="lab1" render="Label" position="30,60" size="700,30" font="Regular;24" zPosition="2" foregroundColor="selectedFG" transparent="1" />
     <widget source="lab2" render="Label" position="30,100" size="700,30" font="Regular; 22" zPosition="2" foregroundColor="selectedFG" transparent="1" />
     <widget name="AboutScrollLabel" position="30,140" size="700,530" font="Regular; 24" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
-    <ePixmap pixmap="Ultimate/icons/memory_info.png" position="870,390" size="280,280" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="icons/memory_info.png" position="870,390" size="280,280" alphatest="blend" transparent="1" />
        <panel name="template_pixmap_line_hor_95" />
        <panel name="template_pixmap_line_hor_130" />
        <panel name="template_pixmap_line_hor_130" />
@@ -1599,7 +1600,7 @@
     <widget source="bitrate" render="Label" position="240,600" size="490,30" valign="center" font="Regular;20" transparent="1" />
     <widget source="LabelEnc" render="Label" position="30,630" size="200,30" valign="center" font="Regular;20" transparent="1" />
     <widget source="enc" render="Label" position="240,630" size="490,30" valign="center" font="Regular;20" transparent="1" />
-    <ePixmap pixmap="Ultimate/icons/network_info.png" position="870,390" size="280,280" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="icons/network_info.png" position="870,390" size="280,280" alphatest="blend" transparent="1" />
        <panel name="template_pixmap_line_hor_400" />
        <panel name="template_title_date" />
        <panel name="template_info_ok_exit_1280" />
@@ -1613,7 +1614,7 @@
        <panel name="template_pixmap_center" />
   </screen>
     <screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap pixmap="Ultimate/icons/menu_information_dmn_info.png" position="870,390" size="280,280" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="icons/menu_information_dmn_info.png" position="870,390" size="280,280" alphatest="blend" transparent="1" />
     <widget source="TunerHeader" render="Label" position="30,60" size="700,30" font="Regular;20" zPosition="1" transparent="1" />
     <widget source="nims" render="Label" position="30,100" size="700,160" font="Regular; 22" zPosition="1" enableWrapAround="0" transparent="1" />
     <widget source="HDDHeader" render="Label" position="30,270" size="700,30" font="Regular; 22" zPosition="1" foregroundColor="selectedFG" transparent="1" />
@@ -1637,7 +1638,7 @@
   <!-- NFR IPTV FHD  -->
   <screen name="IPTV" position="center,center" size="1280,720" title="M3U Converter" flags="wfNoBorder" backgroundColor="background">
     <widget name="text1" position="30,640" size="700,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
-    <widget name="IPTVList" position="30,60" size="700,570" enableWrapAround="1" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="IPTVList" position="30,60" size="700,570" enableWrapAround="1" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
     <panel name="template_pixmap_line_hor_630" />
 	<panel name="ScrollBarTemplate size=700,570" />
     <panel name="template_title_date" />
@@ -1655,9 +1656,9 @@
   <screen name="LCDClockSelector" position="0,0" size="1280,720" title="Lcd Clock Selector" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Choose your Skin" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget name="lab3" position="30,640" size="700,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
-    <widget name="ClockList" position="30,60" size="700,380" enableWrapAround="1" scrollbarMode="showOnDemand"  sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="ClockList" position="30,60" size="700,380" enableWrapAround="1" scrollbarMode="showOnDemand"  sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
     <widget name="Preview" position="250,450" size="220,175" zPosition="2" backgroundColor="background" transparent="1" alphatest="on" />
-  <ePixmap position="870,389" size="280,280" zPosition="2" pixmap="Ultimate/icons/skin_selector.png" transparent="1" alphatest="blend" />
+  <ePixmap position="870,389" size="280,280" zPosition="2" pixmap="icons/skin_selector.png" transparent="1" alphatest="blend" />
   <panel name="template_pixmap_line_hor_630" />
   <panel name="ScrollBarTemplate size=700,380" />
   <panel name="template_pixmap_line_hor_440" />
@@ -1675,9 +1676,9 @@
 <screen name="LCDSkinSelector" position="0,0" size="1280,720" title="Lcd Skin Selector" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Choose your Skin" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
   <widget name="lab3" position="30,640" size="700,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
-  <widget name="SkinList" position="30,60" size="700,380" enableWrapAround="1" scrollbarMode="showAlways" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" transparent="1" />
+  <widget name="SkinList" position="30,60" size="700,380" enableWrapAround="1" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
   <widget name="Preview" position="250,450" size="220,175" zPosition="2" backgroundColor="background" transparent="1" alphatest="on" />
-  <ePixmap position="870,389" size="280,280" zPosition="2" pixmap="Ultimate/icons/skin_selector.png" transparent="1" alphatest="blend" />
+  <ePixmap position="870,389" size="280,280" zPosition="2" pixmap="icons/skin_selector.png" transparent="1" alphatest="blend" />
   <panel name="template_pixmap_line_hor_630" />
   <panel name="ScrollBarTemplate size=700,380" />
   <panel name="template_pixmap_line_hor_440" />
@@ -1693,14 +1694,14 @@
 </screen>
   <!-- NFR UserInterfacePositioner FHD  -->
   <screen name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap position="center,center" zPosition="-10" size="1280,720" pixmap="Ultimate/menu/Testbild.png" />
+    <ePixmap position="center,center" zPosition="-10" size="1280,720" pixmap="menu/Testbild.png" />
     <eLabel backgroundColor="black" font="Regular; 27" halign="center" position="310,45" size="653,62" text="Die roten Winkel genau in den Ecken des TV-Bildschirms positionieren" valign="center" foregroundColor="red" />
     <eLabel backgroundColor="black" font="Regular; 21" halign="center" position="453,185" size="374,43" text="Danach die Grüne Taste drücken" valign="center" foregroundColor="selectedFG" />
     <widget name="config" position="453,229" size="374,210" scrollbarMode="showOnDemand" transparent="1" />
     <widget source="status" render="Label" position="453,434" zPosition="1" size="374,96" font="Regular;20" halign="center" valign="center" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="340,680" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="545,680" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="750,680" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="340,680" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="545,680" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="750,680" size="26,26" alphatest="blend" transparent="1" />
     <widget source="key_red" render="Label" position="370,680" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_green" render="Label" position="575,680" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget source="key_yellow" render="Label" position="780,680" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
@@ -1709,8 +1710,8 @@
   <!-- NFR ViewGitLog FHD  -->
   <screen name="ViewGitLog" position="0,0" size="1280,720" title="ViewGitLog" flags="wfNoBorder" backgroundColor="background">
     <widget name="text" position="30,60" size="700,610" font="Regular;21" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <panel name="template_source_red_o_yellow" />
     <panel name="template_title_date" />
@@ -1727,9 +1728,9 @@
   <!-- NFR NfrWizardSetupScreen" FHD  -->
   <screen name="NfrWizardSetupScreen" position="center,center" size="1280,720" title="openNFR Wizard setup" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="openNFR Wizard setup" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="32" zPosition="14" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="Ultimate/DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="Ultimate/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" itemHeight="32" zPosition="14" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
     <panel name="template_date" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_source_red_green" />
@@ -1754,12 +1755,12 @@
     <widget source="session.CurrentService" render="Label" position="810,335" size="415,28" font="Regular; 22"  borderWidth="2" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <ePixmap position="848,596" zPosition="2" size="350,44" pixmap="Ultimate/icons/db.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Ultimate/menu/BG_1280.png" position="0,0" zPosition="-20" size="1280,720" />
+    <ePixmap position="848,596" zPosition="2" size="350,44" pixmap="icons/db.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="menu/BG_1280.png" position="0,0" zPosition="-20" size="1280,720" />
     <widget name="media" position="70,105" size="705,30" valign="top" font="Regular;22" transparent="1" />
     <widget name="folderlist" position="70,155" zPosition="1" size="705,478" scrollbarMode="showOnDemand" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="21,668" size="22,22" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="226,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="21,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,668" size="22,22" alphatest="blend" transparent="1" />
     <widget name="key_red" position="49,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
     <widget name="key_green" position="255,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
   </screen> -->
@@ -1774,9 +1775,9 @@
     <widget source="session.CurrentService" render="Label" position="810,335" size="415,28" font="Regular; 22"  borderWidth="2" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <ePixmap position="848,596" zPosition="2" size="350,44" pixmap="Ultimate/icons/db.png" transparent="1" alphatest="blend" />
+    <ePixmap position="848,596" zPosition="2" size="350,44" pixmap="icons/db.png" transparent="1" alphatest="blend" />
  <widget source="Title" render="Label"  position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Ultimate/menu/BG_1280.png" position="0,0" zPosition="-20" size="1280,720" />
+    <ePixmap pixmap="menu/BG_1280.png" position="0,0" zPosition="-20" size="1280,720" />
     <widget name="info" position="66,103" size="710,30" font="Regular;24" foregroundColor="selectedFG" transparent="1" backgroundColor="background" />
     <widget name="path" position="66,154" size="710,30" font="Regular;24" foregroundColor="yellow" transparent="1" />
     <widget name="found" position="882,500" size="300,22" font="Regular;20" transparent="1" zPosition="5" />
@@ -1784,9 +1785,9 @@
     <widget name="error" position="882,555" size="300,22" font="Regular;20" transparent="1" zPosition="5" />
     <widget name="list" position="66,193" size="433,445" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="cover" position="526,193" size="248,445" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="21,668" size="22,22" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="226,668" size="22,22" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="433,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="21,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="226,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="433,668" size="22,22" alphatest="blend" transparent="1" />
     <widget name="key_red" position="49,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
     <widget name="key_green" position="255,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
     <widget name="key_blue" position="462,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
@@ -1796,7 +1797,7 @@
     <eLabel text="IPv6Setup" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget source="introduction" render="Label" position="30,630" size="700,30" font="Regular; 25" halign="center" backgroundColor="black" transparent="1" foregroundColor="selectedFG" />
     <widget name="config" position="30,60" size="700,550" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
-	 <ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/network_setup.png" alphatest="blend" transparent="1" />
+	 <ePixmap position="870,390" size="280,280" pixmap="icons/network_setup.png" alphatest="blend" transparent="1" />
     <panel name="template_pixmap_line_hor_620" />
     <panel name="template_date" />
     <panel name="template_source_red_green_blue" />
@@ -1813,9 +1814,9 @@
 <!-- NFR Infopanel eparted FHD  -->
   <screen name="Ceparted" position="0,0" size="1280,720" title="eParted v0.13" backgroundColor="background20">
     <eLabel text="Hard Drive Selection" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget name="list" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
     </widget>
-    <ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/hardisk_selection.png" alphatest="blend" transparent="1" />
+    <ePixmap position="870,390" size="280,280" pixmap="icons/hardisk_selection.png" alphatest="blend" transparent="1" />
     <panel name="template_ok_exit_1280" />
 	<panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_date" />
@@ -1830,12 +1831,12 @@
   </screen>
   <screen name="AddPart" position="0,0" size="1280,720" title="add Partition" backgroundColor="background">
     <eLabel text="Hard Drive Selection" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget name="config" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
     </widget>
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="15,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="288,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="562,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="835,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="15,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="288,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="562,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="835,689" size="26,26" alphatest="blend" transparent="1" />
     <widget render="Label" source="key_red" position="44,689" size="240,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
     <widget render="Label" source="key_green" position="317,689" size="240,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="591,689" size="240,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
@@ -1853,7 +1854,7 @@
   </screen>
   <screen name="Cpart" position="0,0" size="1280,720" title="eParted">
     <eLabel text="Hard Drive Selection" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget source="list" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (70, 5), size = (50, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -1885,7 +1886,7 @@
   </screen>
   <screen name="Cpartexe" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Selection">
     <eLabel text="Hard Drive Selection" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend"  transparent="1">
+    <widget source="list" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend"  transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (70, 5), size = (550, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -1916,9 +1917,9 @@
   <widget source="introduction" render="Label" position="500,689" size="580,25" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
   <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1" />
   <widget source="key_yellow" render="Label" position="255,689" size="270,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
-  <ePixmap position="870,390" size="280,280" pixmap="Ultimate/icons/skin_selector.png" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+  <ePixmap position="870,390" size="280,280" pixmap="icons/skin_selector.png" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_yellow.png" position="226,689" size="26,26" alphatest="blend" transparent="1" />
   <panel name="template_date" />
   <panel name="template_ok_exit_1280" />
   <panel name="template_pixmap_vert_line_738" />
@@ -1933,7 +1934,7 @@
   <screen name="MultiBootSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="Multiboot Image Selector" backgroundColor="background">
     <widget source="description" render="Label" position="30,60" size="700,110" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="center" />
     <widget name="config" position="30,310" size="700,360" zPosition="1" transparent="1" alphatest="blend" font="Regular; 22" />
-    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/e2image.png" transparent="1" alphatest="blend" />
+    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="icons/e2image.png" transparent="1" alphatest="blend" />
     <widget source="options" render="Label" position="30,180" size="700,110" font="Regular; 22" foregroundColor="green" halign="center" backgroundColor="background" valign="center" transparent="1" />
     <panel name="template_title_date" />
     <panel name="template_source_red_green" />
@@ -1950,7 +1951,7 @@
     <eLabel text="Manage your images in the multiboot" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget source="description" render="Label" position="30,60" size="700,30" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="center" />
     <widget name="config" position="30,200" size="700,460" zPosition="1" transparent="1" alphatest="blend" font="Regular; 22" />
-    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/restore_backups.png" transparent="1" alphatest="blend" />
+    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="icons/restore_backups.png" transparent="1" alphatest="blend" />
     <widget source="options" render="Label" position="30,120" size="700,60" font="Regular; 22" foregroundColor="green" halign="left" backgroundColor="background" valign="center" transparent="1" />
     <panel name="template_pixmap_line_hor_100" />
     <panel name="template_pixmap_line_hor_190" />
@@ -1989,28 +1990,28 @@
     <convert type="UltimatePrimeTime">PrimeTime,noDuration</convert>
     </widget>
     <widget source="Title" render="Label"  position="160,4" size="400,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="ServiceEvent" render="Picon" position="899,299" size="75,42" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="ServiceEvent" render="UltimateXPicon" position="899,299" size="75,42" zPosition="5" alphatest="blend" transparent="1">
       <convert type="UltimateRefString">ServicelistRef</convert>
     </widget>
-    <ePixmap pixmap="Ultimate/buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_green.png" position="148,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="355,689" size="26,26" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Ultimate/buttons/key_blue.png" position="512,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="148,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="355,689" size="26,26" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="512,689" size="26,26" alphatest="blend" transparent="1" />
     <widget name="key_red" position="49,689" size="90,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_green" position="177,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_yellow" position="384,689" size="120,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_blue" position="541,689" size="120,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Ultimate/icons/sat.png" position="670,683" size="35,35" zPosition="2" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="icons/sat.png" position="670,683" size="35,35" zPosition="2" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Ultimate/icons/dvbt.png" position="670,683" size="35,35" zPosition="2" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="icons/dvbt.png" position="670,683" size="35,35" zPosition="2" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Ultimate/icons/kabel.png" position="670,683" size="35,35" zPosition="2" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="icons/kabel.png" position="670,683" size="35,35" zPosition="2" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
@@ -2047,14 +2048,14 @@
     <panel name="template_pixmap_vert_line_big_845" />
     <panel name="template_date" />
    </screen>
-     <screen name="TimerImageManager" position="center,center" size="1280,720" title="M3U Converter" flags="wfNoBorder" backgroundColor="background">
+     <screen name="TimerImageManager" position="center,center" size="1280,720"  flags="wfNoBorder" backgroundColor="background">
     <widget name="lab1" position="30,60" size="700,50" font="Regular; 24" foregroundColor="selectedFG" backgroundColor="background" zPosition="2" transparent="1" halign="center" />
     <widget name="list" position="30,140" size="700,470" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
     <widget name="backupstatus" position="30,630" size="700,30" foregroundColor="selectedFG" backgroundColor="background" font="Regular;20" zPosition="5" transparent="1" />
     <applet type="onLayoutFinish">
 		self["list"].instance.setItemHeight(32)
 	</applet>
-    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/image_backup.png" transparent="1" alphatest="blend" />
+    <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="icons/image_backup.png" transparent="1" alphatest="blend" />
     <panel name="template_pixmap_line_hor_120" />
     <panel name="template_pixmap_line_hor_620" />
     <panel name="template_title_date" />
@@ -2070,7 +2071,7 @@
   </screen>
   <screen name="BackupSelection" position="0,0" size="1280,720" title="Select files/folders to backup" flags="wfNoBorder" backgroundColor="background">
   <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular; 32" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-  <widget name="checkList" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
+  <widget name="checkList" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" itemHeight="30" font="Regular; 20" enableWrapAround="1" backgroundColor="background" transparent="1" />
   <panel name="template_date" />
   <panel name="ScrollBarTemplate size=700,610" />
   <panel name="template_source_red_o_yellow" />
@@ -2083,7 +2084,7 @@
   <panel name="template_pixmap_rahmen" />
   <panel name="template_pixmap_Userlogo" />
   <panel name="template_pixmap_center" />
-  <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="Ultimate/icons/image_backup.png" transparent="1" alphatest="blend" />
+  <ePixmap position="870,390" size="280,280" zPosition="2" pixmap="icons/image_backup.png" transparent="1" alphatest="blend" />
 </screen>
   <!-- NFR_DEV_TEAM_Screens  -->
   <!--######################################### -->
@@ -2094,10 +2095,10 @@
     <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,579" size="630,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
 	<eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,636" size="620,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
     <eLabel text="Ultimate HD Config" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="config" position="30,60" size="700,560" font="Regular; 23" itemHeight="32" render="Listbox" scrollbarMode="showNever" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" scrollbarWidth="6" transparent="1"  />
+    <widget name="config" position="30,60" size="700,560" font="Regular; 23" itemHeight="32" render="Listbox" scrollbarMode="showNever" sliderPixmap="menu/Scrollbar.png" alphatest="blend" scrollbarWidth="6" transparent="1"  />
     <widget name="Picture" position="765,400" size="475,267" alphatest="on" />
-    <ePixmap pixmap="Ultimate/buttons/key_yellow.png" position="40,586" size="26,26" alphatest="blend" transparent="1" />
-	<ePixmap position="30,642" size="64,26" zPosition="10" pixmap="Ultimate/buttons/menu.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="40,586" size="26,26" alphatest="blend" transparent="1" />
+	<ePixmap position="30,642" size="64,26" zPosition="10" pixmap="buttons/menu.png" transparent="1" alphatest="blend" />
     <panel name="template_date" />
     <panel name="template_name_red_o_yellow" />
     <panel name="template_ok_exit_1280" />
@@ -2113,7 +2114,7 @@
    <!-- UltimateHD Screens-->
  <screen name="UltimateScreens" position="0,0" size="1280,720" title="Ultimate Setup" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Configure Ultimate HD Skin" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="Ultimate/menu/Scrollbar.png" alphatest="blend" enableWrapAround="1" transparent="1">
+    <widget source="menu" render="Listbox" position="30,60" size="700,610" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" alphatest="blend" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">{"template":
    [
     MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (25, 24), png = 2),
@@ -2146,18 +2147,18 @@
 	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
-	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
-	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="buttons/exit.png" transparent="1" alphatest="blend" />
 	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
   </screen>
   <screen name="NfrHD_Config1" position="center,center" size="800,420" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   	<eLabel text="Ultimate HD" position="10,4" size="350,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
@@ -2167,18 +2168,18 @@
 	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
-	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
-	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="buttons/exit.png" transparent="1" alphatest="blend" />
 	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
   </screen>
     <screen name="NfrHD_Config2" position="center,center" size="800,420" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   	<eLabel text="Ultimate HD" position="10,4" size="350,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
@@ -2188,18 +2189,18 @@
 	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
-	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
-	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="buttons/exit.png" transparent="1" alphatest="blend" />
 	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
   </screen>
      <screen name="NfrHD_Config3" position="center,center" size="800,420" title="NfrHD Setup" flags="wfNoBorder" backgroundColor="background">
   	<eLabel text="Ultimate HD" position="10,4" size="350,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
@@ -2209,23 +2210,23 @@
 	<widget source="global.CurrentTime" render="Label" position="705,3" size="94,44" font="Regular;32" halign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1">
 	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
-	<ePixmap pixmap="Ultimate/DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="DEV/Ultimate_Setup.png" position="500,70" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,120" zPosition="2" size="425,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,51" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" position="0,365" zPosition="2" size="800,5" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/UltimateHD/plugin.png" position="10,205" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="Ultimate/BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
+	<ePixmap pixmap="BG-Pixmaps/Rahmen/Rahmen_Org.png" position="0,0" zPosition="-25" size="800,51" />
 	<eLabel text="um Ihre Einstellungen vorzunehmen." position="10,290" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Bitte rufen Sie das Plugin auf" position="10,250" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" />
 	<eLabel text="Menü - Erweiterungen - Ultimate HD" position="10,80" size="480,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
-	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="Ultimate/buttons/exit.png" transparent="1" alphatest="blend" />
+	<ePixmap position="720,380" size="64,26" zPosition="10" pixmap="buttons/exit.png" transparent="1" alphatest="blend" />
 	<widget name="key_blue" position="51,381" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-	<ePixmap pixmap="Ultimate/buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="buttons/key_blue.png" position="15,380" size="26,26" alphatest="blend" transparent="1" />
   </screen>
     <!-- NFR NfrHD_About FHD  -->
   <screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap pixmap="Ultimate/DEV/Ultimate_Logo.png" position="870,390" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
-    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="Ultimate/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />   <eLabel position="30,200" size="700,30" zPosition="2" font="Regular; 22" text="Einstellungen MSN-Wetter" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
+    <ePixmap pixmap="DEV/Ultimate_Logo.png" position="870,390" size="280,280" zPosition="1" transparent="1" alphatest="blend" />
+    <ePixmap position="30,60" size="700,128" zPosition="10" pixmap="DEV/NFR_Logo.png" transparent="1" alphatest="blend" />   <eLabel position="30,200" size="700,30" zPosition="2" font="Regular; 22" text="Einstellungen MSN-Wetter" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
     <eLabel text="*Ultimate* HD Skin for NFR Images by stein17" position="13,685" size="480,26" font="Regular; 20" align="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
     <eLabel position="30,240" size="700,160" zPosition="2" font="Regular; 22" text="Erweiterungen/Wetterinformationen/Menu, dann Grün Hinzufügen. Wenn ihr den Ort Eingegeben habt, ein mal runter auf Location-Code. Gelb für Code suchen, mit Grün (OK)bestätigen, wichtig wieder OK. Noch wichtiger mit Rot zurück, sonst müsst ihr wieder von vorne anfangen. Jetzt mit Exit beenden, Benutzer Oberfläche neustarten, eventuell kompletter Neustart.." transparent="1" backgroundColor="black" halign="left" valign="top" />
     <eLabel position="29,490" size="700,180" zPosition="2" font="Regular; 22" text="Menu/ System/ Benutzeroberfläche/ Einstellungen, *2nd Infobar*  auf *2nd Infobar INFO* einstellen. Menu/ Info Panel/ Image/Remote-Setup/ Bearbeiten der Fernbedienung/ Info/EPG auswählen, in EPG *Open Eventview* auswählen.  ." transparent="1" backgroundColor="black" halign="left" valign="top" />
