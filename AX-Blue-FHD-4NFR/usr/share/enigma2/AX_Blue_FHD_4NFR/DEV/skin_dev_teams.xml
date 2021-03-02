@@ -1280,15 +1280,15 @@
 <ePixmap pixmap="buttons/key_red.png" position="13,1018" size="35,35" alphatest="blend" />
 <ePixmap pixmap="buttons/key_green.png" position="270,1018" size="35,35" alphatest="blend" />
 <ePixmap pixmap="buttons/key_yellow.png" position="582,1018" size="35,35" alphatest="blend" />
-<ePixmap pixmap="buttons/key_blue.png" position="883,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="buttons/key_blue.png" position="935,1018" size="35,35" alphatest="blend" />
 <ePixmap pixmap="buttons/key_menu.png" position="1401,1010" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
 <ePixmap pixmap="buttons/key_exit.png" position="1320,1010" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
 <ePixmap position="971,676" size="256,256" zPosition="2" pixmap="icons/menu_mainmenu_pluginmanager.png" transparent="1" />
 <eLabel name="background" backgroundColor="background" position="1300,995" size="180,80" />
 <widget name="key_red" position="58,1000" size="200,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
 <widget name="key_green" position="315,1000" size="260,70" zPosition="1" valign="center" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" />
-<widget name="key_yellow" position="630,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-<widget name="key_blue" position="930,1000" size="295,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="key_yellow" position="625,1000" size="300,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="key_blue" position="980,1000" size="295,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
 </screen>
   <!-- NFR PluginInstall FHD  -->
   <screen name="PluginInstall" position="center,center" size="1920,1080" title="Installiere Plugins" flags="wfNoBorder" backgroundColor="transparent">
@@ -1634,24 +1634,28 @@
       <convert type="MenuEntryCompare">about_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-	<widget source="global.CurrentTime" render="Label" position="30,674" size="530,45" font="Regular;32" halign="left" valign="bottom" backgroundColor="background" foregroundColor="orange" noWrap="1" transparent="1" zPosition="3">
+<!-- template_cpu_infobar  6.5-->
+<!--     <widget source="global.CurrentTime" render="Label" position="30,674" size="755,45" font="Regular;32" halign="left" valign="bottom" backgroundColor="background" foregroundColor="orange" noWrap="1" transparent="1" zPosition="3">
     <convert type="AXBlueSTBinfo">CPUtemp</convert>
+    </widget> -->  
+	 <!-- template_cpu_infobar  6.4-->
+    <widget source="global.CurrentTime" render="AXBlueSYSTemp" position="190,674" size="110,45" font="Regular; 32" halign="left" valign="bottom" backgroundColor="background" noWrap="1" transparent="1" zPosition="2" foregroundColor="orange" />
+	<eLabel text="CPU-Temp:" position="30,674" size="160,45" font="Regular; 32" halign="left" valign="bottom" backgroundColor="background" noWrap="1" transparent="1" zPosition="2" foregroundColor="orange" />
+    <widget source="session.CurrentService" render="Label" position="30,908" size="755,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="lightblue">
+      <convert type="AXBlueCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="30,908" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="lightblue">
-    <convert type="AXBlueCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="30,767" size="880,45" zPosition="1" font="Regular; 30" halign="left" valign="center" transparant="1" foregroundColor="bernstein">
-    <convert type="AXBlueReceiverInfo">FLASHINFO</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="30,814" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparant="1" foregroundColor="green">
-    <convert type="AXBlueReceiverInfo">MemTotal</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="30,861" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="red">
-    <convert type="AXBlueReceiverInfo">HddInfo,Long</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="30,720" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="white">
-    <convert type="AXBlueReceiverInfo">UsbInfo,Long</convert>
-  </widget>
+    <widget source="session.CurrentService" render="Label" position="30,767" size="755,45" zPosition="1" font="Regular; 30" halign="left" valign="center" transparant="1" foregroundColor="bernstein">
+      <convert type="AXBlueReceiverInfo">FLASHINFO</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="30,814" size="755,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparant="1" foregroundColor="green">
+      <convert type="AXBlueReceiverInfo">MemTotal</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="30,861" size="755,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="red">
+      <convert type="AXBlueReceiverInfo">HddInfo,Long</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="30,720" size="755,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="white">
+      <convert type="AXBlueReceiverInfo">UsbInfo,Long</convert>
+    </widget>
    <panel name="template_menu_buttons" />
   </screen>
  <!--  NfrHD_Config FHD  -->
