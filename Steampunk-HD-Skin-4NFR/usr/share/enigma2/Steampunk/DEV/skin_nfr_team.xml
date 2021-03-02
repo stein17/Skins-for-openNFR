@@ -504,10 +504,10 @@
   <widget source="windowtitle" render="Label" position="130,10" size="600,38" font="Regular;30" halign="left" valign="center" foregroundColor="brown" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
   <widget source="Title" render="Label" position="50,70" size="680,30" font="Regular; 22" borderColor="black" borderWidth="1" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1" zPosition="1" />
   <widget name="text" position="50,500" size="680,140" font="Regular;22" borderColor="black" borderWidth="1" halign="center" valign="center" transparent="1" zPosition="10" foregroundColor="selectedFG" backgroundColor="background" />
-  <widget name="list" position="50,105" size="680,310" borderColor="black" borderWidth="1" scrollbarMode="showOnDemand" sliderpixmap="Steampunk/Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" itemHeight="35" enableWrapAround="1" backgroundColor="background" transparent="1" zPosition="100" />
-  <ePixmap position="805,379" size="415,255" zPosition="2" pixmap="Steampunk/Icons-Steampunk/Icon-32-Steampunk.png" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="Steampunk/Skinparts/Line_Hor_680.png" position="50,100" zPosition="2" size="680,3" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="Steampunk/Skinparts/Line_Hor_680.png" position="50,415" zPosition="2" size="680,3" alphatest="blend" transparent="1" />
+  <widget name="list" position="50,105" size="680,310" borderColor="black" borderWidth="1" scrollbarMode="showOnDemand" sliderpixmap="Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" itemHeight="35" enableWrapAround="1" backgroundColor="background" transparent="1" zPosition="100" />
+  <ePixmap position="805,379" size="415,255" zPosition="2" pixmap="Icons-Steampunk/Icon-32-Steampunk.png" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="Skinparts/Line_Hor_680.png" position="50,100" zPosition="2" size="680,3" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="Skinparts/Line_Hor_680.png" position="50,415" zPosition="2" size="680,3" alphatest="blend" transparent="1" />
   <panel name="template_date" />
   <panel name="template_menu_ok_exit_1280" />
   <panel name="template_pig_menu" />
@@ -560,15 +560,15 @@
     <eLabel text="Steampunk Config" position="130,10" size="600,38" font="Regular;30" halign="left" valign="center" foregroundColor="brown" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
     <widget name="config" itemHeight="34" font="Regular;22" borderColor="black" borderWidth="1" render="Listbox" position="50,70" size="680,480" scrollbarMode="showOnDemand" sliderpixmap="Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" transparent="1"  />
     <widget name="Picture" position="805,385" size="415,241" alphatest="on" />
-    <ePixmap pixmap="Steampunk/buttons/key_yellow.png" position="60,570" size="30,30" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_yellow.png" position="60,570" size="30,30" alphatest="blend" transparent="1" />
     <ePixmap pixmap="Skinparts/Line_Hor_680.png" position="50,560" zPosition="2" size="680,3" alphatest="blend" transparent="1" />
     <panel name="template_date" />
     <panel name="template_name_red_o_yellow" />
     <panel name="template_ok_exit_1280" />
     <panel name="template_pig_menu" />
     <panel name="template_Steampunk_Background_Setup" />
-    <ePixmap pixmap="Steampunk/buttons/key_leftright.png" position="1010,670" size="62,28" alphatest="blend" transparent="1" />
-    <ePixmap position="60,610" size="30,30" zPosition="10" pixmap="Steampunk/buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_leftright.png" position="1010,670" size="62,28" alphatest="blend" transparent="1" />
+    <ePixmap position="60,610" size="30,30" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="blend" />
   </screen>
  <!--  NfrHD_Config FHD  -->
 <screen name="NfrHD_Config1"  title="NfrHD Setup" position="center,center" size="680,330" backgroundColor="background20">
@@ -586,8 +586,8 @@
   <widget source="global.CurrentTime" render="Label" position="600,10" size="80,40" font="Regular;24"  halign="left" valign="center" foregroundColor="brown" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" >
   <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <ePixmap position="525,295" size="62,28" zPosition="10" pixmap="Steampunk/buttons/ok.png" transparent="1" alphatest="blend" />
-  <ePixmap position="600,295" size="62,28" zPosition="10" pixmap="Steampunk/buttons/exit.png" transparent="1" alphatest="blend" />
+  <ePixmap position="525,295" size="62,28" zPosition="10" pixmap="buttons/ok.png" transparent="1" alphatest="blend" />
+  <ePixmap position="600,295" size="62,28" zPosition="10" pixmap="buttons/exit.png" transparent="1" alphatest="blend" />
   <ePixmap pixmap="Skinparts/Line_Hor_680.png" position="0,277" zPosition="2" size="680,3" alphatest="blend" transparent="1" />
  </screen>
    <!-- AtileHD_Config HD -->
@@ -664,7 +664,7 @@
   <widget source="Event" render="Label" position="121,60" size="550,30" font="Regular;24"  foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="session.CurrentService" render="MetrixHDXPicon" position="40,51" size="75,42" zPosition="5" alphatest="blend" transparent="1">
+  <widget source="session.CurrentService" render="SteampunkXPicon" position="40,51" size="75,42" zPosition="5" alphatest="blend" transparent="1">
     <convert type="MetrixHDServiceName2">Reference</convert>
   </widget>
   <widget source="Event" render="SteampunkRunningText" options="movetype=none,startdelay=600,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="40,100" size="1195,70" font="Regular;20" borderColor="black" borderWidth="1" backgroundColor="background" foregroundColor="white" transparent="1" valign="top" zPosition="1">
@@ -701,19 +701,19 @@
   <widget backgroundColor="metrixblue" name="Active3" position="520,175" size="235,30" zPosition="1" transparent="0" />
   <widget backgroundColor="metrixblue" name="Active4" position="760,175" size="235,30" zPosition="1" transparent="0" />
   <widget backgroundColor="metrixblue" name="Active5" position="1000,175" size="235,30" zPosition="1" transparent="0" />
-  <widget source="piconCh1" render="MetrixHDXPicon" position="40,175" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh1" render="SteampunkXPicon" position="40,175" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="piconCh2" render="MetrixHDXPicon" position="280,175" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh2" render="SteampunkXPicon" position="280,175" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="piconCh3" render="MetrixHDXPicon" position="520,175" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh3" render="SteampunkXPicon" position="520,175" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="piconCh4" render="MetrixHDXPicon" position="760,175" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh4" render="SteampunkXPicon" position="760,175" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="piconCh5" render="MetrixHDXPicon" position="1000,175" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh5" render="SteampunkXPicon" position="1000,175" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget name="list1" position="40,210" scrollbarMode="showOnDemand" sliderPixmap="Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" size="235,445" zPosition="1" transparent="0" TimeforegroundColor="selectedFG" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntryBackgroundColor="background" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="verydarkgrey" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="verydarkgrey" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="background" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="verydarkgrey" EntryBorderColor="selectedFG" TimeFontVertical="Regular;19" borderColor="black" borderWidth="1" EventFontVertical="Regular;18"  />
@@ -751,13 +751,13 @@
   <widget backgroundColor="metrixblue" name="Active1" position="50,225" size="220,30" zPosition="1" transparent="0" />
   <widget backgroundColor="metrixblue" name="Active2" position="275,225" size="225,30" zPosition="1" transparent="0" />
   <widget backgroundColor="metrixblue" name="Active3" position="505,225" size="225,30" zPosition="1" transparent="0" />
-  <widget source="piconCh1" render="MetrixHDXPicon" position="50,225" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh1" render="SteampunkXPicon" position="50,225" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="piconCh2" render="MetrixHDXPicon" position="275,225" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh2" render="SteampunkXPicon" position="275,225" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="piconCh3" render="MetrixHDXPicon" position="505,225" size="50,30" zPosition="2" alphatest="blend">
+  <widget source="piconCh3" render="SteampunkXPicon" position="505,225" size="50,30" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget name="list1" position="50,260" scrollbarMode="showOnDemand" sliderPixmap="Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" size="220,380" zPosition="1" transparent="0" TimeforegroundColor="selectedFG" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntryBackgroundColor="background" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="metrixblue" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="metrixblue" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="background" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="metrixblue" EntryBorderColor="selectedFG" TimeFontVertical="Regular;19" borderColor="black" borderWidth="1" EventFontVertical="Regular;18"  />
@@ -765,7 +765,7 @@
   <widget name="list3" position="505,260" scrollbarMode="showOnDemand" sliderPixmap="Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" size="225,380" zPosition="1" TimeforegroundColor="selectedFG" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntryBackgroundColor="background" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="metrixblue" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="metrixblue" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="background" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="metrixblue" EntryBorderColor="selectedFG" TimeFontVertical="Regular;19" borderColor="black" borderWidth="1" EventFontVertical="Regular;18"  />
    <!-- DO NOT CHANGE THIS LINE !!!!!!!!!!!!!!! -->
   <widget enableWrapAround="0" itemHeight="20" font="Regular;0" name="list" position="0,0" size="0,60" zPosition="-10" />
-  <widget source="session.CurrentService" render="MetrixHDXPicon" position="895,400" size="234,132" zPosition="2" alphatest="blend" borderWidth="1" borderColor="grey">
+  <widget source="session.CurrentService" render="SteampunkXPicon" position="895,400" size="234,132" zPosition="2" alphatest="blend" borderWidth="1" borderColor="grey">
     <convert type="MetrixHDServiceName2">Reference</convert>
   </widget>
   <widget source="session.Event_Now" render="Progress" position="895,545" size="234,12" foregroundColor="selectedFG" borderWidth="2" borderColor="grey" transparent="1" zPosition="2">
@@ -937,9 +937,9 @@
 				}</convert>
   </widget>
   <ePixmap position="805,380" size="415,255" zPosition="2" pixmap="Icons-Steampunk/Icon-24-Steampunk.png" transparent="1" alphatest="blend" />
-  <widget name="PixmapRed" pixmaps="Steampunk/buttons/key_grey.png,Steampunk/buttons/key_red.png" position="40,667" size="30,30" alphatest="blend" transparent="1" />
-  <widget name="PixmapGreen" pixmaps="Steampunk/buttons/key_grey.png,Steampunk/buttons/key_green.png" position="250,667" size="30,30" alphatest="blend" transparent="1" />
-  <widget name="PixmapBlue" pixmaps="Steampunk/buttons/key_grey.png,Steampunk/buttons/key_blue.png" position="460,667" size="30,30" alphatest="blend" transparent="1" />
+  <widget name="PixmapRed" pixmaps="buttons/key_grey.png,buttons/key_red.png" position="40,667" size="30,30" alphatest="blend" transparent="1" />
+  <widget name="PixmapGreen" pixmaps="buttons/key_grey.png,buttons/key_green.png" position="250,667" size="30,30" alphatest="blend" transparent="1" />
+  <widget name="PixmapBlue" pixmaps="buttons/key_grey.png,buttons/key_blue.png" position="460,667" size="30,30" alphatest="blend" transparent="1" />
   <widget name="LabelRed" position="75,667" size="170,30" zPosition="1" font="Regular;20" borderColor="black" borderWidth="1" halign="left" transparent="1" valign="center" noWrap="1" />
   <widget name="LabelGreen" position="285,667" size="170,30" zPosition="1" font="Regular;20" borderColor="black" borderWidth="1" halign="left" transparent="1" valign="center" noWrap="1" />
   <widget name="LabelBlue" position="495,667" size="170,30" zPosition="1" font="Regular;20" borderColor="black" borderWidth="1" halign="left" transparent="1" valign="center" noWrap="1" />
@@ -961,7 +961,7 @@
 				}</convert>
   </widget>
   <ePixmap position="805,380" size="415,255" zPosition="2" pixmap="Icons-Steampunk/Icon-25-Steampunk.png" transparent="1" alphatest="blend" />
-  <widget name="PixmapButton" pixmaps="Steampunk/buttons/key_green.png,Steampunk/buttons/key_grey.png" position="40,667" size="30,30" alphatest="blend" transparent="1" />
+  <widget name="PixmapButton" pixmaps="buttons/key_green.png,buttons/key_grey.png" position="40,667" size="30,30" alphatest="blend" transparent="1" />
   <widget name="LabelButton" position="75,667" size="170,30" zPosition="1" font="Regular;20" borderColor="black" borderWidth="1" halign="left" transparent="1" valign="center" noWrap="1" />
   <panel name="template_date" />
   <panel name="template_ok_exit_1280" />
