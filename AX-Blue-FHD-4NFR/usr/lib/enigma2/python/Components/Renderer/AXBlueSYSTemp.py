@@ -1,9 +1,7 @@
 from Components.VariableText import VariableText
 from enigma import eLabel
-from Components.Renderer.Renderer import Renderer
-from Components.Language import language
-from os import path, popen, environ
-
+from Renderer import Renderer
+from os import path, popen
 
 class AXBlueSYSTemp(Renderer, VariableText):
 	def __init__(self):
