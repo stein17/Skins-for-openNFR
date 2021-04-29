@@ -6,7 +6,7 @@
   <widget source="session.CurrentService" render="Label" position="22,70" size="595,25" font="Regular;22" foregroundColor="selectedFG" borderWidth="2" transparent="1" valign="center" halign="left" noWrap="1" zPosition="5">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget alphatest="blend" position="506,100" render="NFRXPicon" size="110,62" source="session.CurrentService" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="506,100" render="Picon" size="110,62" source="session.CurrentService" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget font="Regular; 22" halign="left" noWrap="1" position="22,375" render="Label" size="595,25" source="session.Event_Now" transparent="1" valign="center" zPosition="2" foregroundColor="selectedFG">

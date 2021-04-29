@@ -1,7 +1,7 @@
 <skin>
  <!-- SecondInfoBar_light -->
 <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="SecondInfoBar" backgroundColor="background">
-  <widget alphatest="blend" position="845,485" render="NFRXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="845,485" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget font="Regular; 22" halign="left" noWrap="1" position="123,70" render="Label" size="495,30" source="session.Event_Now" transparent="1" valign="center" zPosition="2" foregroundColor="green">

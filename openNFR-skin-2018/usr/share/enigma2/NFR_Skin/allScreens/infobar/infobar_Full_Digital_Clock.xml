@@ -1,7 +1,7 @@
 <skin>
  <!--Infobar_Full_Digital_Clock -->
 <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-    <widget alphatest="blend" position="11,562" size="220,130" render="NFRXPicon" source="session.CurrentService" transparent="1" zPosition="2">
+    <widget alphatest="blend" position="11,562" size="220,130" render="Picon" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget font="Regular; 24" halign="right" position="235,568" render="Label" size="70,30" source="session.Event_Now" transparent="1" backgroundColor="background">

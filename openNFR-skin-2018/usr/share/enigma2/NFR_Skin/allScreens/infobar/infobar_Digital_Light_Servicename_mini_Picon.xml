@@ -43,7 +43,7 @@
 <widget source="session.Event_Now" render="Progress" foregroundColor="selectedFG" borderWidth="2" borderColor="grey" position="42,667" size="980,10" zPosition="1" transparent="1">
   <convert type="EventTime">Progress</convert>
 </widget>
-<widget alphatest="blend" position="20,569" size="82,49" render="NFRXPicon" source="session.CurrentService" borderWidth="1" borderColor="grey" transparent="1" zPosition="4">
+<widget alphatest="blend" position="20,569" size="82,49" render="Picon" source="session.CurrentService" borderWidth="1" borderColor="grey" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
 <widget source="global.CurrentTime" render="Label" position="1040,694" size="239,27" font="Regular; 20" halign="center" foregroundColor="selectedFG" backgroundColor="background" zPosition="2" transparent="1">

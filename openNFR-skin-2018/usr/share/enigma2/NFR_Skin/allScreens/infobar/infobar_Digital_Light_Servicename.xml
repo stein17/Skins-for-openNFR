@@ -1,7 +1,7 @@
 <skin>
    <!-- skin_infobar_digital_light_servicename -->
 <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-  <widget alphatest="blend" position="10,578" size="220,132" render="NFRXPicon" source="session.CurrentService" transparent="1" zPosition="4">
+  <widget alphatest="blend" position="10,578" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget font="Regular; 30" halign="right" position="240,624" render="Label" size="90,38" source="session.Event_Now" transparent="1" backgroundColor="background" >

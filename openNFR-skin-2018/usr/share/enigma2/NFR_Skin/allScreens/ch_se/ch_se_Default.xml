@@ -27,7 +27,7 @@
     <eLabel text="CH +/-" zPosition="1" position="456,4" size="120,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="center" />
     <eLabel text="Zapp Favorites " zPosition="1" position="580,4" size="260,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="430,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <widget source="ServiceEvent" render="NFRXPicon" position="844,336" size="53,32" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="ServiceEvent" render="Picon" position="844,336" size="53,32" zPosition="5" alphatest="blend" transparent="1">
       <convert type="NFRRefString">ServicelistRef</convert>
     </widget>
     <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
