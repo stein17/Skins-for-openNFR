@@ -1132,7 +1132,7 @@
   </screen>
   <!-- CronTimer -->
   <screen name="CronTimers" position="0,0" size="1280,720" title="Cron Manager" flags="wfNoBorder" backgroundColor="background">
-    <widget source="list" render="Listbox" position="22,70" size="720,500" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1">
+    <widget source="list" render="Listbox" position="22,70" size="720,450" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (5, 2), size = (695, 30), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
@@ -1143,12 +1143,12 @@
 			</convert>
     </widget>
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/timer.png" transparent="1" alphatest="blend" />
-    <widget name="lab1" position="432,580" size="100,30" font="Regular;20" valign="center" halign="right" transparent="1" />
-    <widget name="labdisabled" position="550,580" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" transparent="1" />
-    <widget name="labactive" position="550,580" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" transparent="1" foregroundColor="black" />
-    <widget name="lab2" position="100,580" size="100,30" font="Regular;20" valign="center" halign="right" transparent="1" />
-    <widget name="labstop" position="220,580" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" transparent="1" />
-    <widget name="labrun" position="220,580" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" transparent="1" foregroundColor="black" />
+    <widget name="lab1" position="400,530" size="300,30" font="Regular;24" valign="center" halign="left" transparent="1" />
+    <widget name="labdisabled" position="400,565" size="300,30" font="Regular;24" valign="center" halign="left" foregroundColor="white" backgroundColor="red"  zPosition="1" transparent="0"  />
+    <widget name="labactive" position="400,565" size="300,30" font="Regular;24" valign="center" halign="left" foregroundColor="black" backgroundColor="green"  zPosition="2" transparent="0"  />
+    <widget name="lab2" position="32,530" size="300,30" font="Regular;24" valign="center" halign="left" transparent="1" />
+    <widget name="labstop" position="32,565" size="300,30" font="Regular;24" valign="center" halign="left" foregroundColor="white" backgroundColor="red"  zPosition="1" transparent="0"  />
+    <widget name="labrun" position="32,565" size="300,30" font="Regular;24" valign="center" halign="left" foregroundColor="black" backgroundColor="green"  zPosition="2" transparent="0"  />
     <widget name="key" position="22,625" size="720,30" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_source_red_o_blue" />
@@ -2510,19 +2510,21 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_source_red_o_blue" />
     <panel name="template_info_menu_exit_1280" />
     <panel name="template_pig_menu" />
-	<panel name="template_EPG_Multi" />
+    <panel name="template_EPG_Multi" />
   </screen>
-  <screen name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
-    <panel name="template_pixmap_browser-epg" />
-    <widget source="global.CurrentTime" render="Label" position="949,14" size="280,30" font="Regular; 24"  backgroundColor="background" foregroundColor="selectedFG" halign="right" transparent="1">
+   <screen name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
+   <widget source="global.CurrentTime" render="Label" position="949,14" size="280,30" font="Regular; 24" backgroundColor="background" foregroundColor="selectedFG" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <widget source="Event" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="344,9" size="300,34" font="Regular; 27" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="black" transparent="1" zPosition="2">
+ <!--    <widget source="Event" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="344,9" size="300,34" font="Regular; 27" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="black" transparent="1" zPosition="2">
       <convert type="EventName">Name</convert>
+    </widget> -->
+    <widget alphatest="blend" position="540,0" render="Picon" size="85,48" source="Service" transparent="1" zPosition="5" borderWidth="1" borderColor="grey">
+    <convert type="ServiceName">Reference</convert>
     </widget>
     <ePixmap position="1062,630" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/left.png" alphatest="on" />
     <ePixmap position="1126,630" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/right.png" alphatest="on" />
-    <widget source="Title" render="Label" zPosition="1" position="22,9" size="320,34" valign="center" font="Regular; 27"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="Title" render="Label" zPosition="1" position="22,9" size="500,34" valign="center" font="Regular; 27" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" />
     <eLabel position="20,101" zPosition="0" size="1239,2" backgroundColor="selectedFG" transparent="1" />
     <widget source="Event" render="Label" position="645,21" size="55,18" font="Regular; 18" halign="right" backgroundColor="background" transparent="1" valign="center">
       <convert type="EventTime">StartTime</convert>
@@ -2539,15 +2541,15 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="Event" render="Progress" pixmap="NFR_Skin/colors/0000ffff.png" position="702,25" size="100,10" zPosition="1" transparent="1" borderWidth="1" borderColor="darkgrey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget name="lab1" position="20,590" size="1239,30" font="Regular;24"  backgroundColor="background" halign="center" valign="center" zPosition="20" transparent="1" />
-    <widget name="timeline_text" position="20,70" size="1239,30" itemHeight="30" TimelineFont="Regular;19" borderColor="grey" borderWidth="1"  backgroundColor="background" foregroundColor="selectedFG" TimelineAlignment="left" zPosition="1" transparent="1" />
-    <widget name="bouquetlist" position="22,9" size="320,34" zPosition="1" itemHeight="32" font="Regular;27" halign="center" valign="center" foregroundColor="white"  backgroundColor="black"  transparent="1" scrollbarMode="showNever" />
+    <widget name="lab1" position="20,590" size="1239,30" font="Regular;24" backgroundColor="background" halign="center" valign="center" zPosition="20" transparent="1" />
+    <widget name="timeline_text" position="20,70" size="1239,30" itemHeight="30" TimelineFont="Regular;19" borderColor="grey" borderWidth="1" backgroundColor="background" foregroundColor="selectedFG" TimelineAlignment="left" zPosition="1" transparent="1" />
+    <widget name="bouquetlist" position="22,9" size="500,34" zPosition="1" itemHeight="32" font="Regular;27" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showNever" />
     <widget name="list" position="20,110" size="1239,510" itemHeight="510" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;19" 
 	ServiceBorderWidth="1" 
 	ServiceNamePadding="3" 
 	EventBorderWidth="1" 
 	EventNamePadding="3"
-	ServiceForegroundColor="cyan1" 
+	ServiceForegroundColor="selectedFG" 
 	ServiceForegroundColorNow="white" 
 	ServiceBackgroundColor="background" 
 	ServiceBackgroundColorNow="verydarkgrey" 
@@ -2557,7 +2559,7 @@ self['config'].l.setSeperation(int(300*f))
 	EntrybackgroundColorSelected="selectedBG" 
 	EntryBackgroundColorNow="verydarkgrey" 
 	EntryBackgroundColorNowSelected="verydarkgrey" 
-	EntryForegroundColorNow="white" 
+	EntryForegroundColorNow="cyan1" 
 	EntryForegroundColorNowSelected="green" 
 	ServiceBorderColor="grey" 
 	EntryBorderColor="grey"  
@@ -2608,26 +2610,22 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="session.CurrentService" render="Label" position="860,689" size="260,25" font="Regular; 20" halign="left" valign="center" backgroundColor="black" transparent="1" zPosition="10">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget alphatest="blend" position="260,0" render="Picon" size="85,48" source="Service" transparent="1" zPosition="5" borderWidth="1" borderColor="grey">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
     <eLabel name="" position="20,626" size="1239,2" zPosition="2" backgroundColor="selectedFG" />
     <panel name="template_menu_info_1280" />
-    <panel name="template_fullscreen_12800" />
+    <panel name="template_pixmap_browser-epg" />
   </screen>
   <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
-    <panel name="template_pixmap_browser-epg" />
-    <widget source="global.CurrentTime" render="Label" position="950,10" size="280,30" font="Regular; 24"  backgroundColor="background" foregroundColor="selectedFG" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="949,14" size="280,30" font="Regular; 24" backgroundColor="background" foregroundColor="selectedFG" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <widget source="Event" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="450,9" size="300,34" font="Regular; 27" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="black" transparent="1" zPosition="2">
+<!--     <widget source="Event" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="450,9" size="300,34" font="Regular; 27" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="black" transparent="1" zPosition="2">
       <convert type="EventName">Name</convert>
-    </widget>
+    </widget> -->
     <ePixmap position="1002,687" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/left.png" alphatest="on" />
     <ePixmap position="1066,687" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/right.png" alphatest="on" />
-    <widget source="Title" render="Label" zPosition="1" position="22,9" size="320,34" valign="center" font="Regular; 27"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <widget alphatest="blend" position="353,0" render="Picon" size="85,48" source="Service" transparent="1" zPosition="5" borderWidth="1" borderColor="grey">
-      <convert type="ServiceName">Reference</convert>
+    <widget source="Title" render="Label" zPosition="1" position="22,9" size="500,34" valign="center" font="Regular; 27" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget alphatest="blend" position="540,0" render="Picon" size="85,48" source="Service" transparent="1" zPosition="5" borderWidth="1" borderColor="grey">
+    <convert type="ServiceName">Reference</convert>
     </widget>
     <widget name="timeline_now" position="20,370" zPosition="2" size="16,289" pixmap="NFR_Skin/epg/timeline-now.png" alphatest="blend" />
     <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
@@ -2645,31 +2643,31 @@ self['config'].l.setSeperation(int(300*f))
     <widget alphatest="blend" name="timeline4" pixmap="NFR_Skin/epg/timeline.png" position="20,376" size="1,275" zPosition="2" />
     <widget alphatest="blend" name="timeline5" pixmap="NFR_Skin/epg/timeline.png" position="20,376" size="1,275" zPosition="2" />
     <eLabel text="Reset Page Up/Down" position="630,302" size="210,25" backgroundColor="black" foregroundColor="selectedFG" font="Regular; 20" transparent="1" halign="left" valign="center" />
-    <eLabel text="zurück / jetzt" position="630,77" size="210,25" font="Regular; 18"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
-    <eLabel text="Zeitraum vor" position="630,122" size="210,25" font="Regular; 18"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
-    <eLabel text="Seite Vor/Zurück" position="630,212" size="210,25" font="Regular; 18"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
-    <eLabel text="Zeilen Verdoppeln" position="630,167" size="210,25" font="Regular; 18"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
-    <eLabel text="+ 24 Stunden" position="870,689" size="120,25"  backgroundColor="background"  foregroundColor="selectedFG" font="Regular; 18" transparent="1" halign="left" valign="center" />
-    <eLabel text="CH +/-" position="800,689" size="70,25" font="Regular; 18"  backgroundColor="background" halign="center" transparent="1" valign="center" />
+    <eLabel text="zurück / jetzt" position="630,77" size="210,25" font="Regular; 18" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
+    <eLabel text="Zeitraum vor" position="630,122" size="210,25" font="Regular; 18" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
+    <eLabel text="Seite Vor/Zurück" position="630,212" size="210,25" font="Regular; 18" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
+    <eLabel text="Zeilen Verdoppeln" position="630,167" size="210,25" font="Regular; 18" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center" />
+    <eLabel text="+ 24 Stunden" position="870,689" size="120,25" backgroundColor="background" foregroundColor="selectedFG" font="Regular; 18" transparent="1" halign="left" valign="center" />
+    <eLabel text="CH +/-" position="800,689" size="70,25" font="Regular; 18" backgroundColor="background" halign="center" transparent="1" valign="center" />
     <ePixmap pixmap="NFR_Skin/buttons/key_5.png" position="597,75" size="30,29" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_6.png" position="597,120" size="30,29" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_7.png" position="597,165" size="30,29" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_9.png" position="597,255" size="30,29" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_8.png" position="597,210" size="30,29" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_0.png" position="597,300" size="30,29" alphatest="blend" zPosition="1" />
-    <widget name="primetime" position="630,257" size="210,25"  backgroundColor="background" foregroundColor="selectedFG" font="Regular; 18" transparent="1" />
+    <widget name="primetime" position="630,257" size="210,25" backgroundColor="background" foregroundColor="selectedFG" font="Regular; 18" transparent="1" />
     <widget name="page" position="907,355" size="0,0" font="Regular;27" transparent="1" />
     <widget name="change_bouquet" position="844,72" size="1,1" backgroundColor="black" foregroundColor="bernstein" font="Regular; 27" transparent="1" />
     <widget name="jump" position="1536,1018" size="0,0" backgroundColor="black" font="Regular;27" transparent="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_0.png" position="1034,687" size="30,29" alphatest="blend" zPosition="1" />
-    <widget source="Event"  backgroundColor="background" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="22,95" size="560,229" font="Regular;22" transparent="1" valign="top" zPosition="1">
+    <widget source="Event" backgroundColor="background" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="22,95" size="560,229" font="Regular;22" transparent="1" valign="top" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="22,70" size="60,20" font="Regular; 20" halign="right"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" valign="center">
+    <widget source="Event" render="Label" position="22,70" size="60,20" font="Regular; 20" halign="right" backgroundColor="background" foregroundColor="selectedFG" transparent="1" valign="center">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M </convert>
     </widget>
-    <widget source="Event" render="Label" position="423,70" size="60,20" font="Regular; 20"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center">
+    <widget source="Event" render="Label" position="423,70" size="60,20" font="Regular; 20" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
@@ -2677,20 +2675,20 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="Event" render="Progress" position="88,75" size="328,10" foregroundColor="selectedFG" borderWidth="2" borderColor="grey" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="489,70" size="95,20" font="Regular; 20"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center">
+    <widget source="Event" render="Label" position="489,70" size="95,20" font="Regular; 20" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" valign="center">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
     <eLabel name="" position="22,92" size="560,1" backgroundColor="selectedFG" zPosition="5" />
-    <widget name="lab1" position="20,616" size="1238,35" font="Regular;24"  backgroundColor="background" halign="center" valign="center" zPosition="20" transparent="1" />
-    <widget name="timeline_text" position="20,335" size="1238,30" itemHeight="30"  backgroundColor="background" TimelineFont="Regular;19" borderColor="grey" borderWidth="1" foregroundColor="selectedFG" TimelineAlignment="left" zPosition="1" transparent="1" />
-    <widget name="bouquetlist" position="22,9" size="320,34" zPosition="1" itemHeight="32" font="Regular;27" halign="center" valign="center" foregroundColor="white"  backgroundColor="black"  transparent="1" scrollbarMode="showNever" />
+    <widget name="lab1" position="20,616" size="1238,35" font="Regular;24" backgroundColor="background" halign="center" valign="center" zPosition="20" transparent="1" />
+    <widget name="timeline_text" position="20,335" size="1238,30" itemHeight="30" backgroundColor="background" TimelineFont="Regular;19" borderColor="grey" borderWidth="1" foregroundColor="selectedFG" TimelineAlignment="left" zPosition="1" transparent="1" />
+    <widget name="bouquetlist" position="22,9" size="500,34" zPosition="1" itemHeight="32" font="Regular;27" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showNever" />
     <widget name="list" position="20,376" size="1238,275" itemHeight="215" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;19" 
 	ServiceBorderWidth="1" 
 	ServiceNamePadding="3" 
 	EventBorderWidth="1" 
 	EventNamePadding="3"
-	ServiceForegroundColor="cyan1" 
+	ServiceForegroundColor="selectedFG" 
 	ServiceForegroundColorNow="white" 
 	ServiceBackgroundColor="background" 
 	ServiceBackgroundColorNow="verydarkgrey" 
@@ -2700,7 +2698,7 @@ self['config'].l.setSeperation(int(300*f))
 	EntrybackgroundColorSelected="selectedBG" 
 	EntryBackgroundColorNow="verydarkgrey" 
 	EntryBackgroundColorNowSelected="verydarkgrey" 
-	EntryForegroundColorNow="white" 
+	EntryForegroundColorNow="cyan1" 
 	EntryForegroundColorNowSelected="green" 
 	ServiceBorderColor="grey" 
 	EntryBorderColor="grey"  
@@ -2717,6 +2715,7 @@ self['config'].l.setSeperation(int(300*f))
 	transparent="1" />
     <panel name="template_menu_info_1280" />
     <panel name="template_pig_setup" />
+    <panel name="template_pixmap_browser-epg" />
     <eLabel name="" position="20,366" size="1239,2" backgroundColor="selectedFG" />
   </screen>
   <screen name="GraphicalInfoBarEPG" title="InfoBar EPG" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
