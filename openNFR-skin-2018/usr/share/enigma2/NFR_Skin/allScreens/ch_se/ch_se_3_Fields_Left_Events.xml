@@ -30,7 +30,7 @@
     <widget source="ServiceEvent" render="Label" position="985,76" size="275,22" font="Regular; 22" foregroundColor="white" backgroundColor="black" halign="center" valign="top" transparent="1" zPosition="6">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="SingleEpgList" position="20,280" size="315,350" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="2" />
+    <widget source="ServiceEvent" render="NFRSingleEpgList" position="20,280" size="315,350" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="2" />
     <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=1000,always=0" position="1069,401" zPosition="1" size="190,24" font="Regular; 20" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="selectedFG">
       <convert type="NFRServiceNameEventNobile">NextEvent</convert>
     </widget>
