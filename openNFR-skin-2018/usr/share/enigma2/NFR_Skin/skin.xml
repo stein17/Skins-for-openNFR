@@ -2538,41 +2538,41 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Progress" pixmap="NFR_Skin/colors/0000ffff.png" position="702,25" size="100,10" zPosition="1" transparent="1" borderWidth="1" borderColor="darkgrey">
+    <widget source="Event" render="Progress" pixmap="NFR_Skin/colors/00cccccc.png" position="702,25" size="100,10" zPosition="1" transparent="1" borderWidth="1" borderColor="darkgrey">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget name="lab1" position="20,590" size="1239,30" font="Regular;24" backgroundColor="background" halign="center" valign="center" zPosition="20" transparent="1" />
     <widget name="timeline_text" position="20,70" size="1239,30" itemHeight="30" TimelineFont="Regular;19" borderColor="grey" borderWidth="1" backgroundColor="background" foregroundColor="selectedFG" TimelineAlignment="left" zPosition="1" transparent="1" />
     <widget name="bouquetlist" position="22,9" size="500,34" zPosition="1" itemHeight="32" font="Regular;27" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showNever" />
-    <widget name="list" position="20,110" size="1239,510" itemHeight="510" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;19" 
-	ServiceBorderWidth="1" 
-	ServiceNamePadding="3" 
-	EventBorderWidth="1" 
+    <widget name="list" position="20,110" size="1239,510" itemHeight="510" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;19"
+	ServiceBorderWidth="1"
+	ServiceNamePadding="3"
+	EventBorderWidth="1"
 	EventNamePadding="3"
-	ServiceForegroundColor="selectedFG" 
-	ServiceForegroundColorNow="white" 
-	ServiceBackgroundColor="background" 
-	ServiceBackgroundColorNow="verydarkgrey" 
-	EntryForegroundColor="white" 
-	EntryforegroundColorSelected="selectedFG" 
-	EntryBackgroundColor="background" 
-	EntrybackgroundColorSelected="selectedBG" 
-	EntryBackgroundColorNow="verydarkgrey" 
-	EntryBackgroundColorNowSelected="verydarkgrey" 
-	EntryForegroundColorNow="cyan1" 
-	EntryForegroundColorNowSelected="green" 
-	ServiceBorderColor="grey" 
-	EntryBorderColor="grey"  
-	RecordForegroundColor="white" 
-	RecordforegroundColorSelected="selectedFG" 
-	RecordBackgroundColor="red" 
-	RecordBackgroundColorSelected="dark" 
-	ZapForegroundColor="white" 
-	ZapBackgroundColor="verydarkgrey" 
-	ZapforegroundColorSelected="selectedFG" 
-	ZapBackgroundColorSelected="lila" 
-	enableWrapAround="1" 
-	scrollbarMode="showNever" 
+	ServiceForegroundColor="selectedFG"
+	ServiceForegroundColorNow="selectedFG"
+	ServiceBackgroundColor="background"
+	ServiceBackgroundColorNow="verydarkgrey"
+	EntryForegroundColor="white"
+	EntryforegroundColorSelected="selectedFG"
+	EntryBackgroundColor="background"
+	EntryBackgroundColorSelected="#004169E1"
+	EntryBackgroundColorNow="#000A1C48"
+	EntryBackgroundColorNowSelected="#000F460E"
+	EntryForegroundColorNow="selectedFG"
+	EntryForegroundColorNowSelected="white"
+	ServiceBorderColor="grey"
+	EntryBorderColor="grey"
+	RecordForegroundColor="white"
+	RecordforegroundColorSelected="selectedFG"
+	RecordBackgroundColor="red"
+	RecordBackgroundColorSelected="dark"
+	ZapForegroundColor="white"
+	ZapBackgroundColor="verydarkgrey"
+	ZapforegroundColorSelected="selectedFG"
+	ZapBackgroundColorSelected="lila"
+	enableWrapAround="1"
+	scrollbarMode="showNever"
 	transparent="1" />
     <widget name="timeline_now" position="20,104" zPosition="2" size="16,524" pixmap="NFR_Skin/epg/timeline-now-xl.png" alphatest="blend" />
     <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
@@ -2683,35 +2683,35 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="lab1" position="20,616" size="1238,35" font="Regular;24" backgroundColor="background" halign="center" valign="center" zPosition="20" transparent="1" />
     <widget name="timeline_text" position="20,335" size="1238,30" itemHeight="30" backgroundColor="background" TimelineFont="Regular;19" borderColor="grey" borderWidth="1" foregroundColor="selectedFG" TimelineAlignment="left" zPosition="1" transparent="1" />
     <widget name="bouquetlist" position="22,9" size="500,34" zPosition="1" itemHeight="32" font="Regular;27" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showNever" />
-    <widget name="list" position="20,376" size="1238,275" itemHeight="215" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;19" 
-	ServiceBorderWidth="1" 
-	ServiceNamePadding="3" 
-	EventBorderWidth="1" 
+    <widget name="list" position="20,376" size="1238,275" itemHeight="215" ServiceFontGraphical="Regular;20" EntryFontGraphical="Regular;19"
+	ServiceBorderWidth="1"
+	ServiceNamePadding="3"
+	EventBorderWidth="1"
 	EventNamePadding="3"
-	ServiceForegroundColor="selectedFG" 
-	ServiceForegroundColorNow="white" 
-	ServiceBackgroundColor="background" 
-	ServiceBackgroundColorNow="verydarkgrey" 
-	EntryForegroundColor="white" 
-	EntryforegroundColorSelected="selectedFG" 
-	EntryBackgroundColor="background" 
-	EntrybackgroundColorSelected="selectedBG" 
-	EntryBackgroundColorNow="verydarkgrey" 
-	EntryBackgroundColorNowSelected="verydarkgrey" 
-	EntryForegroundColorNow="cyan1" 
-	EntryForegroundColorNowSelected="green" 
-	ServiceBorderColor="grey" 
-	EntryBorderColor="grey"  
-	RecordForegroundColor="white" 
-	RecordforegroundColorSelected="selectedFG" 
-	RecordBackgroundColor="red" 
-	RecordBackgroundColorSelected="dark" 
-	ZapForegroundColor="white" 
-	ZapBackgroundColor="verydarkgrey" 
-	ZapforegroundColorSelected="selectedFG" 
-	ZapBackgroundColorSelected="lila" 
-	enableWrapAround="1" 
-	scrollbarMode="showNever" 
+	ServiceForegroundColor="selectedFG"
+	ServiceForegroundColorNow="selectedFG"
+	ServiceBackgroundColor="background"
+	ServiceBackgroundColorNow="verydarkgrey"
+	EntryForegroundColor="white"
+	EntryforegroundColorSelected="selectedFG"
+	EntryBackgroundColor="background"
+	EntryBackgroundColorSelected="#004169E1"
+	EntryBackgroundColorNow="#000A1C48"
+	EntryBackgroundColorNowSelected="#000F460E"
+	EntryForegroundColorNow="selectedFG"
+	EntryForegroundColorNowSelected="white"
+	ServiceBorderColor="grey"
+	EntryBorderColor="grey"
+	RecordForegroundColor="white"
+	RecordforegroundColorSelected="selectedFG"
+	RecordBackgroundColor="red"
+	RecordBackgroundColorSelected="dark"
+	ZapForegroundColor="white"
+	ZapBackgroundColor="verydarkgrey"
+	ZapforegroundColorSelected="selectedFG"
+	ZapBackgroundColorSelected="lila"
+	enableWrapAround="1"
+	scrollbarMode="showNever"
 	transparent="1" />
     <panel name="template_menu_info_1280" />
     <panel name="template_pig_setup" />
@@ -2719,8 +2719,8 @@ self['config'].l.setSeperation(int(300*f))
     <eLabel name="" position="20,366" size="1239,2" backgroundColor="selectedFG" />
   </screen>
   <screen name="GraphicalInfoBarEPG" title="InfoBar EPG" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="0,510" zPosition="-1" size="1280,210" pixmap="NFR_Skin/menu/browser-epg.png" />
-    <widget source="session.CurrentService" render="Label" position="20,517" size="850,44" font="Regular; 34" valign="center" noWrap="1" foregroundColor="selectedFG" transparent="1">
+    <eLabel name="" position="0,530" size="1280,190" backgroundColor="background40" zPosition="-1" />
+    <widget source="session.CurrentService" render="Label" position="20,535" size="850,44" font="Regular; 34" valign="center" noWrap="1" foregroundColor="selectedFG" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="910,688" size="120,30" font="Regular;20" foregroundColor="selectedFG" transparent="1" halign="right" valign="center">
@@ -2730,7 +2730,32 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="lab1" position="22,610" size="1236,35" font="Regular;24" halign="center" valign="center" zPosition="20" transparent="1" />
     <widget name="timeline_text" position="22,581" size="1236,25" itemHeight="30" TimelineFont="Regular;19" borderColor="grey" borderWidth="1" foregroundColor="selectedFG" TimelineAlignment="left" zPosition="1" transparent="1" />
     <widget name="bouquetlist" position="22,581" size="1236,25" zPosition="2" itemHeight="30" font="Regular;19" borderColor="grey" borderWidth="1"  backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="list" position="22,610" size="1236,80" itemHeight="80" ServiceFontInfobar="Regular;20" EventFontInfobar="Regular;19" ServiceForegroundColor="white" ServiceForegroundColorNow="white" ServiceBackgroundColor="background" ServiceBackgroundColorNow="verydarkgrey" EntryForegroundColor="white" EntryforegroundColorSelected="selectedFG" EntryBackgroundColor="background" EntrybackgroundColorSelected="selectedBG" EntryBackgroundColorNow="verydarkgrey" EntryBackgroundColorNowSelected="verydarkgrey" EntryForegroundColorNow="white" EntryForegroundColorNowSelected="white" ServiceBorderColor="grey" ServiceBorderWidth="1" ServiceNamePadding="3" EntryBorderColor="grey" EventBorderWidth="1" EventNamePadding="3" RecordForegroundColor="white" RecordforegroundColorSelected="selectedFG" RecordBackgroundColor="red" RecordBackgroundColorSelected="dark" ZapForegroundColor="white" ZapBackgroundColor="verydarkgrey" ZapforegroundColorSelected="selectedFG" ZapBackgroundColorSelected="lila" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" position="22,610" size="1236,80" itemHeight="80" ServiceFontInfobar="Regular;20" EventFontInfobar="Regular;19"
+    ServiceForegroundColor="selectedFG"
+	ServiceForegroundColorNow="selectedFG"
+	ServiceBackgroundColor="background"
+	ServiceBackgroundColorNow="verydarkgrey"
+	EntryForegroundColor="white"
+	EntryforegroundColorSelected="selectedFG"
+	EntryBackgroundColor="background"
+	EntryBackgroundColorSelected="#004169E1"
+	EntryBackgroundColorNow="#000A1C48"
+	EntryBackgroundColorNowSelected="#000F460E"
+	EntryForegroundColorNow="selectedFG"
+	EntryForegroundColorNowSelected="white"
+	ServiceBorderColor="grey"
+	EntryBorderColor="grey"
+	RecordForegroundColor="white"
+	RecordforegroundColorSelected="selectedFG"
+	RecordBackgroundColor="red"
+	RecordBackgroundColorSelected="dark"
+	ZapForegroundColor="white"
+	ZapBackgroundColor="verydarkgrey"
+	ZapforegroundColorSelected="selectedFG"
+	ZapBackgroundColorSelected="lila"
+	enableWrapAround="1"
+	scrollbarMode="showNever"
+	transparent="1" />
     <widget name="timeline_now" position="0,600" zPosition="2" size="16,90" pixmap="NFR_Skin/epg/timeline-now_s.png" alphatest="blend" />
     <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="22,693" size="25,25" alphatest="blend" transparent="1" />
     <widget name="key_red" position="62,693" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
@@ -2742,7 +2767,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="key_blue" position="701,693" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <ePixmap position="1050,692" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_info.png" transparent="1" alphatest="blend" />
     <ePixmap position="1125,692" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
-	 <panel name="template_digitalclock_widget" />
+	 <panel name="template_Pumuckel_digitalclock_widget" />
   </screen>
   <!-- EventView_light -->
 <screen name="EventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="background">
