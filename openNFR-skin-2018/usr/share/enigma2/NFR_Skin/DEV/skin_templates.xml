@@ -1432,7 +1432,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <ePixmap pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="912,58" size="350,610" />
+    <!-- <ePixmap pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="912,58" size="350,610" /> -->
   </screen>
   <screen name="template_wizardrc">
     <widget name="rc" position="25,84" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
