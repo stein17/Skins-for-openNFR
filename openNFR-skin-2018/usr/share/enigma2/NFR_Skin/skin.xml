@@ -3853,27 +3853,31 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="help2" position="366,93" size="88,25" font="Regular;22" halign="center" valign="center" transparent="1" />
     <ePixmap position="0,0" size="546,121" zPosition="-1" pixmap="NFR_Skin/skin_default/BG_InputHelpDialog.png" transparent="1" alphatest="blend" />
   </screen>
-  <!-- Wizzard's -->
+    <!-- Wizzard's -->
   <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="NetworkWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
   </screen>
   <screen name="AutoTimerWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="AutoTimerWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
   </screen>
   <screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="912,58" size="350,610" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
-    <panel name="template_pig_medium" />
+    <!-- <panel name="template_pig_medium" /> -->
   </screen>
   <screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="VideoWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
@@ -3929,18 +3933,21 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="DreamPackageWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
   </screen>
   <screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="ImageWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="912,58" size="350,610" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
-    <panel name="template_pig_medium" />
+    <!-- <panel name="template_pig_medium" /> -->
   </screen>
   <screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="TutorialWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
@@ -3948,6 +3955,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <!-- CleanupWizard -->
   <screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="CleanupWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
@@ -3964,6 +3972,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="DefaultSatLists" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="920,320" size="350,360" />
     <panel name="template_wizard" />
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
