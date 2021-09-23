@@ -27,6 +27,19 @@
       <convert type="NFRAnalogClock">hourHand</convert>
     </widget>
   </screen>
+	
+  <screen name="template_Pumuckel_digitalclock_widget">
+    <widget foregroundColor="selectedFG" font="LCD; 60" noWrap="1" valign="center" halign="center" position="1109,11" render="Label" size="160,58" source="global.CurrentTime"  backgroundColor="background40">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget font="Regular; 20" noWrap="1" valign="bottom" halign="right" position="970,48" render="Label" size="135,22" source="global.CurrentTime"  backgroundColor="background40">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget font="Regular; 20" valign="bottom" halign="right" noWrap="1" position="970,23" render="Label" size="135,22" source="global.CurrentTime"  backgroundColor="background40">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <eLabel position="970,11" size="300,70" backgroundColor="background40" zPosition="-1" />
+  </screen>
   <!-- Infobar_HTC_Clock  -->
   <screen name="template_htcclock_widget_infobar">
     <ePixmap pixmap="BG-Pixmaps/Digits/HTC_Clock_BG.png" position="1012,494" zPosition="-1" size="259,222" transparent="1" alphatest="blend" />
@@ -215,6 +228,12 @@
     <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="661,100" foregroundColor="selectedFG" font="Regular; 24" halign="left" transparent="1" zPosition="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
+  </screen>
+  <screen name="template_pixmap_Infobar_Pumuckel">
+    <ePixmap position="0,480" zPosition="-10" size="1280,240" pixmap="NFR_Skin/menu/Infobar_Pumuckel_trans.png" />
+  </screen>
+  <screen name="template_pixmap_Clock_Pumuckel">
+    <ePixmap position="0,0" zPosition="-10" size="1280,100" pixmap="NFR_Skin/menu/Clock_Pumuckel.png" />
   </screen>
   <!-- TEMPLATES Ch-SE Poster-->
   <screen name="template_ch_se_poster_d">
@@ -1866,7 +1885,32 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	transparent="1" />
 
 	</screen>
+	<screen name="default_ChannelSelection_Pumuckel">
+	<widget name="list" position="22,70" size="800,590" scrollbarMode="showOnDemand"
+	fieldMargins="5"
+	itemsDistances="5"
+	progressbarHeight="8"
+	progressBarWidth="50"
+	progressbarBorderWidth="1"
+	colorServiceRecorded="red"
+	colorServicePseudoRecorded="rosa"
+	colorServiceStreamed="orange"
+	colorServiceDescription="yellowlight"
+	colorServiceDescriptionSelected="white"
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png"
+	colorEventProgressbarBorder="white"
+	colorEventProgressbarBorderSelected="yellowlight"
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="yellowlight"
+	foregroundColor="white"
+	serviceItemHeight="30"
+	serviceNumberFont="Regular;22"
+	serviceNameFont="Regular;24"
+	serviceInfoFont="Regular;22"
+	transparent="1" />	
 
+	</screen>
 	<screen name="NFR_Funktion_ChannelSelection_Default">
 	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
 	fieldMargins="5" 
@@ -2503,10 +2547,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 
    <!-- template_button_sel-->
  <screen name="template_EPG_Multi">
-  <widget name="now_button_sel" position="34,115" size="150,5" zPosition="2" pixmap="colors/0000ffff.png" />
-  <widget name="next_button_sel" position="198,115" size="150,5" zPosition="2" pixmap="colors/0000ffff.png" />
-  <widget name="more_button_sel" position="362,115" size="150,5" zPosition="2" pixmap="colors/0000ffff.png" />
-  <ePixmap position="34,117" size="700,1" zPosition="2" pixmap="colors/0000ffff.png" />  
+  <widget name="now_button_sel" position="34,115" size="150,5" zPosition="2" pixmap="colors/00ffffff.png" />
+  <widget name="next_button_sel" position="198,115" size="150,5" zPosition="2" pixmap="colors/00ffffff.png" />
+  <widget name="more_button_sel" position="362,115" size="150,5" zPosition="2" pixmap="colors/00ffffff.png" />
+  <ePixmap position="34,117" size="700,1" zPosition="2" pixmap="colors/00ffffff.png" />  
  </screen>
   <!--Template MSN Weather  -->
   <screen name="template_weather">

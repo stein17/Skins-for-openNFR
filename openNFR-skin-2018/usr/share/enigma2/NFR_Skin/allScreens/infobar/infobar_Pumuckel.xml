@@ -1,0 +1,117 @@
+<skin>
+ <!-- skin_infobar_Pumuckel_light -->
+<screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
+  <widget alphatest="blend" position="10,578" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget font="Regular; 30" halign="center" position="239,620" render="Label" size="93,43" source="session.Event_Now" foregroundColor="selectedFG" transparent="1" >
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel font="Regular; 32" halign="center" position="327,617" size="20,40" text="-" transparent="1" foregroundColor="selectedFG"  />
+  <widget font="Regular; 30" halign="left" position="350,620" render="Label" size="100,40" source="session.Event_Now"  foregroundColor="selectedFG" transparent="1" >
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" position="450,620" size="675,43" font="Regular; 30" foregroundColor="selectedFG" transparent="1" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=30,repeat=2,oneshot=1,startdelay=1000,always=0"  zPosition="1" noWrap="1" >
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Next" position="450,680" size="675,43" font="Regular; 30" foregroundColor="grey"  transparent="1" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=30,repeat=2,oneshot=1,startdelay=1000,always=0"  zPosition="1" noWrap="1" >
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget font="Regular; 30" halign="right" position="1124,620" render="Label" size="146,49" source="session.Event_Now" foregroundColor="selectedFG" transparent="1" >
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget font="Regular; 30" foregroundColor="grey"  transparent="1" halign="right" position="1124,680" render="Label" size="146,40" source="session.Event_Next" >
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+
+  <widget font="Regular; 30" foregroundColor="grey"  transparent="1" halign="center" noWrap="1" position="239,680" render="Label" size="99,40" source="session.Event_Next" valign="top">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel font="Regular; 32" foregroundColor="grey"  transparent="1" halign="center" noWrap="1" position="327,677" size="20,40" text="-" valign="top" />
+  <widget font="Regular; 30" foregroundColor="grey"  transparent="1" halign="left" noWrap="1" position="350,680" render="Label" size="100,40" source="session.Event_Next" valign="top">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_pumuckel_crypt_on.png" position="950,575" size="20,26" zPosition="1" alphatest="blend">
+  	<convert type="ServiceInfo">IsCrypted</convert>
+	<convert type="ConditionalShowHide"/>
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_pumuckel_hbbtv_on.png" position="983,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap position="983,575" size="75,26" zPosition="2" pixmap="NFR_Skin/icons/ico_pumuckel_hbbtv_off.png" transparent="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_dolby_off.png" position="1043,575" size="47,26" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsStereo</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_pumuckel_dolby_on.png" position="1043,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_pumuckel_txt_on.png" position="1103,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap position="1103,575" size="47,26" zPosition="2" pixmap="NFR_Skin/icons/ico_pumuckel_txt_off.png" transparent="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_pumuckel_format_off.png" position="1163,575" size="47,26" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsNotWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_pumuckel_format_on.png" position="1163,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1223,575" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_pumuckel_sd_on.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">0,719</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1223,575" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_pumuckel_hd_off.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">720,1079</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1223,575" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_pumuckel_hd_on.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">720,1080</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_pumuckel_uhd_on.png" position="1223,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">Is4K</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="1223,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsHDHDR</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="1223,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsHDR</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="1223,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsHDR10</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="1223,575" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsHLG</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+
+ <!--  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_light.png" /> -->
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="180,581" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="253,564" size="410,42" font="Regular; 32" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="selectedFG">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <panel name="template_Pumuckel_digitalclock_widget" />
+  <panel name="template_progress_default_light"/>
+  <panel name="template_pixmap_Infobar_Pumuckel"/>
+</screen>
+  </skin>

@@ -1,0 +1,15 @@
+<skin>
+ <!-- skin_Pumuckel_digitalclock_widget -->
+<screen name="template_Pumuckel_digitalclock_widget" position="0,0" backgroundColor="transparent">
+<widget foregroundColor="white" font="Regular; 52" noWrap="1" valign="center" halign="left" position="1133,11" render="Label" size="137,68" source="global.CurrentTime" transparent="1" backgroundColor="background">
+  <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget font="Regular; 22" noWrap="1" valign="bottom" halign="right" position="940,51" render="Label" size="155,24" source="global.CurrentTime" backgroundColor="background" transparent="1">
+  <convert type="ClockToText">Format:%e. %B</convert>
+  </widget>
+  <widget font="Regular; 22" valign="bottom" halign="right" noWrap="1" position="940,20" render="Label" size="155,24" source="global.CurrentTime" backgroundColor="background" transparent="1">
+  <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <panel name="template_pixmap_Clock_Pumuckel"/> 
+   </screen>
+  </skin>
