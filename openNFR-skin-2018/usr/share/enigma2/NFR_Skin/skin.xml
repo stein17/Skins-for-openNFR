@@ -31,6 +31,7 @@
   <color name="background20" value="#20000000" />
   <color name="background30" value="#30000000" />
   <color name="background40" value="#40000000" />
+  <color name="background60" value="#60000000" />
   <color name="backgroundBlue" value="#00003366" />
   <color name="background-pig" value="#ff000000" />
 <!--   <color name="bernstein" value="#00f0b400" /> -->
@@ -110,6 +111,7 @@
   <color name="verygrey" value="#00666666" />
   <color name="white" value="#00ffffff" />
   <color name="yellow" value="#00fcc000" />
+  <color name="yellowlight" value="#00ffEEBB"/>
 </colors>
   <fonts>
     <font filename="lcd.ttf" name="LCD" scale="100" />
@@ -2978,11 +2980,11 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_ok_exit_1280" />
     <panel name="template_pig_menu" />
   </screen>
-  <screen name="NumberZap" position="center,center" size="260,80">
-    <eLabel name="a" position="5,5" size="150,70" zPosition="-10" backgroundColor="selectedFG" />
-    <eLabel name="b" position="155,10" size="100,60" zPosition="-10" backgroundColor="selectedFG" />
-    <widget name="channel" position="7,7" size="146,66" font="Regular;30" halign="center" valign="bottom" />
-    <widget name="number" position="155,12" size="98,56" halign="center" valign="bottom" font="Regular;40" />
+  <screen name="NumberZap" position="center,center" size="300,92" backgroundColor="background60" flags="wfNoBorder" >
+    <eLabel name="a" position="5,5" size="170,82" zPosition="-10" backgroundColor="selectedFG" />
+    <eLabel name="b" position="175,10" size="120,72" zPosition="-10" backgroundColor="selectedFG" />
+    <widget name="channel" position="7,7" size="166,78" font="Regular;36" halign="center" valign="center" backgroundColor="background60" />
+    <widget name="number" position="175,12" size="118,68" halign="center" valign="center" font="Regular;50" backgroundColor="background60" />
   </screen>
   <screen name="NumberZapWithName" position="350,240" size="560,220">
     <widget name="servicenumber" position="161,35" size="387,172" font="Regular; 100" noWrap="0" halign="right" transparent="1" valign="center" zPosition="-1" />
