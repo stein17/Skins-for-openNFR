@@ -271,9 +271,9 @@
   </widget>
   </screen>
   <screen name="template_pig_medium">
-    <eLabel position="920,70" size="354,231" zPosition="2" backgroundColor="selectedFG" />
-    <widget source="session.VideoPicture" render="Pig" position="922,72" size="350,197" zPosition="3" backgroundColor="background-pig" />
-    <widget source="session.CurrentService" render="Label" position="922,271" size="350,28" font="Regular; 22" foregroundColor="selectedFG" borderWidth="2" transparent="0" valign="center" halign="center" noWrap="1" zPosition="5">
+    <eLabel position="912,70" size="350,231" zPosition="2" backgroundColor="selectedFG" />
+    <widget source="session.VideoPicture" render="Pig" position="914,72" size="346,197" zPosition="3" backgroundColor="background-pig" />
+    <widget source="session.CurrentService" render="Label" position="914,271" size="346,28" font="Regular; 22" foregroundColor="selectedFG" borderWidth="2" transparent="0" valign="center" halign="center" noWrap="1" zPosition="5">
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
