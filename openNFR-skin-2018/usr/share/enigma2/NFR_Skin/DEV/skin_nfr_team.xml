@@ -1012,8 +1012,8 @@
   <widget name="text1" position="22,630" size="720,30" font="Regular;22" halign="left" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
   <widget name="IPTVList" position="22,70" size="720,410" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
   <ePixmap pixmap="NFR_Skin/icons/osd.png" position="880,370" size="290,290" zPosition="2" transparent="1" alphatest="blend" />
-  <eLabel text="Bitte etwas Geduld, die M3U Settings werden erstellt. Abhängig vom System kann es bis zu 20 Minuten" position="22,490" size="720,60" font="Regular; 22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
-  <eLabel text="Please be patient, the M3U settings are being created. Depending on the system, it can take up to 20 minutes" position="22,560" size="720,60" font="Regular; 22" halign="left" foregroundColor="grey1" backgroundColor="background" transparent="1" />
+  <eLabel text="Bitte etwas Geduld, die M3U Settings werden erstellt. Abhängig vom System kann es bis zu 20 Minuten dauern." position="22,490" size="720,60" font="Regular; 22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+  <eLabel text="Please be patient, the M3U settings are being created. Depending on the system, it can take up to 20 minutes." position="22,560" size="720,60" font="Regular; 22" halign="left" foregroundColor="grey1" backgroundColor="background" transparent="1" />
   <eLabel name="" position="22,480" size="720,2" backgroundColor="selectedFG" />
   <eLabel name="" position="22,550" size="720,2" backgroundColor="selectedFG" />
   <eLabel name="" position="22,620" size="720,2" backgroundColor="selectedFG" />
