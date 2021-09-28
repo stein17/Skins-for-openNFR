@@ -1008,13 +1008,19 @@
 </screen>
 
   <!-- NFR IPTV FHD  -->
-  <screen name="IPTV" position="center,center" size="1280,720" title="M3U Converter" flags="wfNoBorder" backgroundColor="background">
-    <widget name="text1" position="22,630" size="720,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
-    <widget name="IPTVList" position="22,70" size="720,550" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
-    <panel name="template_fullscreen_1280_title" />
-    <panel name="template_pig_menu" />
-    <panel name="template_name_red_o_blue" />
-  </screen>
+<screen name="IPTV" position="center,center" size="1280,720" title="M3U Converter" flags="wfNoBorder" backgroundColor="background">
+  <widget name="text1" position="22,630" size="720,30" font="Regular;22" halign="left" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+  <widget name="IPTVList" position="22,70" size="720,410" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
+  <ePixmap pixmap="NFR_Skin/icons/osd.png" position="880,370" size="290,290" zPosition="2" transparent="1" alphatest="blend" />
+  <eLabel text="Bitte etwas Geduld, die M3U Settings werden erstellt. Abhängig vom System kann es bis zu 20 Minuten" position="22,490" size="720,60" font="Regular; 22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+  <eLabel text="Please be patient, the M3U settings are being created. Depending on the system, it can take up to 20 minutes" position="22,560" size="720,60" font="Regular; 22" halign="left" foregroundColor="grey1" backgroundColor="background" transparent="1" />
+  <eLabel name="" position="22,480" size="720,2" backgroundColor="selectedFG" />
+  <eLabel name="" position="22,550" size="720,2" backgroundColor="selectedFG" />
+  <eLabel name="" position="22,620" size="720,2" backgroundColor="selectedFG" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_pig_menu" />
+  <panel name="template_name_red_o_blue" />
+</screen>
   <!-- NFR LCDClockSelector FHD  -->
   <screen name="LCDClockSelector" position="0,0" size="1280,720" title="Lcd Clock Selector" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Choose your Skin" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
@@ -1061,19 +1067,11 @@
     <panel name="template_pig_menu" />
   </screen>
   <!-- NFR BluetoothDevicesManager FHD  -->
+  
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-  <!-- NFR NfrWizardSetupScreen" FHD  -->
-  <screen name="NfrWizardSetupScreen" position="center,center" size="1280,720" title="openNFR Wizard setup" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text="openNFR Wizard setup" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <widget name="config" position="22,70" size="720,590" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
-    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="DEV/nfr2.png" transparent="1" alphatest="blend" />
-    <ePixmap position="915,400" size="204,200" pixmap="DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
 	
-    <panel name="template_fullscreen_1280" />
-    <panel name="template_source_red_green" />
-    <panel name="template_exit_1280" />
-    <panel name="template_pig_menu" />
-  </screen>
+
   <!-- NFR FindMovieListScanPath FHD  -->
   <!--   <screen name="FindMovieListScanPath" position="center,center" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="background">
     <widget source="global.CurrentTime" render="Label" position="1000,24" size="270,30" font="Regular; 22" foregroundColor="selectedFG" halign="right" transparent="1">
@@ -1386,7 +1384,6 @@
   <!-- AutoBackup -->
 <screen name="ConfigUI" position="0,0" size="1280,720" title="AutoBackup Configuration" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <!-- <eLabel text="Configuration AutoBackup" zPosition="1" position="22,4" size="720,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" /> -->
     <widget name="config" position="22,70" size="720,320" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="status" position="22,400" size="720,220" font="Regular;20" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="statusbar" position="22,630" size="720,30" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
@@ -1397,5 +1394,189 @@
     <panel name="template_name_red_green_blue" />
     <panel name="template_ok_exit_1280" />
     <panel name="template_pig_menu" />
+  </screen>
+  <!-- openNFR-gui2-Wizards -->  
+  <!-- WizardLanguage -->    
+  <screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="LanguageWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="text" position="185,71" size="710,380" font="Regular;20" valign="bottom" transparent="1" />
+    <eLabel position="185,455" size="710,2" backgroundColor="selectedFG" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="languagetext" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" transparent="1" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="languages" render="Listbox" position="185,460" size="710,200" zPosition="13" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (90, 16), size = (570, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmap(pos = (10, 10), size = (60, 40), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 60
+				}
+			</convert>
+    </widget>
+	<widget source="global.CurrentTime" render="Pixmap" pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="914,71" size="345,589" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1">
+      <convert type="NFRBlinkingClock" />
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+	<panel name="template_pixmap_quick_menu" />
+	<panel name="template_wizardrc" />
+  </screen>
+ <!-- VideoWizard -->
+  <screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="VideoWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="text" position="185,71" size="710,380" font="Regular;20" valign="bottom" transparent="1" />
+    <eLabel position="185,455" size="710,2" backgroundColor="selectedFG" />
+    <widget source="list" render="Listbox" position="185,460" size="710,200" zPosition="13" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 0), size = (680, 30), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 30
+				}
+			</convert>
+    </widget>
+    <widget name="config" position="185,460" size="710,200" itemHeight="30" zPosition="14" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="selectedBG" foregroundColorSelected="selectedFG" transparent="1" />
+    <widget name="HelpWindow" position="330,180" size="402,128" zPosition="1" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="languagetext" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" transparent="1" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Pixmap" pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="914,71" size="345,589" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1">
+      <convert type="NFRBlinkingClock" />
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_pixmap_quick_menu" />
+    <panel name="template_wizardrc" />
+  </screen>
+ <!-- NfrWizardSetup -->
+  <screen name="NfrWizardSetupScreen" position="center,center" size="1280,720" title="openNFR Wizard setup" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="openNFR Wizard setup" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="870,590" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Pixmap" pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="914,71" size="345,589" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1">
+      <convert type="NFRBlinkingClock" />
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+	<panel name="template_pixmap_quick_menu" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_exit_1280" />
+  </screen>
+  
+    <!-- Wizzard's -->
+  <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="NetworkWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizard" />
+    <panel name="template_wizardrc" />
+    <panel name="template_pig_medium" />
+  </screen>
+  <screen name="AutoTimerWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="AutoTimerWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizard" />
+    <panel name="template_wizardrc" />
+    <panel name="template_pig_medium" />
+  </screen>
+ <screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="DefaultWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="text" position="185,71" size="710,380" font="Regular;20" valign="bottom" transparent="1" />
+    <eLabel position="185,455" size="710,2" backgroundColor="selectedFG" />
+    <widget source="list" render="Listbox" position="185,460" size="710,200" zPosition="13" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 0), size = (680, 30), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 30
+				}
+			</convert>
+    </widget>
+    <widget name="config" position="185,460" size="710,200" itemHeight="30" zPosition="14" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="selectedBG" foregroundColorSelected="selectedFG" transparent="1" />
+    <widget name="HelpWindow" position="330,180" size="402,128" zPosition="1" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="languagetext" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" transparent="1" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizardrc" />
+	<panel name="template_pig_medium" />
+	<panel name="template_pixmap_quick_menu" />
+  </screen>
+  <screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="DreamPackageWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizard" />
+    <panel name="template_wizardrc" />
+    <panel name="template_pig_medium" />
+  </screen>
+  <screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="ImageWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizard" />
+    <panel name="template_wizardrc" />
+    <panel name="template_pig_medium" />
+  </screen>
+  <screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="TutorialWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizard" />
+    <panel name="template_wizardrc" />
+    <panel name="template_pig_medium" />
+  </screen>
+  <!-- CleanupWizard -->
+  <screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="CleanupWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizard" />
+    <panel name="template_wizardrc" />
+    <panel name="template_pig_medium" />
+  </screen>
+  <screen name="CleanupWizardConfiguration" position="0,0" size="1280,720" title="CleanupWizard settings" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,550" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="status" render="Label" position="22,630" size="720,30" font="Regular;22" halign="center" transparent="1" />
+    <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/setup.png" transparent="1" alphatest="blend" />
+    <panel name="template_name_red_green" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="DefaultSatLists" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_wizard" />
+    <panel name="template_wizardrc" />
+    <panel name="template_pig_medium" />
+  </screen>
+  <screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
+    <widget name="text" position="186,71" size="710,360" font="Regular;23" transparent="1" />
+    <widget name="ErrorPixmap" pixmap="NFR_Skin/skin_default/icons/input_error.png" position="75,90" size="53,53" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="NFR_Skin/skin_default/icons/input_question.png" position="75,90" size="53,53" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="75,90" size="53,53" alphatest="blend" />
+    <widget name="list" position="184,437" size="710,220" transparent="1" />
+    <widget name="rc" position="25,155" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
+    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
+    <eLabel text="MessageBoxWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <eLabel position="185,435" size="710,2" backgroundColor="selectedFG" />
+    <ePixmap pixmap="NFR_Skin/skin_default/system/Wizard.png" position="914,315" size="345,345" zPosition="2" alphatest="blend"/>
+    <panel name="template_pig_medium" />
+	<panel name="template_pixmap_quick_menu" />
   </screen>
 </skin>
