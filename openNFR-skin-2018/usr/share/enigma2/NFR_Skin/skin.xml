@@ -2053,7 +2053,7 @@
 <screen name="QuickMenu" position="0,0" size="1280,720" title="Quick Launch Menu" flags="wfNoBorder" backgroundColor="background">
     <widget name="list" position="22,70" size="430,590" itemHeight="50" font="Regular; 20" scrollbarMode="showNever" transparent="1"  backgroundColor="background" foregroundColor="white"  />
     <widget name="sublist" position="465,70" size="430,590" itemHeight="50" font="Regular; 20" scrollbarMode="showNever" transparent="1"  backgroundColor="background" foregroundColor="white"  />
-    <widget name="description" position="923,321" size="355,355" zPosition="1" font="Regular;20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
+    <widget name="description" position="917,310" size="340,345" zPosition="1" font="Regular;20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
     <panel name="template_pixmap_quick_menu" />
 	<panel name="template_pixmap_quick_menu_line" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
