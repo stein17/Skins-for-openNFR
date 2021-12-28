@@ -2502,7 +2502,7 @@ self['config'].l.setSeperation(int(300*f))
   </screen>
   <screen name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
     <panel name="template_pixmap_browser-epg" />
-    <widget source="global.CurrentTime" render="Label" position="949,14" size="280,30" font="Regular; 24" backgroundColor="background" foregroundColor="selectedFG" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="930,14" size="280,30" font="Regular; 24" backgroundColor="background" foregroundColor="selectedFG" halign="right" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
     <widget source="Event" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="344,9" size="300,34" font="Regular; 27" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="black" transparent="1" zPosition="2">
@@ -2520,7 +2520,7 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="860,21" size="90,18" font="Regular; 18" backgroundColor="background" transparent="1" halign="left" valign="center">
+    <widget source="Event" render="Label" position="860,21" size="69,18" font="Regular; 18" backgroundColor="background" transparent="1" halign="left" valign="center">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -2605,7 +2605,7 @@ self['config'].l.setSeperation(int(300*f))
   </screen>
   <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
     <panel name="template_pixmap_browser-epg" />
-    <widget source="global.CurrentTime" render="Label" position="950,10" size="280,30" font="Regular; 24" backgroundColor="background" foregroundColor="selectedFG" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="930,10" size="280,30" font="Regular; 24" backgroundColor="background" foregroundColor="selectedFG" halign="right" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
     <widget source="Event" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="450,9" size="300,34" font="Regular; 27" halign="center" valign="center" foregroundColor="selectedFG" backgroundColor="black" transparent="1" zPosition="2">
