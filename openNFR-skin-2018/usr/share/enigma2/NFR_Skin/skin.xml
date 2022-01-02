@@ -1266,10 +1266,10 @@
     <panel name="template_pig_menu" />
   </screen>
   <screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="background">
-    <widget name="AboutScrollLabel" position="22,70" size="720,330" valign="left" font="Regular; 22" transparent="1" />
-    <widget source="IFtext" render="Label" position="22,455" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
-    <widget source="IF" render="Label" position="22,422" size="720,23" zPosition="10" font="Regular;20" halign="left" transparent="1" />
-    <widget source="Statustext" render="Label" position="22,515" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
+    <widget name="AboutScrollLabel" position="22,70" size="720,330" valign="right" font="Regular; 24" transparent="1" />
+    <widget source="IFtext" render="Label" position="22,455" size="120,23" zPosition="10" font="Regular;20" halign="left" transparent="1" />
+    <widget source="IF" render="Label" position="191,455" size="549,23" zPosition="10" font="Regular;20" halign="left" transparent="1" />
+    <widget source="Statustext" render="Label" position="22,515" size="115,23" zPosition="10" font="Regular;20" halign="left" transparent="1" />
     <widget name="statuspic" pixmaps="NFR_Skin/skin_default/icons/lock_on.png,NFR_Skin/skin_default/icons/lock_error.png" position="191,509" zPosition="10" size="32,31" transparent="1" alphatest="on" />
     <widget source="LabelBSSID" render="Label" position="22,480" size="200,30" valign="center" font="Regular;20" transparent="1" />
     <widget source="BSSID" render="Label" position="240,480" size="500,30" valign="center" font="Regular;20" transparent="1" />
