@@ -4519,21 +4519,22 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="statusbar" render="Label" position="10,5" zPosition="10" size="10,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
   </screen>
   <screen name="NetworkServiceSetup" title="NetworkServiceSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <widget name="lab1" position="100,130" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labactive" position="320,130" size="172,30" font="Regular;22" valign="center" halign="center" zPosition="2" />
-    <widget name="lab2" position="100,190" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labstop" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" transparent="0"/>
+    <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_pig_menu" />
   </screen>
   <screen name="NetworkFtp" title="FTP Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <widget name="lab1" position="100,130" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="lab2" position="100,190" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labstop" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" transparent="0"/>
+    <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_source_red_o_yellow" />
@@ -4549,11 +4550,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="template_pig_menu" />
   </screen>
   <screen name="NetworkNfs" title="NFS Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <widget name="lab1" position="100,130" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labactive" position="320,130" size="172,30" font="Regular;22" valign="center" halign="center" zPosition="2" />
-    <widget name="lab2" position="100,190" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labstop" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" />
+    <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center"  foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center"  foregroundColor="black" backgroundColor="green" zPosition="2" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_name_red_o_yellow" />
@@ -4561,11 +4562,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="template_pig_menu" />
   </screen>
   <screen name="NetworkSABnzbd" title="SABnzbd Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <widget name="lab1" position="100,130" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labactive" position="320,130" size="172,30" font="Regular;22" valign="center" halign="center" zPosition="2" />
-    <widget name="lab2" position="100,190" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labstop" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" />
+    <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_source_red_o_yellow" />
@@ -4573,11 +4574,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="template_pig_menu" />
   </screen>
   <screen name="NetworkAfp" position="0,0" size="1280,720" title="AFP Setup" flags="wfNoBorder" backgroundColor="background">
-    <widget name="lab1" position="100,130" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labactive" position="320,130" size="172,30" font="Regular;22" valign="center" halign="center" zPosition="2" />
-    <widget name="lab2" position="100,190" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
-    <widget name="labstop" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,190" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" />
+    <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" halign="left" transparent="1" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,10" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_source_red_o_yellow" />
@@ -4586,10 +4587,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <screen name="NetworkSamba" title="Samba Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" />
     <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" />
-    <widget name="labrun" position="320,140" size="172,30" zPosition="1" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" />
-    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" zPosition="2" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" />
+    <widget name="labrun" position="320,140" size="172,30" zPosition="1" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_name_red_o_blue" />
@@ -4605,10 +4606,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <screen name="NetworkOpenvpn" title="OpenVpn Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" />
     <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" />
-    <widget name="labrun" position="320,140" size="172,30" zPosition="1" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" />
+    <widget name="labrun" position="320,140" size="172,30" zPosition="1" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_ok_exit_1280" />
@@ -4618,10 +4619,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="NetworkInadyn" title="Inadyn Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <widget name="autostart" position="70,80" size="150,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labdisabled" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <widget name="status" position="70,140" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <widget name="time" position="70,200" size="240,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labtime" position="320,200" size="100,30" font="Regular;22" valign="center" />
     <widget name="username" position="70,260" size="220,30" font="Regular;22" valign="center" transparent="1" />
@@ -4658,10 +4659,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="template_pig_menu" />
   </screen>
   <screen name="NetworkTelnet" title="Telnet Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <widget name="lab1" position="22,70" size="720,60" font="Regular;22" valign="center" transparent="1" />
-    <widget name="lab2" position="100,200" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labstop" position="320,200" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" />
-    <widget name="labrun" position="320,200" size="172,30" zPosition="1" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" />
+    <widget name="lab1" position="100,80" size="150,30" font="Regular;22" valign="center" transparent="1" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="white" zPosition="2" />
+    <widget name="lab2" position="100,140" size="150,30" font="Regular;22" valign="center" transparent="1" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" />
+    <widget name="labrun" position="320,140" size="172,30" zPosition="1" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_name_red_green" />
     <panel name="template_fullscreen_1280_title" />
@@ -4680,10 +4682,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="NetworkuShare" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <widget name="autostart" position="70,80" size="150,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labdisabled" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <widget name="status" position="70,140" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <widget name="username" position="70,200" size="240,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labuser" position="320,200" size="100,30" font="Regular;22" valign="center" />
     <widget name="iface" position="70,260" size="220,30" font="Regular;22" valign="center" transparent="1" />
@@ -4691,7 +4693,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="port" position="70,320" size="220,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labport" position="320,320" size="350,30" font="Regular;22" valign="center" />
     <widget name="telnetport" position="70,380" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labtelnetport" position="70,380" size="150,30" font="Regular;22" valign="center" />
+    <widget name="labtelnetport" position="320,380" size="150,30" font="Regular;22" valign="center" />
     <widget name="sharedir" position="70,440" size="150,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labsharedir" position="320,440" size="350,30" font="Regular;22" valign="center" />
     <widget name="web" position="110,500" size="300,30" font="Regular;22" valign="center" transparent="1" />
@@ -4730,12 +4732,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="NetworkMiniDLNA" title="MiniDLNA Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <widget name="autostart" position="110,80" size="150,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labdisabled" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <widget name="status" position="110,140" size="150,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="selectedFG" zPosition="2" />
+    <widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="white" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center"  foregroundColor="black" backgroundColor="green" zPosition="2" />
     <widget name="username" position="110,200" size="240,30" font="Regular;22" valign="center" transparent="1" />
-    <widget name="labuser" position="350,200" size="100,30" font="Regular;22" valign="center" />
+    <widget name="labuser" position="320,200" size="100,30" font="Regular;22" valign="center" />
     <widget name="iface" position="110,260" size="220,30" font="Regular;22" valign="center" transparent="1" />
     <widget name="labiface" position="320,260" size="350,30" font="Regular;22" valign="center" />
     <widget name="port" position="110,320" size="220,30" font="Regular;22" valign="center" transparent="1" />
