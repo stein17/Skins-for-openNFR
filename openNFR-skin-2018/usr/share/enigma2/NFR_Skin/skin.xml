@@ -4537,7 +4537,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2" />
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/network.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280_title" />
-    <panel name="template_source_red_o_yellow" />
+    <panel name="template_name_red_o_yellow" />
     <panel name="template_ok_exit_1280" />
     <panel name="template_pig_menu" />
   </screen>
