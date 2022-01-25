@@ -3082,6 +3082,8 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="list" position="22,70" size="720,590" zPosition="4" itemHeight="50" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="text" position="785,380" size="475,270" font="Regular; 20" halign="center" valign="center" transparent="1" />
     <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <eLabel name="spaceused" text="% Flash Used..." position="50,690" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="200,690" size="520,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_pig_menu" />
   </screen>
