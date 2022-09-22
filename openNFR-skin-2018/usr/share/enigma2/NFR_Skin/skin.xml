@@ -1326,7 +1326,7 @@
     <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="icons/info.png" transparent="1" alphatest="blend" />
     <widget name="infolist" position="22,70" size="720,590" itemHeight="40" selectionDisabled="1" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
     <panel name="template_ok_exit_1280" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="template_name_long_red_o_blue" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_pig_menu" />
   </screen>
