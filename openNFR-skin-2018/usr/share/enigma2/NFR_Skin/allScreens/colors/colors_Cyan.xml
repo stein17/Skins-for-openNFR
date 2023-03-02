@@ -107,4 +107,8 @@
       <pixmap pos="bpBottomRight" filename="NFR_Skin/window/bot-right.png" />
     </borderset>
   </windowstyle>
+    <screen name="template_border_quick_menu">
+        <widget name="list" position="22,70" size="430,590" itemHeight="50" font="Regular; 20" scrollbarMode="showNever" transparent="1" backgroundColor="background" foregroundColor="white" selectionPixmap="window/Cyan/quickselectborder.png" />
+        <widget name="sublist" position="466,70" size="429,590" itemHeight="50" font="Regular; 20" scrollbarMode="showNever" transparent="1" backgroundColor="background" foregroundColor="white" selectionPixmap="window/Cyan/quickselectborder.png"/>
+    </screen>
   </skin>
